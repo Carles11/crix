@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack --env.mode development && yarn server",
-    "build": "webpack --env.mode production && yarn server",
+    "build": "webpack --env.mode production",
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "node server"
   },
