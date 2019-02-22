@@ -1,9 +1,24 @@
 const path = require("path"); //import path from "path"
+// const webpack = require("webpack");
 
 module.exports = ({ mode }) => ({
   mode,
-  entry: ["./src/index.js"],
-  output: { path: path.join(__dirname, "dist"), filename: "app.js" },
+  entry: [
+    // "react-hot-loader/patch",
+    // "webpack-dev-server/client?http://localhost:3000",
+    // "webpack/hot/only-dev-server",
+    "./src/index.js"],
+    devtool: "cheap-eval-source-map",
+  output: { 
+    path: path.join(__dirname, "dist"), 
+          filename: "app.js" },
+  // devServer: {
+  //   hot: true
+  // },
+  // plugins: {
+  //   new webpack.HotModuleReplacementPlugin(),
+  //   new webpack.NamedModulesPlugin()
+  // },
   module: {
     rules: [
       {
@@ -30,6 +45,6 @@ module.exports = ({ mode }) => ({
     ]
   },
   resolve: {
-    extensions: [".js", ".jsx"]
+    extensions: [".js", ".jsx", ".json"]
   }
 });

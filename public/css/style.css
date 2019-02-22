@@ -1,12 +1,25 @@
 
+html {
+    height: 100%;
+}
+
 body {
+    margin: 0;
+    padding: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 16px;
-    background: peru;
-
+    background: #d9dcc4;
+    height: 100%;
+}
+.landing-grid{
+     width: 100%;
+     background-color: transparent;
+     display: grid;
+     grid-template-columns: 1fr 4fr;
 }
 
-.title {
+
+/* .title {
     font-size: 2rem;
-    color: blue;
-}
+    color: #0a6284;
+} */

@@ -1,8 +1,69 @@
+
+
 nav {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+    justify-content: space-around;
+    /* margin: 2rem; */
 }
 
 nav a {
-    color: rgb(43, 58, 226);
+    color: #7f7c7c;
     text-decoration: none;
+    cursor: pointer;
 }
+
+header {
+    width: 100%;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+a:hover {
+    color: #0a6284;
+}
+
+.landing-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+}
+
+.bg-img-landing {
+    background-image: url("../assets/images/BG_code_javascript.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    
+}
+
+.bg-img-contact {
+    background-image: url("../assets/images/contact-web-development.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.bg-img-services {
+    background-image: url("../assets/images/services-web-development.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.bg-img-about-us {
+    background-image: url("../assets/images/about-us-team-web-development.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+/* .body-block {
+    height: 100vh;
+} */
