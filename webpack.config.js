@@ -12,7 +12,9 @@ module.exports = ({ mode }) => ({
   output: { 
     path: path.join(__dirname, "dist"), 
           filename: "app.js" },
-  // devServer: {
+  devServer: {
+    publicPath: '/public'
+  },
   //   hot: true
   // },
   // plugins: {

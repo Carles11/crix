@@ -1,14 +1,15 @@
-import React from 'react'
+import React from 'react';
+import Header from '../components/Header';
 
-import Header from "../components/Header";
+
 
 
 const Contact = () => {
     return (
-    <div className="bg-img-contact">
-        <Header />
-        <h1>Hola contacet</h1>
-    </div>
+        <div className="bg-img-contact">
+            <Header />
+            <h1>Hola contacet</h1>
+        </div>
     )
 }
 

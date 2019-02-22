@@ -5,11 +5,12 @@ nav {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1em;
     justify-content: space-around;
+    align-self: center;
     /* margin: 2rem; */
 }
 
 nav a {
-    color: #7f7c7c;
+    color: white;
     text-decoration: none;
     cursor: pointer;
 }
@@ -25,27 +26,21 @@ a:hover {
     color: #0a6284;
 }
 
-.landing-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 5px;
-}
 
 .bg-img-landing {
-    background-image: url("../assets/images/BG_code_javascript.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    
+background-image: url("../assets/images/BG_code_javascript.jpg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 100vh;
 }
 
 .bg-img-contact {
-    background-image: url("../assets/images/contact-web-development.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
+background-image: url("../assets/images/contact-web-development.jpg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 100vh;
 }
 
 .bg-img-services {
@@ -54,6 +49,7 @@ a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    opacity: 1%;
 }
 
 .bg-img-about-us {
