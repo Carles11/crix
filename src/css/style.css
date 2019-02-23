@@ -36,14 +36,6 @@ height: 100vh;
 }
 
 .bg-img-contact {
-background-image: url("../assets/images/contact-web-development.jpg");
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-height: 100vh;
-}
-
-.bg-img-services {
     background-image: url("../assets/images/services-web-development.jpg");
     background-position: center;
     background-repeat: no-repeat;

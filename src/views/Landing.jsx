@@ -1,9 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import Helmet from "react-helmet";
 
 import logo from "../assets/logos/crif_logo75_transp.png";
 import HeaderHome from "../components/HeaderHome.jsx";
+
 
 const Wrapper = styled.div`
     display: grid;
@@ -20,6 +22,13 @@ const Body = styled.div`
 const Landing = () => {
     return (
         <div className= "bg-img-landing">
+        <Helmet
+          title={DIC.DESCRIPTION}
+          meta={[
+            { name: 'description', content: `${DIC.DESCRIPTION}` },
+            { property: 'og:title', content: `${DIC.DESCRIPTION}` },
+          ]}
+        />
         <Wrapper>
           <Link to="/">
             <img
