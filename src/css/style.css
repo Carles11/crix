@@ -51,6 +51,9 @@ height: 100vh;
     background-size: cover;
     height: 100vh;
 }
+.highlight-text {
+    background-color: black;
+}
 
 /* .body-block {
     height: 100vh;

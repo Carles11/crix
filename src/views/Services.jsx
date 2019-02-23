@@ -5,7 +5,6 @@ import Header from "../components/Header";
 
 
 const Title = styled.h1`
-  background-color: #f4f4f4;
   color: silver;
   font-size: 3.6em;
   text-align: center;
@@ -14,7 +13,7 @@ const Title = styled.h1`
 const Subtitle = styled.h2`
   font-size: 2em;
   text-align: center;
-  margin-top: 1000px;
+  padding-top: 4%;
 `;
 const Body = styled.div`
   color: silver;
@@ -24,8 +23,8 @@ const Body = styled.div`
 `;
 const Section_grey = styled.section`
   background-color: #f4f4f4;
-  color: white;
-  min-height: 650px;
+  color: silver;
+  min-height: 750px;
   position: relative;
   width: 100%;
   height: 100%;
@@ -38,10 +37,12 @@ const Section_white = styled.section`
   width: 100%;
 `;
 const Article = styled.article`
-    text-align: center;
-    line-height: 60px;
-    margin-left: 20px;
-    margin-right: 25px;
+  text-align: justify;
+  line-height: 60px;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding-bottom: 6%;
+ 
 `;
 
 
@@ -49,10 +50,10 @@ const Services = () => {
     return (
       <div>
         <Header />
-        <Title>SERVICES</Title>
+        <Title>SERVICE</Title>
         <Body>   
             <Section_white>
-                <Subtitle>Web Entwicklung</Subtitle>
+                <Subtitle>Web development</Subtitle>
                 <Article>
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                 diam nonumy eirmod tempor invidunt ut labore et dolore magna
@@ -63,7 +64,7 @@ const Services = () => {
                 </Article>
             </Section_white>
             <Section_grey>
-                <Subtitle>Brochüre und Plakate Design</Subtitle>
+                <Subtitle>Server maintenance</Subtitle>
                 <Article>
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                 diam nonumy eirmod tempor invidunt ut labore et dolore magna
