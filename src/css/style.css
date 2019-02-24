@@ -26,7 +26,6 @@ a:hover {
     color: #0a6284;
 }
 
-
 .bg-img-landing {
 background-image: url("https://res.cloudinary.com/dssldws2k/image/upload/v1523461140/CRiF/photo-1485431618850-e6592fd4b298.jpg");
 background-position: center;
@@ -69,6 +68,7 @@ span {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    cursor: pointer;
 }
 
 span::before,
@@ -104,6 +104,7 @@ span::after {
     padding: 10px;
     display: inline-block;
     justify-items: end;
+    cursor: pointer;
 }
 
 .navbar_item_r {
