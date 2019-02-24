@@ -1,35 +1,27 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-import logo from "../assets/logos/crif_logo75_transp.png";
-import HeaderHome from "../components/HeaderHome.jsx";
-
+import HeaderHome from "../components/HeaderHome";
+import Logo from "../components/Logo"
 
 const Wrapper = styled.div`
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
 `;
 const Body = styled.div`
+  text-align: center;
+  font-family: "Montserrat Subrayada", sans-serif;
   color: white;
   font-size: 4em;
   text-align: center;
-  font-family: "Montserrat Subrayada", sans-serif;
 `;
-
 
 const Landing = () => {
     return (
         <div className= "bg-img-landing">
         <Wrapper>
-          <Link to="/">
-            <img
-              height="150px"
-              width="150px"
-              src={logo}
-              alt="Logo of CriX web development javascript"
-            />
-          </Link>
+          <Logo />
           <HeaderHome />
         </Wrapper>
         <Body>

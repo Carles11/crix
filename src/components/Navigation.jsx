@@ -1,7 +1,10 @@
 import React from 'react'
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
-const Navigation = () => {
+import CrossMenu from './CrossMenu';
+
+class Navigation extends React.Component {
+  render(){
     return (
       <nav>
         <Link to="/services">
@@ -13,8 +16,12 @@ const Navigation = () => {
         <Link to="/contact">
             <h1>CONTACT</h1>
         </Link>
+        <CrossMenu
+          handleClose={this.props.handleClose}
+        />
       </nav>
     );
+  }
 }
 
 export default Navigation;

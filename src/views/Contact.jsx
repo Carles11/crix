@@ -23,7 +23,7 @@ const Body = styled.div`
   text-align: center;
   font-family: "Montserrat", sans-serif;
 `;
-const Section = styled.section`
+const Section = styled.object`
   color: white;
   min-height: 750px;
   position: relative;
@@ -48,13 +48,13 @@ const Contact = () => {
       <div className="bg-img-contact">
         <Header />
         <Title>
-          <span className="highlight-text">CONTACT</span>
+          <object className="highlight-text">CONTACT</object>
         </Title>
         <Body>
           <Section>
             <Subtitle>CriX Web Development</Subtitle>
             <Article>
-              <span className="highlight-text">
+              <object className="highlight-text">
                 Elbestr. 15
                 <br />
                 60329 Frankfurt am Main
@@ -67,9 +67,9 @@ const Contact = () => {
                 <StyledLink to="mailto:carles@crix.design">
                   carles@crix.design
                 </StyledLink>
-              </span>
+              </object>
             </Article>
-          </Section>
+          </Section>   
         </Body>
       </div>
     );
