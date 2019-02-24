@@ -28,7 +28,7 @@ a:hover {
 
 
 .bg-img-landing {
-background-image: url("../assets/images/BG_code_javascript.jpg");
+background-image: url("https://res.cloudinary.com/dssldws2k/image/upload/v1523461140/CRiF/photo-1485431618850-e6592fd4b298.jpg");
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
@@ -45,7 +45,7 @@ height: 100vh;
 }
 
 .bg-img-about-us {
-    background-image: url("../assets/images/about-us-team-web-development.jpg");
+    background-image: url("../assets/images/about-us-crix-web-development.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

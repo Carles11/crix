@@ -12,7 +12,7 @@ const Title = styled.h1`
   font-family: "Montserrat", sans-serif;
   `;
 const Subtitle = styled.h2`
-  font-size: 2em;
+  font-size: 4em;
   text-align: center;
   padding-top: 4%;
   mix-blend-mode: difference;
@@ -48,23 +48,26 @@ const Contact = () => {
       <div className="bg-img-contact">
         <Header />
         <Title>
-          <span className="highlight-text">KONTAKT</span>
+          <span className="highlight-text">CONTACT</span>
         </Title>
         <Body>
           <Section>
             <Subtitle>CriX Web Development</Subtitle>
             <Article>
-                <span className="highlight-text">Elbestr. 15
-              <br />
+              <span className="highlight-text">
+                Elbestr. 15
+                <br />
                 60329 Frankfurt am Main
-              <br />
+                <br />
+                Germany
+                <br />
                 Tel.: 01782871785
-              <br />
+                <br />
                 E-Mail:
-              <StyledLink to="mailto:carles@crix.design">
-                carles@crix.design
-              </StyledLink>
-                  </span>
+                <StyledLink to="mailto:carles@crix.design">
+                  carles@crix.design
+                </StyledLink>
+              </span>
             </Article>
           </Section>
         </Body>

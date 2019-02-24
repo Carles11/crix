@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:3000/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="http://localhost:3000/manifest.json">
+    <link rel="shortcut icon" href="http://localhost:3000/favicon.ico">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>CRiF Development</title>
+  <style type="text/css">body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+</style><style type="text/css">.navbar_white{
+  display: block;
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 3s;
+       -o-transition-duration: 3s;
+          transition-duration: 3s;
+}
+.navbar_white.active{
+  opacity: 1;
+}
+.logo{
+  height: 70px;
+  width: 70px;
+}
+.main_nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+.main_nav li {
+  text-align: center;
+}
+/* DROWING CROSS */
+span {
+  position: relative;
+    height: 50px; /* this can be anything */
+    width: 50px;  /* ...but maintain 1:1 aspect ratio */
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+}
+span::before,
+span::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 4px; /* cross thickness */
+    background:#696969;
+  }
+span::before {
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+}
+span::after {
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+}
+/* END OF DROWING CROSS */
+.burger {
+  width: 40px;
+  height: 6px;
+  margin: 4px 0;
+  background: white;
+}
+.mainBurger {
+  padding: 10px;
+  display: inline-block;
+}
+.navbar_item_r {
+  margin-right: 20px;
+  margin-top: 20px;
+}
+.navbar_item_l{
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.home {
+  padding-top: 0px;
+  background-image: url('https://res.cloudinary.com/dssldws2k/image/upload/v1523461140/CRiF/photo-1485431618850-e6592fd4b298.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+.aboutUs{
+  padding-top: 0px;
+  background-image: url('http://res.cloudinary.com/dssldws2k/image/upload/v1525351247/CRiF/road_BW.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+
+}
+/* POLYGON NAVIGATION */
+.polygon_nav {
+  background-color: white;
+  width: 100%;
+  height: 85vh;
+  background-size: cover;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 40%);
+          clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 40%);
+}
+.poly_item_r {
+  margin-right: 2em;
+  color: #696969;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 50;
+  font-size: 1em;
+}
+.poly_item_l{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 50;
+  font-size: 1em;
+  margin-left: 60vh;
+  color: #696969
+}
+.poly_item_c{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 50;
+  font-size: 1em;
+  color: #696969
+}
+/* END OF POLYGON NAVIGATION */
+
+
+/* GOOGLE FONTS
+font-family: 'Montserrat', sans-serif;
+font-family: 'Amiri', serif;
+font-family: 'Montserrat Alternates',   sans-serif; */
+
+  /* font-family: 'Trade Winds', cursive; */
+  /* font-family: 'Cormorant SC', serif; */
+  /* font-family: 'Simonetta', cursive; */
+  /* font-family: 'Trade Winds', cursive; */
+  /* font-family: 'Crimson Text', serif; */
+
+.home_title{
+  text-align: center;
+  font-family: 'Montserrat Alternates',sans-serif;
+  font-size: 8em;
+  font-weight: 100;
+  color: white;
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+.nav_title{
+  text-align: center;
+  font-family: 'Montserrat Alternates',sans-serif;
+  font-size: 8em;
+  font-weight: 100;
+  color: #696969;
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+.home_subtitle {
+  position: relative;
+  padding-left: 5em;
+  padding-top: 0em;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 50;
+  font-size: 1.5em;
+  color: white;
+}
+.nav_subtitle {
+  position: relative;
+  padding-left: 5em;
+  padding-top: 0em;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 50;
+  font-size: 1.5em;
+  color: #696969;
+}
+@media only screen and (max-width:650px) {
+
+  .menu_nav li {
+    text-align: right;
+    margin-left: 10em;
+    padding: 0.3em;
+  }
+  .menu_nav ul {
+    list-style: none;
+    margin-left: 6em;
+    display: inline-table;
+  }
+  .poly_item_r {
+    color: #696969;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 50;
+    font-size: 1em;
+    margin: 0;
+  }
+  .poly_item_l{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 50;
+    font-size: 1em;
+    color: #696969
+  }
+  .poly_item_c{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 50;
+    font-size: 1em;
+    color: #696969
+  }
+  
+}</style></head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"><div class="home"><nav class="main_nav"><div><nav class="main_nav"><ul><li class="navbar_item_l"><div class="mainBurger"><div class="burger"></div><div class="burger"></div><div class="burger"></div></div></li><li class="navbar_item_r"><img class="logo" src="./CRiF Development_files/crif_logo_web_development.png" alt="crif development logo"></li></ul></nav></div></nav><div class="navbar_white " style="display: none;"><div class="polygon_nav main_nav"><nav><ul><li class="navbar_item_l"><span></span></li><li class="navbar_item_r"><img id="Home" class="logo" src="./CRiF Development_files/crif_logo_web_development.png" alt="crif development logo"></li></ul></nav><h1 class="nav_title">CRiF</h1><h3 class="nav_subtitle"> WEB DEVELOPMENT </h3><nav class="menu_nav"><ul><li id="AboutUs" class="poly_item_l">ABOUT US</li><li id="Projects" class="poly_item_c">PROJECTS</li><li id="Contact" class="poly_item_r">CONTACT</li></ul></nav></div></div><div><h1 class="home_title">CRiF</h1><h4 class="home_subtitle"> WEB DEVELOPMENT </h4></div></div></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  <script type="text/javascript" src="./CRiF Development_files/bundle.js"></script>
+
+</body></html>
