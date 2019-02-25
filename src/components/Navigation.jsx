@@ -3,67 +3,46 @@ import { Link } from 'react-router-dom';
 import styled from "styled-components";
 
 import BurgerMenu from './BurgerMenu';
-// import CrossMenu from './CrossMenu';
+import NavigationVertical from './NavigationVertical';
+import CrossMenu from './CrossMenu';
 
 
-const Mobile = styled.div`
-  @media only screen and (min-width: 650px) {
-    display: none;
-  }
-`;
+
 const Desktop = styled.div`
   @media only screen and (max-width: 650px) {
-    display: none;
-  }
-`;
-const VerticalMenu = styled.ul`
-  @media only screen and (min-width: 650px) {
-    display: none;
-  }
-
+    display: none };
 `;
 
 class Navigation extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      active : false
+      display: 'none'
     }
+    this.handleClick = this.handleClick.bind(this);
+    this.handleClose = this.handleClose.bind(this);
   }
-// My functions
 
-  componentDidMount(BurgerMenu) {
-    BurgerMenu ? this.showVertical() : this.setState({ active: false });
+  handleClick() {
+    this.setState({display:'block'});
   }
-  showVertical () {
-    this.setState({ active: true });
+  handleClose() {
+    this.setState({display:'none' });
   }
 
   render(){
-    return (
-      <div>
-        <Mobile>
-          <BurgerMenu />
-        </Mobile>
-
-        <VerticalMenu>
-          <Link to="/services">
-            <h1>SERVICES</h1>
-          </Link>
-          <Link to="/about-us">
-            <h1>ABOUT US</h1>
-          </Link>
-          <Link to="/contact">
-            <h1>CONTACT</h1>
-          </Link>
-        
-        </VerticalMenu>  
-
-        <Desktop>
+      return (
+        <div>
+          <BurgerMenu handleClick={this.handleClick} />
+          <div style={{display:this.state.display}}>
+            <CrossMenu handleClose={this.handleClose} />
+            <NavigationVertical />
+          </div>
+          <Desktop>
           <nav>
             <div />
             <Link to="/services">
-              <h1>SERVICES</h1>
+              <h1>SERVICE</h1>
             </Link>
             <Link to="/about-us">
               <h1>ABOUT US</h1>
@@ -72,10 +51,9 @@ class Navigation extends React.Component {
               <h1>CONTACT</h1>
             </Link>
           </nav>
-        </Desktop>
-      </div>
-    );
-  }
-}
-
+          </Desktop>
+        </div>
+      );
+    };
+  }  
 export default Navigation;
