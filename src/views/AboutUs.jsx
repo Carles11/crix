@@ -2,9 +2,18 @@ import React from 'react';
 import styled from "styled-components";
 
 import Header from "../components/Header";
+import img from "../assets/images/about-us-crix-web-development.jpg";
+
 // import PhotoC from "../components/PhotoC";
 // import PhotoX from "../components/PhotoX";
 
+const BgImage = styled.div`
+  background-image: url(${img});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+`;
 
 const Title = styled.h1`
   font-family: Montserrat;
@@ -39,7 +48,7 @@ const Paragraph = styled.p`
 
 const AboutUs = () => {
     return (
-      <div className="bg-img-about-us">
+      <BgImage>
         <Header />
         <Title>ABOUT US</Title>
         <SubTitle>Our team</SubTitle>
@@ -52,7 +61,7 @@ const AboutUs = () => {
         </Paragraph>
         {/* <PhotoC />
         <PhotoX /> */}
-      </div>
+      </BgImage>
     );
 }
 

@@ -1,16 +1,31 @@
 import React from 'react';
 import Header from '../components/Header';
 import styled from 'styled-components';
-import { Link } from "react-router-dom";
+
+import img from "../assets/images/contact-ball-room.jpg";
+import ContactAdress from '../components/ContactAdress';
 
 
+const BgImage = styled.div`
+  background-image: url(${img});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+`;
+const HighlightMe = styled.h1`
+  background-color: black;
+  display: inline;
+`;
 
-const Title = styled.h1`
+const Title = styled.div`
   color: silver;
-  font-size: 3.6em;
+  font-size: 2em;
   text-align: center;
-  font-family: "Montserrat", sans-serif;
-  `;
+  font-family: Montserrat;
+  padding-top: 1%;
+  padding-bottom: 1%;
+`;
 const Subtitle = styled.h2`
   font-size: 4em;
   text-align: center;
@@ -23,55 +38,30 @@ const Body = styled.div`
   text-align: center;
   font-family: "Montserrat", sans-serif;
 `;
-const Section = styled.object`
+const Section = styled.section`
   color: white;
   min-height: 750px;
   position: relative;
   width: 100%;
   height: 100%;
 `;
-const Article = styled.article`
-  text-align: center;
-  margin-left: 20%;
-  margin-right: 20%;
-  padding-bottom: 6%;
-`;
-const StyledLink = styled(Link)`
-  color: palevioletred;
-  font-weight: bold;
-  mix-blend-mode: difference;
-`;
+
 
 
 const Contact = () => {
     return (
-      <div className="bg-img-contact">
+      <BgImage>
         <Header />
         <Title>
-          <object className="highlight-text">CONTACT</object>
+          <HighlightMe>CONTACT</HighlightMe>
         </Title>
         <Body>
           <Section>
             <Subtitle>CriX Web Development</Subtitle>
-            <Article>
-              <object className="highlight-text">
-                Elbestr. 15
-                <br />
-                60329 Frankfurt am Main
-                <br />
-                Germany
-                <br />
-                Tel.: 01782871785
-                <br />
-                E-Mail:
-                <StyledLink to="mailto:carles@crix.design">
-                  carles@crix.design
-                </StyledLink>
-              </object>
-            </Article>
-          </Section>   
+            <ContactAdress />
+          </Section>
         </Body>
-      </div>
+      </BgImage>
     );
 };
 

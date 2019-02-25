@@ -1,10 +1,10 @@
 
+/* nav props applying in Navigation and BurgerMenu*/
 
 nav {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 1em;
-    justify-content: end;
     align-self: center;
     /* margin: 2rem; */
 }
@@ -24,35 +24,10 @@ header {
 
 a:hover {
     color: #0a6284;
+     transition: all 0.8s ease;
 }
 
-.bg-img-landing {
-background-image: url("https://res.cloudinary.com/dssldws2k/image/upload/v1523461140/CRiF/photo-1485431618850-e6592fd4b298.jpg");
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-height: 100vh;
-}
 
-.bg-img-contact {
-    background-image: url("../assets/images/services-web-development.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    opacity: 1%;
-}
-
-.bg-img-about-us {
-    background-image: url("../assets/images/about-us-crix-web-development.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-}
-.highlight-text {
-    background-color: black;
-}
 
 /* .body-block {
     height: 100vh;
@@ -93,52 +68,11 @@ span::after {
 
 
 
-.burger {
-    width: 40px;
-    height: 6px;
-    margin: 4px 0;
-    background: white;
-}
 
-.mainBurger {
-    padding: 10px;
-    display: inline-block;
-    justify-items: end;
-    cursor: pointer;
-}
 
-.navbar_item_r {
-    margin-right: 20px;
-    margin-top: 20px;
-}
-
-.navbar_item_l {
-    margin-top: 20px;
-    margin-left: 20px;
-}
 
 @media only screen and (max-width:650px) {
 
-    .poly_item_r {
-        color: #696969;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 50;
-        font-size: 1em;
-        margin: 0;
-    }
-
-    .poly_item_l {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 50;
-        font-size: 1em;
-        color: #696969
-    }
-
-    .poly_item_c {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 50;
-        font-size: 1em;
-        color: #696969
-    }
+   
 
 }

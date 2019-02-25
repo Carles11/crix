@@ -1,13 +1,21 @@
 import React from 'react';
 import styled from 'styled-components';
+import img from "../assets/images/skating-lake.jpg";
 
-import HeaderHome from "../components/HeaderHome";
+import Navigation from "../components/Navigation";
 import Logo from "../components/Logo"
 
 const Wrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 100%;
+`;
+const BgImage = styled.div`
+  background-image: url(${img});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 `;
 const Body = styled.div`
   text-align: center;
@@ -19,16 +27,16 @@ const Body = styled.div`
 
 const Landing = () => {
     return (
-        <div className= "bg-img-landing">
+      <BgImage>
         <Wrapper>
           <Logo />
-          <HeaderHome />
+          <Navigation />
         </Wrapper>
         <Body>
-            <h1>CriX</h1>
-            <h3>Web Development</h3>
+          <h1>CriX</h1>
+          <h3>Web Development</h3>
         </Body>
-      </div>
+      </BgImage>
     );
 };
 

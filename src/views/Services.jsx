@@ -3,8 +3,7 @@ import styled from 'styled-components';
 
 import Header from "../components/Header";
 
-
-const Title = styled.h1`
+const Title = styled.div`
   color: silver;
   font-size: 3.6em;
   text-align: center;
@@ -50,7 +49,9 @@ const Services = () => {
     return (
       <div>
         <Header />
-        <Title>SERVICE</Title>
+        <Title>
+          <h1>SERVICE</h1>
+        </Title>
         <Body>   
             <Section_white>
                 <Subtitle>Web development</Subtitle>
