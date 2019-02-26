@@ -43,7 +43,20 @@ const Paragraph = styled.p`
   max-width: 60%;
   text-align: justify;
   letter-spacing: 3px;
-  line-height:1.8;
+  line-height: 1.8;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 0.8em;
+    max-width: 90%;
+    letter-spacing: 1px;
+    line-height: 1;
+  }
+  @media only screen and (max-width: 800px) {
+    font-size: 1.5em;
+    max-width: 75%;
+    letter-spacing: 2px;
+    line-height: 1.3;
+  }
 `;
 
 const AboutUs = () => {

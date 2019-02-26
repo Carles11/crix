@@ -7,45 +7,44 @@ import NavigationVertical from './NavigationVertical';
 import CrossMenu from './CrossMenu';
 
 
+const PositionCrossMenu = styled.div`
+  padding-top: 40px;
+  padding-right: 25px;
+`;
 
 const Desktop = styled.div`
-  @media only screen and (max-width: 650px) {
-    display: none };
+  white-space: nowrap;
+
+  @media only screen and (max-width: 600px) {
+    display: none;
+  }
 `;
 
 class Navigation extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      display: 'none',
-      active: true
+      display: 'block',
+      opacity: 0
     }
     this.handleClick = this.handleClick.bind(this);
     this.handleClose = this.handleClose.bind(this);
   }
 
   handleClick() {
-    if (this.state.display === 'none') {
-      this.setState({ display: 'block',active: false})
+    if (this.state.display === 'block') {
+      this.setState({ display: 'none',opacity: 1})
     } else {
-      this.setState({ display: 'none',active: true })
+      this.setState({ display: 'block',opacity: 0 })
     }
   }
   handleClose() {
-    this.setState({display:'none',active:true });
+    this.setState({display:'block',opacity:0 });
   }
-
 
   render(){
       return (
         <div>
-          <div style={{ active: this.state.active }}>
-            <BurgerMenu handleClick={this.handleClick} />
-          </div>
-          <div style={{ display: this.state.display }}>
-            <CrossMenu handleClose={this.handleClose} />
-            <NavigationVertical />
-          </div>
           <Desktop>
             <nav>
               <div />
@@ -60,8 +59,16 @@ class Navigation extends React.Component {
               </Link>
             </nav>
           </Desktop>
+          <div style={{ display: this.state.display }}>
+            <BurgerMenu handleClick={this.handleClick} />
+          </div>
+          <PositionCrossMenu style={{ opacity: this.state.opacity }}>
+            <CrossMenu handleClose={this.handleClose} />
+            <NavigationVertical />
+          </PositionCrossMenu>
         </div>
       );
     };
   }  
+
 export default Navigation;

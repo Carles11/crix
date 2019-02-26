@@ -17,13 +17,20 @@ const BgImage = styled.div`
   background-size: cover;
   height: 100vh;
 `;
-const Body = styled.div`
-  text-align: center;
+const Title = styled.div`
   font-family: "Montserrat Subrayada", sans-serif;
   color: white;
   font-size: 4em;
   text-align: center;
+
+  @media screen and (max-width: 600px) {
+    font-size: 1.6em;
+  }
+  @media screen and (max-width: 800px) {
+  font-size: 2.6em;
 `;
+
+
 
 const Landing = () => {
     return (
@@ -32,10 +39,10 @@ const Landing = () => {
           <Logo />
           <Navigation />
         </Wrapper>
-        <Body>
+        <Title>
           <h1>CriX</h1>
           <h3>Web Development</h3>
-        </Body>
+        </Title>
       </BgImage>
     );
 };

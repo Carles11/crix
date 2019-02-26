@@ -17,10 +17,22 @@ const Article = styled.article`
   margin-left: 20%;
   margin-right: 20%;
   padding-bottom: 6%;
+  max-width: 60%;
   color: silver;
-  font - size: 1.8em;
-  font - family: "Montserrat", sans - serif;
-  `;
+  font-size: 1.8em;
+  font-family: "Montserrat", sans - serif;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 0.3em;
+    max-width: 90%;
+    line-height: 1;
+  }
+  @media only screen and (max-width: 800px) {
+    font-size: 1.3em;
+    max-width: 75%;
+    line-height: 1.3;
+  }
+`;
 
 const ContactAdress = () => {
     return (
@@ -36,7 +48,7 @@ const ContactAdress = () => {
           <br />
           E-Mail:
           <StyledLink to="mailto:carles@crix.design">
-            carles@crix.design
+             carles@crix.design
           </StyledLink>
         </HighlightMe>
       </Article>

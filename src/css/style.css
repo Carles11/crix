@@ -17,7 +17,7 @@ nav a {
 
 header {
     width: 100%;
-    background-color: white;
+    background-color: rgb(236, 236, 236);
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -36,13 +36,13 @@ a:hover {
 /* DROWING CROSS */
 span {
     position: relative;
-    height: 50px;
+    height: 65px;
     /* this can be anything */
-    width: 50px;
+    width: 65px;
     /* ...but maintain 1:1 aspect ratio */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: right;
     cursor: pointer;
 }
 
@@ -51,9 +51,9 @@ span::after {
     position: absolute;
     content: '';
     width: 100%;
-    height: 6px;
+    height: 9px;
     /* cross thickness */
-    background: #ffffff;
+    background: #0a6284;
 }
 
 span::before {
