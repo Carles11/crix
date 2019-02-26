@@ -13,14 +13,14 @@ const BgImage = styled.div`
   background-size: cover;
   height: 100vh;
 `;
-const HighlightMe = styled.h1`
+const HighlightMe = styled.div`
   background-color: black;
   display: inline;
 `;
 
 const Title = styled.h1`
   font-family: Montserrat;
-  font-size: 2em;
+  font-size: 2.6em;
   text-align: center;
   margin: auto;
   color: silver;
@@ -35,12 +35,10 @@ const Subtitle = styled.h2`
   @media only screen and (max-width: 600px) {
     font-size: 1.5em;
     text-align: center;
-    max-width: 90%;
   }
   @media only screen and (max-width: 800px) {
-    font-size: 2.6em;
+    font-size: 2.8em;
     text-align: center;
-    max-width: 75%;
   }
 `;
 const Body = styled.div`

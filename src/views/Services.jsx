@@ -5,7 +5,7 @@ import Header from "../components/Header";
 
 const Title = styled.h1`
   font-family: Montserrat;
-  font-size: 2em;
+  font-size: 2.6em;
   text-align: center;
   margin: auto;
   color: silver;
@@ -16,7 +16,7 @@ const Subtitle = styled.h2`
   font-size: 2em;
   text-align: center;
   margin: auto;
-  color: white;
+  color: silver;
   padding-top: 4%;
   padding-bottom: 2%;
 `;

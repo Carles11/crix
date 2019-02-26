@@ -20,6 +20,7 @@ header {
     background-color: rgb(236, 236, 236);
     display: grid;
     grid-template-columns: 1fr 1fr;
+
 }
 
 a:hover {

@@ -17,7 +17,7 @@ const BgImage = styled.div`
 
 const Title = styled.h1`
   font-family: Montserrat;
-  font-size: 2em;
+  font-size: 2.6em;
   text-align: center;
   margin: auto;
   color: white;

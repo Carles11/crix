@@ -12,6 +12,7 @@ const StyledMenu = styled.div`
   text-decoration: none;
   cursor: pointer;
   line-height: 1.1;
+  
 `;
 
 const StyledLink = styled(Link)`
@@ -19,22 +20,23 @@ const StyledLink = styled(Link)`
   text-decoration: none;
   white-space: nowrap;
   cursor: pointer;
-`;
+  `;
 
+  
 class NavigationVertical extends React.Component{
  
     render(){
         return (
           <StyledMenu>
-            <StyledLink to="/services">
-              <h1>SERVICE</h1>
-            </StyledLink>
-            <StyledLink to="/about-us">
-              <h1>ABOUT US</h1>
-            </StyledLink>
-            <StyledLink to="/contact">
-              <h1>CONTACT</h1>
-            </StyledLink>
+              <StyledLink to="/services">
+                <h1>SERVICE</h1>
+              </StyledLink>
+              <StyledLink to="/about-us">
+                <h1>ABOUT US</h1>
+              </StyledLink>
+              <StyledLink to="/contact">
+                <h1>CONTACT</h1>
+              </StyledLink>
           </StyledMenu>
         );
     }
