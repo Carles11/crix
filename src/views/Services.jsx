@@ -3,11 +3,13 @@ import styled from 'styled-components';
 
 import Header from "../components/Header";
 
-const Title = styled.div`
-  color: silver;
-  font-size: 3.6em;
+const Title = styled.h1`
+  font-family: Montserrat;
+  font-size: 2em;
   text-align: center;
-  font-family: "Montserrat", sans-serif;
+  margin: auto;
+  color: silver;
+  margin-top: 80px;
 `;
 const Subtitle = styled.h2`
   font-size: 2em;

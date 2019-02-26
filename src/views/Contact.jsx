@@ -18,13 +18,13 @@ const HighlightMe = styled.h1`
   display: inline;
 `;
 
-const Title = styled.div`
-  color: silver;
+const Title = styled.h1`
+  font-family: Montserrat;
   font-size: 2em;
   text-align: center;
-  font-family: Montserrat;
-  padding-top: 1%;
-  padding-bottom: 1%;
+  margin: auto;
+  color: silver;
+  margin-top: 80px;
 `;
 const Subtitle = styled.h2`
   font-size: 4em;

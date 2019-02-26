@@ -2,7 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 
 import Header from "../components/Header";
-import img from "../assets/images/about-us-crix-web-development.jpg";
+import img from "../assets/images/about-us.jpg";
 
 // import PhotoC from "../components/PhotoC";
 // import PhotoX from "../components/PhotoX";
