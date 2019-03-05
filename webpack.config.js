@@ -1,5 +1,8 @@
 const path = require("path"); //import path from "path"
-// const webpack = require("webpack");
+const webpack = require("webpack");
+
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+
 
 module.exports = ({ mode }) => ({
   mode,
@@ -21,6 +24,12 @@ module.exports = ({ mode }) => ({
   //   new webpack.HotModuleReplacementPlugin(),
   //   new webpack.NamedModulesPlugin()
   // },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './public/index.html',
+    }),
+    new webpack.ProgressPlugin(),
+  ],
   module: {
     rules: [
       {
