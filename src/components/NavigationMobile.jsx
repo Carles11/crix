@@ -23,7 +23,7 @@ const StyledLink = styled(Link)`
   cursor: pointer;
 `;
 
-const CrossRight = styled.div`
+const CrossPosition = styled.div`
   margin-left: 120px;
   margin-top: 40px;
 `;
@@ -33,9 +33,9 @@ class NavigationMobile extends React.Component{
     render(){
         return (
           <StyledMenu>
-            <CrossRight>
+            <CrossPosition>
                 <CrossMenu handleClose={this.props.handleClose} />
-            </CrossRight>
+            </CrossPosition>
               <StyledLink to="/services">
                 <h1>SERVICE</h1>
               </StyledLink>

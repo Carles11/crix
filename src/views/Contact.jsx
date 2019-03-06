@@ -4,6 +4,8 @@ import styled from 'styled-components';
 
 import img from "../assets/images/contact-ball-room.jpg";
 import ContactAdress from '../components/ContactAdress';
+import Footer from "../components/Footer";
+
 
 
 const BgImage = styled.div`
@@ -59,18 +61,21 @@ const Section = styled.section`
 
 const Contact = () => {
     return (
-      <BgImage>
-        <Header />
-        <Title>
-          <HighlightMe>CONTACT</HighlightMe>
-        </Title>
-        <Body>
-          <Section>
-            <Subtitle>CriX Web Development</Subtitle>
-            <ContactAdress />
-          </Section>
-        </Body>
-      </BgImage>
+      <div>
+        <BgImage>
+          <Header />
+          <Title>
+            <HighlightMe>CONTACT</HighlightMe>
+          </Title>
+          <Body>
+            <Section>
+              <Subtitle>CriX Web Development</Subtitle>
+              <ContactAdress />
+            </Section>
+          </Body>
+        </BgImage>
+        <Footer />
+      </div>
     );
 };
 

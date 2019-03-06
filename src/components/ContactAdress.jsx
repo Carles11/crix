@@ -19,7 +19,7 @@ const Article = styled.article`
   padding-bottom: 6%;
   max-width: 60%;
   color: silver;
-  font-size: 1.8em;
+  font-size: 1.4em;
   font-family: "Montserrat", sans - serif;
 
   @media only screen and (max-width: 600px) {
@@ -28,7 +28,7 @@ const Article = styled.article`
     line-height: 1;
   }
   @media only screen and (max-width: 800px) {
-    font-size: 1.3em;
+    font-size: 1em;
     max-width: 75%;
     line-height: 1.3;
   }
@@ -46,10 +46,7 @@ const ContactAdress = () => {
           <br />
           Tel.: 01782871785
           <br />
-          E-Mail:
-          <StyledLink to="mailto:carles@crix.design">
-             carles@crix.design
-          </StyledLink>
+          E-Mail: <StyledLink to="mailto:carles@crix.design"> carles@crix.design</StyledLink>
         </HighlightMe>
       </Article>
     );

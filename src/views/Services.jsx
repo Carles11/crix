@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from 'styled-components';
 
-import Header from "../components/Header";
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 const Title = styled.h1`
   font-family: Montserrat;
@@ -20,7 +21,7 @@ const Subtitle = styled.h2`
   padding-top: 4%;
   padding-bottom: 2%;
 `;
-const Section_grey = styled.section`
+const Grey_block = styled.section`
   background-color: #f4f4f4;
   color: silver;
   min-height: 750px;
@@ -34,7 +35,7 @@ const Section_grey = styled.section`
     min-height: 500px;
   }
 `;
-const Section_white = styled.section`
+const White_block = styled.section`
   background-color: white;
   color: silver;
   min-height: 650px;
@@ -78,18 +79,18 @@ const Services = () => {
       <div>
         <Header />
         <Title>SERVICE</Title>   
-            <Section_white>
+            <White_block>
                 <Subtitle>Web development</Subtitle>
                 <Article>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                justo duo dolores et ea rebum. Stet clita kasd gubergren, no
-                sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
-                ipsum dolor s
+                We use the latest technologies when developing our applications. 
+                We code plain Javascript using MERN (Mongo - Express - React - Node).
+                All in Javascript. With this, all code we write is personally optimized for your necessities, 
+                and it is very scalable. Start with a small project that covers your needs for now and make it 
+                grow when the time is right. No templates used, no cheap block constructing systems, 
+                no "it is not possible".
                 </Article>
-            </Section_white>
-            <Section_grey>
+            </White_block>
+            <Grey_block>
                 <Subtitle>Server maintenance</Subtitle>
                 <Article>
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
@@ -115,8 +116,8 @@ const Services = () => {
                 consectetuer adipiscing elit, sed diam nonummy nibh euismod
                 tincidunt ut laoreet dolore magna aliquam erat volutpat.
                 </Article>
-            </Section_grey>
-            <Section_white>
+            </Grey_block>
+            <White_block>
                 <Subtitle>Social media services</Subtitle>
                 <Article>
                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
@@ -126,7 +127,8 @@ const Services = () => {
                     sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
                     ipsum dolor
                 </Article>
-            </Section_white>
+            </White_block>
+            <Footer />
       </div>
     );
 };

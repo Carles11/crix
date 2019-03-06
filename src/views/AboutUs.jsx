@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 import Header from "../components/Header";
 import img from "../assets/images/about-us.jpg";
+import Footer from "../components/Footer";
 
 // import PhotoC from "../components/PhotoC";
 // import PhotoX from "../components/PhotoX";
@@ -61,20 +62,24 @@ const Paragraph = styled.p`
 
 const AboutUs = () => {
     return (
-      <BgImage>
-        <Header />
-        <Title>ABOUT US</Title>
-        <SubTitle>Our team</SubTitle>
-        <Paragraph>
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-          erat, sed diam voluptua. At vero eos et accusam et justo duo
-          dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-          sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor
-        </Paragraph>
-        {/* <PhotoC />
+      <div>
+        <BgImage>
+          <Header />
+          <Title>ABOUT US</Title>
+          <SubTitle>Our team</SubTitle>
+          <Paragraph>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+            diam nonumy eirmod tempor invidunt ut labore et dolore magna
+            aliquyam erat, sed diam voluptua. At vero eos et accusam et
+            justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+            takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
+            dolor
+          </Paragraph>
+          {/* <PhotoC />
         <PhotoX /> */}
-      </BgImage>
+        </BgImage>
+        <Footer />
+      </div>
     );
 }
 
