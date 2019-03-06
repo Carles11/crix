@@ -25,6 +25,7 @@ header {
 
 a:hover {
     color: #0a6284;
+    text-shadow: -1px 0 whitesmoke, 0 1px whitesmoke, 1px 0 whitesmoke, 0 -1px whitesmoke;
     transition: all 0.8s ease;
 }
 

@@ -2,33 +2,27 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from "react-router-dom";
 
-
-import Logo from "../components/Logo";
-
-
 const StyledFooter = styled.div`
   display: grid;
   font-family: Montserrat;
   font-size: 75%;
   justify-content: end;
-  margin-right: 100px;
+  padding-right: 100px;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  color: silver;
   text-decoration: none;
-  cursor: pointer;
-  height: 100px;
+  background-color: #0a6284;
+  margin-bottom: 0;
 `;
 const StyledLink = styled(Link)`
-  color: grey;
+  color: white;
   text-decoration: none;
   cursor: pointer;
 `;
-
 
 const Footer = () => {
     return (
         <StyledFooter>
-          <StyledLink to="/datenschuetzerklaerung">
+          <StyledLink to="/datenschutzerklaerung">
             <h1>Datenschutzerklärung</h1>
           </StyledLink>
           <StyledLink to="/impressum">
