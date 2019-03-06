@@ -18,7 +18,7 @@ const Burger = styled.div`
   justify-items: end;
 `;
 const Mobile = styled.div`
-  @media only screen and (min-width: 650px) {
+  @media only screen and (min-width: 600px) {
     display: none;
   }
 `;

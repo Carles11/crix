@@ -2,9 +2,11 @@ import React from 'react';
 import styled from'styled-components';
 import { Link } from "react-router-dom";
 
+import CrossMenu from './CrossMenu';
+
 const StyledMenu = styled.div`
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   justify-content: end;
   text-align: right;
   padding-right: 20px;
@@ -12,7 +14,6 @@ const StyledMenu = styled.div`
   text-decoration: none;
   cursor: pointer;
   line-height: 1.1;
-  
 `;
 
 const StyledLink = styled(Link)`
@@ -20,14 +21,21 @@ const StyledLink = styled(Link)`
   text-decoration: none;
   white-space: nowrap;
   cursor: pointer;
-  `;
+`;
 
+const CrossRight = styled.div`
+  margin-left: 120px;
+  margin-top: 40px;
+`;
   
-class NavigationVertical extends React.Component{
+class NavigationMobile extends React.Component{
  
     render(){
         return (
           <StyledMenu>
+            <CrossRight>
+                <CrossMenu handleClose={this.props.handleClose} />
+            </CrossRight>
               <StyledLink to="/services">
                 <h1>SERVICE</h1>
               </StyledLink>
@@ -42,4 +50,4 @@ class NavigationVertical extends React.Component{
     }
 }
 
-export default NavigationVertical;
+export default NavigationMobile;
