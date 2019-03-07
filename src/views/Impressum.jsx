@@ -50,12 +50,12 @@ const White_block = styled.section`
 `;
 const Article = styled.article`
   font-family: Montserrat;
-  font-size: 2em;
+  font-size: 1.2em;
   text-align: center;
   margin: auto;
   color: silver;
   max-width: 60%;
-  text-align: left;
+  text-align: justify;
   letter-spacing: 3px;
   line-height: 1.8;
 
@@ -66,7 +66,7 @@ const Article = styled.article`
     line-height: 1;
   }
   @media only screen and (max-width: 800px) {
-    font-size: 1.5em;
+    font-size: 1em;
     max-width: 75%;
     letter-spacing: 2px;
     line-height: 1.3;
@@ -86,15 +86,19 @@ const Impressum = () => {
           Elbestrasse 15
           <br />
           60329 Frankfurt am Main
+          <br />
+          Steuernummer: 013 861 02632
+          <br />
+          Ust-Id.Nr.: DE275710941
         </Article>
       </White_block>
       <Grey_block>
-              <Subtitle>Bei redaktionellen Inhalten</Subtitle>
-              <Article>
-                  Verantwortlich nach § 55 Abs.2 RStV
-            <br /> Carles del Río Francés
-            <br /> Elbestrasse 15
-            <br /> 60329 Frankfurt am Main
+        <Subtitle>Bei redaktionellen Inhalten</Subtitle>
+        <Article>
+          Verantwortlich nach § 55 Abs.2 RStV
+          <br /> Carles del Río Francés
+          <br /> Elbestrasse 15
+          <br /> 60329 Frankfurt am Main
         </Article>
       </Grey_block>
       <Footer />

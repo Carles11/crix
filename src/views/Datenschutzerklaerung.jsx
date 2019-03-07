@@ -51,7 +51,7 @@ const White_block = styled.section`
 `;
 const Article = styled.article`
   font-family: Montserrat;
-  font-size: 2em;
+  font-size: 1.2em;
   text-align: center;
   margin: auto;
   color: silver;
@@ -67,7 +67,7 @@ const Article = styled.article`
     line-height: 1;
   }
   @media only screen and (max-width: 800px) {
-    font-size: 1.5em;
+    font-size: 1em;
     max-width: 75%;
     letter-spacing: 2px;
     line-height: 1.3;

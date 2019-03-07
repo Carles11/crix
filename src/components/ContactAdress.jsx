@@ -19,11 +19,11 @@ const Article = styled.article`
   padding-bottom: 6%;
   max-width: 60%;
   color: silver;
-  font-size: 1.4em;
+  font-size: 1.2em;
   font-family: "Montserrat", sans - serif;
 
   @media only screen and (max-width: 600px) {
-    font-size: 0.3em;
+    font-size: 0.8em;
     max-width: 90%;
     line-height: 1;
   }
