@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
+
 const Title = styled.h1`
   font-family: Montserrat;
   font-size: 2.6em;
@@ -14,25 +15,33 @@ const Title = styled.h1`
 `;
 const Subtitle = styled.h2`
   font-family: Montserrat;
-  font-size: 2em;
+  font-size: 2.2em;
   text-align: center;
   margin: auto;
   color: silver;
   padding-top: 4%;
   padding-bottom: 2%;
 `;
-const Grey_block = styled.section`
-  background-color: #f4f4f4;
-  color: silver;
+const Bg_pic_block = styled.section`
   min-height: 750px;
-  position: relative;
   width: 100%;
-  height: 100%;
-  @media only screen and (max-width: 600px) {
-    min-height: 450px;
-  }
+
+  background-image: url("https://res.cloudinary.com/dssldws2k/image/upload/v1552013085/CRiF/BG_code_javascript_FILTRD.png");
+  background-position: bottom center;
+  background-attachment: scroll;
+
   @media only screen and (max-width: 800px) {
-    min-height: 500px;
+    min-height: 600px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    min-height: 550px;
+  }
+
+  @media (min-width: 1025px) {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
   }
 `;
 const White_block = styled.section`
@@ -41,6 +50,7 @@ const White_block = styled.section`
   min-height: 650px;
   position: relative;
   width: 100%;
+
   @media only screen and (max-width: 600px) {
     min-height: 450px;
   }
@@ -50,7 +60,7 @@ const White_block = styled.section`
 `;
 const Article = styled.article`
   font-family: Montserrat;
-  font-size: 1.2em;
+  font-size: 1.4em;
   text-align: center;
   margin: auto;
   color: silver;
@@ -59,17 +69,43 @@ const Article = styled.article`
   letter-spacing: 3px;
   line-height: 1.8;
 
+  @media only screen and (max-width: 800px) {
+    font-size: 1.2em;
+    max-width: 75%;
+    letter-spacing: 2px;
+    line-height: 1.3;
+  }
+
   @media only screen and (max-width: 600px) {
-    font-size: 0.8em;
+    font-size: 1em;
     max-width: 90%;
     letter-spacing: 1px;
     line-height: 1;
   }
+`;
+const Article_w = styled.article`
+  font-family: Montserrat;
+  font-size: 1.4em;
+  text-align: center;
+  margin: auto;
+  color: white;
+  max-width: 60%;
+  text-align: justify;
+  letter-spacing: 3px;
+  line-height: 1.8;
+
   @media only screen and (max-width: 800px) {
-    font-size: 1em;
+    font-size: 1.2em;
     max-width: 75%;
     letter-spacing: 2px;
     line-height: 1.3;
+  }
+
+  @media only screen and (max-width: 600px) {
+    font-size: 1em;
+    max-width: 90%;
+    letter-spacing: 1px;
+    line-height: 1;
   }
 `;
 
@@ -94,14 +130,14 @@ const Services = () => {
                 no "it is not possible with this template". Just Javascript code for you.
                 </Article>
             </White_block>
-            <Grey_block>
+            <Bg_pic_block>
                 <Subtitle>Server maintenance</Subtitle>
-                <Article>
+                <Article_w>
                 Besides coding your tailor made website, we offer you also server maintenance and domain buy.
                 Leave us the hard job of maintaining your server and your domain. We update all our projects weekly,
                 so there are no down-falls. We always use two kernel servers, so your website is allways up and running.
-                </Article>
-            </Grey_block>
+                </Article_w>
+            </Bg_pic_block>
             <White_block>
                 <Subtitle>What about prices?</Subtitle>
                 <Article>

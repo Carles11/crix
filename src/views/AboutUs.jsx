@@ -39,7 +39,7 @@ const SubTitle = styled.h2`
 
 const Paragraph = styled.p`
   font-family: Montserrat;
-  font-size: 1.2em;
+  font-size: 1.4em;
   text-align: center;
   margin: auto;
   color: silver;
@@ -93,16 +93,32 @@ const AboutUs = () => {
           <Title>ABOUT US</Title>
           <SubTitle>Our team</SubTitle>
           <Paragraph>
-            Thanks for landing here. We are Carles and Xavi. We started
-            developing long time ago and we learned from the best. After a
-            while, we felt confident enough to start our own company and...
-            here we are! At CriX Carles will be your feedback receiver and
-            your personal contact to us. When all is cleared, settled and
-            ready, Xavi and Carles will start coding. We take one client at
-            a time, so you never have the feeling no one is on your thing.
-            That´s why we will communicate you the next possible starting
-            date for your project. Once we are on it, we deliver in 14
-            weeks. No project takes more than that with us.
+            We are Carles and Xavi. We develope pure Javascript from scratch
+            coded websites. Only that gives you the freedom to achieve
+            whatever you want on your website. If you have seen it somewhere,
+            it is doable. 
+            
+            We started developing long time ago and we know what we do. 
+            At CriX, Carles and Xavi will code a modern design website using the 
+            latest programming technologies, making your website stabler, faster, better.
+                   
+            We take one client at a time, so you don´t have to worry on top of
+            your project, having the feeling no one is on your thing. 
+            We are on it until it´s done. 
+
+            And we like to make it happen fast. That´s why we warranty you a maximum 
+            delivery time of 14 weeks for any site. But for that to happen, we need your 
+            constant feedback from the beginning to make things right at once.
+
+            For the very same OneClientPolicy we have, we might be busy the time you need us.
+            In that case we will love to hear your proposal and we will communicate you 
+            the next possible starting date for us. Once we are on it, we deliver. 
+          </Paragraph>
+          <Paragraph>
+            Just call Carles and let´s talk. 
+          </Paragraph>
+          <Paragraph>
+            Telephone: 0049-(0)-1782871785          
           </Paragraph>
           <Portraits>
             <div>
@@ -110,14 +126,14 @@ const AboutUs = () => {
                 src={avatarC}
                 alt="Portrait of Carles del Río Francés"
                 width="350px"
-                />
+              />
               <h3>Carles</h3>
             </div>
             <div>
               <img
                 src={avatarX}
                 alt="Portrait of Xavi Vilà Albiol"
-              width="350px"
+                width="350px"
               />
               <h3>Xavi</h3>
             </div>
