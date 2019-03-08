@@ -4,14 +4,16 @@ import { Link } from "react-router-dom";
 
 const StyledFooter = styled.div`
   display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 500px:
   font-family: Montserrat;
   font-size: 75%;
-  justify-content: end;
   padding-right: 100px;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  justify-content: end;
   text-decoration: none;
   background-color: #0a6284;
-  margin-bottom: 0;
+  bottom: 0;
+  width: 100%;
 `;
 const StyledLink = styled(Link)`
   color: white;

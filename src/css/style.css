@@ -1,5 +1,17 @@
 
 /* nav props applying in Navigation and BurgerMenu*/
+* {
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+body {
+    height: 100%;
+    position: relative;
+}
 
 nav {
     display: grid;

@@ -1,8 +1,10 @@
 import React from 'react'
 import styled from 'styled-components';
 
+
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import QuotationForm from "../components/QuotationForm";
 
 
 const Title = styled.h1`
@@ -40,7 +42,6 @@ const Bg_pic_block = styled.section`
 
   @media (min-width: 1025px) {
     background-repeat: no-repeat;
-    background-size: contain;
     background-attachment: fixed;
   }
 `;
@@ -134,19 +135,18 @@ const Services = () => {
                 <Subtitle>Server maintenance</Subtitle>
                 <Article_w>
                 Besides coding your tailor made website, we offer you also server maintenance and domain buy.
-                Leave us the hard job of maintaining your server and your domain. We update all our projects weekly,
-                so there are no down-falls. We always use two kernel servers, so your website is allways up and running.
+                Leave us the hard job of maintaining your server and your domain. We update all our projects weekly.
+                 We always use two kernel servers, so your website is allways up and running.
                 </Article_w>
             </Bg_pic_block>
             <White_block>
                 <Subtitle>What about prices?</Subtitle>
                 <Article>
-                    Web development is a curious world. Similar coded sites usually have very different prices. 
-                    It more likely depends on who is your customer and how money he can spend. Not here.
                     We offer you fixed prices for your website. Tell us what features you need in your site and
                     we give you a fixed price. Use the form below to find your quotation.
                 </Article>
             </White_block>
+            <QuotationForm />
             <Footer />
       </div>
     );
