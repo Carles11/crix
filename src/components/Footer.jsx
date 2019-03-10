@@ -2,18 +2,20 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from "react-router-dom";
 
-const StyledFooter = styled.div`
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  height: 500px:
-  font-family: Montserrat;
-  font-size: 75%;
-  padding-right: 100px;
-  justify-content: end;
-  text-decoration: none;
+const StyledFooter = styled.ul`
+  flex-direction: column;
+  height: 300px;
   background-color: #0a6284;
   bottom: 0;
   width: 100%;
+  justify-content: center;
+  align-items: flex-end;
+  padding-right: 35px;
+`;
+const MenuItem = styled.li`
+  list-style: none;
+  font-family: Montserrat;
+  font-size: 1.4em;
 `;
 const StyledLink = styled(Link)`
   color: white;
@@ -23,17 +25,23 @@ const StyledLink = styled(Link)`
 
 const Footer = () => {
     return (
-        <StyledFooter>
+      <StyledFooter>
+        <MenuItem>
           <StyledLink to="/datenschutzerklaerung">
-            <h1>Datenschutzerklärung</h1>
+            <li>Datenschutzerklärung</li>
           </StyledLink>
-          <StyledLink to="/impressum">
-            <h1>Impressum</h1>
-          </StyledLink>
-          <StyledLink to="/contact">
-            <h1>Contact</h1>
-          </StyledLink>
-        </StyledFooter>
+        </MenuItem>
+        <MenuItem>
+        <StyledLink to="/impressum">
+          <li>Impressum</li>
+        </StyledLink>
+        </MenuItem>
+        <MenuItem>
+        <StyledLink to="/contact">
+          <li>Contact</li>
+        </StyledLink>
+        </MenuItem>
+      </StyledFooter>
     );
 };
 

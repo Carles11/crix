@@ -4,34 +4,31 @@ import styled from 'styled-components';
 import avatarC from "../assets/images/avatar_carles.png";
 import avatarX from "../assets/images/avatar_xavi.png";
 
-const Pics = styled.div`
-  display: flex;
+const Pics = styled.ul`
   flex-direction: row;
-  background-color: rebeccapurple;
+  background-color: transparent;
   width: 100%;
-  font-family: Montserrat;
-  color: white;
-  font-size: 1.4em;
-  height: 500px;
-
+  justify-content: space-evenly;
 
   @media only screen and (max-width: 800px) {
-  
   }
 
   @media only screen and (max-width: 600px) {
-   
   }
 `;
 
-const PicLeft = styled.div`
-  align-items: center;
-  justify-content: center;
+const PicLeft = styled.li`
+  padding-top: 5%;
 `;
 
-const PicRight = styled.div`
-  align-items: center;
-  justify-content: center;
+const PicRight = styled.li`
+  padding-top: 5%;
+`;
+const PicFootText = styled.p`
+  font-family: Montserrat;
+  font-size: 1.4em;
+  color: white;
+  text-align: center;
 `;
 
 const Portraits = () =>{
@@ -41,13 +38,17 @@ const Portraits = () =>{
           <img
             src={avatarC}
             alt="Portrait of Carles del Río Francés"
+            height="350px"
           />
+          <PicFootText>Carles</PicFootText>
         </PicLeft>
         <PicRight>
           <img
             src={avatarX}
             alt="Portrait of Xavi Vilà Albiol"
+            height="350px"
           />
+          <PicFootText>Xavi</PicFootText>
         </PicRight>
       </Pics>
     );

@@ -16,6 +16,10 @@ ul {
     display: -webkit-flex; /* targets Chrome, Safar i */
     display: -ms-flexbox; /* targets IE10 */
     display: flex;
+    list-style-type: none;
+}
+li {
+    text-decoration: none;
 }
 
 nav {

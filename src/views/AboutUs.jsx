@@ -13,7 +13,7 @@ const BgImage = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 100%;
   display: block:
   flex-direction: column;
 `;
@@ -39,9 +39,6 @@ const SubTitle = styled.h2`
 
 const MainSection = styled.section`
   min-height: 100vh; 
-  overflow: hidden;
-  
-  padding-bottom: 100px; 
 `;
 
 const AboutUs = () => {
