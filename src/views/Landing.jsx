@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import img from "../assets/images/skating-lake.jpg";
+import img from "../assets/images/skating-lake_crix.jpg";
 
 import Navigation from "../components/Navigation";
 import Logo from "../components/Logo"
