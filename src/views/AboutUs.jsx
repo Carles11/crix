@@ -14,6 +14,8 @@ const BgImage = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+  display: block:
+  flex-direction: column;
 `;
 
 const Title = styled.h1`
@@ -35,15 +37,12 @@ const SubTitle = styled.h2`
   padding-bottom: 2%;
 `;
 
-
 const MainSection = styled.section`
   min-height: 100vh; 
   overflow: hidden;
-  display: block;
-  position: relative;
+  
   padding-bottom: 100px; 
 `;
-
 
 const AboutUs = () => {
     return (
