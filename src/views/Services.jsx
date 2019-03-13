@@ -12,7 +12,6 @@ const Title = styled.h1`
   font-size: 2.6em;
   text-align: center;
   margin: auto;
-  color: silver;
   margin-top: 80px;
 `;
 const Subtitle = styled.h2`
@@ -20,13 +19,13 @@ const Subtitle = styled.h2`
   font-size: 2.2em;
   text-align: center;
   margin: auto;
-  color: silver;
   padding-top: 4%;
   padding-bottom: 2%;
 `;
 const Bg_pic_block = styled.section`
   min-height: 750px;
   width: 100%;
+  color: white;
 
   background-image: url("https://res.cloudinary.com/dssldws2k/image/upload/v1552013085/CRiF/BG_code_javascript_FILTRD.png");
   background-position: bottom center;
@@ -47,7 +46,7 @@ const Bg_pic_block = styled.section`
 `;
 const White_block = styled.section`
   background-color: white;
-  color: silver;
+  color: #696969;
   min-height: 650px;
   position: relative;
   width: 100%;
@@ -64,24 +63,24 @@ const Article = styled.article`
   font-size: 1.4em;
   text-align: center;
   margin: auto;
-  color: silver;
-  max-width: 60%;
+  color: #696969;
+  max-width: 70%;
   text-align: justify;
   letter-spacing: 3px;
-  line-height: 1.8;
+  line-height: 1.8em;
 
   @media only screen and (max-width: 800px) {
     font-size: 1.2em;
     max-width: 75%;
     letter-spacing: 2px;
-    line-height: 1.3;
+    line-height: 1.8em;
   }
 
   @media only screen and (max-width: 600px) {
     font-size: 1em;
     max-width: 90%;
     letter-spacing: 1px;
-    line-height: 1;
+    line-height: 1.6em;
   }
 `;
 const Article_w = styled.article`
@@ -90,7 +89,7 @@ const Article_w = styled.article`
   text-align: center;
   margin: auto;
   color: white;
-  max-width: 60%;
+  max-width: 70%;
   text-align: justify;
   letter-spacing: 3px;
   line-height: 1.8;
@@ -99,14 +98,14 @@ const Article_w = styled.article`
     font-size: 1.2em;
     max-width: 75%;
     letter-spacing: 2px;
-    line-height: 1.3;
+    line-height: 1.8;
   }
 
   @media only screen and (max-width: 600px) {
     font-size: 1em;
     max-width: 90%;
     letter-spacing: 1px;
-    line-height: 1;
+    line-height: 1.6;
   }
 `;
 

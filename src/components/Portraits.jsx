@@ -9,12 +9,6 @@ const Pics = styled.ul`
   background-color: transparent;
   width: 100%;
   justify-content: space-evenly;
-
-  @media only screen and (max-width: 800px) {
-  }
-
-  @media only screen and (max-width: 600px) {
-  }
 `;
 
 const PicLeft = styled.li`
@@ -22,16 +16,16 @@ const PicLeft = styled.li`
   padding-top: 5%;
   height: 400px;
   text-align: center;
+  align-self: center;
 
   @media only screen and (max-width: 800px) {
     height: 300px;
-    align-self: center;
     padding-top: 10%;
 
   }
   @media only screen and (max-width: 600px) {
     height: 200px;
-    align-self: center;
+    margin-bottom: 23%;
   }
 `;
 
@@ -40,17 +34,15 @@ const PicRight = styled.li`
   padding-top: 5%;
   height: 400px;
   text-align: center;
+  align-self: center;
 
   @media only screen and (max-width: 800px) {
     height: 300px;
-    align-self: center;
     padding-top: 10%;
-
-
   }
   @media only screen and (max-width: 600px) {
     height: 200px;
-    align-self: center;
+    margin-bottom: 23%;
 
   }
 `;

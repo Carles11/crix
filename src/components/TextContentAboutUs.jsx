@@ -8,24 +8,24 @@ const Paragraph = styled.p`
   font-size: 1.4em;
   text-align: center;
   margin: auto;
-  color: silver;
-  max-width: 60%;
+  color: white;
+  max-width: 70%;
   text-align: justify;
   letter-spacing: 3px;
   line-height: 1.8;
 
-  @media only screen and (max-width: 600px) {
-    font-size: 0.8em;
-    max-width: 90%;
-    letter-spacing: 1px;
-    line-height: 1;
-  }
   @media only screen and (max-width: 800px) {
-    font-size: 1em;
+    font-size: 1.2em;
     max-width: 75%;
     letter-spacing: 2px;
-    line-height: 1.3;
+    line-height: 1.8;
   }
+
+  @media only screen and (max-width: 600px) {
+    font-size: 1em;
+    max-width: 90%;
+    letter-spacing: 1px;
+    line-height: 1.6;
 `;
 const TextContentAboutUs = () => {
     return (

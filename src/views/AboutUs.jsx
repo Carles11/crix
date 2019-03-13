@@ -13,7 +13,6 @@ const BgImage = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100%;
   display: block:
   flex-direction: column;
 `;
@@ -37,14 +36,9 @@ const SubTitle = styled.h2`
   padding-bottom: 2%;
 `;
 
-const MainSection = styled.section`
-  min-height: 100vh; 
-`;
-
 const AboutUs = () => {
     return (
       <div>
-        <MainSection>
           <BgImage>
             <Header />
             <Title>ABOUT US</Title>
@@ -52,7 +46,6 @@ const AboutUs = () => {
             <TextContentAboutUs />
             <Portraits />
           </BgImage>
-        </MainSection>
         <Footer />
       </div>
     );
