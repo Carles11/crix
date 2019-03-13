@@ -6,7 +6,7 @@ import styled from 'styled-components'
 const MainBurger = styled.div`
     padding: 10px;
     display: inline-block;
-    justify-items: end;
+    align-content: end;
     cursor: pointer;
 `;
 
@@ -17,17 +17,16 @@ const Burger = styled.div`
   padding: 6px;
   justify-items: end;
 `;
-const Mobile = styled.div`
-  @media only screen and (min-width: 600px) {
-    display: none;
-  }
-`;
+// const Mobile = styled.div`
+//   @media only screen and (min-width: 600px) {
+//     display: none;
+//   }
+// `;
 
 class BurgerMenu extends React.Component {
   
     render() {
         return (
-          <Mobile>
             <nav>
               <div />
               <div />
@@ -38,7 +37,6 @@ class BurgerMenu extends React.Component {
                 <Burger />
               </MainBurger>
             </nav>
-          </Mobile>
         );
     }
 }

@@ -2,10 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from "react-router-dom";
 
+import CrossMenu from './CrossMenu';
+
 const StyledMenu = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   align-self: center;
 `;
 
@@ -14,7 +16,10 @@ const StyledLink = styled(Link)`
   text-decoration: none;
   cursor: pointer;
 `;
-
+const CrossPosition = styled.div`
+  margin-right: 40px;
+  margin-top: 40px;
+`;
 
 class NavigationDesktop extends React.Component {
 
@@ -30,6 +35,9 @@ class NavigationDesktop extends React.Component {
                 <StyledLink to="/contact">
                     <h1>CONTACT</h1>
                 </StyledLink>
+                <CrossPosition>
+                    <CrossMenu handleClose={this.props.handleClose} />
+                </CrossPosition>
             </StyledMenu>
         );
     }

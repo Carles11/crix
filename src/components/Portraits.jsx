@@ -5,7 +5,7 @@ import avatarC from "../assets/images/avatar_carles.png";
 import avatarX from "../assets/images/avatar_xavi.png";
 
 const Pics = styled.ul`
-  flex-direction: row;
+  flex-flow: row nowrap;
   background-color: transparent;
   width: 100%;
   justify-content: space-evenly;
@@ -18,17 +18,47 @@ const Pics = styled.ul`
 `;
 
 const PicLeft = styled.li`
+  order: 1;
   padding-top: 5%;
+  height: 400px;
+  text-align: center;
+
+  @media only screen and (max-width: 800px) {
+    height: 300px;
+    align-self: center;
+    padding-top: 10%;
+
+  }
+  @media only screen and (max-width: 600px) {
+    height: 200px;
+    align-self: center;
+  }
 `;
 
 const PicRight = styled.li`
+  order: 2;
   padding-top: 5%;
+  height: 400px;
+  text-align: center;
+
+  @media only screen and (max-width: 800px) {
+    height: 300px;
+    align-self: center;
+    padding-top: 10%;
+
+
+  }
+  @media only screen and (max-width: 600px) {
+    height: 200px;
+    align-self: center;
+
+  }
 `;
 const PicFootText = styled.p`
   font-family: Montserrat;
   font-size: 1.4em;
   color: white;
-  text-align: center;
+  align-self: center;
 `;
 
 const Portraits = () =>{
@@ -38,7 +68,7 @@ const Portraits = () =>{
           <img
             src={avatarC}
             alt="Portrait of Carles del Río Francés"
-            height="350px"
+            height="100%"
           />
           <PicFootText>Carles</PicFootText>
         </PicLeft>
@@ -46,7 +76,7 @@ const Portraits = () =>{
           <img
             src={avatarX}
             alt="Portrait of Xavi Vilà Albiol"
-            height="350px"
+            height="100%"
           />
           <PicFootText>Xavi</PicFootText>
         </PicRight>

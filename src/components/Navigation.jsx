@@ -7,10 +7,9 @@ import NavigationDesktop from './NavigationDesktop';
 
 
 const Mobile = styled.div`
-  padding-top: 40px;
   padding-right: 25px;
 
-  @media only screen and (min-width: 600px) {
+  @media only screen and (min-width: 601px) {
     display: none;
   }
 `;
@@ -44,7 +43,7 @@ class Navigation extends React.Component {
       return (
         <div>
           <Desktop>
-            <NavigationDesktop />
+            {this.state.showDropdown ? <NavigationDesktop handleClose={this.handleClose} /> : <BurgerMenu handleClick={this.handleClick} />}
           </Desktop>
           <Mobile>
             {this.state.showDropdown ? <NavigationMobile handleClose={this.handleClose} /> : <BurgerMenu handleClick={this.handleClick} />}
