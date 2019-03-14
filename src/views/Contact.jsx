@@ -13,7 +13,8 @@ const BgImage = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  display: block:
+  flex-direction: column;
 `;
 const HighlightMe = styled.div`
   background-color: black;
