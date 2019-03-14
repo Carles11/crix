@@ -13,7 +13,7 @@ const StyledMenu = styled.div`
   color: silver;
   text-decoration: none;
   cursor: pointer;
-  line-height: 1.1;
+  line-height: 0.5;
 `;
 
 const StyledLink = styled(Link)`
@@ -37,13 +37,13 @@ class NavigationMobile extends React.Component{
                 <CrossMenu handleClose={this.props.handleClose} />
             </CrossPosition>
               <StyledLink to="/services">
-                <h1>SERVICE</h1>
+                <h3>SERVICE</h3>
               </StyledLink>
               <StyledLink to="/about-us">
-                <h1>ABOUT US</h1>
+                <h3>ABOUT US</h3>
               </StyledLink>
               <StyledLink to="/contact">
-                <h1>CONTACT</h1>
+                <h3>CONTACT</h3>
               </StyledLink>
           </StyledMenu>
         );

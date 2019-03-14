@@ -6,9 +6,10 @@ const StyledFooter = styled.ul`
   flex-direction: column;
   height: 300px;
   background-color: #0a6284;
-  bottom: 0;
+  padding-top: 100px;
+  margin-top: 0;
+  margin-bottom: 0;
   width: 100%;
-  justify-content: center;
   align-items: flex-end;
   padding-right: 35px;
 `;

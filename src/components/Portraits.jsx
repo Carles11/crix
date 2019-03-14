@@ -9,6 +9,7 @@ const Pics = styled.ul`
   background-color: transparent;
   width: 100%;
   justify-content: space-evenly;
+  padding-bottom: 100px;
 `;
 
 const PicLeft = styled.li`
