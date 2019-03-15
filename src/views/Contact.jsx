@@ -35,14 +35,14 @@ const Subtitle = styled.h2`
   padding-top: 4%;
   mix-blend-mode: difference;
 
-  @media only screen and (max-width: 600px) {
-    font-size: 1.5em;
-    text-align: center;
+  @media screen and (max-width: 600px) {
+    font-size: 1.9em;
   }
-  @media only screen and (max-width: 800px) {
-    font-size: 2.8em;
-    text-align: center;
-  }
+  @media screen and (min-width: 601px) {
+  font-size: 2.9em;
+
+  @media screen and (min-width: 801px) {
+  font-size: 4em;
 `;
 const Body = styled.div`
   color: silver;

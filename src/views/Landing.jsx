@@ -25,13 +25,15 @@ const Title = styled.div`
   text-align: center;
 
   @media screen and (max-width: 600px) {
-    font-size: 1em;
+    font-size: 1.9em;
   }
-  @media screen and (min-width: 601px, max-width: 801px) {
-  font-size: 2em;
+  @media screen and (min-width: 601px) {
+  font-size: 2.9em;
+
+  @media screen and (min-width: 801px) {
+  font-size: 4em;
   
-  @media screen and (max-width: 1201px) {
-  font-size: 2em;
+
 `;
 
 

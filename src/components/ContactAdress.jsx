@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom' 
+// import { Link } from 'react-router-dom' 
 import styled from 'styled-components';
 
 
@@ -7,13 +7,14 @@ const HighlightMe = styled.div`
   background-color: black;
   display: inline;
 `;
-const StyledLink = styled(Link)`
-  color: palevioletred;
-  font-weight: bold;
-  mix-blend-mode: difference;
-`;
+// const StyledLink = styled(Link)`
+//   color: palevioletred;
+//   font-weight: bold;
+//   mix-blend-mode: difference;
+// `;
 const Article = styled.article`
   text-align: center;
+  line-height: 1.3;
   margin-left: 20%;
   margin-right: 20%;
   padding-bottom: 6%;
@@ -22,16 +23,18 @@ const Article = styled.article`
   font-size: 1.2em;
   font-family: "Montserrat", sans - serif;
 
-  @media only screen and (max-width: 600px) {
+  @media screen and (max-width: 600px) {
     font-size: 0.8em;
-    max-width: 90%;
-    line-height: 1;
   }
-  @media only screen and (max-width: 800px) {
-    font-size: 1em;
-    max-width: 75%;
-    line-height: 1.3;
-  }
+  @media screen and (min-width: 601px) {
+  font-size: 1.1em;
+
+  @media screen and (min-width: 801px) {
+  font-size: 1.4em;
+`;
+const Mailto = styled.div`
+  color: palevioletred !important;
+  font-weight: bold !important;
 `;
 
 const ContactAdress = () => {
@@ -46,7 +49,7 @@ const ContactAdress = () => {
           <br />
           Tel.: 01782871785
           <br />
-          E-Mail: <StyledLink to="mailto:carles@crix.design"> carles@crix.design</StyledLink>
+          E-Mail: <Mailto><a href="mailto:carles@crix.design"> carles@crix.design</a></Mailto>
         </HighlightMe>
       </Article>
     );
