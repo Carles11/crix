@@ -8,8 +8,9 @@ import Logo from "../components/Logo"
 const Wrapper = styled.div`
   width: 100%;
   background-color: transparent;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 `;
 const BgImage = styled.div`
   background-image: url(${img});

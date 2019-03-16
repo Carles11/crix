@@ -1,5 +1,3 @@
-
-/* nav props applying in Navigation and BurgerMenu*/
 * {
     box-sizing: border-box;
 }
@@ -8,19 +6,27 @@
 *:after {
     box-sizing: border-box;
 }
+
 body {
     height: 100%;
     position: relative;
 }
+
 ul {
-    display: -webkit-flex; /* targets Chrome, Safar i */
-    display: -ms-flexbox; /* targets IE10 */
+    display: -webkit-flex;
+    /* targets Chrome, Safar i */
+    display: -ms-flexbox;
+    /* targets IE10 */
     display: flex;
     list-style-type: none;
 }
+
 li {
     text-decoration: none;
 }
+
+
+/* nav props applying in Navigation and BurgerMenu*/
 
 nav {
     display: grid;
@@ -34,14 +40,6 @@ nav a {
     color: white;
     text-decoration: none;
     cursor: pointer;
-}
-
-header {
-    width: 100%;
-    background-color: rgb(236, 236, 236);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
 }
 
 a:hover {
@@ -92,8 +90,4 @@ span::after {
 
 
 
-@media only screen and (max-width:650px) {
-
-   
-
-}
+@media only screen and (max-width:650px) {}

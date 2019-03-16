@@ -7,17 +7,26 @@ import CrossMenu from './CrossMenu';
 const StyledMenu = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  align-self: center;
+justify-content: flex-end;
 
   @media only screen and (max-width: 1115px) {
     font-size: 60%;  }
 `;
 
 const StyledLink = styled(Link)`
+  width: 200px;
   color: white;
   text-decoration: none;
   cursor: pointer;
+  align-self: center;
+
+    @media only screen and (max-width: 811px) {
+    width: 111px;
+  }
+    @media only screen and (max-width: 1115px) {
+    width: 160px;
+}
+
 `;
 const CrossPosition = styled.div`
   margin-right: 40px;
