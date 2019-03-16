@@ -21,9 +21,8 @@ const Title = styled.h1`
   font-family: Montserrat;
   font-size: 2.6em;
   text-align: center;
-  margin: auto;
   color: white;
-  margin-top: 80px;
+  margin-top: 155px;
 `;
 
 const SubTitle = styled.h2`

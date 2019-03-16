@@ -12,7 +12,7 @@ const Title = styled.h1`
   font-size: 2.6em;
   text-align: center;
   margin: auto;
-  margin-top: 80px;
+  margin-top: 175px;
 `;
 const Subtitle = styled.h2`
   font-family: Montserrat;
