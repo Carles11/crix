@@ -5,15 +5,15 @@ import { Link } from "react-router-dom";
 import CrossMenu from './CrossMenu';
 
 const StyledMenu = styled.div`
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   justify-content: end;
   text-align: right;
   padding-right: 20px;
   color: silver;
   text-decoration: none;
   cursor: pointer;
-  line-height: 0.5;
+  line-height: 0.2;
 `;
 
 const StyledLink = styled(Link)`

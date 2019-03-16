@@ -9,6 +9,9 @@ const StyledMenu = styled.div`
   flex-direction: row;
   justify-content: space-around;
   align-self: center;
+
+  @media only screen and (max-width: 1115px) {
+    font-size: 60%;  }
 `;
 
 const StyledLink = styled(Link)`
