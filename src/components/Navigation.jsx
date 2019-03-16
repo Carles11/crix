@@ -5,7 +5,6 @@ import BurgerMenu from './BurgerMenu';
 import NavigationMobile from './NavigationMobile';
 import NavigationDesktop from './NavigationDesktop';
 
-
 const Mobile = styled.div`
   padding-right: 25px;
 
