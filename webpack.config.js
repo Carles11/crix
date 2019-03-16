@@ -27,7 +27,7 @@ module.exports = ({ mode }) => ({
   plugins: [
     new HtmlWebpackPlugin({
       template: './public/index.html',
-      favicon: './src/assets/images/favicon.ico',
+      favicon: './src/assets/logos/favicon.ico',
     }),
     new webpack.ProgressPlugin(),
   ],
