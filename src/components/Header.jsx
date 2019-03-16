@@ -27,8 +27,8 @@ const Header = () => {
         <Sticky_nav>
                 <Link to="/">
                     <img
-                        height= "150px"
-                        width= "150px"
+                        height= "105px"
+                        width= "105px"
                         src= {logo} alt="Logo of CriX design web development"/>
                 </Link>
                 <Nav_right>

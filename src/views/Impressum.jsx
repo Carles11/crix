@@ -10,7 +10,8 @@ const Title = styled.h1`
   text-align: center;
   margin: auto;
   color: silver;
-  margin-top: 80px;
+  margin-top: 0;
+  padding-top: 125px;
 `;
 const Subtitle = styled.h2`
   font-family: Montserrat;
