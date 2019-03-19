@@ -8,8 +8,8 @@ const Logo = () =>{
     return(
         <Link to="/">
             <img
-                height="150px"
-                width="150px"
+                height="105px"
+                width="105px"
                 src={logo}
                 alt="Logo of CriX web development javascript"
             />
