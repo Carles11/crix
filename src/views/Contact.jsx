@@ -21,6 +21,11 @@ const HighlightMe = styled.div`
   background-color: black;
   display: inline;
 `;
+const Text = styled.p`
+  background-color: black;
+  display: inline;
+  font-size: 20px;
+`;
 
 const Title = styled.h1`
   font-family: Montserrat;
@@ -74,7 +79,7 @@ const Contact = () => {
             <Section>
               <Subtitle>CriX Web Development</Subtitle>
               <ContactAdress />
-              <HighlightMe>Or leave us a message</HighlightMe>
+              <Text>Or leave us a message</Text>
               <ContactForm />
             </Section>
           </Body>
