@@ -20,17 +20,15 @@ const Article = styled.article`
   padding-bottom: 6%;
   max-width: 60%;
   color: silver;
-  font-size: 1.2em;
+  font-size: 30px;
   font-family: "Montserrat", sans - serif;
 
   @media screen and (max-width: 600px) {
-    font-size: 0.8em;
+    font-size: 24px;
   }
-  @media screen and (min-width: 601px) {
-  font-size: 1.1em;
-
   @media screen and (min-width: 801px) {
-  font-size: 1.4em;
+  font-size: 27px;
+  }
 `;
 const Mailto = styled.div`
   color: palevioletred !important;

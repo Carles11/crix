@@ -56,41 +56,41 @@ const ButtonSubmit = styled.button`
   }
 `;
 const Input = styled.input`
-  border-bottom: 1px solid silber;
-  width: 40%;
-  height: 2em;
-  background-color: transparent;
-  font-size: 20px;
-  color: white;
-  mix-blend-mode: difference;
+  display: block;
+  width: 20%;
+  padding: 4px 8px;
+  margin-bottom: 8px;
+  border-radius: 3px;
+  border: 1px solid #888;
+  font-size: 16px;
 
   @media screen and (max-width: 600px) {
     font-size: 14px;
-    width: 70%;
+    width: 50%;
   }
 `;
 const TextArea = styled.textarea`
-    border: 1px solid silber;
-    background-color: transparent;
-    font-size: 20px;
-    width: 40%;
-    height: 141px;;
-    color: white;
-    mix-blend-mode: difference;
+    display: block;
+  width: 20%;
+  padding: 4px 8px;
+  margin-bottom: 8px;
+  border-radius: 3px;
+  border: 1px solid #888;
+  font-size: 16px;
 
   @media screen and (max-width: 600px) {
           font-size: 14px;
-          width: 70%;
+          width: 50%;
   }
 `;
 class ContactForm extends React.Component {
     render(){
         return (
-        <Form>
-            <Input type="text" value="Name" />
-            <Input type="email" value="E-mail" />
-            <Input type="text" value="Subject" />
-            <TextArea type="text" value="Your message" />
+        <Form for="inp" class="inp">
+            <input type="text" value="Name" />
+            <input type="text" value="E-mail" />
+            <input type="text" value="Subject" />
+            <textarea type="text" value="Your message" />
             <Buttons>
                 <ButtonReset type="reset" value="Clear">Clear</ButtonReset>
                 <ButtonSubmit type="submit" value="Submit">Send</ButtonSubmit>
