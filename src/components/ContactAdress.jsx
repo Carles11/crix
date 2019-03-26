@@ -3,7 +3,7 @@ import React from 'react'
 import styled from 'styled-components';
 
 
-const HighlightMe = styled.div`
+const HighlightMe = styled.h4`
   background-color: black;
   display: inline;
 `;

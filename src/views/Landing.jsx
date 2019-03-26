@@ -20,7 +20,7 @@ const BgImage = styled.div`
   height: 100vh;
 `;
 const Title = styled.div`
-  font-family: "Montserrat Subrayada", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: white;
   font-size: 4em;
   text-align: center;
