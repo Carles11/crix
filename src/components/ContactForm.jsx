@@ -1,6 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
+const { useState } = React
+
+// STYLED COMPONENTS ####
 const Form = styled.div`
     display: flex;
     flex-direction: column;
@@ -16,7 +19,6 @@ const Buttons = styled.div`
     @media screen and (max-width: 600px) {
         flex-direction: column;
         justify-content: center;
-
     }
 `; 
 const ButtonReset = styled.button`
@@ -70,7 +72,7 @@ const Input = styled.input`
   }
 `;
 const TextArea = styled.textarea`
-    display: block;
+  display: block;
   width: 20%;
   padding: 4px 8px;
   margin-bottom: 8px;
@@ -83,22 +85,63 @@ const TextArea = styled.textarea`
           width: 50%;
   }
 `;
-class ContactForm extends React.Component {
-    render(){
-        return (
-        <Form for="inp" class="inp">
-            <input type="text" value="Name" />
-            <input type="text" value="E-mail" />
-            <input type="text" value="Subject" />
-            <textarea type="text" value="Your message" />
-            <Buttons>
-                <ButtonReset type="reset" value="Clear">Clear</ButtonReset>
-                <ButtonSubmit type="submit" value="Submit">Send</ButtonSubmit>
-            </Buttons>
 
-        </Form>
-        ); 
+// USING REACT HOOKS #######
+const ContactForm = props => {
+    const [username, setUsername] = useState()
+    const [useremail, setUseremail] = useState()
+    const [usersubject, setUsersubject] = useState()
+    const [usermessage, setUsermessage] = useState()
+
+    const handleChangeUsername = e => {
+        setUsername(e.target.value)
     }
-}
+    const handleChangeUseremail = e => {
+        setUseremail(e.target.value)
+    }
+    const handleChangeUsersubject = e => {
+        setUsersubject(e.target.value)
+    }
+    const handleChangeUsermessage = e => {
+        setUsermessage(e.target.value)
+    }
+
+    const handleSubmit = event => {
+        alert("Cleared data")
+        event.preventDefault()
+    }
+    const handleClick = () => {
+        alert("E-mail sent!")
+    }
+
+        return (
+            <Form onSubmit={handleSubmit}>
+                <Input 
+                    type="text"
+                    value={username}
+                    placeholder={"Name:"}
+                    onChange={handleChangeUsername} />
+                <Input 
+                    type="text"
+                    value={useremail}
+                    placeholder={"E-mail:"}
+                    onChange={handleChangeUseremail} />
+                <Input 
+                    type="text"
+                    value={usersubject}
+                    placeholder={"Subject:"}
+                    onChange={handleChangeUsersubject} />
+                <TextArea 
+                    rows={10}
+                    value={usermessage}
+                    handleChange={handleChangeUsermessage}
+                    placeholder={"Write us a message"} />
+                <Buttons>
+                    <ButtonReset type="reset" value="Clear" onClick={handleSubmit}>Clear</ButtonReset>
+                    <ButtonSubmit type="submit" value="Submit" onClick={handleClick}>Send</ButtonSubmit>
+                </Buttons>
+            </Form>
+        ); 
+    };
 
 export default ContactForm;
