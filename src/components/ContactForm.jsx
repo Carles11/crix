@@ -86,6 +86,15 @@ class ContactForm extends React.Component {
   handleMessageChange(event) {
     this.setState({ message: event.target.value })
   };
+  handleResetClick(e){
+    e.preventDefault();
+    this.setState({
+      name: '',
+      email: '',
+      subject: '',
+      message: '',
+    })
+  };
     render(){
         return (
         <Form>
@@ -114,7 +123,10 @@ class ContactForm extends React.Component {
               onChange={this.handleMessageChange} />
             {this.state.message}
             <Buttons>
-                <ButtonReset type="reset" value="Clear">Clear</ButtonReset>
+                <ButtonReset 
+                  type="reset" 
+                  value="Clear"
+                  onClick={this.handleResetClick}>Clear</ButtonReset>
                 <ButtonSubmit type="submit" value="Submit">Send</ButtonSubmit>
             </Buttons>
 
