@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { timingSafeEqual } from 'crypto';
 
 const Form = styled.div`
     display: flex;
@@ -55,42 +56,63 @@ const ButtonSubmit = styled.button`
   font-size: 18px;
   }
 `;
-const Input = styled.input`
-  display: block;
-  width: 20%;
-  padding: 4px 8px;
-  margin-bottom: 8px;
-  border-radius: 3px;
-  border: 1px solid #888;
-  font-size: 16px;
 
-  @media screen and (max-width: 600px) {
-    font-size: 14px;
-    width: 50%;
-  }
-`;
-const TextArea = styled.textarea`
-    display: block;
-  width: 20%;
-  padding: 4px 8px;
-  margin-bottom: 8px;
-  border-radius: 3px;
-  border: 1px solid #888;
-  font-size: 16px;
-
-  @media screen and (max-width: 600px) {
-          font-size: 14px;
-          width: 50%;
-  }
-`;
 class ContactForm extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      name : '',
+      email : '',
+      subject : '',
+      message : '',
+    }
+
+    this.handleNameChange = this.handleNameChange.bind(this)
+    this.handleEmailChange = this.handleEmailChange.bind(this)
+    this.handleSubjectChange = this.handleSubjectChange.bind(this)
+    this.handleMessageChange = this.handleMessageChange.bind(this)
+
+  }
+
+  handleNameChange (event) {
+      this.setState({name: event.target.value})
+  };
+  handleEmailChange(event) {
+    this.setState({ email: event.target.value })
+  };
+  handleSubjectChange(event) {
+    this.setState({ subject: event.target.value })
+  };
+  handleMessageChange(event) {
+    this.setState({ message: event.target.value })
+  };
     render(){
         return (
-        <Form for="inp" class="inp">
-            <input type="text" value="Name" />
-            <input type="text" value="E-mail" />
-            <input type="text" value="Subject" />
-            <textarea type="text" value="Your message" />
+        <Form>
+            <input 
+              name="name"
+              type="text" 
+              value={this.state.name}
+              onChange={this.handleNameChange} />
+            {this.state.name}
+            <input 
+              name="email"
+              type="text"
+              value={this.state.email}
+              onChange={this.handleEmailChange} />
+            {this.state.email}
+            <input
+              name="subject"
+              type="text"
+              value={this.state.subject}
+              onChange={this.handleSubjectChange} />
+            {this.state.subject}
+            <textarea 
+              name="message"
+              type="text"
+              value={this.state.message}
+              onChange={this.handleMessageChange} />
+            {this.state.message}
             <Buttons>
                 <ButtonReset type="reset" value="Clear">Clear</ButtonReset>
                 <ButtonSubmit type="submit" value="Submit">Send</ButtonSubmit>
