@@ -1,6 +1,5 @@
-import React from 'react';
+import React, { Component } from 'react';
 import styled from 'styled-components';
-import { timingSafeEqual } from 'crypto';
 
 const Form = styled.div`
     display: flex;
@@ -56,8 +55,15 @@ const ButtonSubmit = styled.button`
   font-size: 18px;
   }
 `;
+const Label = styled.label`
+  color: #696969;
+  align-text: left;
+  font-size: 20px;
+  mix-blend-mode: difference;
 
-class ContactForm extends React.Component {
+`;
+
+class ContactForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -65,13 +71,13 @@ class ContactForm extends React.Component {
       email : '',
       subject : '',
       message : '',
+      sent: false,
+      buttonText: 'Send message'
     }
-
     this.handleNameChange = this.handleNameChange.bind(this)
     this.handleEmailChange = this.handleEmailChange.bind(this)
     this.handleSubjectChange = this.handleSubjectChange.bind(this)
     this.handleMessageChange = this.handleMessageChange.bind(this)
-
   }
 
   handleNameChange (event) {
@@ -86,42 +92,65 @@ class ContactForm extends React.Component {
   handleMessageChange(event) {
     this.setState({ message: event.target.value })
   };
-  handleResetClick(e){
-    e.preventDefault();
+
+  formSubmit (e) {
+    e.preventDefault()
+
     this.setState({
-      name: '',
-      email: '',
-      subject: '',
-      message: '',
+      buttonText: '...sending'
     })
-  };
+
+    let data = {
+      name: this.state.name,
+      subject: this.state.subject,
+      email: this.state.email,
+      message: this.state.message
+    }
+
+    axios.post('API_URI', data)
+      .then(res => {
+        this.setState({ sent: true }, this.resetForm())
+      })
+      .catch(() => {
+        console.log('Message not sent')
+      })
+  }
+
+    resetForm () {
+      this.setState({
+        name: '',
+        message: '',
+        email: '',
+        buttonText: 'Message Sent'
+      })
+    }
     render(){
         return (
         <Form>
+          <Label for="name">Name</Label>
             <input 
               name="name"
               type="text" 
               value={this.state.name}
               onChange={this.handleNameChange} />
-            {this.state.name}
+            <Label for="email">E-mail</Label>
             <input 
               name="email"
               type="text"
               value={this.state.email}
               onChange={this.handleEmailChange} />
-            {this.state.email}
+            <Label for="subject">Subject</Label>
             <input
               name="subject"
               type="text"
               value={this.state.subject}
               onChange={this.handleSubjectChange} />
-            {this.state.subject}
+            <Label for="message">Your message</Label>
             <textarea 
               name="message"
               type="text"
               value={this.state.message}
               onChange={this.handleMessageChange} />
-            {this.state.message}
             <Buttons>
                 <ButtonReset 
                   type="reset" 
