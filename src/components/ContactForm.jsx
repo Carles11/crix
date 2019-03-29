@@ -8,24 +8,20 @@ const Form = styled.div`
     align-items: center;    
     padding-top: 40px;
 `;
-const Buttons = styled.div`
-    display: flex;
-    flex-direction: row;
+const Button = styled.div`
     padding-bottom: 40px;
     padding-top: 40px;
     @media screen and (max-width: 600px) {
-        flex-direction: column;
-        justify-content: center;
+    padding-bottom: 25px;
+    padding-top: 25px;
     }
 `; 
-
 const ButtonSubmit = styled.button`
   background: #0a6284;
   border-radius: 8px;
   color: white;
   height: 60px;
   width: 100px;
-  margin-left: 1em;
   font-size: 16px;
   @media screen and (max-width: 600px) {
     font-size: 14px;
@@ -33,15 +29,15 @@ const ButtonSubmit = styled.button`
     width: 90px;
     margin: auto;
   }
-  @media screen and (min-width: 801px) {
-  font-size: 18px;
-  }
 `;
 const Label = styled.label`
   color: #696969;
   align-text: left;
   font-size: 20px;
   mix-blend-mode: difference;
+  @media screen and (max-width: 600px) {
+    font-size: 14px;
+  }
 `;
 
 class ContactForm extends Component {
@@ -62,11 +58,9 @@ class ContactForm extends Component {
     this.formSubmit = this.formSubmit.bind(this)
     this.resetForm = this.resetForm.bind(this)
     this.onClick = this.onClick.bind(this)
-
   }
-
   handleNameChange (event) {
-      this.setState({name: event.target.value})
+    this.setState({name: event.target.value})
   };
   handleEmailChange(event) {
     this.setState({ email: event.target.value })
@@ -77,21 +71,18 @@ class ContactForm extends Component {
   handleMessageChange(event) {
     this.setState({ message: event.target.value })
   };
-
+  
   formSubmit (e) {
-    
     e.preventDefault()
     this.setState({
       buttonText: '...sending'
     })
-
     let data = {
       name: this.state.name,
       subject: this.state.subject,
       email: this.state.email,
       message: this.state.message
     }
-
     axios.post('http://localhost:4444/crix-mail-api/index.js', data)
       .then(res => {
         this.setState({ sent: true }, this.resetForm())
@@ -100,7 +91,6 @@ class ContactForm extends Component {
         console.log('Message not sent, bitch')
       })
   }
-
     resetForm () {
       this.setState({
         name: '',
@@ -141,11 +131,11 @@ class ContactForm extends Component {
               type="text"
               value={this.state.message}
               onChange={this.handleMessageChange} />
-            <Buttons>
+            <Button>
                 <ButtonSubmit 
                   type="submit"
                   onClick={this.onClick}>{ this.state.buttonText }</ButtonSubmit>
-            </Buttons>
+            </Button>
 
         </Form>
         ); 

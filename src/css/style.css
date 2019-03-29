@@ -113,4 +113,54 @@ input[type=text] {
     font-size: 16px;
 }
 
-@media only screen and (max-width:650px) {}
+@media only screen and (max-width:650px) {
+    input[type=text] {
+        width: 55%;
+        padding: 10px 18px;
+        margin: 6px 0;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 2px solid white;
+        opacity: 0.8;
+        color: black;
+        font-size: 14px;
+    }
+
+    textarea {
+        width: 55%;
+        padding: 10px 18px;
+        margin: 6px 0;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 2px solid white;
+        opacity: 0.8;
+        color: black;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width:1200px) {
+    input[type=text] {
+        width: 65%;
+        padding: 10px 18px;
+        margin: 6px 0;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 2px solid white;
+        opacity: 0.8;
+        color: black;
+        font-size: 14px;
+    }
+
+    textarea {
+        width: 65%;
+        padding: 10px 18px;
+        margin: 6px 0;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 2px solid white;
+        opacity: 0.8;
+        color: black;
+        font-size: 14px;
+    }
+}
