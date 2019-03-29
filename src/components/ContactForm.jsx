@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import axios from 'axios';
 
 const Form = styled.div`
     display: flex;
@@ -12,31 +13,12 @@ const Buttons = styled.div`
     flex-direction: row;
     padding-bottom: 40px;
     padding-top: 40px;
-
     @media screen and (max-width: 600px) {
         flex-direction: column;
         justify-content: center;
-
     }
 `; 
-const ButtonReset = styled.button`
-  background-color: white;
-  border-radius: 8px;
-  color: #696969;
-  height: 60px;
-  width: 100px;
-  margin-right: 1em;
-  font-size: 20px;
-  @media screen and (max-width: 600px) {
-    font-size: 14px;
-    height: 40px;
-    width: 90px;
-    margin: auto;
-  }
-  @media screen and (min-width: 801px) {
-  font-size: 18px;
-  }
-`;
+
 const ButtonSubmit = styled.button`
   background: #0a6284;
   border-radius: 8px;
@@ -60,7 +42,6 @@ const Label = styled.label`
   align-text: left;
   font-size: 20px;
   mix-blend-mode: difference;
-
 `;
 
 class ContactForm extends Component {
@@ -78,6 +59,10 @@ class ContactForm extends Component {
     this.handleEmailChange = this.handleEmailChange.bind(this)
     this.handleSubjectChange = this.handleSubjectChange.bind(this)
     this.handleMessageChange = this.handleMessageChange.bind(this)
+    this.formSubmit = this.formSubmit.bind(this)
+    this.resetForm = this.resetForm.bind(this)
+    this.onClick = this.onClick.bind(this)
+
   }
 
   handleNameChange (event) {
@@ -94,8 +79,8 @@ class ContactForm extends Component {
   };
 
   formSubmit (e) {
+    
     e.preventDefault()
-
     this.setState({
       buttonText: '...sending'
     })
@@ -107,12 +92,12 @@ class ContactForm extends Component {
       message: this.state.message
     }
 
-    axios.post('API_URI', data)
+    axios.post('http://localhost:4444/crix-mail-api/index.js', data)
       .then(res => {
         this.setState({ sent: true }, this.resetForm())
       })
       .catch(() => {
-        console.log('Message not sent')
+        console.log('Message not sent, bitch')
       })
   }
 
@@ -121,42 +106,45 @@ class ContactForm extends Component {
         name: '',
         message: '',
         email: '',
+        subject: '',
         buttonText: 'Message Sent'
       })
+    };
+    onClick(e) {
+      this.formSubmit(e);
+      this.resetForm();
     }
     render(){
         return (
-        <Form>
-          <Label for="name">Name</Label>
+          <Form onSubmit={(e) => this.formSubmit(e)}>
+          <Label>Name</Label>
             <input 
               name="name"
               type="text" 
               value={this.state.name}
               onChange={this.handleNameChange} />
-            <Label for="email">E-mail</Label>
+            <Label>E-mail</Label>
             <input 
               name="email"
               type="text"
               value={this.state.email}
               onChange={this.handleEmailChange} />
-            <Label for="subject">Subject</Label>
+            <Label>Subject</Label>
             <input
               name="subject"
               type="text"
               value={this.state.subject}
               onChange={this.handleSubjectChange} />
-            <Label for="message">Your message</Label>
+            <Label>Your message</Label>
             <textarea 
               name="message"
               type="text"
               value={this.state.message}
               onChange={this.handleMessageChange} />
             <Buttons>
-                <ButtonReset 
-                  type="reset" 
-                  value="Clear"
-                  onClick={this.handleResetClick}>Clear</ButtonReset>
-                <ButtonSubmit type="submit" value="Submit">Send</ButtonSubmit>
+                <ButtonSubmit 
+                  type="submit"
+                  onClick={this.onClick}>{ this.state.buttonText }</ButtonSubmit>
             </Buttons>
 
         </Form>
