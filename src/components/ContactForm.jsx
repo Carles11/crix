@@ -15,7 +15,7 @@ const Button = styled.div`
     padding-bottom: 25px;
     padding-top: 25px;
     }
-`; 
+`;
 const ButtonSubmit = styled.button`
   background: #0a6284;
   border-radius: 8px;
@@ -44,10 +44,10 @@ class ContactForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      name : '',
-      email : '',
-      subject : '',
-      message : '',
+      name: '',
+      email: '',
+      subject: '',
+      message: '',
       sent: false,
       buttonText: 'Send message'
     }
@@ -59,8 +59,8 @@ class ContactForm extends Component {
     this.resetForm = this.resetForm.bind(this)
     this.onClick = this.onClick.bind(this)
   }
-  handleNameChange (event) {
-    this.setState({name: event.target.value})
+  handleNameChange(event) {
+    this.setState({ name: event.target.value })
   };
   handleEmailChange(event) {
     this.setState({ email: event.target.value })
@@ -71,8 +71,8 @@ class ContactForm extends Component {
   handleMessageChange(event) {
     this.setState({ message: event.target.value })
   };
-  
-  formSubmit (e) {
+
+  formSubmit(e) {
     e.preventDefault()
     this.setState({
       buttonText: '...sending'
@@ -88,58 +88,58 @@ class ContactForm extends Component {
         this.setState({ sent: true }, this.resetForm())
       })
       .catch(() => {
-        console.log('Message not sent, bitch')
+        console.log('Message not sent')
       })
   }
-    resetForm () {
-      this.setState({
-        name: '',
-        message: '',
-        email: '',
-        subject: '',
-        buttonText: 'Message Sent'
-      })
-    };
-    onClick(e) {
-      this.formSubmit(e);
-      this.resetForm();
-    }
-    render(){
-        return (
-          <Form onSubmit={(e) => this.formSubmit(e)}>
-          <Label>Name</Label>
-            <input 
-              name="name"
-              type="text" 
-              value={this.state.name}
-              onChange={this.handleNameChange} />
-            <Label>E-mail</Label>
-            <input 
-              name="email"
-              type="text"
-              value={this.state.email}
-              onChange={this.handleEmailChange} />
-            <Label>Subject</Label>
-            <input
-              name="subject"
-              type="text"
-              value={this.state.subject}
-              onChange={this.handleSubjectChange} />
-            <Label>Your message</Label>
-            <textarea 
-              name="message"
-              type="text"
-              value={this.state.message}
-              onChange={this.handleMessageChange} />
-            <Button>
-                <ButtonSubmit 
-                  type="submit"
-                  onClick={this.onClick}>{ this.state.buttonText }</ButtonSubmit>
-            </Button>
+  resetForm() {
+    this.setState({
+      name: '',
+      message: '',
+      email: '',
+      subject: '',
+      buttonText: 'Message Sent'
+    })
+  };
+  onClick(e) {
+    this.formSubmit(e);
+    this.resetForm();
+  }
+  render() {
+    return (
+      <Form onSubmit={(e) => this.formSubmit(e)}>
+        <Label>Name</Label>
+        <input
+          name="name"
+          type="text"
+          value={this.state.name}
+          onChange={this.handleNameChange} />
+        <Label>E-mail</Label>
+        <input
+          name="email"
+          type="text"
+          value={this.state.email}
+          onChange={this.handleEmailChange} />
+        <Label>Subject</Label>
+        <input
+          name="subject"
+          type="text"
+          value={this.state.subject}
+          onChange={this.handleSubjectChange} />
+        <Label>Your message</Label>
+        <textarea
+          name="message"
+          type="text"
+          value={this.state.message}
+          onChange={this.handleMessageChange} />
+        <Button>
+          <ButtonSubmit
+            type="submit"
+            onClick={this.onClick}>{this.state.buttonText}</ButtonSubmit>
+        </Button>
 
-        </Form>
-        ); 
-    }
+      </Form>
+    );
+  }
 }
 
 export default ContactForm;

@@ -22,7 +22,7 @@ const Desktop = styled.div`
 `;
 
 class Navigation extends React.Component {
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {
       showDropdown: false,
@@ -38,18 +38,18 @@ class Navigation extends React.Component {
     this.setState({ showDropdown: false });
   }
 
-  render(){
-      return (
-        <div>
-          <Desktop>
-            {this.state.showDropdown ? <NavigationDesktop handleClose={this.handleClose} /> : <BurgerMenu handleClick={this.handleClick} />}
-          </Desktop>
-          <Mobile>
-            {this.state.showDropdown ? <NavigationMobile handleClose={this.handleClose} /> : <BurgerMenu handleClick={this.handleClick} />}
-          </Mobile>
-        </div>
-      );
-    };
-  }  
+  render() {
+    return (
+      <div>
+        <Desktop>
+          {this.state.showDropdown ? <NavigationDesktop handleClose={this.handleClose} /> : <BurgerMenu handleClick={this.handleClick} />}
+        </Desktop>
+        <Mobile>
+          {this.state.showDropdown ? <NavigationMobile handleClose={this.handleClose} /> : <BurgerMenu handleClick={this.handleClick} />}
+        </Mobile>
+      </div>
+    );
+  };
+}
 
 export default Navigation;

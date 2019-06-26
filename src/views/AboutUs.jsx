@@ -8,6 +8,7 @@ import Portraits from "../components/Portraits";
 import TextContentAboutUs from "../components/TextContentAboutUs"
 
 
+
 const BgImage = styled.div`
   background-image: url(${img});
   background-position: center;
@@ -37,18 +38,18 @@ const SubTitle = styled.h2`
 `;
 
 const AboutUs = () => {
-    return (
-      <div>
-          <BgImage>
-            <Header />
-            <Title>ABOUT US</Title>
-            <SubTitle>Our team</SubTitle>
-            <TextContentAboutUs />
-            <Portraits />
-          </BgImage>
-        <Footer />
-      </div>
-    );
+  return (
+    <div>
+      <BgImage>
+        <Header />
+        <Title>ABOUT US</Title>
+        <SubTitle>Our team</SubTitle>
+        <TextContentAboutUs />
+        <Portraits />
+      </BgImage>
+      <Footer />
+    </div>
+  );
 }
 
 export default AboutUs;

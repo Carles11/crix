@@ -1,7 +1,7 @@
 const dictionary = {
   en: {
     SERVICES: "SERVICES",
-    SERVICES_TXT: "Lalalaskjasiojflsd we are the best",
+    SERVICES_TXT: "If you need a website and you expect to get a professional website to be proud of, it is time we know each other. We never stop learning, that´s how we use the latest technologies when developing our applications. We code using Javascript. React is our tool to work. This might maybe not tell you much, but it means that your app will be stable and fast, very fast. With this, all code we write is personally optimized for your necessities, and it is very scalable. Start with a small project that covers your needs for now and make it grow when the time is right. No templates used, no cheap block constructing systems.We just Javascript for you.",
     SERVICES_DEV: "Web development",
     SERVICES_DEV_TXT:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sedLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed",
