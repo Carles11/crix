@@ -40,18 +40,18 @@ const Title = styled.div`
 
 
 const Landing = () => {
-    return (
-      <BgImage>
-        <Wrapper>
-          <Logo />
-          <Navigation />
-        </Wrapper>
-        <Title>
-          <h1>CriX</h1>
-          <h3>Web Development</h3>
-        </Title>
-      </BgImage>
-    );
+  return (
+    <BgImage>
+      <Wrapper>
+        <Logo />
+        <Navigation invertColor />
+      </Wrapper>
+      <Title>
+        <h1>CriX</h1>
+        <h3>Web Development</h3>
+      </Title>
+    </BgImage>
+  );
 };
 
 

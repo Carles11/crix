@@ -40,6 +40,7 @@ const SubTitle = styled.h2`
 const AboutUs = () => {
   return (
     <div>
+
       <BgImage>
         <Header />
         <Title>ABOUT US</Title>

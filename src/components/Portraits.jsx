@@ -5,6 +5,8 @@ import avatarC from "../assets/images/avatar_carles.png";
 import avatarX from "../assets/images/avatar_xavi.png";
 
 const Pics = styled.ul`
+  margin: 0px;
+  display: flex;
   flex-flow: row nowrap;
   background-color: transparent;
   width: 100%;
@@ -54,27 +56,27 @@ const PicFootText = styled.p`
   align-self: center;
 `;
 
-const Portraits = () =>{
-    return (
-      <Pics>
-        <PicLeft>
-          <img
-            src={avatarC}
-            alt="Portrait of Carles del Río Francés"
-            height="100%"
-          />
-          <PicFootText>Carles</PicFootText>
-        </PicLeft>
-        <PicRight>
-          <img
-            src={avatarX}
-            alt="Portrait of Xavi Vilà Albiol"
-            height="100%"
-          />
-          <PicFootText>Xavi</PicFootText>
-        </PicRight>
-      </Pics>
-    );
+const Portraits = () => {
+  return (
+    <Pics>
+      <PicLeft>
+        <img
+          src={avatarC}
+          alt="Portrait of Carles del Río Francés"
+          height="100%"
+        />
+        <PicFootText>Carles</PicFootText>
+      </PicLeft>
+      <PicRight>
+        <img
+          src={avatarX}
+          alt="Portrait of Xavi Vilà Albiol"
+          height="100%"
+        />
+        <PicFootText>Xavi</PicFootText>
+      </PicRight>
+    </Pics>
+  );
 }
 
 
