@@ -42,10 +42,10 @@ class Navigation extends React.Component {
     return (
       <div>
         <Desktop>
-          {this.state.showDropdown ? <NavigationDesktop handleClose={this.handleClose} /> : <BurgerMenu handleClick={this.handleClick} />}
+          {this.state.showDropdown ? <NavigationDesktop invertColor handleClose={this.handleClose} /> : <BurgerMenu handleClick={this.handleClick} />}
         </Desktop>
         <Mobile>
-          {this.state.showDropdown ? <NavigationMobile handleClose={this.handleClose} /> : <BurgerMenu handleClick={this.handleClick} />}
+          {this.state.showDropdown ? <NavigationMobile invertColor handleClose={this.handleClose} /> : <BurgerMenu handleClick={this.handleClick} />}
         </Mobile>
       </div>
     );

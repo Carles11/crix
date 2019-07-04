@@ -6,6 +6,8 @@ import App from "./App";
 import "./css/style.css"
 import ScrollToTop from "react-router-scroll-top";
 
+// import registerServiceWorker from './registerServiceWorker';
+
 let root = document.getElementById("root");
 ReactDOM.render(
   <Router>
@@ -14,4 +16,7 @@ ReactDOM.render(
     </ScrollToTop>
   </Router>,
   root
-); 
+);
+
+// registerServiceWorker();
+

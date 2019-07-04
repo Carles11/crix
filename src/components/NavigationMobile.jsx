@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from'styled-components';
+import styled from 'styled-components';
 import { Link } from "react-router-dom";
 
 import CrossMenu from './CrossMenu';
@@ -13,7 +13,8 @@ const StyledMenu = styled.div`
   color: silver;
   text-decoration: none;
   cursor: pointer;
-  line-height: 0.2;
+  line-height: 0.1;
+
 `;
 
 const StyledLink = styled(Link)`
@@ -27,27 +28,27 @@ const CrossPosition = styled.div`
   margin-left: 120px;
   margin-top: 40px;
 `;
-  
-class NavigationMobile extends React.Component{
- 
-    render(){
-        return (
-          <StyledMenu>
-            <CrossPosition>
-                <CrossMenu handleClose={this.props.handleClose} />
-            </CrossPosition>
-              <StyledLink to="/services">
-                <h3>SERVICE</h3>
-              </StyledLink>
-              <StyledLink to="/about-us">
-                <h3>ABOUT US</h3>
-              </StyledLink>
-              <StyledLink to="/contact">
-                <h3>CONTACT</h3>
-              </StyledLink>
-          </StyledMenu>
-        );
-    }
+
+class NavigationMobile extends React.Component {
+
+  render() {
+    return (
+      <StyledMenu>
+        <CrossPosition>
+          <CrossMenu handleClose={this.props.handleClose} />
+        </CrossPosition>
+        <StyledLink to="/services">
+          <h3>SERVICE</h3>
+        </StyledLink>
+        <StyledLink to="/about-us">
+          <h3>ABOUT US</h3>
+        </StyledLink>
+        <StyledLink to="/contact">
+          <h3>CONTACT</h3>
+        </StyledLink>
+      </StyledMenu>
+    );
+  }
 }
 
 export default NavigationMobile;

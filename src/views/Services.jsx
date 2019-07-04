@@ -1,11 +1,10 @@
 import React from 'react'
 import styled from 'styled-components';
-
+// import PropTypes from 'prop-types';
 
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import QuotationForm from "../components/QuotationForm";
-
 
 const Title = styled.h1`
   font-family: Montserrat;
@@ -23,7 +22,7 @@ const Subtitle = styled.h2`
   padding-bottom: 2%;
 `;
 const Bg_pic_block = styled.section`
-  min-height: 750px;
+  min-height: auto;
   width: 100%;
   color: white;
 
@@ -32,11 +31,11 @@ const Bg_pic_block = styled.section`
   background-attachment: scroll;
 
   @media only screen and (max-width: 800px) {
-    min-height: 600px;
+    min-height: auto;
   }
 
   @media only screen and (max-width: 600px) {
-    min-height: 550px;
+    min-height: auto;
   }
 
   @media (min-width: 1025px) {
@@ -47,24 +46,25 @@ const Bg_pic_block = styled.section`
 const White_block = styled.section`
   background-color: white;
   color: #696969;
-  min-height: 650px;
+  min-height: auto;
   position: relative;
   width: 100%;
 
   @media only screen and (max-width: 600px) {
-    min-height: 450px;
+    min-height: auto;
   }
   @media only screen and (max-width: 800px) {
-    min-height: 500px;
+    min-height: auto;
   }
 `;
 const Article = styled.article`
   font-family: Montserrat;
   font-size: 1.4em;
-  text-align: center;
+  text-align: justify;
   margin: auto;
+  padding: 20px;
   color: #696969;
-  max-width: 70%;
+  max-width: 80%;
   text-align: justify;
   letter-spacing: 3px;
   line-height: 1.8em;
@@ -88,6 +88,7 @@ const Article_w = styled.article`
   font-size: 1.4em;
   text-align: center;
   margin: auto;
+  padding: 20px;
   color: white;
   max-width: 70%;
   text-align: justify;
@@ -114,7 +115,7 @@ const Services = () => {
     return (
       <div>
         <Header />
-        <Title>SERVICE</Title>   
+        <Title>SERVICES</Title>   
             <White_block>
                 <Subtitle>Web development</Subtitle>
                 <Article>
@@ -134,7 +135,7 @@ const Services = () => {
                 <Subtitle>Server maintenance</Subtitle>
                 <Article_w>
                 Besides coding your tailor made website, we offer you also server maintenance and domain buy.
-                Leave us the hard job of maintaining your server and your domain. We update all our projects weekly.
+                Leave us the job of maintaining your server and your domain. We update all our projects weekly.
                  We always use two kernel servers, so your website is allways up and running.
                 </Article_w>
             </Bg_pic_block>
@@ -142,7 +143,7 @@ const Services = () => {
                 <Subtitle>What about prices?</Subtitle>
                 <Article>
                     We offer you fixed prices for your website. Tell us what features you need in your site and
-                    we give you a fixed price. Use the form below to find your quotation.
+                    we give you a fair price. 
                 </Article>
             </White_block>
             <QuotationForm />
@@ -150,5 +151,12 @@ const Services = () => {
       </div>
     );
 };
+
+// Services.propTypes = {
+//   DIC: PropTypes.shape({
+//     SERVICES_TITLE: PropTypes.string.isRequired,
+//   }).isRequired,
+// };
+
 
 export default Services;

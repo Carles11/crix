@@ -12,6 +12,49 @@ body {
     position: relative;
 }
 
+h1 {
+    font-size: 3rem;
+    margin: 0.67em 0;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin: 0.67em 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    letter-spacing: 0.03em;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Montserrat', serif;
+    line-height: 1.2;
+    font-weight: 100;
+}
+
+h1 {
+    font-size: calc(60px + (45 - 35) * ((100vw - 600px) / (1600 - 900)));
+}
+
+h2 {
+    font-size: calc(35px + (40 - 30) * ((100vw - 600px) / (1600 - 900)));
+}
+
+h2.tit-box {
+    font-size: calc(30px + (35 - 25) * ((100vw - 600px) / (1600 - 900)));
+}
+
+h3 {
+    font-size: calc(30px + (15 - 14) * ((100vw - 600px) / (1600 - 900)));
+}
+
 ul {
     display: -webkit-flex;
     /* targets Chrome, Safar i */
@@ -54,12 +97,12 @@ a:hover {
     height: 100vh;
 } */
 
-/* DROWING CROSS */
+/* DROWING CROSS CSS START*/
 span {
     position: relative;
-    height: 65px;
+    height: 45px;
     /* this can be anything */
-    width: 65px;
+    width: 45px;
     /* ...but maintain 1:1 aspect ratio */
     display: flex;
     flex-direction: column;
