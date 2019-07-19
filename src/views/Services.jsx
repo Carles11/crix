@@ -48,16 +48,16 @@ const White_block = styled.section`
   color: #696969;
   min-height: 650px;
   position: relative;
-  width: 90%;
+  width: 100%;
 
   @media only screen and (max-width: 600px) {
     min-height: auto;
-    width: 90%;
+    width: 80%;
 
   }
   @media only screen and (max-width: 800px) {
     min-height: auto;
-    width: 750%;
+    width: 75%;
 
   }
 `;
