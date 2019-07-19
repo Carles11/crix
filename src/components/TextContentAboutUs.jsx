@@ -33,16 +33,15 @@ const TextContentAboutUs = () => {
   return (
     <Article>
       <Paragraph>
-        We are Carles and Xavi. We develope pure Javascript coded websites from scratch. Only that gives us the freedom to achieve whatever you want on your website. If you have seen it somewhere, it is doable. We started developing long time ago and we know what we do.
+        Hi, we are Carles and Xavi. We develope pure Javascript coded websites from scratch. Only that gives us the freedom to achieve whatever you want on your website. If you have seen it somewhere, it is doable. We´ve started developing long time ago and we know what we do.
         </Paragraph>
       <Paragraph>
-        At CriX, we code modern designed websites
-        using the latest programming technologies, making your website
-        stabler, faster, better. We take one client at a time, so you
-        don´t have to worry on top of your project, having the feeling no one is on your thing. We are on it until it´s done. And we like to make it happen fast. That´s why we warranty you a maximum delivery time of 14 weeks for any site. But for that to happen, we need your constant feedback from the beginning to make things right at once. For the very same OneClientPolicy we have, we might be busy the time you need us. In that case we will love to hear your proposal and we will communicate you the next possible starting date for us. Once we are on it, we deliver.
+        At CriX, we code modern designed websites using the latest programming technologies, making your website
+        more stable, faster, better. We take one client at a time, so you don´t have to worry about having the feeling no one is on your thing. We are on it until it´s done. And we like to make it happen fast. That´s why we warranty you a maximum delivery time of 14 weeks for any site. But for that to happen, we need your constant feedback from the beginning to make things right at once.
         </Paragraph>
       <Paragraph>
-        No outsource jobs. We both personally code the apps.
+        We know that creating content is an unpleasant mission, but only if you respond with those contents on time, can we deliver on time. For the very same OneClientPolicy we have, we might be busy the time you need us. In that case we will love to hear your proposal and we will tell you the next possible starting date for us to begin your project. Once we are on it, we deliver.
+          No outsource jobs. We both personally code the apps.
         </Paragraph>
       <Paragraph>Just call Carles and let´s talk.</Paragraph>
       <Paragraph>Telephone: 0049-(0)-1782871785</Paragraph>

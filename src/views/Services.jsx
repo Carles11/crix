@@ -10,7 +10,7 @@ const Title = styled.h1`
   font-family: Montserrat;
   font-size: 2.6em;
   text-align: center;
-  margin-top: 0;
+  margin-top: 50px;
   padding-top: 125px;
 `;
 const Subtitle = styled.h2`
@@ -46,15 +46,19 @@ const Bg_pic_block = styled.section`
 const White_block = styled.section`
   background-color: white;
   color: #696969;
-  min-height: auto;
+  min-height: 650px;
   position: relative;
-  width: 100%;
+  width: 90%;
 
   @media only screen and (max-width: 600px) {
     min-height: auto;
+    width: 90%;
+
   }
   @media only screen and (max-width: 800px) {
     min-height: auto;
+    width: 750%;
+
   }
 `;
 const Article = styled.article`
@@ -123,27 +127,23 @@ const Services = () => {
                 and you want to leave a door open to scalate the features of your website as your project grows.
          
                 We use the latest technologies when developing our applications. 
-                We code plain Javascript using MERN (Mongo - Express - React - Node). This might not tell
-                you much, but it means that your app will be stable and fast, very fast.
-                With this, all code we write is personally optimized for your necessities, 
-                and it is very scalable. Start with a small project that covers your needs for now and make it 
-                grow when the time is right. No templates used, no cheap block constructing systems, 
-                no "it is not possible with this template". Just Javascript code for you.
+                All the code we write for you is personally optimized to your necessities, 
+                and it is very scalable. That way, if you start with a small project that covers your needs for now and you want to make it 
+                grow when the time is right, it will nicely grow. We don´t use any templates or web constructing systems. We just Javascript code from scratch for you.
                 </Article>
             </White_block>
             <Bg_pic_block>
                 <Subtitle>Server maintenance</Subtitle>
                 <Article_w>
-                Besides coding your tailor made website, we offer you also server maintenance and domain buy.
-                Leave us the job of maintaining your server and your domain. We update all our projects weekly.
-                 We always use two kernel servers, so your website is allways up and running.
+                Besides coding you a tailor made website, we offer you server maintenance and domain buy.
+                Leave us the job of maintaining your server and let us take care of the domain you like. We update all our servers regularly and take care that your website is always on-line.
                 </Article_w>
             </Bg_pic_block>
             <White_block>
                 <Subtitle>What about prices?</Subtitle>
                 <Article>
                     We offer you fixed prices for your website. Tell us what features you need in your site and
-                    we give you a fair price. 
+                    we will give you that fair price you have in mind. 
                 </Article>
             </White_block>
             <QuotationForm />
