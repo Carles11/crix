@@ -24,8 +24,9 @@ const StyledLink = styled(Link)`
 
 `;
 const CrossPosition = styled.div`
-  margin-right: 40px;
-  margin-top: 40px;
+  margin-right: 20px;
+  margin-top: 47px;
+  padding-left: 30px;
 `;
 
 class NavigationDesktop extends React.Component {

@@ -9,13 +9,15 @@ const MainBurger = styled.div`
     display: inline-block;
     align-content: end;
     cursor: pointer;
+    margin-top: 17px;
+
 `;
 
 const Burger = styled.div`
-  width: 45px;
-  margin: 6px 0;
+  width: 35px;
+  margin: 5px 0;
   background: #0a6284;
-  padding: 6px;
+  padding: 2px;
   justify-items: end;
 `;
 

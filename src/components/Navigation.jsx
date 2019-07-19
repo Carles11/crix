@@ -8,7 +8,7 @@ import NavigationDesktop from './NavigationDesktop';
 const Mobile = styled.div`
   padding-right: 25px;
 
-  @media only screen and (min-width: 601px) {
+  @media only screen and (min-width: 750px) {
     display: none;
   }
 `;
@@ -16,7 +16,7 @@ const Mobile = styled.div`
 const Desktop = styled.div`
   white-space: nowrap;
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 750px) {
     display: none;
   }
 `;

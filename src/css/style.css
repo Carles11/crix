@@ -100,9 +100,9 @@ a:hover {
 /* DROWING CROSS CSS START*/
 span {
     position: relative;
-    height: 45px;
+    height: 40px;
     /* this can be anything */
-    width: 45px;
+    width: 40px;
     /* ...but maintain 1:1 aspect ratio */
     display: flex;
     flex-direction: column;
@@ -115,7 +115,7 @@ span::after {
     position: absolute;
     content: '';
     width: 100%;
-    height: 9px;
+    height: 3px;
     /* cross thickness */
     background: #0a6284;
 }
