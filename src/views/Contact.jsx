@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 import img from "../assets/images/contact-ball-room.jpg";
 import ContactAdress from '../components/ContactAdress';
-import ContactForm from '../components/ContactForm';
+// import ContactForm from '../components/ContactForm';
 import Footer from "../components/Footer";
 
 
@@ -79,8 +79,8 @@ const Contact = () => {
             <Section>
               <Subtitle>CriX Web Development</Subtitle>
               <ContactAdress />
-              <Text>Or leave us a message</Text>
-              <ContactForm />
+              ${'' /* <Text>Or leave us a message</Text>
+              <ContactForm /> */}
             </Section>
           </Body>
         </BgImage>
