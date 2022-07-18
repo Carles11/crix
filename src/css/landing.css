@@ -1,0 +1,19 @@
+
+.landing-nav-wrapper{
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.main-title{
+    color: #010101;
+    text-align: center; 
+    margin: 0;
+}
+
+.main-subtitle{
+    color: #010101;
+    text-align: center; 
+    margin: 0;
+}
