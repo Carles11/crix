@@ -11,7 +11,7 @@ const Sticky_nav = styled.header`
     background-color: rgb(236, 236, 236);
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
 
     position: fixed;
     top:0;

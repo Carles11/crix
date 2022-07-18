@@ -2,3 +2,5 @@
 /_CriX
 /.vscode
 /dist
+.env
+/.env

@@ -11,7 +11,7 @@ module.exports = ({ mode }) => ({
     // "webpack-dev-server/client?http://localhost:3000",
     // "webpack/hot/only-dev-server",
     "./src/index.js"],
-    devtool: "cheap-eval-source-map",
+    devtool: mode === 'production' ? false : 'source-map',
   output: { 
     path: path.join(__dirname, "dist"), 
           filename: "app.js" },

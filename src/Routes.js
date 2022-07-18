@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 import Landing from "./views/Landing";
 import Services from "./views/Services";
@@ -8,17 +8,17 @@ import AboutUs from "./views/AboutUs";
 import Datenschutzerklaerung from './views/Datenschutzerklaerung';
 import Impressum from './views/Impressum';
 
-const Routes = () => {
+const AllRoutes = () => {
     return (
-        <Switch onChange={() => window.scrollTo(0, 0)}>
-            <Route exact path="/" component={Landing} />
-            <Route path="/services" component={Services} />
-            <Route path="/contact" component={Contact} />
-            <Route path="/about-us" component={AboutUs} />
-            <Route path="/datenschutzerklaerung" component={Datenschutzerklaerung} />
-            <Route path="/impressum" component={Impressum} />
-        </Switch>
+        <Routes onChange={() => window.scrollTo(0, 0)}>
+            <Route exact path="/" element={<Landing />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/about-us" element={<AboutUs />} />
+            <Route path="/datenschutzerklaerung" element={<Datenschutzerklaerung />} />
+            <Route path="/impressum" element={<Impressum />} />
+        </Routes>
     )
 }
 
-export default Routes;
+export default AllRoutes;
