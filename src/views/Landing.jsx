@@ -48,7 +48,7 @@ const Landing = () => {
       </Wrapper>
       <Title>
         <h1>CriX</h1>
-        <h3>Web Development a  nd Design</h3>
+        <h3>Web Development and Design</h3>
       </Title>
     </BgImage>
   );
