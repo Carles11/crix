@@ -8,7 +8,6 @@ import "./css/style.css"
 // import ScrollToTop from "./helpers/ScrollToTop";
 
 // import registerServiceWorker from './registerServiceWorker';
-
 const  container = document.getElementById("root");
 const root = createRoot(container);
 root.render(
