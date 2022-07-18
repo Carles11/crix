@@ -1,8 +1,7 @@
-const path = require("path"); //import path from "path"
-const webpack = require("webpack");
+const path = require('path') //import path from "path"
+const webpack = require('webpack')
 
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = ({ mode }) => ({
   mode,
@@ -10,13 +9,15 @@ module.exports = ({ mode }) => ({
     // "react-hot-loader/patch",
     // "webpack-dev-server/client?http://localhost:3000",
     // "webpack/hot/only-dev-server",
-    "./src/index.js"],
-    devtool: mode === 'production' ? false : 'source-map',
-  output: { 
-    path: path.join(__dirname, "dist"), 
-          filename: "app.js" },
+    './src/index.js',
+  ],
+  devtool: mode === 'production' ? false : 'source-map',
+  output: {
+    path: path.join(__dirname, 'dist'),
+    filename: 'app.js',
+  },
   devServer: {
-    publicPath: '/public'
+    publicPath: '/public',
   },
   //   hot: true
   // },
@@ -36,27 +37,21 @@ module.exports = ({ mode }) => ({
       {
         test: /\.(js|jsx)$/,
         use: {
-          loader: "babel-loader"
+          loader: 'babel-loader',
         },
-        exclude: /node_modules/
+        exclude: /node_modules/,
       },
       {
         test: /\.css$/,
-        use: [
-          "style-loader",
-          "css-loader"
-        ]
+        use: ['style-loader', 'css-loader'],
       },
       {
         test: /\.(jpg|png|jpeg)$/,
-        use: [
-          "file-loader"
-        ]
-        
-      }
-    ]
+        use: ['file-loader'],
+      },
+    ],
   },
   resolve: {
-    extensions: [".js", ".jsx", ".json"]
-  }
-});
+    extensions: ['.js', '.jsx', '.json'],
+  },
+})

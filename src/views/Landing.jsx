@@ -21,8 +21,10 @@ const Landing = () => {
         <Logo />
         <Navigation invertColor />
       </div>
-      <h1 className="main-title">Carles del Río Francés</h1>
-      <h3 className="main-subtitle">Web Development and Design</h3>
+      <div className="landing-titles-wrapper">
+        <h1 className="main-title">Carles del Río</h1>
+        <h3 className="main-subtitle">Web Development and Design</h3>
+      </div>
     </BgImage>
   )
 }

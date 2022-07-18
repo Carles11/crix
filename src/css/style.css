@@ -1,25 +1,23 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *:before,
 *:after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    height: 100%;
-    position: relative;
+  height: 100%;
+  position: relative;
 }
 
 h1 {
-    font-size: 3rem;
-    margin: 0.67em 0;
+  margin: 0.67em 0;
 }
 
 h2 {
-    font-size: 1.5rem;
-    margin: 0.37em 0;
+  margin: 0.37em 0;
 }
 
 h1,
@@ -28,70 +26,68 @@ h3,
 h4,
 h5,
 h6 {
-    letter-spacing: 0.03em;
+  letter-spacing: 0.03em;
 }
 
 h1,
 h2,
 h3 {
-    font-family: "Roboto", sans-serif;
-    line-height: 1.2;
-    font-weight: 100;
+  font-family: 'Prompt', sans-serif;
+  line-height: 1.2;
+  font-weight: 600;
 }
 
 h1 {
-    font-size: calc(60px + (45 - 35) * ((100vw - 600px) / (1600 - 900)));
+  font-size: calc(45px + (45 - 35) * ((100vw - 600px) / (1600 - 900)));
 }
 
 h2 {
-    font-size: calc(35px + (40 - 30) * ((100vw - 600px) / (1600 - 900)));
+  font-size: calc(35px + (40 - 30) * ((100vw - 600px) / (1600 - 900)));
 }
 
 h2.tit-box {
-    font-size: calc(30px + (35 - 25) * ((100vw - 600px) / (1600 - 900)));
+  font-size: calc(30px + (35 - 25) * ((100vw - 600px) / (1600 - 900)));
 }
 
 h3 {
-    font-size: calc(30px + (15 - 14) * ((100vw - 600px) / (1600 - 900)));
+  font-size: calc(30px + (15 - 14) * ((100vw - 600px) / (1600 - 900)));
 }
 
 ul {
-    display: -webkit-flex;
-    /* targets Chrome, Safar i */
-    display: -ms-flexbox;
-    /* targets IE10 */
-    display: flex;
-    list-style-type: none;
+  display: -webkit-flex;
+  /* targets Chrome, Safar i */
+  display: -ms-flexbox;
+  /* targets IE10 */
+  display: flex;
+  list-style-type: none;
 }
 
 li {
-    text-decoration: none;
+  text-decoration: none;
 }
-
 
 /* nav props applying in Navigation and BurgerMenu*/
 
 nav {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 1em;
-    align-self: center;
-    /* margin: 2rem; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 1em;
+  align-self: center;
+  /* margin: 2rem; */
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 a:hover {
-    color: #0a6284;
-    text-shadow: -1px 0 whitesmoke, 0 1px whitesmoke, 1px 0 whitesmoke, 0 -1px whitesmoke;
-    transition: all 0.8s ease;
+  color: #0a6284;
+  text-shadow: -1px 0 whitesmoke, 0 1px whitesmoke, 1px 0 whitesmoke,
+    0 -1px whitesmoke;
+  transition: all 0.8s ease;
 }
-
-
 
 /* .body-block {
     height: 100vh;
@@ -99,111 +95,111 @@ a:hover {
 
 /* DROWING CROSS CSS START*/
 span {
-    position: relative;
-    height: 45px;
-    /* this can be anything */
-    width: 45px;
-    /* ...but maintain 1:1 aspect ratio */
-    display: flex;
-    flex-direction: column;
-    justify-content: right;
-    cursor: pointer;
+  position: relative;
+  height: 45px;
+  /* this can be anything */
+  width: 45px;
+  /* ...but maintain 1:1 aspect ratio */
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  cursor: pointer;
 }
 
 span::before,
 span::after {
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: 9px;
-    /* cross thickness */
-    background: #0a6284;
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 9px;
+  /* cross thickness */
+  background: #0a6284;
 }
 
 span::before {
-    transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 span::after {
-    transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 /* END OF DROWING CROSS */
 
 textarea {
-    width: 25%;
-    height: 150px;
-    padding: 12px 20px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    background-color: #f8f8f8;
-    opacity: 0.8;
-    resize: none;
-    color: black;
-    font-size: 16px;
+  width: 25%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  opacity: 0.8;
+  resize: none;
+  color: black;
+  font-size: 16px;
 }
 
-input[type=text] {
-    width: 25%;
-    padding: 12px 20px;
-    margin: 8px 0;
+input[type='text'] {
+  width: 25%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid white;
+  opacity: 0.8;
+  color: black;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 650px) {
+  input[type='text'] {
+    width: 55%;
+    padding: 10px 18px;
+    margin: 6px 0;
     box-sizing: border-box;
     border: none;
     border-bottom: 2px solid white;
     opacity: 0.8;
     color: black;
-    font-size: 16px;
+    font-size: 14px;
+  }
+
+  textarea {
+    width: 55%;
+    padding: 10px 18px;
+    margin: 6px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid white;
+    opacity: 0.8;
+    color: black;
+    font-size: 14px;
+  }
 }
 
-@media only screen and (max-width:650px) {
-    input[type=text] {
-        width: 55%;
-        padding: 10px 18px;
-        margin: 6px 0;
-        box-sizing: border-box;
-        border: none;
-        border-bottom: 2px solid white;
-        opacity: 0.8;
-        color: black;
-        font-size: 14px;
-    }
+@media only screen and (max-width: 1200px) {
+  input[type='text'] {
+    width: 65%;
+    padding: 10px 18px;
+    margin: 6px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid white;
+    opacity: 0.8;
+    color: black;
+    font-size: 14px;
+  }
 
-    textarea {
-        width: 55%;
-        padding: 10px 18px;
-        margin: 6px 0;
-        box-sizing: border-box;
-        border: none;
-        border-bottom: 2px solid white;
-        opacity: 0.8;
-        color: black;
-        font-size: 14px;
-    }
-}
-
-@media only screen and (max-width:1200px) {
-    input[type=text] {
-        width: 65%;
-        padding: 10px 18px;
-        margin: 6px 0;
-        box-sizing: border-box;
-        border: none;
-        border-bottom: 2px solid white;
-        opacity: 0.8;
-        color: black;
-        font-size: 14px;
-    }
-
-    textarea {
-        width: 65%;
-        padding: 10px 18px;
-        margin: 6px 0;
-        box-sizing: border-box;
-        border: none;
-        border-bottom: 2px solid white;
-        opacity: 0.8;
-        color: black;
-        font-size: 14px;
-    }
+  textarea {
+    width: 65%;
+    padding: 10px 18px;
+    margin: 6px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid white;
+    opacity: 0.8;
+    color: black;
+    font-size: 14px;
+  }
 }
