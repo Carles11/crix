@@ -12,10 +12,10 @@ const MainBurger = styled.div`
 `;
 
 const Burger = styled.div`
-  width: 45px;
+  width: 35px;
   margin: 6px 0;
   background: #0a6284;
-  padding: 6px;
+  padding: 2px;
   justify-items: end;
 `;
 

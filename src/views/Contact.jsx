@@ -73,7 +73,7 @@ const Contact = () => {
         <BgImage>
           <Header />
           <Title>
-            <HighlightMe>CONTACT</HighlightMe>
+            <HighlightMe>CONTACTUS</HighlightMe>
           </Title>
           <Body>
             <Section>

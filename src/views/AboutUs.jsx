@@ -44,7 +44,7 @@ const AboutUs = () => {
       <BgImage>
         <Header />
         <Title>ABOUT US</Title>
-        <SubTitle>Our team</SubTitle>
+        <SubTitle>Our teamo</SubTitle>
         <TextContentAboutUs />
         <Portraits />
       </BgImage>
