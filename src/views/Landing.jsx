@@ -26,7 +26,7 @@ const Landing = () => {
       </div>
       <div className="landing-titles-wrapper">
         <h1 className="main-title">Carles del Río</h1>
-        <h4 className="main-subtitle">Web Development and Design</h4>
+        <h4 className="main-subtitle">Web Development | Graphic design</h4>
         <div className="landing-buttons-wrapper">
           <Button
             elementType="Link"

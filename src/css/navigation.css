@@ -24,7 +24,7 @@
   margin: 0 25px;
 }
 .menu-item-link:hover {
-  padding: 4px;
+  padding-bottom: 4px;
   color: orange;
   transition: color 1s;
 }
