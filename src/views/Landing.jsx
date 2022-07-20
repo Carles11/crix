@@ -4,6 +4,8 @@ import img from '../assets/images/skating-lake_crix.jpg'
 
 import Navigation from '../components/Navigation'
 import Logo from '../components/Logo'
+
+import Button from '../components/Button'
 import '../css/landing.css'
 
 const BgImage = styled.div`
@@ -12,6 +14,7 @@ const BgImage = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+  width: 100%;
 `
 
 const Landing = () => {
@@ -23,7 +26,25 @@ const Landing = () => {
       </div>
       <div className="landing-titles-wrapper">
         <h1 className="main-title">Carles del Río</h1>
-        <h3 className="main-subtitle">Web Development and Design</h3>
+        <h4 className="main-subtitle">Web Development and Design</h4>
+        <div className="landing-buttons-wrapper">
+          <Button
+            elementType="Link"
+            pathLink="/contact"
+            variant="light"
+            size="lg"
+          >
+            CONTACTA
+          </Button>
+          <Button
+            elementType="Link"
+            pathLink="/about-us"
+            variant="primary"
+            size="lg"
+          >
+            SOBRE CARLES
+          </Button>
+        </div>
       </div>
     </BgImage>
   )

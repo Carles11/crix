@@ -31,10 +31,17 @@ h6 {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: 'Prompt', sans-serif;
   line-height: 1.2;
   font-weight: 600;
+}
+h5 {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1;
+  font-weight: 200;
+  color: white;
 }
 
 h1 {
@@ -51,6 +58,12 @@ h2.tit-box {
 
 h3 {
   font-size: calc(30px + (15 - 14) * ((100vw - 600px) / (1600 - 900)));
+}
+h4 {
+  font-size: calc(20px + (11 - 7) * ((100vw - 600px) / (1600 - 900)));
+}
+h5 {
+  font-size: calc(18px + (9 - 5) * ((100vw - 600px) / (1600 - 900)));
 }
 
 ul {
@@ -84,8 +97,7 @@ nav a {
 
 a:hover {
   color: #0a6284;
-  text-shadow: -1px 0 whitesmoke, 0 1px whitesmoke, 1px 0 whitesmoke,
-    0 -1px whitesmoke;
+
   transition: all 0.8s ease;
 }
 

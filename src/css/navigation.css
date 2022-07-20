@@ -1,0 +1,23 @@
+.menu-items-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: right;
+  padding-right: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  line-height: 0.2;
+}
+.menu-items-block {
+  margin-right: 0.5rem;
+  align-self: center;
+  color: white;
+}
+
+.menu-item-link {
+  width: fit-content;
+  text-decoration: none;
+  cursor: pointer;
+  align-self: center;
+  margin: 0 25px;
+}
