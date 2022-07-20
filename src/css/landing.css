@@ -8,7 +8,7 @@
 }
 .landing-titles-wrapper {
   width: fit-content;
-  margin: 4rem auto;
+  margin: 6rem auto;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -48,5 +48,8 @@
   }
   .main-subtitle {
     font-size: 1em;
+  }
+  .landing-titles-wrapper {
+    margin: 3rem auto;
   }
 }
