@@ -43,6 +43,12 @@ h5 {
   font-weight: 200;
   color: white;
 }
+h6 {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1;
+  font-weight: 100;
+  color: white;
+}
 
 h1 {
   font-size: calc(45px + (45 - 35) * ((100vw - 600px) / (1600 - 900)));
@@ -64,6 +70,9 @@ h4 {
 }
 h5 {
   font-size: calc(18px + (9 - 5) * ((100vw - 600px) / (1600 - 900)));
+}
+h6 {
+  font-size: calc(13px + (7 - 3) * ((100vw - 600px) / (1600 - 900)));
 }
 
 ul {
