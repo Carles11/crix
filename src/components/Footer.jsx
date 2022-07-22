@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const StyledFooter = styled.ul`
   flex-direction: column;
   height: 300px;
-  background-color: orange;
+  background-color: #333366;
   padding-top: 100px;
   margin-top: 0;
   margin-bottom: 0;
@@ -17,6 +17,7 @@ const MenuItem = styled.li`
   list-style: none;
   font-family: Montserrat;
   font-size: 1.4em;
+  color: white;
 `
 const StyledLink = styled(Link)`
   color: white;

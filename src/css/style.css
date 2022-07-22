@@ -1,3 +1,7 @@
+/* WEB UNIVERSAL COLOR PALETTE COMBINATION */
+/* #333366 #FFFFFF #FF9933 #010101 * { */
+/* DARKBLUE  WHITE   ORANGE  BLACK * { */
+
 * {
   box-sizing: border-box;
 }
@@ -105,7 +109,7 @@ nav a {
 }
 
 a:hover {
-  color: #0a6284;
+  color: #ff9933;
 
   transition: all 0.8s ease;
 }

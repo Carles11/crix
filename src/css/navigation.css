@@ -25,7 +25,7 @@
 }
 .menu-item-link:hover {
   padding-bottom: 4px;
-  color: orange;
+  color: #ff9933;
   transition: color 1s;
 }
 .menu-item-link:after {
@@ -36,7 +36,7 @@
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: orange;
+  background-color: #ff9933;
   transform-origin: bottom right;
   transition: transform 0.5s ease-out;
 }
