@@ -9,7 +9,7 @@ button:focus {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  min-width: 16rem !important;
+  min-width: 16rem;
   margin: 0.3rem;
   /* Text */
   font-weight: 500;
@@ -113,4 +113,14 @@ path {
   color: white;
   background: orange;
   border: white;
+}
+
+/* MOBILE STYLES */
+
+@media only screen and (max-width: 650px) {
+  .btn {
+    min-width: 11rem;
+    width: 14rem;
+    align-self: center;
+  }
 }

@@ -1,8 +1,5 @@
-import React from "react";
-import styled from "styled-components";
-
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import React from 'react'
+import styled from 'styled-components'
 
 const Title = styled.h1`
   font-family: Montserrat;
@@ -12,7 +9,7 @@ const Title = styled.h1`
   color: silver;
   margin-top: 0;
   padding-top: 125px;
-`;
+`
 const Subtitle = styled.h2`
   font-family: Montserrat;
   font-size: 2em;
@@ -21,7 +18,7 @@ const Subtitle = styled.h2`
   color: silver;
   padding-top: 4%;
   padding-bottom: 2%;
-`;
+`
 const Grey_block = styled.section`
   background-color: #f4f4f4;
   color: silver;
@@ -35,7 +32,7 @@ const Grey_block = styled.section`
   @media only screen and (max-width: 800px) {
     min-height: 500px;
   }
-`;
+`
 const White_block = styled.section`
   background-color: white;
   color: silver;
@@ -48,7 +45,7 @@ const White_block = styled.section`
   @media only screen and (max-width: 800px) {
     min-height: 500px;
   }
-`;
+`
 const Article = styled.article`
   font-family: Montserrat;
   font-size: 1.2em;
@@ -72,7 +69,7 @@ const Article = styled.article`
     letter-spacing: 2px;
     line-height: 1.3;
   }
-`;
+`
 
 const Impressum = () => {
   return (
@@ -102,9 +99,8 @@ const Impressum = () => {
           <br /> 60329 Frankfurt am Main
         </Article>
       </Grey_block>
-      <Footer />
     </div>
-  );
-};
+  )
+}
 
-export default Impressum;
+export default Impressum

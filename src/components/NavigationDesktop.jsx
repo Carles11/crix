@@ -9,7 +9,7 @@ class NavigationDesktop extends React.Component {
     return (
       <div className="menu-items-container">
         <Link to="/services">
-          <h6 className="menu-item-link">Servicios</h6>
+          <h6 className="menu-item-link">¿Qué y con quién?</h6>
         </Link>
         <Link to="/about-us">
           <h6 className="menu-item-link">Sobre Carles</h6>

@@ -1,13 +1,9 @@
-import React from 'react';
-import styled from "styled-components";
+import React from 'react'
+import styled from 'styled-components'
 
-import Header from "../components/Header";
-import img from "../assets/images/about-us.jpg";
-import Footer from "../components/Footer";
-import Portraits from "../components/Portraits";
-import TextContentAboutUs from "../components/TextContentAboutUs"
-
-
+import img from '../assets/images/about-us.jpg'
+import Portraits from '../components/Portraits'
+import TextContentAboutUs from '../components/TextContentAboutUs'
 
 const BgImage = styled.div`
   background-image: url(${img});
@@ -16,7 +12,7 @@ const BgImage = styled.div`
   background-size: cover;
   display: block:
   flex-direction: column;
-`;
+`
 
 const Title = styled.h1`
   font-family: Montserrat;
@@ -25,7 +21,7 @@ const Title = styled.h1`
   color: white;
   margin-top: 0;
   padding-top: 125px;
-`;
+`
 
 const SubTitle = styled.h2`
   font-family: Montserrat;
@@ -35,22 +31,19 @@ const SubTitle = styled.h2`
   color: white;
   padding-top: 4%;
   padding-bottom: 2%;
-`;
+`
 
 const AboutUs = () => {
   return (
     <div>
-
       <BgImage>
-        <Header />
         <Title>ABOUT US</Title>
         <SubTitle>Our teamo</SubTitle>
         <TextContentAboutUs />
         <Portraits />
       </BgImage>
-      <Footer />
     </div>
-  );
+  )
 }
 
-export default AboutUs;
+export default AboutUs

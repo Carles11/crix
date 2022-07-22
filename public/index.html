@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -15,6 +15,25 @@
 </head>
 
 <body>
+    <script>
+        //Create div element
+        var div = document.createElement(‘div’);
+        
+        //Give a height to div
+        div.style.height = ‘100vh’;
+        
+        //Append div to document
+        document.body.appendChild(div);
+        
+        //Add event listener so document can listen to mouse movements
+        div.addEventListener(‘mousemove’, function(event) {
+        
+        var x = event.clientX,
+        y = event.clientY;
+        
+        div.style.backgroundColor = ‘rgb(‘+ x +’, ‘+y+’, +100)’
+        } )
+        </script>
     <main id="root"></main>
 </body>
 
