@@ -14,6 +14,7 @@
 body {
   height: 100%;
   position: relative;
+  font-family: 'Roboto', serif;
 }
 
 h1 {
@@ -31,6 +32,7 @@ h4,
 h5,
 h6 {
   letter-spacing: 0.03em;
+  margin: 0;
 }
 
 h1,
@@ -105,12 +107,34 @@ nav {
 a {
   color: white;
   text-decoration: none;
+  font-family: 'Montserrat';
   cursor: pointer;
+  display: inline-block;
+  position: relative;
+  width: fit-content;
+  text-decoration: none;
+  margin: 0 25px;
 }
-
 a:hover {
-  color: #ff9933;
-  transition: all 0.8s ease;
+  padding-bottom: 4px;
+  color: #ff9933 !important;
+  transition: color 1s;
+}
+a:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ff9933;
+  transform-origin: bottom right;
+  transition: transform 0.5s ease-out;
+}
+a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 /* .body-block {

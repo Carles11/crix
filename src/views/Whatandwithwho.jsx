@@ -7,7 +7,7 @@ import '../css/whatandwithwho.css'
 
 const Subtitle = styled.h2`
   font-size: 2.2em;
-  text-align: center;
+  text-align: left;
   margin: auto;
   padding-top: 4%;
   padding-bottom: 2%;
@@ -58,7 +58,7 @@ const Whatandwithwho = () => {
     <div className="what-content">
       <h1>Qué hago</h1>
       <White_block>
-        <Subtitle>Web</Subtitle>
+        <h2 className="what-subtitle">Web</h2>
         <Article>
           Desarrollo páginas web y software en Javascript al 100%. Eso me
           permite darle total flexibilidad a tu imaginación. O casi. Pero si lo
@@ -86,7 +86,7 @@ const Whatandwithwho = () => {
           </ul>
         </Article>
 
-        <Subtitle>Diseño gráfico</Subtitle>
+        <h2 className="what-subtitle">Diseño gráfico</h2>
         <Article>
           Edito folletos y PDFs multipágina, pósters y ediciones de cualquier
           tipo. Tras tu aprovación, envío directamente el diseño a una imprenta
@@ -102,7 +102,7 @@ const Whatandwithwho = () => {
       <h1>Con quién</h1>
 
       <White_block>
-        <Subtitle>Instituciones culturales y escuelas</Subtitle>
+        <h2 className="what-subtitle">Instituciones culturales y escuelas</h2>
         <ul>
           <li>Instituto Cervantes</li>
           <li>Hessenwaldschule</li>

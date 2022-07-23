@@ -42,6 +42,12 @@
   margin-left: 8rem;
   margin-right: 4rem;
 }
+.footer-ul-right h5 {
+  margin-bottom: 1rem;
+}
+.footer-ul-left h5 {
+  margin-bottom: 1rem;
+}
 
 .bottom-line {
   height: 2px;
@@ -54,6 +60,7 @@
   .footer-content {
     flex-direction: column;
     align-items: flex-start;
+    margin-left: 2rem;
   }
   .footer-left {
     margin-left: 0;
