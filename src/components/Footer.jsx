@@ -1,49 +1,34 @@
 import React from 'react'
-import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
-const StyledFooter = styled.ul`
-  flex-direction: column;
-  height: 300px;
-  background-color: #333366;
-  padding-top: 100px;
-  margin-top: 0;
-  margin-bottom: 0;
-  width: 100%;
-  align-items: flex-end;
-  padding-right: 35px;
-`
-const MenuItem = styled.li`
-  list-style: none;
-  font-family: Montserrat;
-  font-size: 1.4em;
-  color: white;
-`
-const StyledLink = styled(Link)`
-  color: white;
-  text-decoration: none;
-  cursor: pointer;
-`
+import '../css/footer.css'
 
 const Footer = () => {
   return (
-    <StyledFooter>
-      <MenuItem>
-        <StyledLink to="/datenschutzerklaerung">
-          <li>Datenschutzerklärung</li>
-        </StyledLink>
-      </MenuItem>
-      <MenuItem>
-        <StyledLink to="/impressum">
-          <li>Impressum</li>
-        </StyledLink>
-      </MenuItem>
-      <MenuItem>
-        <StyledLink to="/contact">
-          <li>Contact</li>
-        </StyledLink>
-      </MenuItem>
-    </StyledFooter>
+    <div className="footer-container">
+      <hr className="bottom-line" />
+      <div className="footer-content">
+        <div className="footer-left">
+          <ul className="footer-ul-left">
+            <h5>Contacta con Carles</h5>
+            <Link to="/contact">
+              <li>Contact</li>
+            </Link>
+          </ul>
+        </div>
+        <div className="footer-right">
+          <ul className="footer-ul-right">
+            <h5>Lo legal</h5>
+            <Link to="/datenschutzerklaerung">
+              <li>Datenschutzerklärung</li>
+            </Link>
+            <Link to="/impressum">
+              <li>Impressum</li>
+            </Link>
+          </ul>
+        </div>
+      </div>
+    </div>
   )
 }
 

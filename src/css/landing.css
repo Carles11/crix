@@ -6,8 +6,9 @@
   width: 100%; */
   background: linear-gradient(-45deg, #333366, #faf0e6, whitesmoke, whitesmoke);
   background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
+  animation: gradient 30s ease infinite;
   height: 100vh;
+  width: 100%;
 }
 
 @keyframes gradient {
@@ -24,14 +25,15 @@
 
 .landing-body-wrapper {
   width: 100%;
-  width: fit-content;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  align-items: center;
 }
 
 .landing-body-wrapper h1 {
-  margin: 6rem auto;
+  display: flex;
+  justify-content: right;
+  margin: 8rem auto 0 auto;
 }
 .landing-buttons-wrapper {
   display: flex;
@@ -39,20 +41,14 @@
   justify-content: flex-end;
 }
 .main-title {
-  color: #010101;
-  text-align: center;
-  margin: 4rem auto 0 auto;
   text-transform: uppercase;
   font-size: 8em;
   font-weight: 700;
   letter-spacing: 1px;
 }
 .main-subtitle {
-  color: #010101;
-  text-align: right;
-  margin: 0.2rem 0 1rem 0;
-  font-size: 2em;
-  transition: all 0.5s ease-out;
+  display: flex;
+  margin-top: auto;
 }
 .main-subtitle:hover {
   background-color: rgb(1, 1, 1, 0.8);
@@ -62,13 +58,10 @@
   transition: all 0.5s ease-out;
 }
 
-.bottom-line {
-  position: absolute;
-  bottom: 10%;
-  width: 40%;
-  height: 1px;
-  background-color: #ff9933;
-  border: none;
+.main-titles-align {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
 }
 
 .social-media-section {
@@ -78,13 +71,18 @@
   margin-left: 4rem;
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 677px) {
   .main-title {
-    font-size: 3em;
+    font-size: 2rem;
   }
   .main-subtitle {
     text-align: center;
-    font-size: 1.4em;
+  }
+
+  .main-titles-align {
+    align-items: center;
+    padding-right: 0;
+    padding-left: 0;
   }
 
   .landing-body-wrapper {
@@ -107,5 +105,16 @@
   .social-media-section {
     width: 60%;
     margin-left: 2rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .main-titles-align {
+    align-items: center;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .main-title {
+    font-size: 2rem;
   }
 }

@@ -11,9 +11,9 @@ const MainBurger = styled.div`
 
 const Burger = styled.div`
   width: 35px;
-  margin: 6px 0;
+  margin: 10px 0;
   background: #ff9933;
-  padding: 2px;
+  padding: 1px;
   justify-items: end;
 `
 

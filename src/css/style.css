@@ -17,11 +17,11 @@ body {
 }
 
 h1 {
-  margin: 0.67em 0;
+  margin: 0.47em 0;
 }
 
 h2 {
-  margin: 0.37em 0;
+  margin: 0.27em 0;
 }
 
 h1,
@@ -42,13 +42,13 @@ h4 {
   font-weight: 400;
 }
 h5 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Advent Pro', sans-serif;
   line-height: 1;
   font-weight: 200;
   color: white;
 }
 h6 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Advent Pro', sans-serif;
   line-height: 1;
   font-weight: 100;
   color: white;
@@ -102,7 +102,7 @@ nav {
   /* margin: 2rem; */
 }
 
-nav a {
+a {
   color: white;
   text-decoration: none;
   cursor: pointer;
@@ -110,7 +110,6 @@ nav a {
 
 a:hover {
   color: #ff9933;
-
   transition: all 0.8s ease;
 }
 
