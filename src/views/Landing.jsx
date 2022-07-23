@@ -1,7 +1,6 @@
 import React from 'react'
 
 import Button from '../components/Button'
-import SocialMedia from '../components/SocialMedia'
 import '../css/landing.css'
 
 const Landing = () => {

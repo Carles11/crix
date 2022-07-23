@@ -3,8 +3,7 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
 const Title = styled.h1`
-  font-family: Montserrat;
-  font-size: 2.6em;
+s  font-size: 2.6em;
   text-align: center;
   margin: auto;
   color: silver;
@@ -12,7 +11,6 @@ const Title = styled.h1`
   padding-top: 125px;
 `
 const Subtitle = styled.h2`
-  font-family: Montserrat;
   font-size: 2em;
   text-align: center;
   margin: auto;
@@ -48,8 +46,7 @@ const White_block = styled.section`
   }
 `
 const Article = styled.article`
-  font-family: Montserrat;
-  font-size: 1.2em;
+s  font-size: 1.2em;
   text-align: center;
   margin: auto;
   color: silver;

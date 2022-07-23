@@ -1,8 +1,8 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from 'react'
+import styled from 'styled-components'
 
-import avatarC from "../assets/images/avatar_carles.png";
-import avatarX from "../assets/images/avatar_xavi.png";
+import avatarC from '../assets/images/avatar_carles.png'
+import avatarX from '../assets/images/avatar_xavi.png'
 
 const Pics = styled.ul`
   margin: 0px;
@@ -12,7 +12,7 @@ const Pics = styled.ul`
   width: 100%;
   justify-content: space-evenly;
   padding-bottom: 100px;
-`;
+`
 
 const PicLeft = styled.li`
   order: 1;
@@ -24,13 +24,12 @@ const PicLeft = styled.li`
   @media only screen and (max-width: 800px) {
     height: 300px;
     padding-top: 10%;
-
   }
   @media only screen and (max-width: 600px) {
     height: 200px;
     margin-bottom: 23%;
   }
-`;
+`
 
 const PicRight = styled.li`
   order: 2;
@@ -46,15 +45,13 @@ const PicRight = styled.li`
   @media only screen and (max-width: 600px) {
     height: 200px;
     margin-bottom: 23%;
-
   }
-`;
+`
 const PicFootText = styled.p`
-  font-family: Montserrat;
   font-size: 1.4em;
   color: white;
   align-self: center;
-`;
+`
 
 const Portraits = () => {
   return (
@@ -68,16 +65,11 @@ const Portraits = () => {
         <PicFootText>Carles</PicFootText>
       </PicLeft>
       <PicRight>
-        <img
-          src={avatarX}
-          alt="Portrait of Xavi Vilà Albiol"
-          height="100%"
-        />
+        <img src={avatarX} alt="Portrait of Xavi Vilà Albiol" height="100%" />
         <PicFootText>Xavi</PicFootText>
       </PicRight>
     </Pics>
-  );
+  )
 }
 
-
-export default Portraits;
+export default Portraits

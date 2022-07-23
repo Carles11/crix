@@ -15,7 +15,6 @@ const BgImage = styled.div`
 `
 
 const Title = styled.h1`
-  font-family: Montserrat;
   font-size: 2.6em;
   text-align: center;
   color: white;
@@ -24,7 +23,6 @@ const Title = styled.h1`
 `
 
 const SubTitle = styled.h2`
-  font-family: Montserrat;
   font-size: 2em;
   text-align: center;
   margin: auto;

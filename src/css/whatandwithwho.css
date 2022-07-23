@@ -1,0 +1,10 @@
+.what-content {
+  margin-left: 2rem;
+  margin-top: 4rem;
+}
+
+@media only screen and (min-width: 677px) {
+  .what-content {
+    margin-left: 12rem;
+  }
+}

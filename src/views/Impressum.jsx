@@ -2,7 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Title = styled.h1`
-  font-family: Montserrat;
   font-size: 2.6em;
   text-align: center;
   margin: auto;
@@ -11,7 +10,6 @@ const Title = styled.h1`
   padding-top: 125px;
 `
 const Subtitle = styled.h2`
-  font-family: Montserrat;
   font-size: 2em;
   text-align: center;
   margin: auto;
@@ -47,7 +45,6 @@ const White_block = styled.section`
   }
 `
 const Article = styled.article`
-  font-family: Montserrat;
   font-size: 1.2em;
   text-align: center;
   margin: auto;

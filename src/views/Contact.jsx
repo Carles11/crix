@@ -24,7 +24,6 @@ const Text = styled.p`
 `
 
 const Title = styled.h1`
-  font-family: Montserrat;
   font-size: 2.6em;
   text-align: center;
   margin: auto;
@@ -51,7 +50,6 @@ const Body = styled.div`
   color: silver;
   font-size: 1.8em;
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
 `
 const Section = styled.section`
   color: white;
