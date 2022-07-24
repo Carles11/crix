@@ -75,7 +75,7 @@ path {
   text-decoration: none;
 }
 .btn-light:hover {
-  color: white;
+  color: white !important;
   background: #ff9933;
   border: white;
   font-weight: 400;
@@ -104,7 +104,7 @@ path {
 }
 
 .btn-primary:hover {
-  color: white;
+  color: white !important;
   background: #ff9933;
   border: white;
   font-weight: 400;
