@@ -118,9 +118,9 @@ a {
   width: fit-content;
   text-decoration: none;
   margin: 0 25px;
+  padding-bottom: 4px;
 }
 a:hover {
-  padding-bottom: 4px;
   color: #ff6a3d !important;
   transition: color 1s;
 }

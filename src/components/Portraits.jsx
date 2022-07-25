@@ -1,6 +1,6 @@
 import React from 'react'
 
-import avatarC from '../assets/images/avatar_carles.png'
+import avatarC from '../assets/images/Carles_400x400.jpg'
 import avatarX from '../assets/images/avatar_xavi.png'
 import SocialMediaBar from './SocialMediaBar'
 import '../css/portraits.css'
@@ -15,7 +15,10 @@ const Portraits = () => {
           height="70%"
         />
         <p className="portrait-below_text">Carles del Río Francés</p>
-        <SocialMediaBar />
+        <SocialMediaBar
+          twitterLink="https://twitter.com/TheCriXDesigner"
+          linkedinLink="https://www.linkedin.com/in/carlos-del-rio-frances/"
+        />
       </div>
       <div className="portrait-flex_right boxed">
         <img
@@ -25,7 +28,10 @@ const Portraits = () => {
           height="70%"
         />
         <p className="portrait-below_text">Xavi Vilà Albiol</p>
-        <SocialMediaBar />
+        <SocialMediaBar
+          twitterLink="https://twitter.com/TheCriXDesigner"
+          linkedinLink="https://www.linkedin.com/in/carlos-del-rio-frances/"
+        />
       </div>
     </div>
   )

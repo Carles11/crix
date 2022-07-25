@@ -34,6 +34,9 @@
 .boxed:hover {
   transform: scale(1.1);
 }
+.boxed img {
+  border-radius: 50%;
+}
 .portrait-below_text {
   font-size: 1.4em;
   color: #010101;

@@ -6,7 +6,7 @@
   margin-bottom: 4rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  background-color: #1a2238;
+  background-color: white;
 }
 
 section.about-content_bottom {
@@ -23,12 +23,14 @@ section.about-content_bottom {
 }
 .about-content h1,
 h3,
-p {
-  color: white;
+p,
+a {
+  color: #010101;
 }
 .about-content_bottom h1,
 h3,
-p {
+p,
+a {
   color: #010101;
 }
 .subtitle-bottom {

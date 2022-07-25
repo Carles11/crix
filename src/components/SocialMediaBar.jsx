@@ -1,15 +1,19 @@
 import React from 'react'
-linkedInIcon
+
 import linkedInIcon from '../assets/icons/social/linkedin-icon64.png'
 import twitterIcon from '../assets/icons/social/twitter-icon64.png'
 
 import '../css/portraits.css'
 
-const SocialMediaBar = () => {
+const SocialMediaBar = ({ twitterLink, linkedinLink }) => {
   return (
     <div className="social-flex">
-      <img src={twitterIcon} alt="twitter icon" />
-      <img src={linkedInIcon} alt="linkedin icon" />
+      <a href={twitterLink} target="_blank" rel="noopener noreferrer">
+        <img src={twitterIcon} alt="twitter icon" />
+      </a>
+      <a href={linkedinLink} target="_blank" rel="noopener noreferrer">
+        <img src={linkedInIcon} alt="linkedin icon" />
+      </a>
     </div>
   )
 }
