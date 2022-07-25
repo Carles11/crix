@@ -48,9 +48,9 @@ const Whatandwithwho = () => {
 
             <h3 className="what-subtitle subtitle-bottom">Empresas</h3>
             <ul>
-              <li>Instituto Cervantes</li>
-              <li>Hessenwaldschule</li>
-              <li>Kultusministerium Hessen</li>
+              <li>TheCirculArt</li>
+              <li>Jordi Arjó, psicólogia.</li>
+              <li>Abluelemon</li>
             </ul>
           </div>
         </div>

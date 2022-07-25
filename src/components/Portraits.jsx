@@ -29,8 +29,8 @@ const Portraits = () => {
         />
         <p className="portrait-below_text">Xavi Vilà Albiol</p>
         <SocialMediaBar
-          twitterLink="https://twitter.com/TheCriXDesigner"
-          linkedinLink="https://www.linkedin.com/in/carlos-del-rio-frances/"
+          twitterLink="https://twitter.com/txiverke"
+          linkedinLink="https://www.linkedin.com/in/xavi-vil%C3%A0-albiol-59387029/"
         />
       </div>
     </div>
