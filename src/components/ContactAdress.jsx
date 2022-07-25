@@ -12,7 +12,7 @@ const HighlightMe = styled.h4`
 //   mix-blend-mode: difference;
 // `;
 const Article = styled.article`
-  text-align: center;
+  text-align: left;
   line-height: 1.3;
   margin-left: 20%;
   margin-right: 20%;
@@ -28,10 +28,6 @@ const Article = styled.article`
     font-size: 27px;
   }
 `
-const Mailto = styled.div`
-  color: palevioletred !important;
-  font-weight: bold !important;
-`
 
 const ContactAdress = () => {
   return (
@@ -45,10 +41,7 @@ const ContactAdress = () => {
         <br />
         Tel.: 01782871785
         <br />
-        E-Mail:{' '}
-        <Mailto>
-          <a href="mailto:carles@crix.design"> carles@crix.design</a>
-        </Mailto>
+        E-Mail: <a href="mailto:carles@crix.design"> carles@crix.design</a>
       </HighlightMe>
     </Article>
   )
