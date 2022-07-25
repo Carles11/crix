@@ -70,6 +70,9 @@
   width: 40%;
   margin-left: 4rem;
 }
+.bottom-line {
+  margin-block-start: -3rem;
+}
 
 @media only screen and (max-width: 677px) {
   .main-title {
@@ -100,6 +103,7 @@
 
   .bottom-line {
     width: 60%;
+    margin-block-start: -3rem;
   }
 
   .social-media-section {
@@ -116,5 +120,8 @@
   }
   .main-title {
     font-size: 2rem;
+  }
+  .bottom-line {
+    margin-block-start: -3rem;
   }
 }
