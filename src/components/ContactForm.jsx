@@ -18,7 +18,9 @@ class ContactForm extends Component {
     }
   }
   handleChange(e) {
-    const { target: { name, value } } = e    
+    const {
+      target: { name, value },
+    } = e
     console.log('addintotostate...----> ', name, value)
     this.setState({ [name]: value })
   }

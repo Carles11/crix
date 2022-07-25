@@ -28,7 +28,7 @@
 .boxed {
   border: 1px solid silver;
   border-radius: 2px;
-  padding: 2rem;
+  padding: 4rem;
   transition: all 0.2s ease-in-out;
 }
 .boxed:hover {
