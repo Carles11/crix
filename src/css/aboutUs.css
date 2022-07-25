@@ -14,6 +14,7 @@ section.about-content_bottom {
   margin-top: 7rem;
   padding-left: 1rem;
   padding-top: 3rem;
+  padding-bottom: 4rem;
 }
 
 .about-content_section {
@@ -62,13 +63,13 @@ a {
   .about-content {
     margin: 0;
     padding-top: 4rem;
-    padding-bottom: 4rem;
   }
   section.about-content_bottom {
     margin: 3rem 0;
     background-color: white;
     padding-left: 0;
     padding-top: 8rem;
+    padding-bottom: 6rem;
   }
   .about-content_section {
     flex-direction: row;
@@ -83,6 +84,9 @@ a {
 
 /* > Big Desktop */
 @media only screen and (min-width: 1024px) {
+  .about-content_bottom {
+    padding-bottom: 8rem;
+  }
   .about-content_article {
     font-size: 1.5em;
     max-width: 100%;

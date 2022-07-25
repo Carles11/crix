@@ -45,7 +45,6 @@ const Whatandwithwho = () => {
               <li>Hessenwaldschule</li>
               <li>Kultusministerium Hessen</li>
             </ul>
-            <p>Tr</p>
 
             <h3 className="what-subtitle subtitle-bottom">Empresas</h3>
             <ul>
@@ -53,7 +52,6 @@ const Whatandwithwho = () => {
               <li>Hessenwaldschule</li>
               <li>Kultusministerium Hessen</li>
             </ul>
-            <p>Tr</p>
           </div>
         </div>
       </section>
