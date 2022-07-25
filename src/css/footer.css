@@ -39,8 +39,8 @@
 .footer-ul-right {
   display: flex;
   flex-direction: column;
-  margin-left: 1rem;
-  margin-right: 4rem;
+  margin-left: 0;
+  margin-right: 0;
 }
 .footer-ul-right h5 {
   margin-bottom: 1rem;
@@ -79,7 +79,7 @@
   }
   .footer-ul-right {
     margin-left: 0;
-    margin-right: 4.5rem;
+    margin-right: 0;
   }
   .footer-right h5 {
     margin: 2rem auto 1rem 0;
@@ -102,6 +102,10 @@
   }
   .footer-right {
     margin-left: 0;
+  }
+  .footer-ul-right {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 

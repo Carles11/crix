@@ -8,7 +8,7 @@ import '../css/whatandwithwho.css'
 const Whatandwithwho = () => {
   return (
     <main>
-      <div className="what-content ">
+      <div className="what-content">
         <section className="what-content_section">
           <h1>Qué hago</h1>
           <div className="what-content_article">
@@ -36,9 +36,9 @@ const Whatandwithwho = () => {
 
       <section className="what-content_bottom">
         <div className="what-content_section">
-          <h1>Con quién</h1>
+          <h1 className="subtitle-bottom">Con quién</h1>
           <div className="what-content_article">
-            <h3 className="what-subtitle">
+            <h3 className="what-subtitle subtitle-bottom">
               Instituciones culturales y escuelas
             </h3>
             <ul>
@@ -48,7 +48,7 @@ const Whatandwithwho = () => {
             </ul>
             <p>Tr</p>
 
-            <h3 className="what-subtitle">Empresas</h3>
+            <h3 className="what-subtitle subtitle-bottom">Empresas</h3>
             <ul>
               <li>Instituto Cervantes</li>
               <li>Hessenwaldschule</li>

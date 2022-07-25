@@ -1,19 +1,32 @@
 /* > Mobile */
 .what-content {
-  margin: 3rem 1rem;
+  width: 100%;
+  margin: 3rem 0;
   position: relative;
   margin-bottom: 4rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
+
 section.what-content_bottom {
-  margin: 8rem 1rem;
-  position: relative;
   background-color: white;
+  margin-top: 7rem;
+  padding-left: 1rem;
+  padding-top: 3rem;
 }
 
 .what-content_section {
   width: 100%;
   display: flex;
   flex-direction: column;
+}
+.what-content .what-content_section h1,
+h3,
+p {
+  color: white;
+}
+.subtitle-bottom {
+  color: #010101;
 }
 
 .what-title {
@@ -42,18 +55,19 @@ section.what-content_bottom {
 @media only screen and (min-width: 677px) {
   .what-content {
     margin: 0;
-    margin-top: 4rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
   section.what-content_bottom {
-    margin: 0;
-    margin-top: 4rem;
+    margin: 3rem 0;
     background-color: white;
+    padding-left: 0;
+    padding-top: 8rem;
   }
   .what-content_section {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: baseline;
-    margin: 0 1rem;
   }
   .what-content_article {
     margin-left: 2rem;
@@ -68,5 +82,10 @@ section.what-content_bottom {
     max-width: 100%;
     letter-spacing: 2px;
     line-height: 1.6em;
+  }
+  section.what-content_bottom {
+    margin: 3rem 0;
+    padding-left: 0;
+    padding-top: 11rem;
   }
 }
