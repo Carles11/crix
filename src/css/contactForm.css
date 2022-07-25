@@ -1,0 +1,11 @@
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.contact-label {
+  color: #696969;
+  text-align: left;
+}

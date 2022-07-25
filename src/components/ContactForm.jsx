@@ -1,90 +1,38 @@
-import React, { Component } from 'react';
-import styled from 'styled-components';
-import axios from 'axios';
+import React, { Component } from 'react'
 
-const Form = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;    
-    padding-top: 40px;
-`;
-const Button = styled.div`
-    padding-bottom: 40px;
-    padding-top: 40px;
-    @media screen and (max-width: 600px) {
-    padding-bottom: 25px;
-    padding-top: 25px;
-    }
-`;
-const ButtonSubmit = styled.button`
-  background: #0a6284;
-  border-radius: 8px;
-  color: white;
-  height: 60px;
-  width: 100px;
-  font-size: 16px;
-  @media screen and (max-width: 600px) {
-    font-size: 14px;
-    height: 40px;
-    width: 90px;
-    margin: auto;
-  }
-`;
-const Label = styled.label`
-  color: #696969;
-  align-text: left;
-  font-size: 20px;
-  mix-blend-mode: difference;
-  @media screen and (max-width: 600px) {
-    font-size: 14px;
-  }
-`;
+import Button from '../components/Button'
+
+import axios from 'axios'
+import '../css/contactForm.css'
 
 class ContactForm extends Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       name: '',
       email: '',
       subject: '',
       message: '',
       sent: false,
-      buttonText: 'Send message'
+      buttonText: 'Send message',
     }
-    this.handleNameChange = this.handleNameChange.bind(this)
-    this.handleEmailChange = this.handleEmailChange.bind(this)
-    this.handleSubjectChange = this.handleSubjectChange.bind(this)
-    this.handleMessageChange = this.handleMessageChange.bind(this)
-    this.formSubmit = this.formSubmit.bind(this)
-    this.resetForm = this.resetForm.bind(this)
-    this.onClick = this.onClick.bind(this)
   }
-  handleNameChange(event) {
-    this.setState({ name: event.target.value })
-  };
-  handleEmailChange(event) {
-    this.setState({ email: event.target.value })
-  };
-  handleSubjectChange(event) {
-    this.setState({ subject: event.target.value })
-  };
-  handleMessageChange(event) {
-    this.setState({ message: event.target.value })
-  };
+  handleChange(event) {
+    const { name, value } = event.target
+    this.setState({ [name]: value })
+  }
 
   formSubmit(e) {
     e.preventDefault()
     this.setState({
-      buttonText: '...sending'
+      buttonText: '...sending',
     })
-    let data = {
-      name: this.state.name,
-      subject: this.state.subject,
-      email: this.state.email,
-      message: this.state.message
-    }
-    axios.post('http://localhost:4444/crix-mail-api/index.js', data)
-      .then(res => {
+    const { name, subject, email, message } = this.state
+
+    const data = { name, subject, email, message }
+    axios
+      .post('http://localhost:4444/crix-mail-api/index.js', data)
+      .then((res) => {
         this.setState({ sent: true }, this.resetForm())
       })
       .catch(() => {
@@ -97,49 +45,59 @@ class ContactForm extends Component {
       message: '',
       email: '',
       subject: '',
-      buttonText: 'Message Sent'
+      buttonText: 'Message Sent',
     })
-  };
-  onClick(e) {
-    this.formSubmit(e);
-    this.resetForm();
+  }
+  handleSubmit(e) {
+    this.formSubmit(e)
+    this.resetForm()
   }
   render() {
+    const { name, subject, email, message, buttonText } = this.state
+
     return (
-      <Form onSubmit={(e) => this.formSubmit(e)}>
-        <Label>Name</Label>
+      <form className="contact-form" onSubmit={(e) => this.formSubmit(e)}>
+        <label className="contact-label">Name</label>
         <input
           name="name"
           type="text"
-          value={this.state.name}
-          onChange={this.handleNameChange} />
-        <Label>E-mail</Label>
+          value={name}
+          onChange={this.handleChange}
+        />
+        <label className="contact-label">E-mail</label>
         <input
           name="email"
           type="text"
-          value={this.state.email}
-          onChange={this.handleEmailChange} />
-        <Label>Subject</Label>
+          value={email}
+          onChange={this.handleChange}
+        />
+        <label className="contact-label">Subject</label>
         <input
           name="subject"
           type="text"
-          value={this.state.subject}
-          onChange={this.handleSubjectChange} />
-        <Label>Your message</Label>
+          value={subject}
+          onChange={this.handleChange}
+        />
+        <label className="contact-label">Your message</label>
         <textarea
           name="message"
           type="text"
-          value={this.state.message}
-          onChange={this.handleMessageChange} />
-        <Button>
-          <ButtonSubmit
-            type="submit"
-            onClick={this.onClick}>{this.state.buttonText}</ButtonSubmit>
+          value={message}
+          onChange={this.handleChange}
+        />
+        <Button
+          elementType="Link"
+          type="submit"
+          pathLink="/"
+          variant="primary"
+          size="lg"
+          onClick={this.handleSubmit}
+        >
+          {buttonText}
         </Button>
-
-      </Form>
-    );
+      </form>
+    )
   }
 }
 
-export default ContactForm;
+export default ContactForm
