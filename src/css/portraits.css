@@ -6,7 +6,7 @@
   background-color: transparent;
   width: 100%;
   justify-content: space-evenly;
-  padding-bottom: 100px;
+  padding-bottom: 3rem;
 }
 
 .portrait-flex_left {
@@ -25,10 +25,25 @@
   align-self: center;
 }
 
+.boxed {
+  border: 1px solid silver;
+  border-radius: 2px;
+  padding: 2rem;
+  transition: all 0.2s ease-in-out;
+}
+.boxed:hover {
+  transform: scale(1.1);
+}
 .portrait-below_text {
   font-size: 1.4em;
   color: #010101;
   align-self: center;
+}
+
+.social-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 @media only screen and (min-width: 677) {

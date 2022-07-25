@@ -46,7 +46,18 @@ module.exports = ({ mode }) => ({
         test: /\.(jpg|png|jpeg)$/,
         use: ['file-loader'],
       },
+
+      {
+        test: /\.svg$/,
+        loader: 'svg-inline-loader',
+      },
     ],
+    // loaders: [
+    //   {
+    //     test: /\.svg$/,
+    //     loader: 'svg-inline-loader',
+    //   },
+    // ],
   },
   resolve: {
     extensions: ['.js', '.jsx', '.json'],
