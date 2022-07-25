@@ -1,0 +1,17 @@
+.address-content {
+  text-align: left;
+  line-height: 1.3;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding-bottom: 6%;
+  max-width: 60%;
+  color: silver;
+}
+.address-content h4 {
+  padding: 4px;
+}
+
+.address-highlight {
+  background-color: black;
+  display: inline;
+}
