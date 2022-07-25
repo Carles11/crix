@@ -14,18 +14,19 @@ class ContactForm extends Component {
       subject: '',
       message: '',
       sent: false,
-      buttonText: 'Send message',
+      buttonText: 'Envía',
     }
   }
-  handleChange(event) {
-    const { name, value } = event.target
+  handleChange(e) {
+    const { target: { name, value } } = e    
+    console.log('addintotostate...----> ', name, value)
     this.setState({ [name]: value })
   }
 
   formSubmit(e) {
     e.preventDefault()
     this.setState({
-      buttonText: '...sending',
+      buttonText: '...enviando',
     })
     const { name, subject, email, message } = this.state
 
@@ -33,10 +34,10 @@ class ContactForm extends Component {
     axios
       .post('http://localhost:4444/crix-mail-api/index.js', data)
       .then((res) => {
-        this.setState({ sent: true }, this.resetForm())
+        this.setState({ buttonText: 'Enviado!', sent: true }, this.resetForm())
       })
       .catch(() => {
-        console.log('Message not sent')
+        console.log('Mensaje no enviado.')
       })
   }
   resetForm() {
