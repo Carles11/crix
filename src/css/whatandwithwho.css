@@ -39,7 +39,7 @@ p {
 }
 .what-subtitle:hover {
   background-color: rgb(1, 1, 1, 0.8);
-  color: #ff9933;
+  color: #ff6a3d;
   padding-left: 3rem;
   padding-right: 3rem;
   transition: all 0.5s ease-out;

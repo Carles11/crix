@@ -1,6 +1,6 @@
 /* WEB UNIVERSAL COLOR PALETTE COMBINATION */
-/* #333366 #FFFFFF #FF9933 #010101 * { */
-/* DARKBLUE  WHITE   ORANGE  BLACK * { */
+/* #1A2238   #9DAAF2     #FF6A3D #F4DB7D * { */
+/* DARKBLUE  LIGHTBLUE   ORANGE  YELLOW * { */
 
 * {
   box-sizing: border-box;
@@ -46,13 +46,11 @@ h5 {
   font-family: 'Advent Pro', sans-serif;
   line-height: 1;
   font-weight: 200;
-  color: white;
 }
 h6 {
   font-family: 'Advent Pro', sans-serif;
   line-height: 1;
   font-weight: 100;
-  color: white;
 }
 
 h1 {
@@ -96,7 +94,7 @@ li {
 
 li::before {
   content: '•';
-  color: #ff9933;
+  color: #f4db7d;
   padding-right: 11px;
 }
 
@@ -123,7 +121,7 @@ a {
 }
 a:hover {
   padding-bottom: 4px;
-  color: #ff9933 !important;
+  color: #ff6a3d !important;
   transition: color 1s;
 }
 a:after {
@@ -134,7 +132,7 @@ a:after {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #ff9933;
+  background-color: #f4db7d;
   transform-origin: bottom right;
   transition: transform 0.5s ease-out;
 }

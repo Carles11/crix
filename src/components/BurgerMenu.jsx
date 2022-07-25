@@ -12,7 +12,7 @@ const MainBurger = styled.div`
 const Burger = styled.div`
   width: 35px;
   margin: 10px 0;
-  background: #ff9933;
+  background: #ff6a3d;
   padding: 1px;
   justify-items: end;
 `
