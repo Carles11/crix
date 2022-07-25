@@ -1,7 +1,6 @@
 import React from 'react'
 // import PropTypes from 'prop-types';
 
-import QuotationForm from '../components/QuotationForm'
 import Divider from '../components/Divider'
 import '../css/whatandwithwho.css'
 
@@ -58,7 +57,6 @@ const Whatandwithwho = () => {
           </div>
         </div>
       </section>
-      <QuotationForm />
     </main>
   )
 }

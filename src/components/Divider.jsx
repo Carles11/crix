@@ -4,7 +4,7 @@ import '../css/divider.css'
 const Divider = () => {
   return (
     <svg
-      class="editorial"
+      className="editorial"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
       viewBox="0 24 150 28 "
@@ -21,16 +21,16 @@ const Divider = () => {
    v44h-352z"
         />
       </defs>
-      <g class="parallax1">
+      <g className="parallax1">
         <use xlinkHref="#gentle-wave" x="50" y="3" fill="#f461c1" />
       </g>
-      <g class="parallax2">
+      <g className="parallax2">
         <use xlinkHref="#gentle-wave" x="50" y="0" fill="#4579e2" />
       </g>
-      <g class="parallax3">
+      <g className="parallax3">
         <use xlinkHref="#gentle-wave" x="50" y="9" fill="#3461c1" />
       </g>
-      <g class="parallax4">
+      <g className="parallax4">
         <use xlinkHref="#gentle-wave" x="50" y="6" fill="#fff" />
       </g>
     </svg>
