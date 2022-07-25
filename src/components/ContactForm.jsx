@@ -56,35 +56,50 @@ class ContactForm extends Component {
     const { name, subject, email, message, buttonText } = this.state
 
     return (
-      <form className="contact-form" onSubmit={(e) => this.formSubmit(e)}>
-        <label className="contact-label">Name</label>
-        <input
-          name="name"
-          type="text"
-          value={name}
-          onChange={this.handleChange}
-        />
-        <label className="contact-label">E-mail</label>
-        <input
-          name="email"
-          type="text"
-          value={email}
-          onChange={this.handleChange}
-        />
-        <label className="contact-label">Subject</label>
-        <input
-          name="subject"
-          type="text"
-          value={subject}
-          onChange={this.handleChange}
-        />
-        <label className="contact-label">Your message</label>
-        <textarea
-          name="message"
-          type="text"
-          value={message}
-          onChange={this.handleChange}
-        />
+      <form
+        className="contact-form contact-flex"
+        onSubmit={(e) => this.formSubmit(e)}
+      >
+        <div className="contact-input-group">
+          <label className="contact-label">Name</label>
+          <input
+            name="name"
+            type="text"
+            value={name}
+            onChange={this.handleChange}
+            className="simple-input"
+          />{' '}
+        </div>{' '}
+        <div className="contact-input-group">
+          <label className="contact-label">E-mail</label>
+          <input
+            name="email"
+            type="text"
+            value={email}
+            onChange={this.handleChange}
+            className="simple-input"
+          />{' '}
+        </div>{' '}
+        <div className="contact-input-group">
+          <label className="contact-label">Subject</label>
+          <input
+            name="subject"
+            type="text"
+            value={subject}
+            onChange={this.handleChange}
+            className="simple-input"
+          />{' '}
+        </div>
+        <div className="contact-input-group">
+          <label className="contact-label">Your message</label>
+          <textarea
+            name="message"
+            type="text"
+            value={message}
+            onChange={this.handleChange}
+            className="simple-input"
+          />
+        </div>
         <Button
           elementType="Link"
           type="submit"

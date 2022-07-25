@@ -1,5 +1,7 @@
 .contact {
-  height: 100vh;
+  height: fit-content;
+  position: relative;
+  margin: 4rem auto;
 }
 
 /* > Mobile */
@@ -51,6 +53,7 @@ a {
   .contact-content {
     margin: 0;
     padding-top: 4rem;
+    margin-bottom: 6rem;
   }
   section.contact-content_bottom {
     margin: 3rem 0;
