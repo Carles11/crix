@@ -97,6 +97,7 @@ li {
 li::before {
   content: '•';
   color: #ff9933;
+  padding-right: 11px;
 }
 
 /* nav props applying in Navigation and BurgerMenu*/
