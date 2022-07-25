@@ -2,6 +2,12 @@
 .what-content {
   margin: 3rem 1rem;
   position: relative;
+  margin-bottom: 4rem;
+}
+section.what-content_bottom {
+  margin: 8rem 1rem;
+  position: relative;
+  background-color: white;
 }
 
 .what-content_section {
@@ -35,16 +41,23 @@
 /* > Tablet */
 @media only screen and (min-width: 677px) {
   .what-content {
-    margin: 6rem 2rem;
+    margin: 0;
+    margin-top: 4rem;
+  }
+  section.what-content_bottom {
+    margin: 0;
+    margin-top: 4rem;
+    background-color: white;
   }
   .what-content_section {
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     align-items: baseline;
     margin: 0 1rem;
   }
   .what-content_article {
     margin-left: 2rem;
+    width: 50%;
   }
 }
 

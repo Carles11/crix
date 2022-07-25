@@ -48,7 +48,7 @@
 }
 .main-subtitle {
   display: flex;
-  margin-top: auto;
+  margin-bottom: 2rem;
 }
 .main-subtitle:hover {
   background-color: rgb(1, 1, 1, 0.8);

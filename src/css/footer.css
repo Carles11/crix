@@ -39,7 +39,7 @@
 .footer-ul-right {
   display: flex;
   flex-direction: column;
-  margin-left: 8rem;
+  margin-left: 1rem;
   margin-right: 4rem;
 }
 .footer-ul-right h5 {

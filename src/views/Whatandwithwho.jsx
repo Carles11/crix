@@ -2,13 +2,14 @@ import React from 'react'
 // import PropTypes from 'prop-types';
 
 import QuotationForm from '../components/QuotationForm'
+import Divider from '../components/Divider'
 import '../css/whatandwithwho.css'
 
 const Whatandwithwho = () => {
   return (
-    <div>
-      <div className="what-content">
-        <div className="what-content_section">
+    <main>
+      <div className="what-content ">
+        <section className="what-content_section">
           <h1>Qué hago</h1>
           <div className="what-content_article">
             <h3 className="what-subtitle">Web</h3>
@@ -29,9 +30,11 @@ const Whatandwithwho = () => {
               <a href="/hovear-con-list-de-países">Envíos a toda Europa</a>.
             </p>
           </div>
-        </div>
+        </section>
       </div>
-      <div className="what-content">
+      <Divider />
+
+      <section className="what-content_bottom">
         <div className="what-content_section">
           <h1>Con quién</h1>
           <div className="what-content_article">
@@ -44,11 +47,19 @@ const Whatandwithwho = () => {
               <li>Kultusministerium Hessen</li>
             </ul>
             <p>Tr</p>
+
+            <h3 className="what-subtitle">Empresas</h3>
+            <ul>
+              <li>Instituto Cervantes</li>
+              <li>Hessenwaldschule</li>
+              <li>Kultusministerium Hessen</li>
+            </ul>
+            <p>Tr</p>
           </div>
         </div>
-      </div>
+      </section>
       <QuotationForm />
-    </div>
+    </main>
   )
 }
 
