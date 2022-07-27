@@ -26,16 +26,16 @@ section.about-content_bottom {
 h3,
 p,
 a {
-  color: #010101;
+  color: var(--text-color-dark);
 }
 .about-content_bottom h1,
 h3,
 p,
 a {
-  color: #010101;
+  color: var(--text-color-dark);
 }
 .subtitle-bottom {
-  color: #010101;
+  color: var(--text-color-dark);
 }
 
 .about-title {

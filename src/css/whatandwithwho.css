@@ -23,10 +23,10 @@ section.what-content_bottom {
 .what-content .what-content_section h1,
 h3,
 p {
-  color: 010101;
+  color: var(--text-color-dark);
 }
 .subtitle-bottom {
-  color: #010101;
+  color: var(--text-color-dark);
 }
 
 .what-title {
@@ -45,7 +45,7 @@ p {
   transition: all 0.5s ease-out;
 }
 .what-content_article {
-  color: #010101;
+  color: var(--text-color-dark);
 }
 .what-content_article p {
   margin-top: 1.2em;

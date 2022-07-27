@@ -68,9 +68,9 @@ path {
 
 .btn-light {
   background: white;
-  color: #010101;
+  color: var(--text-color-dark);
   font-weight: 600;
-  border: #010101;
+  border: var(--text-color-dark);
   box-shadow: 6.9829px 8.72862px 15.7115px rgba(1, 1, 1, 0.25);
   text-decoration: none;
 }
@@ -95,7 +95,7 @@ path {
 }
 
 .btn-primary {
-  background: #010101;
+  background: var(--blackBg);
   color: white;
   border: white;
   box-shadow: 6.9829px 8.72862px 15.7115px rgba(1, 1, 1, 0.25);

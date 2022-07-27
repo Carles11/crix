@@ -28,3 +28,9 @@
 .simple-input {
   border: 1px solid silver;
 }
+/* > Tablet */
+@media only screen and (min-width: 677px) {
+  .contact-input-group {
+    align-items: left;
+  }
+}

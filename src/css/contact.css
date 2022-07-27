@@ -24,11 +24,11 @@ section.contact-content_section {
 h3,
 p,
 a {
-  color: #010101;
+  color: var(--blackBg);
 }
 
 .contact-title {
-  color: #696969;
+  color: var(--darkGrey);
   opacity: 0.9;
 }
 .contact-subtitle {
@@ -36,7 +36,7 @@ a {
   display: flex;
 }
 .contact-subtitle:hover {
-  background-color: rgb(1, 1, 1, 0.8);
+  background-color: var(--light-blackBg);
   color: #ff6a3d;
   padding-left: 3rem;
   padding-right: 3rem;

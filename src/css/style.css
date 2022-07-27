@@ -1,6 +1,42 @@
 /* WEB UNIVERSAL COLOR PALETTE COMBINATION */
 /* #1A2238   #9DAAF2     #FF6A3D #F4DB7D * { */
 /* DARKBLUE  LIGHTBLUE   ORANGE  YELLOW * { */
+/* WEB UNIVERSAL COLOR PALETTE COMBINATION */
+/* #1A2238   #9DAAF2     #FF6A3D #F4DB7D * { */
+/* DARKBLUE  LIGHTBLUE   ORANGE  YELLOW * { */
+:root {
+  --blackBg: #010101;
+  --light-blackBg: #051423;
+  --light-grey: #f2f5f7;
+  --darkGrey: #b6b4b4;
+  --primaryColor: #1a2238;
+  --primaryLightColor: #9daaf2;
+  --secondaryColor: #ff6a3d;
+  --secondaryLightColor: #f4db7d;
+
+  --text-color-dark: #223651;
+  --text-color-light: #f6f6f6;
+
+  --success-green: #03cea4;
+  --error-red: #db3069;
+  --alert-yellow: #fada5e;
+
+  --minWidthDesktopHuge: 1920px;
+  --minWidthDesktopExtraLargePlus: 1670px;
+  --minWidthDesktopExtraLarge: 1440px;
+  --minWidthDesktopLarge: 1281px;
+  --minWidthDesktopMiddle: 1200px;
+  --minWidthIpadPro: 1024px;
+  --maxWidthIpadPro: 1023px;
+  --minWidthDesktop: 992px;
+  --minWidthTablet: 768px;
+  --maxWidthTablet: 767px;
+  --minWidthPhoneMiddleLandscape: 640px;
+  --minWidthPhoneMiddle: 576px;
+  --minWidthPhoneRotated: 500px;
+  --minWidthPhoneLastGeneration: 370px;
+  --minWidthPhone: 320px;
+}
 
 * {
   box-sizing: border-box;

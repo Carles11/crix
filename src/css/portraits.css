@@ -39,7 +39,7 @@
 }
 .portrait-below_text {
   font-size: 1.4em;
-  color: #010101;
+  color: var(--text-color-dark);
   align-self: center;
 }
 
