@@ -29,17 +29,13 @@ p {
   color: var(--text-color-dark);
 }
 
-.what-title {
-  color: #696969;
-  opacity: 0.9;
-}
 .what-subtitle {
   margin-top: 2rem;
   display: flex;
 }
 .what-subtitle:hover {
-  background-color: rgb(1, 1, 1, 0.8);
-  color: #ff6a3d;
+  background-color: var(--light-blackBg);
+  color: var(--secondaryColor);
   padding-left: 3rem;
   padding-right: 3rem;
   transition: all 0.5s ease-out;

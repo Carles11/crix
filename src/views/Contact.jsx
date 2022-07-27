@@ -25,6 +25,9 @@ const Contact = () => {
       </div>{' '}
       <div className="contact-form-container">
         <ContactAdress />
+        <div class="horizontal-divider">
+          <hr class="brace" />
+        </div>
         <div class="vertical-divider">
           <div class="center-element">CriX</div>
         </div>

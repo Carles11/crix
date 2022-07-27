@@ -76,13 +76,13 @@ path {
 }
 .btn-light:hover {
   color: white !important;
-  background: #ff6a3d;
+  background: var(--secondaryColor);
   border: white;
   font-weight: 400;
 }
 .btn-light:focus {
   color: white;
-  background: #ff6a3d;
+  background: var(--secondaryColor);
   border: white;
 }
 .btn-light:not(:disabled) {
@@ -105,13 +105,13 @@ path {
 
 .btn-primary:hover {
   color: white !important;
-  background: #ff6a3d;
+  background: var(--secondaryColor);
   border: white;
   font-weight: 400;
 }
 .btn-primary:focus {
   color: white;
-  background: #ff6a3d;
+  background: var(--secondaryColor);
   border: white;
 }
 

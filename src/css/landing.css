@@ -52,7 +52,7 @@
 }
 .main-subtitle:hover {
   background-color: rgb(1, 1, 1, 0.8);
-  color: #ff6a3d;
+  color: var(--secondaryColor);
   padding-left: 3rem;
   padding-right: 3rem;
   transition: all 0.5s ease-out;

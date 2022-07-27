@@ -157,7 +157,7 @@ a {
   padding-bottom: 4px;
 }
 a:hover {
-  color: #ff6a3d !important;
+  color: var(--secondaryColor) !important;
   transition: color 1s;
 }
 a:after {
