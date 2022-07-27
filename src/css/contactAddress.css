@@ -5,7 +5,7 @@
   margin-right: 20%;
   padding-bottom: 6%;
   max-width: 60%;
-  color: silver;
+  color: var(--text-color-light);
   margin-top: 3rem;
 }
 .address-content h4 {
@@ -13,6 +13,6 @@
 }
 
 .address-highlight {
-  background-color: black;
+  background-color: var(--light-blackBg);
   display: inline;
 }

@@ -139,6 +139,7 @@ a {
   }
   .contact-form-container {
     flex-direction: row;
+    align-items: center;
   }
   .vertical-divider {
     position: absolute;
