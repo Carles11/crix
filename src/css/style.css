@@ -216,7 +216,8 @@ span::after {
 
 textarea {
   height: 150px;
-  padding: 12px 20px;
+  padding: 12px 60px;
+  margin-bottom: 2rem;
   border: 2px solid var(--darkGrey);
   border-radius: 4px;
   background-color: var(--light-grey);
@@ -227,9 +228,8 @@ textarea {
 }
 
 input[type='text'] {
-  width: 25%;
-  padding: 12px 20px;
-  margin: 8px 0;
+  padding: 12px 60px;
+  margin: 1px 0;
   box-sizing: border-box;
   border: none;
   border-bottom: 2px solid var(--darkGrey);
@@ -240,9 +240,7 @@ input[type='text'] {
 
 @media only screen and (max-width: 650px) {
   input[type='text'] {
-    width: 55%;
-    padding: 10px 18px;
-    margin: 6px 0;
+    margin: 3px 0;
     box-sizing: border-box;
     border: none;
     border-bottom: 2px solid var(--darkGrey);
@@ -252,8 +250,6 @@ input[type='text'] {
   }
 
   textarea {
-    width: 55%;
-    padding: 10px 18px;
     margin: 6px 0;
     box-sizing: border-box;
     border: none;
@@ -266,9 +262,7 @@ input[type='text'] {
 
 @media only screen and (max-width: 1200px) {
   input[type='text'] {
-    width: 65%;
-    padding: 10px 18px;
-    margin: 6px 0;
+    margin: 5px 0;
     box-sizing: border-box;
     border: none;
     border-bottom: 2px solid var(--darkGrey);
@@ -278,8 +272,6 @@ input[type='text'] {
   }
 
   textarea {
-    width: 65%;
-    padding: 10px 18px;
     margin: 6px 0;
     box-sizing: border-box;
     border: none;
