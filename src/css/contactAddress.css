@@ -1,12 +1,9 @@
 .address-content {
   text-align: left;
   line-height: 1.3;
-  margin-left: 20%;
-  margin-right: 20%;
-  padding-bottom: 6%;
-  max-width: 60%;
   color: var(--text-color-light);
-  margin-top: 3rem;
+  width: 50%;
+  margin-left: 15%;
 }
 .address-content h4 {
   padding: 4px;

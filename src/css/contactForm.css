@@ -14,7 +14,7 @@
 
 .contact-label {
   padding-bottom: 1.1rem;
-  color: #696969;
+  color: var(--darkGrey);
   text-align: left;
 }
 
@@ -30,7 +30,16 @@
 }
 /* > Tablet */
 @media only screen and (min-width: 677px) {
+  .contact-form {
+    width: 50%;
+    /* min-width: -webkit-fill-available; */
+  }
   .contact-input-group {
     align-items: left;
+  }
+}
+@media only screen and (min-width: var(--minWidthDesktopLarge)) {
+  .contact-form {
+    min-width: auto;
   }
 }

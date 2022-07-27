@@ -140,13 +140,14 @@ a {
   .contact-form-container {
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
   }
   .vertical-divider {
     position: absolute;
     display: table;
     text-align: center;
 
-    height: 66%;
+    height: 55%;
     width: 100%;
   }
 
