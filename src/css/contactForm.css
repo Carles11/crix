@@ -16,6 +16,7 @@
   color: var(--darkGrey);
   text-align: left;
   margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 .contact-input-group {

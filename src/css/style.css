@@ -250,7 +250,6 @@ input[type='text'] {
   }
 
   textarea {
-    margin: 6px 0;
     box-sizing: border-box;
     border: none;
     border-bottom: 2px solid var(--darkGrey);
@@ -272,7 +271,6 @@ input[type='text'] {
   }
 
   textarea {
-    margin: 6px 0;
     box-sizing: border-box;
     border: none;
     border-bottom: 2px solid var(--darkGrey);
