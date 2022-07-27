@@ -14,15 +14,7 @@
   padding-right: 1rem;
 }
 
-section.contact-content_bottom {
-  background-color: white;
-  margin-top: 7rem;
-  padding-left: 1rem;
-  padding-top: 3rem;
-  padding-bottom: 4rem;
-}
-
-.contact-content_section {
+section.contact-content_section {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -35,17 +27,29 @@ a {
   color: #010101;
 }
 
-.subtitle-bottom {
-  color: #010101;
-}
-
 .contact-title {
   color: #696969;
   opacity: 0.9;
 }
+.contact-subtitle {
+  margin-top: 2rem;
+  display: flex;
+}
+.contact-subtitle:hover {
+  background-color: rgb(1, 1, 1, 0.8);
+  color: #ff6a3d;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  transition: all 0.5s ease-out;
+}
 
 .contact-content_article p > a {
   color: inherit;
+}
+
+.contact-form-container {
+  display: flex;
+  flex-direction: column;
 }
 
 /* > Tablet */
@@ -55,14 +59,8 @@ a {
     padding-top: 4rem;
     margin-bottom: 6rem;
   }
-  section.contact-content_bottom {
-    margin: 3rem 0;
-    background-color: white;
-    padding-left: 0;
-    padding-top: 8rem;
-    padding-bottom: 6rem;
-  }
-  .contact-content_section {
+
+  section.contact-content_section {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: baseline;
@@ -70,6 +68,41 @@ a {
   .contact-content_article {
     margin-left: 2rem;
     width: 50%;
+  }
+  .contact-form-container {
+    flex-direction: row;
+  }
+  .vertical-divider {
+    position: absolute;
+    display: table;
+    text-align: center;
+
+    height: 66%;
+    width: 100%;
+  }
+
+  .vertical-divider .center-element {
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .vertical-divider .center-element:before,
+  .center-element:after {
+    position: absolute;
+    content: '';
+    width: 1px;
+    left: 50%;
+    border-left: 1px solid black;
+  }
+  .vertical-divider .center-element:before {
+    bottom: 50%;
+    top: 0;
+    margin-bottom: 20px;
+  }
+  .vertical-divider .center-element:after {
+    top: 50%;
+    bottom: 0;
+    margin-top: 20px;
   }
 }
 

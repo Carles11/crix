@@ -1,6 +1,5 @@
 import React from 'react'
 
-import Divider from '../components/Divider'
 import ContactAdress from '../components/ContactAdress'
 import ContactForm from '../components/ContactForm'
 import '../css/contact.css'
@@ -21,13 +20,16 @@ const Contact = () => {
               para enviarme un email. De cualquier forma me pondré en contacto
               contigo lo antes posible.
             </p>
-
-            <ContactAdress />
           </div>
         </section>
-        <Divider />
       </div>{' '}
-      <ContactForm />
+      <div className="contact-form-container">
+        <ContactAdress />
+        <div class="vertical-divider">
+          <div class="center-element">CriX</div>
+        </div>
+        <ContactForm />
+      </div>
     </div>
   )
 }
