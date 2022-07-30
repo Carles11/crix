@@ -6,13 +6,9 @@ const ContactAdress = () => {
   return (
     <div className="address-content">
       <h4 className="address-highlight">
-        Elbestr. 15
+        Carles del Río Francés
         <br />
-        60329 Frankfurt am Main
-        <br />
-        Germany
-        <br />
-        Tel.: 01782871785
+        Whatsapp: +49-01782871785
         <br />
         E-Mail: <a href="mailto:carles@crix.design"> carles@crix.design</a>
       </h4>

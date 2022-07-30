@@ -64,7 +64,7 @@ class ContactForm extends Component {
         onSubmit={(e) => this.formSubmit(e)}
       >
         <div className="contact-input-group">
-          <label className="contact-label">Name</label>
+          <label className="contact-label">Nombre</label>
           <input
             name="name"
             type="text"
@@ -84,7 +84,7 @@ class ContactForm extends Component {
           />{' '}
         </div>{' '}
         <div className="contact-input-group">
-          <label className="contact-label">Subject</label>
+          <label className="contact-label">Tema</label>
           <input
             name="subject"
             type="text"
@@ -94,7 +94,7 @@ class ContactForm extends Component {
           />{' '}
         </div>
         <div className="contact-input-group">
-          <label className="contact-label">Your message</label>
+          <label className="contact-label">Tu mensaje</label>
           <textarea
             name="message"
             type="text"
