@@ -25,11 +25,11 @@ const Contact = () => {
       </div>{' '}
       <div className="contact-form-container">
         <ContactAdress />
-        <div class="horizontal-divider">
-          <hr class="brace" />
+        <div className="horizontal-divider">
+          <hr className="brace" />
         </div>
-        <div class="vertical-divider">
-          <div class="center-element">CriX</div>
+        <div className="vertical-divider">
+          <div className="center-element">CriX</div>
         </div>
         <ContactForm />
       </div>

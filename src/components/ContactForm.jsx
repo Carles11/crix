@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 
 import Button from '../components/Button'
-
-import axios from 'axios'
+import emailSend from '../views/utils/email.js'
 import '../css/contactForm.css'
 
 class ContactForm extends Component {
@@ -33,15 +32,9 @@ class ContactForm extends Component {
     const { name, subject, email, message } = this.state
 
     const data = { name, subject, email, message }
-    axios
-      .post('http://localhost:4444/crix-mail-api/index.js', data)
-      .then((res) => {
-        this.setState({ buttonText: 'Enviado!', sent: true }, this.resetForm())
-      })
-      .catch(() => {
-        console.log('Mensaje no enviado.')
-      })
+    emailSend(data)
   }
+
   resetForm() {
     this.setState({
       name: '',
@@ -61,7 +54,7 @@ class ContactForm extends Component {
     return (
       <form
         className="contact-form contact-flex"
-        onSubmit={(e) => this.formSubmit(e)}
+        // onSubmit={(e) => this.formSubmit(e)}
       >
         <div className="contact-input-group">
           <label className="contact-label">Nombre</label>
