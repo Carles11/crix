@@ -34,6 +34,7 @@ const Landing = () => {
             </Button>
           </div>
         </div>
+        <h4 className="skills-block">Educación y competencias</h4>
       </div>
     </div>
   )

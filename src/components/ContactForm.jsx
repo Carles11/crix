@@ -16,11 +16,10 @@ class ContactForm extends Component {
       buttonText: 'Envía',
     }
   }
-  handleChange(e) {
+  handleChange = (e) => {
     const {
       target: { name, value },
     } = e
-    console.log('addintotostate...----> ', name, value)
     this.setState({ [name]: value })
   }
 
@@ -32,6 +31,7 @@ class ContactForm extends Component {
     const { name, subject, email, message } = this.state
 
     const data = { name, subject, email, message }
+    console.log('formSubmit...----> ', data)
     emailSend(data)
   }
 
@@ -44,7 +44,9 @@ class ContactForm extends Component {
       buttonText: 'Message Sent',
     })
   }
-  handleSubmit(e) {
+  handleSubmit = (e) => {
+    console.log('handleSubmit...----> ')
+
     this.formSubmit(e)
     this.resetForm()
   }
@@ -54,7 +56,7 @@ class ContactForm extends Component {
     return (
       <form
         className="contact-form contact-flex"
-        // onSubmit={(e) => this.formSubmit(e)}
+        onSubmit={(e) => this.formSubmit(e)}
       >
         <div className="contact-input-group">
           <label className="contact-label">Nombre</label>
