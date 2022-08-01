@@ -1,5 +1,5 @@
 import React from 'react'
-import '../css/skillsBlock.css'
+import '../../css/skillsBlock.css'
 
 const Skills = () => {
   return (

@@ -1,9 +1,35 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import Button from '../components/Button'
+import SkillsBlock from '../components/skillsBlock'
 import '../css/landing.css'
 
 const Landing = () => {
+  const HoverableDiv = ({ handleMouseOver, handleMouseOut }) => {
+    return (
+      <h4
+        className="skills-block"
+        onMouseOver={handleMouseOver}
+        onMouseOut={handleMouseOut}
+      >
+        Educación y competencias
+      </h4>
+    )
+  }
+
+  const HoverSkills = () => {
+    return <SkillsBlock />
+  }
+
+  const [isHovering, setIsHovering] = useState(false)
+  const handleMouseOver = () => {
+    setIsHovering(true)
+  }
+
+  const handleMouseOut = () => {
+    setIsHovering(false)
+  }
+
   return (
     <div className="landing-img-bg">
       <div className="landing-body-wrapper">
@@ -34,7 +60,11 @@ const Landing = () => {
             </Button>
           </div>
         </div>
-        <h4 className="skills-block">Educación y competencias</h4>
+        <HoverableDiv
+          handleMouseOver={handleMouseOver}
+          handleMouseOut={handleMouseOut}
+        />
+        {isHovering && <HoverSkills />}
       </div>
     </div>
   )

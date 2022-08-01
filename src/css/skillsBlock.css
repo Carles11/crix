@@ -11,3 +11,7 @@
   margin-bottom: 40px;
   background-color: white;
 }
+.skills-table {
+  display: flex;
+  flex-direction: row;
+}
