@@ -8,11 +8,11 @@ const Skills = () => {
       <table class="table-style">
         <tr>
           <td>Javascript</td>
-          <td>⭐⭐⭐⭐⭐</td>
+          <td>⭐⭐⭐⭐</td>
         </tr>
         <tr>
           <td>React</td>
-          <td>⭐⭐⭐⭐⭐</td>
+          <td>⭐⭐⭐⭐</td>
         </tr>
         <tr>
           <td>HTML</td>
