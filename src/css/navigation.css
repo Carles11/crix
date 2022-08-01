@@ -14,6 +14,29 @@
   color: white;
 }
 
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  text-align: right;
+  padding-right: 20px;
+  color: silver;
+  text-decoration: none;
+  cursor: pointer;
+  line-height: 0.1;
+}
+
+.mobile-menu-cros {
+  margin-left: 120px;
+  margin-top: 40px;
+}
+
+.mobile-menu-link {
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 650px) {
   .menu-items-block {
     margin-right: 0;
