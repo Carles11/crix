@@ -88,7 +88,7 @@ h5 {
 h6 {
   font-family: 'Advent Pro', sans-serif;
   line-height: 1;
-  font-weight: 100;
+  font-weight: 200;
 }
 
 h1 {
@@ -113,7 +113,7 @@ h5 {
   font-size: calc(18px + (9 - 5) * ((100vw - 600px) / (1600 - 900)));
 }
 h6 {
-  font-size: calc(13px + (7 - 3) * ((100vw - 600px) / (1600 - 900)));
+  font-size: calc(17px + (8 - 4) * ((100vw - 600px) / (1600 - 900)));
 }
 
 ul {

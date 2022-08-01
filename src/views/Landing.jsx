@@ -5,20 +5,16 @@ import SkillsBlock from '../components/skillsBlock'
 import '../css/landing.css'
 
 const Landing = () => {
-  const HoverableDiv = ({ handleMouseOver, handleMouseOut }) => {
+  const HoverableDiv = ({ handleMouseOver }) => {
     return (
-      <h4
-        className="skills-block"
-        onMouseOver={handleMouseOver}
-        onMouseOut={handleMouseOut}
-      >
+      <h4 className="skills-block" onMouseOver={handleMouseOver}>
         Educación y competencias
       </h4>
     )
   }
 
-  const HoverSkills = () => {
-    return <SkillsBlock />
+  const HoverSkills = ({ handleClick }) => {
+    return <SkillsBlock handleClick={handleClick} />
   }
 
   const [isHovering, setIsHovering] = useState(false)
@@ -26,12 +22,15 @@ const Landing = () => {
     setIsHovering(true)
   }
 
-  const handleMouseOut = () => {
+  // const handleMouseOut = () => {
+  //   setIsHovering(false)
+  // }
+  const handleClick = () => {
     setIsHovering(false)
   }
 
   return (
-    <div className="landing-img-bg">
+    <div className="landing-img-bg" onClick={handleClick}>
       <div className="landing-body-wrapper">
         <div className="main-titles-align">
           <h1 className="main-title">Carles del Río</h1>
@@ -60,12 +59,9 @@ const Landing = () => {
             </Button>
           </div>
         </div>
-        <HoverableDiv
-          handleMouseOver={handleMouseOver}
-          handleMouseOut={handleMouseOut}
-        />
-        {isHovering && <HoverSkills />}
       </div>
+      <HoverableDiv handleMouseOver={handleMouseOver} />
+      {isHovering && <HoverSkills handleClick={handleClick} />}
     </div>
   )
 }

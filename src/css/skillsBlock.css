@@ -9,6 +9,18 @@
   background-color: var(--light-grey);
   opacity: 0.9;
 }
+
+.cross:before {
+  content: 'X';
+  position: absolute;
+  top: 3%;
+  right: 3%;
+}
+.cross:hover {
+  cursor: pointer;
+  scale: 1.2;
+  transition: scale 2 ease-out;
+}
 .skills-table {
   display: flex;
   flex-direction: row;

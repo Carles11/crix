@@ -4,7 +4,7 @@ import '../../css/skillsBlock.css'
 const Education = () => {
   return (
     <div className="column-2a">
-      <h2>Education</h2>
+      <h5>Education</h5>
       <table className="table-style">
         <tr>
           <td>Barcelona Code School Bootcamp</td>

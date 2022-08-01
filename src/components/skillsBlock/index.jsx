@@ -5,13 +5,14 @@ import Skills from './Skills'
 
 import '../../css/skillsBlock.css'
 
-const SkillsBlock = () => {
+const SkillsBlock = ({ handleClick }) => {
   return (
     <div className="skills-container">
-    <div className="skills-table">
-      <Education />
-      <Skills />
-    </div>
+      <div className="cross" onClick={handleClick} />
+      <div className="skills-table">
+        <Education />
+        <Skills />
+      </div>
     </div>
   )
 }
