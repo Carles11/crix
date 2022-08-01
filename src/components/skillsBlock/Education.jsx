@@ -7,28 +7,20 @@ const Education = () => {
       <h2>Education</h2>
       <table class="table-style">
         <tr>
-          <td>Barnacle Bootcamp</td>
-          <td>2020</td>
+          <td>Barcelona Code School Bootcamp</td>
+          <td>2019</td>
         </tr>
         <tr>
-          <td>Seaweed University</td>
-          <td>2019-2020</td>
+          <td>SAE Audio Engineering School</td>
+          <td>2015</td>
         </tr>
         <tr>
-          <td>Highwater High School</td>
-          <td>2018-2019</td>
+          <td>Eventmanager IHK Herrenhausen</td>
+          <td>2013"</td>
         </tr>
         <tr>
-          <td>Middle-Sized Pond Middle School</td>
-          <td>2017-2018</td>
-        </tr>
-        <tr>
-          <td>Minnow Elementary School</td>
-          <td>2016-2017</td>
-        </tr>
-        <tr>
-          <td>Phytoplankton Preschool</td>
-          <td>2015-2016</td>
+          <td>Diplomado en Turismo</td>
+          <td>1996-1999</td>
         </tr>
       </table>
     </div>
