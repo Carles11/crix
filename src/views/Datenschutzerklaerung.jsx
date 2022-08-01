@@ -1,81 +1,14 @@
 import React from 'react'
-import styled from 'styled-components'
 import { Link } from 'react-router-dom'
-
-const Title = styled.h1`
-s  font-size: 2.6em;
-  text-align: center;
-  margin: auto;
-  color: silver;
-  margin-top: 0;
-  padding-top: 125px;
-`
-const Subtitle = styled.h2`
-  font-size: 2em;
-  text-align: center;
-  margin: auto;
-  color: silver;
-  padding-top: 4%;
-  padding-bottom: 2%;
-`
-const Grey_block = styled.section`
-  background-color: #f4f4f4;
-  color: silver;
-  min-height: 750px;
-  position: relative;
-  width: 100%;
-  height: 100%;
-  @media only screen and (max-width: 600px) {
-    min-height: 450px;
-  }
-  @media only screen and (max-width: 800px) {
-    min-height: 500px;
-  }
-`
-const White_block = styled.section`
-  background-color: white;
-  color: silver;
-  min-height: 650px;
-  position: relative;
-  width: 100%;
-  @media only screen and (max-width: 600px) {
-    min-height: 450px;
-  }
-  @media only screen and (max-width: 800px) {
-    min-height: 500px;
-  }
-`
-const Article = styled.article`
-s  font-size: 1.2em;
-  text-align: center;
-  margin: auto;
-  color: silver;
-  max-width: 60%;
-  text-align: justify;
-  letter-spacing: 3px;
-  line-height: 1.8;
-
-  @media only screen and (max-width: 600px) {
-    font-size: 0.8em;
-    max-width: 90%;
-    letter-spacing: 1px;
-    line-height: 1;
-  }
-  @media only screen and (max-width: 800px) {
-    font-size: 1em;
-    max-width: 75%;
-    letter-spacing: 2px;
-    line-height: 1.3;
-  }
-`
+import '../css/privacyConsent.css'
 
 const Datenschutzerklaerung = () => {
   return (
     <div>
-      <Title>DATENSCHUTZERKLÄRUNG</Title>
-      <White_block>
-        <Subtitle>Allgemeine Datenschutzerklärung</Subtitle>
-        <Article>
+      <h1 className="privacy-title">DATENSCHUTZERKLÄRUNG</h1>
+      <div className="privacy-white-block">
+        <h2 className="privacy-subtitle">Allgemeine Datenschutzerklärung</h2>
+        <article className="privacy-article">
           Durch die Nutzung unserer Website erklären Sie sich mit der Erhebung,
           Verarbeitung und Nutzung von Daten gemäß der nachfolgenden
           Beschreibung einverstanden. Unsere Website kann grundsätzlich ohne
@@ -86,11 +19,13 @@ const Datenschutzerklaerung = () => {
           Daten, insbesondere Name, Adresse oder E-Mail-Adresse werden soweit
           möglich auf freiwilliger Basis erhoben. Ohne Ihre Einwilligung erfolgt
           keine Weitergabe der Daten an Dritte.
-        </Article>
-      </White_block>
-      <Grey_block>
-        <Subtitle>Datenschutzerklärung für Google Analytics</Subtitle>
-        <Article>
+        </article>
+      </div>
+      <div className="privacy-grey-block">
+        <h2 className="privacy-subtitle">
+          Datenschutzerklärung für Google Analytics
+        </h2>
+        <article className="privacy-article">
           Unsere Website verwendet Google Analytics, einen Webanalysedienst von
           Google Inc., 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA.
           Zur Deaktivierung von Google Analytiscs stellt Google unter{' '}
@@ -123,8 +58,8 @@ const Datenschutzerklaerung = () => {
             {' '}
             http://www.google.com/intl/de/analytics/privacyoverview.html.
           </Link>
-        </Article>
-      </Grey_block>
+        </article>
+      </div>
     </div>
   )
 }
