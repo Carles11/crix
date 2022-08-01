@@ -21,6 +21,8 @@
   --error-red: #db3069;
   --alert-yellow: #fada5e;
 
+  --borderRadius: 4px;
+
   --minWidthDesktopHuge: 1920px;
   --minWidthDesktopExtraLargePlus: 1670px;
   --minWidthDesktopExtraLarge: 1440px;

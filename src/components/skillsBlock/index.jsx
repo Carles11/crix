@@ -7,9 +7,11 @@ import '../../css/skillsBlock.css'
 
 const SkillsBlock = () => {
   return (
+    <div className="skills-container">
     <div className="skills-table">
       <Education />
       <Skills />
+    </div>
     </div>
   )
 }

@@ -1,17 +1,18 @@
 .column-2a {
   float: left;
   width: 45%;
-  padding: 40px;
-  padding-left: 70px;
-  padding-right: 70px;
-  padding-bottom: 60px;
-  height: 450px;
-  margin: 30px;
-  margin-right: 30px;
-  margin-bottom: 40px;
+  height: fit-content;
   background-color: white;
+}
+.skills-container {
+  position: absolute;
+  bottom: 8% !important;
+  right: 5% !important;
 }
 .skills-table {
   display: flex;
   flex-direction: row;
+  border: 1px solid var(--darkGrey);
+  border-radius: var(--borderRadius);
+  padding: 1rem;
 }

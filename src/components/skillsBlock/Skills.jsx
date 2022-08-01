@@ -3,11 +3,15 @@ import '../../css/skillsBlock.css'
 
 const Skills = () => {
   return (
-    <div class="column-2a">
+    <div className="column-2a">
       <h2>Skills</h2>
-      <table class="table-style">
+      <table className="table-style">
         <tr>
           <td>Javascript</td>
+          <td>⭐⭐⭐⭐</td>
+        </tr>
+        <tr>
+          <td>Node.js</td>
           <td>⭐⭐⭐⭐</td>
         </tr>
         <tr>

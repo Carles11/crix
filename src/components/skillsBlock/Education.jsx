@@ -3,9 +3,9 @@ import '../../css/skillsBlock.css'
 
 const Education = () => {
   return (
-    <div class="column-2a">
+    <div className="column-2a">
       <h2>Education</h2>
-      <table class="table-style">
+      <table className="table-style">
         <tr>
           <td>Barcelona Code School Bootcamp</td>
           <td>2019</td>
