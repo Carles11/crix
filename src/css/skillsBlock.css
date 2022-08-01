@@ -1,13 +1,13 @@
 .column-2a {
-  float: left;
   width: 45%;
   height: fit-content;
-  background-color: white;
 }
 .skills-container {
   position: absolute;
   bottom: 8% !important;
   right: 5% !important;
+  background-color: var(--light-grey);
+  opacity: 0.9;
 }
 .skills-table {
   display: flex;
@@ -15,4 +15,15 @@
   border: 1px solid var(--darkGrey);
   border-radius: var(--borderRadius);
   padding: 1rem;
+}
+
+@media only screen and (max-width: 677px) {
+  .skills-table {
+    flex-direction: column;
+
+    padding: 0.2rem;
+  }
+  .column-2a {
+    width: 100%;
+  }
 }

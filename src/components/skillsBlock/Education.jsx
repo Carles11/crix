@@ -16,7 +16,7 @@ const Education = () => {
         </tr>
         <tr>
           <td>Eventmanager IHK Herrenhausen</td>
-          <td>2013"</td>
+          <td>2013</td>
         </tr>
         <tr>
           <td>Diplomado en Turismo</td>
