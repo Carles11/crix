@@ -35,11 +35,11 @@ const Skills = () => {
         <h5>Graphicdesign Skills</h5>
         <tr>
           <td>Adobe inDesign</td>
-          <td>⭐⭐⭐⭐⭐</td>
+          <td>⭐⭐⭐⭐</td>
         </tr>
         <tr>
           <td>Adobe Photoshop</td>
-          <td>⭐⭐⭐⭐</td>
+          <td>⭐⭐⭐</td>
         </tr>
         <tr>
           <td>Adobe Acrobat DC</td>

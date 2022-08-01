@@ -71,7 +71,6 @@ const Article = styled.article`
 const Impressum = () => {
   return (
     <div>
-      <Header />
       <Title>IMPRESSUM</Title>
       <White_block>
         <Subtitle>Anbieter</Subtitle>
