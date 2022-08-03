@@ -1,6 +1,7 @@
 .column-2a {
   width: 45%;
   height: fit-content;
+  margin: 0 0.5rem;
 }
 .skills-container {
   position: absolute;
@@ -23,7 +24,7 @@
 }
 .skills-table {
   display: flex;
-  flex-direction: row;
+  flex-direction: row reverse;
   border: 1px solid var(--darkGrey);
   border-radius: var(--borderRadius);
   padding: 1rem;
@@ -31,7 +32,7 @@
 
 @media only screen and (max-width: 677px) {
   .skills-table {
-    flex-direction: column;
+    flex-direction: column reverse;
 
     padding: 0.2rem;
   }

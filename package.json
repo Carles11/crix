@@ -69,5 +69,8 @@
   "bugs": {
     "url": "https://github.com/Carles11/crix/issues"
   },
-  "homepage": "https://crix.design"
+  "homepage": "https://crix.design",
+  "eslintIgnore": [
+    "dictionary.js"
+  ]
 }

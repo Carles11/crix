@@ -4,23 +4,19 @@ import '../../css/skillsBlock.css'
 const Education = () => {
   return (
     <div className="column-2a">
-      <h5>Education</h5>
+      <h5>Diseño gráfico</h5>
       <table className="table-style">
         <tr>
-          <td>Barcelona Code School Bootcamp</td>
-          <td>2019</td>
+          <td>Adobe inDesign</td>
+          <td>⭐⭐⭐⭐</td>
         </tr>
         <tr>
-          <td>SAE Audio Engineering School</td>
-          <td>2015</td>
+          <td>Adobe Photoshop</td>
+          <td>⭐⭐⭐</td>
         </tr>
         <tr>
-          <td>Eventmanager IHK Herrenhausen</td>
-          <td>2013</td>
-        </tr>
-        <tr>
-          <td>Diplomado en Turismo</td>
-          <td>1996-1999</td>
+          <td>Adobe Acrobat DC</td>
+          <td>⭐⭐⭐⭐⭐</td>
         </tr>
       </table>
     </div>
