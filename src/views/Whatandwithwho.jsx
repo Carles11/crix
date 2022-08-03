@@ -4,29 +4,26 @@ import React from 'react'
 import Divider from '../components/Divider'
 import '../css/whatandwithwho.css'
 
-const Whatandwithwho = () => {
+const Whatandwithwho = (props) => {
+  const { DIC } = props
+
   return (
     <main>
       <div className="what-content">
         <section className="what-content_section">
-          <h1>Qué hago</h1>
+          <h1>{DIC.WHATIDO_SECTION_ONE_TITLE}</h1>
           <div className="what-content_article">
-            <h3 className="what-subtitle">Web</h3>
-            <p>
-              Desarrollo páginas web y software en Javascript al 100%. Eso me
-              permite darle total flexibilidad a tu imaginación. O casi. Pero si
-              lo has visto, se puede hacer.
-              <br />
-              Con WordPress desarrollo páginas más sencillas y de menor costo.
-            </p>
-            <p>Manejo gestores de portales y softwares de Instituciones.</p>
+            <h3 className="what-subtitle">{DIC.WHATIDO_SECTION_ONE_SUB_ONE}</h3>
+            <p>{DIC.WHATIDO_SECTION_ONE_DESC_ONE}</p>
+            <p>{DIC.WHATIDO_SECTION_ONE_DESC_ONE_bis}</p>
 
-            <h3 className="what-subtitle">Diseño gráfico</h3>
+            <h3 className="what-subtitle">{DIC.WHATIDO_SECTION_ONE_SUB_TWO}</h3>
             <p>
-              Edito folletos y PDFs multipágina, pósters y ediciones de
-              cualquier tipo. Tras tu aprovación, envío directamente el diseño a
-              una imprenta digital y lo recibes en tu puerta.{' '}
-              <a href="/hovear-con-list-de-países">Envíos a toda Europa</a>.
+              {DIC.WHATIDO_SECTION_ONE_DESC_TWO}
+              <a href="/hovear-con-list-de-países">
+                {DIC.WHATIDO_SECTION_ONE_DESC_TWO_bis}
+              </a>
+              .
             </p>
           </div>
         </section>
@@ -35,10 +32,10 @@ const Whatandwithwho = () => {
 
       <section className="what-content_bottom">
         <div className="what-content_section">
-          <h1 className="subtitle-bottom">Con quién</h1>
+          <h1 className="subtitle-bottom">{DIC.WHATIDO_SECTION_TWO_TITLE}</h1>
           <div className="what-content_article">
             <h3 className="what-subtitle subtitle-bottom">
-              Instituciones culturales y escuelas
+              {DIC.WHATIDO_SECTION_TWO_SUB_ONE}{' '}
             </h3>
             <ul>
               <li>Instituto Cervantes</li>
@@ -46,7 +43,9 @@ const Whatandwithwho = () => {
               <li>Kultusministerium Hessen</li>
             </ul>
 
-            <h3 className="what-subtitle subtitle-bottom">Empresas</h3>
+            <h3 className="what-subtitle subtitle-bottom">
+              {DIC.WHATIDO_SECTION_TWO_SUB_TWO}
+            </h3>
             <ul>
               <li>TheCirculArt</li>
               <li>Jordi Arjó, psicólogia.</li>

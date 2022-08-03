@@ -13,5 +13,15 @@
   "NAV_ABOUT_US": "About us",
   "NAV_CONTACT": "Contact",
   "NOTFOUND": "The page you are looking for does not exist here.",
-  "NOTFOUND_TXT": "Oups! Wrong paht. Try again."
+  "NOTFOUND_TXT": "Oups! Wrong paht. Try again.",
+  "WHATIDO_SECTION_ONE_TITLE": "What do I do?",
+  "WHATIDO_SECTION_ONE_DESC_ONE": "Desarrollo páginas web y software en Javascript al 100%. Eso me permite darle total flexibilidad a tu imaginación. O casi. Pero si lo has visto, se puede hacer. Con WordPress desarrollo páginas más sencillas y de menor costo.",
+  "WHATIDO_SECTION_ONE_DESC_ONE_bis": "Manejo gestores de portales y softwares de Instituciones.",
+  "WHATIDO_SECTION_ONE_DESC_TWO": "Edito folletos y PDFs multipágina, pósters y ediciones de cualquier tipo. Tras tu aprovación, envío directamente el diseño a  una imprenta digital y lo recibes en tu puerta.",
+  "WHATIDO_SECTION_ONE_DESC_TWO_bis": "Envíos a toda Europa",
+  "WHATIDO_SECTION_ONE_SUB_ONE": "Web",
+  "WHATIDO_SECTION_ONE_SUB_TWO": "Grafikdesign",
+  "WHATIDO_SECTION_TWO_TITLE": "¿Con quién?",
+  "WHATIDO_SECTION_TWO_SUB_ONE": "Instituciones culturales y escuelas",
+  "WHATIDO_SECTION_TWO_SUB_TWO": "Empresas"
 }
