@@ -6,11 +6,10 @@ import '../css/landing.css'
 
 const Landing = (props) => {
   const { DIC } = props
-  console.log('dididi', DIC)
   const HoverableDiv = ({ handleMouseOver }) => {
     return (
       <h4 className="skills-block" onMouseOver={handleMouseOver}>
-        Educación y competencias
+        {DIC.BTN_SKILLS}
       </h4>
     )
   }
@@ -40,7 +39,7 @@ const Landing = (props) => {
             className="main-subtitle"
             content=" Web Development | Graphic design"
           >
-            Web Development | Graphic design
+            {DIC.LANDING_SUBTITLE}
           </h4>
           <div className="landing-buttons-wrapper">
             <Button
@@ -49,7 +48,7 @@ const Landing = (props) => {
               variant="light"
               size="lg"
             >
-              CONTACTA
+              {DIC.BTN_CONTACT}
             </Button>
             <Button
               elementType="Link"
@@ -57,7 +56,7 @@ const Landing = (props) => {
               variant="primary"
               size="lg"
             >
-              SOBRE CARLES
+              {DIC.BTN_ABOUT}
             </Button>
           </div>
         </div>
