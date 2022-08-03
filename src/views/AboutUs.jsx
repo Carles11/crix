@@ -4,36 +4,20 @@ import Portraits from '../components/Portraits'
 import Divider from '../components/Divider'
 import '../css/aboutUs.css'
 
-const AboutUs = () => {
+const AboutUs = (props) => {
+  const { DIC } = props
   return (
     <main>
       <div className="about-content">
         <section className="about-content_section">
-          <h1>Quién es Carles</h1>
+          <h1>{DIC.ABOUT_TITLE}</h1>
           <div className="about-content_article">
-            <h3 className="about-subtitle">Los orígenes</h3>
-            <p>
-              Después de algo más de once años trabajando como ingeniero de
-              sonido y de eventos para el Instituto Cervantes de Frankfurt en
-              Alemania, decidí emprender el camino de la programación. A finales
-              del 2017 profesionalicé mis conocimientos en la Barcelona Code
-              School, donde consumé los estudios como "Javascript Fullstack
-              Developer".
-            </p>
+            <h3 className="about-subtitle">{DIC.ABOUT_SUB_ONE}</h3>
+            <p>{DIC.ABOUT_DESC_ONE}</p>
 
-            <h3 className="about-subtitle">Actualmente</h3>
-            <p>
-              Desde entonces me he dedicado al 100% a la programación trabajando
-              para clientes privados y como programador para start-ups. Durante
-              mi etapa del Instituto Cervantes adquirí además conocimientos
-              sobre el manejo de gestores de portales y softwares propios
-              institucionales. Habiendo recibido previo acceso al software,
-              ofrezco un mantenimiento 100% de los mismos.
-            </p>
-            <p>
-              Ayudo a crear páginas web increíbles y en general cualquier tipo
-              de soportets gráficos para promoción como folletos, pósters o programas.
-            </p>
+            <h3 className="about-subtitle">{DIC.ABOUT_SUB_TWO}</h3>
+            <p>{DIC.ABOUT_DESC_TWO}</p>
+            <p>{DIC.ABOUT_DESC_TWO_bis}</p>
           </div>
         </section>
       </div>

@@ -1,4 +1,10 @@
 {
+  "ABOUT_TITLE": "Quién es Carles",
+  "ABOUT_DESC_ONE": "Después de algo más de once años trabajando como ingeniero de sonido y de eventos para el Instituto Cervantes de Frankfurt en Alemania, decidí emprender el camino de la programación. A finales del 2017 profesionalicé mis conocimientos en la Barcelona Code School, donde consumé los estudios como Javascript Fullstack Developer.",
+  "ABOUT_DESC_TWO": "Desde entonces me he dedicado al 100% a la programación trabajando  para clientes privados y como programador para start-ups. Durante mi etapa del Instituto Cervantes adquirí además conocimientos sobre el manejo de gestores de portales y softwares propios institucionales. Habiendo recibido previo acceso al software, ofrezco un mantenimiento 100% de los mismos.",
+  "ABOUT_DESC_TWO_bis": " Ayudo a crear páginas web increíbles y en general cualquier tipo de soportets gráficos para promoción como folletos, pósters o programas.",
+  "ABOUT_SUB_ONE": "Los orígenes",
+  "ABOUT_SUB_TWO": "Actualmente",
   "BTN_CONTACT": "CONTACTA",
   "BTN_ABOUT": "SOBRE CARLES",
   "BTN_SKILLS": "Competencias técnicas",
