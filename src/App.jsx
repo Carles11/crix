@@ -8,7 +8,6 @@ import AllRoutes from './Routes'
 
 const DIC = getDictionary()
 
-console.log('DIDIDI', DIC)
 const App = (props) => {
   return (
     <Fragment>

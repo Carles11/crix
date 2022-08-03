@@ -8,13 +8,14 @@ import AboutUs from './views/AboutUs'
 import Datenschutzerklaerung from './views/Datenschutzerklaerung'
 import Impressum from './views/Impressum'
 
-const AllRoutes = () => {
+const AllRoutes = (props) => {
+  const { DIC } = props
   return (
     <Routes onChange={() => window.scrollTo(0, 0)}>
-      <Route exact path="/" element={<Landing />} />
-      <Route path="/whatandwithwho" element={<Whatandwithwho />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="/about-us" element={<AboutUs />} />
+      <Route exact path="/" element={<Landing DIC={DIC} />} />
+      <Route path="/whatandwithwho" element={<Whatandwithwho DIC={DIC} />} />
+      <Route path="/contact" element={<Contact DIC={DIC} />} />
+      <Route path="/about-us" element={<AboutUs DIC={DIC} />} />
       <Route
         path="/datenschutzerklaerung"
         element={<Datenschutzerklaerung />}

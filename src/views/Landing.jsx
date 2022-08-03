@@ -4,7 +4,9 @@ import Button from '../components/Button'
 import SkillsBlock from '../components/skillsBlock'
 import '../css/landing.css'
 
-const Landing = () => {
+const Landing = (props) => {
+  const { DIC } = props
+  console.log('dididi', DIC)
   const HoverableDiv = ({ handleMouseOver }) => {
     return (
       <h4 className="skills-block" onMouseOver={handleMouseOver}>
