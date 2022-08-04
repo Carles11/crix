@@ -8,6 +8,10 @@
   cursor: pointer;
   line-height: 0.2;
 }
+
+.menu-items-container h6 {
+  margin: 0 0.8rem;
+}
 .menu-items-block {
   margin-right: 0.5rem;
   align-self: center;

@@ -13,7 +13,7 @@ class ContactForm extends Component {
       subject: '',
       message: '',
       sent: false,
-      buttonText: 'Envía',
+      buttonText: props.DIC.BTN_SEND,
     }
   }
   handleChange = (e) => {
@@ -26,7 +26,7 @@ class ContactForm extends Component {
   formSubmit(e) {
     e.preventDefault()
     this.setState({
-      buttonText: '...enviando',
+      buttonText: this.props.DIC.BTN_SENDING,
     })
     const { name, subject, email, message } = this.state
 
@@ -41,7 +41,7 @@ class ContactForm extends Component {
       message: '',
       email: '',
       subject: '',
-      buttonText: 'Message Sent',
+      buttonText: this.props.DIC.BTN_SENT,
     })
   }
   handleSubmit = (e) => {
@@ -52,6 +52,7 @@ class ContactForm extends Component {
   }
   render() {
     const { name, subject, email, message, buttonText } = this.state
+    const { DIC } = this.props
 
     return (
       <form
@@ -61,7 +62,7 @@ class ContactForm extends Component {
         <div className="contact-input-group">
           <label className="contact-label">Nombre</label>
           <input
-            name="name"
+            name={DIC.CONTACTFORM_NAME}
             type="text"
             value={name}
             onChange={this.handleChange}
@@ -71,7 +72,7 @@ class ContactForm extends Component {
         <div className="contact-input-group">
           <label className="contact-label">E-mail</label>
           <input
-            name="email"
+            name={DIC.CONTACTFORM_EMAIL}
             type="text"
             value={email}
             onChange={this.handleChange}
@@ -81,7 +82,7 @@ class ContactForm extends Component {
         <div className="contact-input-group">
           <label className="contact-label">Tema</label>
           <input
-            name="subject"
+            name={DIC.CONTACTFORM_SUBJECT}
             type="text"
             value={subject}
             onChange={this.handleChange}
@@ -91,7 +92,7 @@ class ContactForm extends Component {
         <div className="contact-input-group">
           <label className="contact-label">Tu mensaje</label>
           <textarea
-            name="message"
+            name={DIC.CONTACTFORM_MESSAGE}
             type="text"
             value={message}
             onChange={this.handleChange}

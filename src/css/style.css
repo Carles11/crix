@@ -149,14 +149,11 @@ nav {
 a {
   color: white;
   text-decoration: none;
-  font-family: 'Montserrat';
   cursor: pointer;
   display: inline-block;
   position: relative;
   width: fit-content;
   text-decoration: none;
-  margin: 0 25px;
-  padding-bottom: 4px;
 }
 a:hover {
   color: var(--secondaryColor) !important;

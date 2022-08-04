@@ -4,21 +4,22 @@ import ContactAdress from '../components/ContactAdress'
 import ContactForm from '../components/ContactForm'
 import '../css/contact.css'
 
-const Contact = () => {
+const Contact = (props) => {
+  const { DIC } = props
+
   return (
     <div className="contact">
       <div className="contact-content">
         <section className="contact-content_section">
-          <h1 className="contact-title"> Contacta</h1>
+          <h1 className="contact-title">{DIC.CONTACT_TITLE}</h1>
           <div className="contact-content_article">
-            <h3 className="contact-subtitle">Hablemos</h3>
+            <h3 className="contact-subtitle">{DIC.CONTACT_SUB}</h3>
             <p>
-              Deja tu mensaje a través del formulario más abajo o pincha{' '}
+              {DIC.CONTACT_TEXT_ONE}{' '}
               <a href="mailto:carles@crix.design" target="_blank">
-                en este enlace{' '}
+                {DIC.CONTACT_TEXT_TWO}{' '}
               </a>
-              para enviarme un email. De cualquier forma me pondré en contacto
-              contigo lo antes posible.
+              {DIC.CONTACT_TEXT_THREE}
             </p>
           </div>
         </section>
@@ -31,7 +32,7 @@ const Contact = () => {
         <div className="vertical-divider">
           <div className="center-element">CriX</div>
         </div>
-        <ContactForm />
+        <ContactForm DIC={DIC} />
       </div>
     </div>
   )
