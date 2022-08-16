@@ -92,7 +92,7 @@ h6 {
 }
 
 h1 {
-  font-size: calc(45px + (45 - 35) * ((100vw - 600px) / (1600 - 900)));
+  font-size: calc(80px + (45 - 35) * ((100vw - 600px) / (1600 - 900)));
 }
 
 h2 {
@@ -147,13 +147,8 @@ nav {
 }
 
 a {
-  color: white;
   text-decoration: none;
   cursor: pointer;
-  display: inline-block;
-  position: relative;
-  width: fit-content;
-  text-decoration: none;
 }
 a:hover {
   color: var(--secondaryColor) !important;
@@ -162,11 +157,12 @@ a:hover {
 a:after {
   content: '';
   position: absolute;
-  width: 100%;
+  width: 10%;
   transform: scaleX(0);
   height: 2px;
-  bottom: 0;
-  left: 0;
+  margin-top: 2px;
+  /* bottom: 0;
+  left: 0; */
   background-color: var(--secondaryLightColor);
   transform-origin: bottom right;
   transition: transform 0.5s ease-out;

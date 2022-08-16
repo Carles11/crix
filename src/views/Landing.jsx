@@ -34,7 +34,7 @@ const Landing = (props) => {
     <div className="landing-img-bg" onClick={handleClick}>
       <div className="landing-body-wrapper">
         <div className="main-titles-align">
-          <h1 className="main-title">Carles del Río</h1>
+          <h1 className="main-title">Carles del Río Francés</h1>
           <h4
             className="main-subtitle"
             content=" Web Development | Graphic design"

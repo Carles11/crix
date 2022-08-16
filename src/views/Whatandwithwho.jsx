@@ -19,7 +19,7 @@ const Whatandwithwho = (props) => {
 
             <h3 className="what-subtitle">{DIC.WHATIDO_SECTION_ONE_SUB_TWO}</h3>
             <p>
-              {DIC.WHATIDO_SECTION_ONE_DESC_TWO}
+              {DIC.WHATIDO_SECTION_ONE_DESC_TWO}{' '}
               <a href="/hovear-con-list-de-países">
                 {DIC.WHATIDO_SECTION_ONE_DESC_TWO_bis}
               </a>
@@ -48,7 +48,7 @@ const Whatandwithwho = (props) => {
             </h3>
             <ul>
               <li>TheCirculArt</li>
-              <li>Jordi Arjó, psicólogia.</li>
+              <li>Jordi Arjó, psicólogo</li>
               <li>Abluelemon</li>
             </ul>
           </div>

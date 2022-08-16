@@ -11,7 +11,29 @@
   padding-bottom: 8rem;
   justify-content: center;
 }
-
+.footer-content li {
+  color: white;
+}
+.footer-content li:hover {
+  color: var(--secondaryColor) !important;
+  transition: color 1s;
+}
+/* .footer-content:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0.2);
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--secondaryLightColor) !important;
+  transform-origin: bottom right;
+  transition: transform 0.5s ease-out;
+}
+.footer-content:hover:after {
+  transform: scaleX(1) !important;
+  transform-origin: bottom left;
+} */
 .footer-left {
   display: flex;
   flex-direction: column;
