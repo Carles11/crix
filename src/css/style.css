@@ -154,7 +154,7 @@ a:hover {
   color: var(--secondaryColor) !important;
   transition: color 1s;
 }
-a:after {
+a:not(.dont-underline):after {
   content: '';
   position: absolute;
   width: 10%;

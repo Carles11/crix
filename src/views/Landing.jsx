@@ -47,6 +47,7 @@ const Landing = (props) => {
               pathLink="/contact"
               variant="light"
               size="lg"
+              className="dont-underline"
             >
               {DIC.BTN_CONTACT}
             </Button>
@@ -55,6 +56,7 @@ const Landing = (props) => {
               pathLink="/about-us"
               variant="primary"
               size="lg"
+              className="dont-underline"
             >
               {DIC.BTN_ABOUT}
             </Button>
