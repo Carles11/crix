@@ -14,14 +14,35 @@ class ContactForm extends Component {
       message: '',
       sent: false,
       buttonText: props.DIC.BTN_SEND,
+      isError: {
+        name: '',
+        email: '',
+      },
     }
   }
   handleChange = (e) => {
     e.preventDefault()
+    const regExp =
+      /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
 
     const { name, value } = e.target
-
-    this.setState({ [name]: value })
+    const isError = { ...this.state.isError }
+    switch (name) {
+      case 'name':
+        isError.name = value.length < 4 ? 'Escribe al menos 4 caracteres.' : ''
+        break
+      case 'email':
+        isError.email = regExp.test(value)
+          ? ''
+          : 'El formato del email no parece válido.'
+        break
+      default:
+        break
+    }
+    this.setState({
+      isError,
+      [name]: value,
+    })
   }
 
   formSubmit(e) {
@@ -50,7 +71,7 @@ class ContactForm extends Component {
     this.resetForm()
   }
   render() {
-    const { name, subject, email, message, buttonText } = this.state
+    const { name, subject, email, message, buttonText, isError } = this.state
     // const { DIC } = this.props
 
     return (
@@ -69,6 +90,9 @@ class ContactForm extends Component {
             }}
             className="simple-input"
           />{' '}
+          {isError.name.length > 0 && (
+            <span className="invalid-feedback">{isError.name}</span>
+          )}
         </div>{' '}
         <div className="contact-input-group">
           <label className="contact-label">E-mail</label>
@@ -79,6 +103,9 @@ class ContactForm extends Component {
             onChange={this.handleChange}
             className="simple-input"
           />{' '}
+          {isError.email.length > 0 && (
+            <span className="invalid-feedback">{isError.email}</span>
+          )}
         </div>{' '}
         <div className="contact-input-group">
           <label className="contact-label">Tema</label>
