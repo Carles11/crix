@@ -81,7 +81,7 @@
 
 @media only screen and (max-width: 321px) {
   .landing-buttons-wrapper {
-    margin-top: 0;
+    margin-top: 0 !important;
   }
 }
 @media only screen and (max-width: 677px) {
