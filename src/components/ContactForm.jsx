@@ -17,10 +17,11 @@ class ContactForm extends Component {
     }
   }
   handleChange = (e) => {
-    console.log('handleChanging', e.target)
-    const {
-      target: { name, value },
-    } = e
+    e.preventDefault()
+
+    const { name, value } = e.target
+    console.log('handleChanging-NAME', name)
+    console.log('handleChanging-VALUE', value)
     this.setState({ [name]: value })
   }
 
@@ -53,7 +54,7 @@ class ContactForm extends Component {
   }
   render() {
     const { name, subject, email, message, buttonText } = this.state
-    const { DIC } = this.props
+    // const { DIC } = this.props
 
     return (
       <form
@@ -63,17 +64,19 @@ class ContactForm extends Component {
         <div className="contact-input-group">
           <label className="contact-label">Nombre</label>
           <input
-            name={DIC.CONTACTFORM_NAME}
+            name="name"
             type="text"
             value={name}
-            onChange={this.handleChange}
+            onChange={(e) => {
+              this.handleChange(e)
+            }}
             className="simple-input"
           />{' '}
         </div>{' '}
         <div className="contact-input-group">
           <label className="contact-label">E-mail</label>
           <input
-            name={DIC.CONTACTFORM_EMAIL}
+            name="email"
             type="text"
             value={email}
             onChange={this.handleChange}
@@ -83,7 +86,7 @@ class ContactForm extends Component {
         <div className="contact-input-group">
           <label className="contact-label">Tema</label>
           <input
-            name={DIC.CONTACTFORM_SUBJECT}
+            name="subject"
             type="text"
             value={subject}
             onChange={this.handleChange}
@@ -93,7 +96,7 @@ class ContactForm extends Component {
         <div className="contact-input-group">
           <label className="contact-label">Tu mensaje</label>
           <textarea
-            name={DIC.CONTACTFORM_MESSAGE}
+            name="message"
             type="text"
             value={message}
             onChange={this.handleChange}
