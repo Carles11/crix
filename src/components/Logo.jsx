@@ -7,8 +7,8 @@ const Logo = () => {
   return (
     <Link to="/" className="menu-logo dont-underline">
       <img
-        height="105px"
-        width="105px"
+        height="120px"
+        width="120px"
         src={logo}
         alt="Logo of CriX web development javascript"
       />
