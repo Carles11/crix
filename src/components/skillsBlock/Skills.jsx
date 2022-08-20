@@ -12,7 +12,11 @@ const Skills = () => {
             <td>⭐⭐⭐⭐⭐</td>
           </tr>
           <tr>
-            <td>Javascript with React in Node.js</td>
+            <td>Javascript</td>
+            <td>⭐⭐⭐⭐</td>
+          </tr>
+          <tr>
+            <td>React in Node.js</td>
             <td>⭐⭐⭐⭐</td>
           </tr>
           <tr>

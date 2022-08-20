@@ -11,7 +11,7 @@ const Landing = (props) => {
       <h4
         className="skills-block"
         onMouseOver={handleMouseOver}
-        onClick={handleMouseOver}
+        onClick={handleMobileClose}
       >
         {DIC.BTN_SKILLS}
       </h4>
@@ -24,13 +24,18 @@ const Landing = (props) => {
 
   const [isHovering, setIsHovering] = useState(false)
 
+  const handleMobileClose = () => {
+    if (window.innerWidth > 767) {
+      return
+    } else {
+      setIsHovering(!isHovering)
+    }
+  }
+
   const handleMouseOver = () => {
     setIsHovering(true)
   }
 
-  // const handleMouseOut = () => {
-  //   setIsHovering(false)
-  // }
   const handleClick = () => {
     if (window.innerWidth > 767) {
       setIsHovering(false)
