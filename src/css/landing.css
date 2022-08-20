@@ -79,6 +79,11 @@
   margin-block-start: -3rem;
 }
 
+@media only screen and (max-width: 321px) {
+  .landing-buttons-wrapper {
+    margin-top: 0;
+  }
+}
 @media only screen and (max-width: 677px) {
   .main-title {
     font-size: 2rem;
