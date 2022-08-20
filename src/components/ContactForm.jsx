@@ -20,8 +20,7 @@ class ContactForm extends Component {
     e.preventDefault()
 
     const { name, value } = e.target
-    console.log('handleChanging-NAME', name)
-    console.log('handleChanging-VALUE', value)
+
     this.setState({ [name]: value })
   }
 
@@ -33,7 +32,7 @@ class ContactForm extends Component {
     const { name, subject, email, message } = this.state
 
     const data = { name, subject, email, message }
-    console.log('formSubmit...----> ', data)
+
     emailSend(data)
   }
 
@@ -47,8 +46,6 @@ class ContactForm extends Component {
     })
   }
   handleSubmit = (e) => {
-    console.log('handleSubmit...----> ')
-
     this.formSubmit(e)
     this.resetForm()
   }
