@@ -24,7 +24,7 @@
 }
 .skills-table {
   display: flex;
-  flex-direction: row reverse;
+  flex-direction: row-reverse;
   border: 1px solid var(--darkGrey);
   border-radius: var(--borderRadius);
   padding: 1rem;
@@ -32,11 +32,12 @@
 
 @media only screen and (max-width: 677px) {
   .skills-table {
-    flex-direction: column reverse;
+    flex-direction: column-reverse;
 
     padding: 0.2rem;
   }
   .column-2a {
     width: 100%;
+    margin: 1rem auto;
   }
 }

@@ -8,7 +8,11 @@ const Landing = (props) => {
   const { DIC } = props
   const HoverableDiv = ({ handleMouseOver }) => {
     return (
-      <h4 className="skills-block" onMouseOver={handleMouseOver}>
+      <h4
+        className="skills-block"
+        onMouseOver={handleMouseOver}
+        onClick={handleMouseOver}
+      >
         {DIC.BTN_SKILLS}
       </h4>
     )
@@ -19,6 +23,7 @@ const Landing = (props) => {
   }
 
   const [isHovering, setIsHovering] = useState(false)
+
   const handleMouseOver = () => {
     setIsHovering(true)
   }
@@ -27,7 +32,11 @@ const Landing = (props) => {
   //   setIsHovering(false)
   // }
   const handleClick = () => {
-    setIsHovering(false)
+    if (window.innerWidth > 767) {
+      setIsHovering(false)
+    } else {
+      return
+    }
   }
 
   return (
