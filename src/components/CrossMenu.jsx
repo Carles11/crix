@@ -1,10 +1,7 @@
-import React from 'react';
-
+import React from 'react'
 
 export default class CrossMenu extends React.Component {
-    render() {
-        return (
-            <span onClick={this.props.handleClose} />
-        );
-    }
+  render() {
+    return <span className="span-cross" onClick={this.props.handleClose} />
+  }
 }

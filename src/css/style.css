@@ -177,7 +177,7 @@ a:hover:after {
 } */
 
 /* DROWING CROSS CSS START*/
-span {
+.span-cross {
   position: relative;
   height: 45px;
   /* this can be anything */
@@ -189,8 +189,8 @@ span {
   cursor: pointer;
 }
 
-span::before,
-span::after {
+.span-cross::before,
+.span-cross::after {
   position: absolute;
   content: '';
   width: 100%;
@@ -199,11 +199,11 @@ span::after {
   background: var(--secondaryColor);
 }
 
-span::before {
+.span-cross::before {
   transform: rotate(45deg);
 }
 
-span::after {
+.span-cross::after {
   transform: rotate(-45deg);
 }
 

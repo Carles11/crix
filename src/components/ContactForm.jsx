@@ -55,7 +55,7 @@ class ContactForm extends Component {
     if (isValid) {
       Swal.fire({
         title: `Lo siento:`,
-        text: `Parece que hay errores en el formulario. Intenta corregirlos antes de enviar de nuevo. `,
+        text: `Parece que hay errores en el formulario. Intenta corregirlos antes de enviar de nuevo.`,
         icon: 'error',
         showConfirmButton: false,
         showCancelButton: true,
