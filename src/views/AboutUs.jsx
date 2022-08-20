@@ -1,56 +1,44 @@
-import React from 'react';
-import styled from "styled-components";
+import React from 'react'
 
-import Header from "../components/Header";
-import img from "../assets/images/about-us.jpg";
-import Footer from "../components/Footer";
-import Portraits from "../components/Portraits";
-import TextContentAboutUs from "../components/TextContentAboutUs"
+import Portraits from '../components/Portraits'
+import Divider from '../components/Divider'
+import '../css/aboutUs.css'
 
-
-
-const BgImage = styled.div`
-  background-image: url(${img});
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: block:
-  flex-direction: column;
-`;
-
-const Title = styled.h1`
-  font-family: Montserrat;
-  font-size: 2.6em;
-  text-align: center;
-  color: white;
-  margin-top: 0;
-  padding-top: 125px;
-`;
-
-const SubTitle = styled.h2`
-  font-family: Montserrat;
-  font-size: 2em;
-  text-align: center;
-  margin: auto;
-  color: white;
-  padding-top: 4%;
-  padding-bottom: 2%;
-`;
-
-const AboutUs = () => {
+const AboutUs = (props) => {
+  const { DIC } = props
   return (
-    <div>
+    <main>
+      <div className="about-content">
+        <section className="about-content_section">
+          <h1>{DIC.ABOUT_SEC_ONE_TITLE}</h1>
+          <div className="about-content_article">
+            <h3 className="about-subtitle">{DIC.ABOUT_SEC_ONE_SUB_ONE}</h3>
+            <p>{DIC.ABOUT_SEC_ONE_DESC_ONE}</p>
 
-      <BgImage>
-        <Header />
-        <Title>ABOUT US</Title>
-        <SubTitle>Our team</SubTitle>
-        <TextContentAboutUs />
+            <h3 className="about-subtitle">{DIC.ABOUT_SEC_ONE_SUB_TWO}</h3>
+            <p>{DIC.ABOUT_SEC_ONE_DESC_TWO}</p>
+            <p>{DIC.ABOUT_SEC_ONE_DESC_TWO_bis}</p>
+          </div>
+        </section>
+      </div>
+      <Divider />
+
+      <section className="about-content_bottom">
+        <div className="about-content_section">
+          "<h1 className="subtitle-bottom">{DIC.ABOUT_SEC_TWO_TITLE}</h1>
+          <div className="about-content_article">
+            <h3 className="about-subtitle subtitle-bottom">
+              {DIC.ABOUT_SEC_TWO_SUB_ONE}
+            </h3>
+
+            <p>{DIC.ABOUT_SEC_TWO_DESC_ONE}</p>
+            <p>{DIC.ABOUT_SEC_TWO_DESC_TWO}</p>
+          </div>
+        </div>
         <Portraits />
-      </BgImage>
-      <Footer />
-    </div>
-  );
+      </section>
+    </main>
+  )
 }
 
-export default AboutUs;
+export default AboutUs

@@ -1,0 +1,79 @@
+.contact-form {
+  width: 100%;
+  margin: 3rem 0;
+  position: relative;
+  margin-bottom: 4rem;
+  padding-top: 6rem;
+  padding-bottom: 4rem;
+}
+.contact-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-label {
+  color: var(--darkGrey);
+  text-align: left;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact-input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.simple-input {
+  border: 1px solid silver;
+}
+/* > Tablet */
+@media only screen and (min-width: 677px) {
+  .contact-form {
+    width: 50vw;
+    /* min-width: -webkit-fill-available; */
+  }
+  .contact-input-group {
+    align-items: left;
+  }
+}
+@media only screen and (min-width: var(--minWidthDesktopLarge)) {
+  .contact-form {
+    min-width: auto;
+  }
+}
+
+/* .invalid-feedback {
+  color: var(--error-red);
+} */
+
+.invalid-feedback {
+  background: var(--error-red) !important;
+  color: var(--text-color-light);
+  padding: 10px !important;
+  border-radius: 0 !important;
+  position: relative;
+  display: inline-block !important;
+  box-shadow: 1px 1px 1px #aaaaaa;
+  margin-top: 10px;
+}
+.invalid-feedback:before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid var(--error-red);
+  position: absolute;
+  top: -10px;
+}
+.contact-label:after {
+  color: var(--error-red) !important;
+}
+.invalid-feedback input {
+  background: #fff0f4;
+  color: var(--error-red);
+  border: 1px solid var(--error-red) !important;
+}

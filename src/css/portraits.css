@@ -1,0 +1,75 @@
+.portrait-flex {
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  width: 100%;
+  justify-content: space-evenly;
+  padding-top: 3rem;
+  padding-right: 1rem;
+}
+
+.portrait-flex_left {
+  order: 1;
+  padding-top: 5%;
+  height: 400px;
+  text-align: center;
+  align-self: center;
+}
+
+.portrait-flex_right {
+  order: 2;
+  padding-top: 5%;
+  margin-top: 1rem;
+  height: 400px;
+  text-align: center;
+  align-self: center;
+}
+
+.boxed {
+  border: 1px solid silver;
+  border-radius: 2px;
+  padding: 4rem;
+  transition: all 0.2s ease-in-out;
+}
+.boxed:hover {
+  transform: scale(1.1);
+}
+.boxed img {
+  border-radius: 50%;
+}
+.portrait-below_text {
+  font-size: 1.4em;
+  color: var(--text-color-dark);
+  align-self: center;
+}
+
+.social-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 677px) {
+  .portrait-flex {
+    flex-direction: row;
+    flex-flow: row nowrap;
+
+    padding-top: 6rem;
+  }
+  .portrait-flex_left {
+    height: 450px;
+  }
+  .portrait-flex_right {
+    margin-top: 0;
+    height: 450px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .portrait-flex_right {
+    margin-bottom: 23%;
+  }
+  .portrait-flex_left {
+    margin-bottom: 23%;
+  }
+}

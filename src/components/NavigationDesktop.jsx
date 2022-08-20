@@ -1,54 +1,26 @@
-import React from 'react';
-import styled from 'styled-components';
-import { Link } from "react-router-dom";
-import CrossMenu from './CrossMenu';
 
-const StyledMenu = styled.div`
-display: flex;
-flex-direction: row;
-justify-content: space-around;
-text-align: right;
-padding-right: 20px;
-text-decoration: none;
-cursor: pointer;
-line-height: 0.2;
-`;
+import React from 'react'
 
-const StyledLink = styled(Link)`
-    width: 200px;
-    text-decoration: none;
-    cursor: pointer;
-    align-self: center;
-    color: #0a6284;
-    
+import { Link } from 'react-router-dom'
 
-`;
-const CrossPosition = styled.div`
-  margin-right: 20px;
-  margin-top: 47px;
-  padding-left: 30px;
-`;
+import '../css/navigation.css'
 
 class NavigationDesktop extends React.Component {
-
   render() {
     return (
-      <StyledMenu>
-        <StyledLink to="/services">
-          <h3>SERVICE</h3>
-        </StyledLink>
-        <StyledLink to="/about-us">
-          <h3>ABOUT US</h3>
-        </StyledLink>
-        <StyledLink to="/contact">
-          <h3>CONTACT</h3>
-        </StyledLink>
-        <CrossPosition>
-          <CrossMenu handleClose={this.props.handleClose} />
-        </CrossPosition>
-      </StyledMenu>
-    );
+      <div className="menu-items-container">
+        <Link to="/whatandwithwho">
+          <h6>Qué hago y con quién trabajo</h6>
+        </Link>
+        <Link to="/about-us">
+          <h6>Sobre Carles</h6>
+        </Link>
+        <Link to="/contact">
+          <h6>Contacta</h6>
+        </Link>
+      </div>
+    )
   }
 }
 
-export default NavigationDesktop;
+export default NavigationDesktop

@@ -1,145 +1,163 @@
-import React, { Component } from 'react';
-import styled from 'styled-components';
-import axios from 'axios';
+import React, { Component } from 'react'
 
-const Form = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;    
-    padding-top: 40px;
-`;
-const Button = styled.div`
-    padding-bottom: 40px;
-    padding-top: 40px;
-    @media screen and (max-width: 600px) {
-    padding-bottom: 25px;
-    padding-top: 25px;
-    }
-`;
-const ButtonSubmit = styled.button`
-  background: #0a6284;
-  border-radius: 8px;
-  color: white;
-  height: 60px;
-  width: 100px;
-  font-size: 16px;
-  @media screen and (max-width: 600px) {
-    font-size: 14px;
-    height: 40px;
-    width: 90px;
-    margin: auto;
-  }
-`;
-const Label = styled.label`
-  color: #696969;
-  align-text: left;
-  font-size: 20px;
-  mix-blend-mode: difference;
-  @media screen and (max-width: 600px) {
-    font-size: 14px;
-  }
-`;
+import Button from '../components/Button'
+import emailSend from '../views/utils/email.js'
+
+import Swal from 'sweetalert2'
+
+import '../css/contactForm.css'
 
 class ContactForm extends Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       name: '',
       email: '',
       subject: '',
       message: '',
       sent: false,
-      buttonText: 'Send message'
+      buttonText: props.DIC.BTN_SEND,
+      isError: {
+        name: '',
+        email: '',
+      },
     }
-    this.handleNameChange = this.handleNameChange.bind(this)
-    this.handleEmailChange = this.handleEmailChange.bind(this)
-    this.handleSubjectChange = this.handleSubjectChange.bind(this)
-    this.handleMessageChange = this.handleMessageChange.bind(this)
-    this.formSubmit = this.formSubmit.bind(this)
-    this.resetForm = this.resetForm.bind(this)
-    this.onClick = this.onClick.bind(this)
   }
-  handleNameChange(event) {
-    this.setState({ name: event.target.value })
-  };
-  handleEmailChange(event) {
-    this.setState({ email: event.target.value })
-  };
-  handleSubjectChange(event) {
-    this.setState({ subject: event.target.value })
-  };
-  handleMessageChange(event) {
-    this.setState({ message: event.target.value })
-  };
+  handleChange = (e) => {
+    const regExp =
+      /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+
+    const { name, value } = e.target
+    const isError = { ...this.state.isError }
+    switch (name) {
+      case 'name':
+        isError.name = value.length < 4 ? 'Escribe al menos 4 caracteres.' : ''
+        break
+      case 'email':
+        isError.email = regExp.test(value)
+          ? ''
+          : 'El formato del email no parece válido.'
+        break
+      default:
+        break
+    }
+    this.setState({
+      isError,
+      [name]: value,
+    })
+  }
 
   formSubmit(e) {
     e.preventDefault()
-    this.setState({
-      buttonText: '...sending'
-    })
-    let data = {
-      name: this.state.name,
-      subject: this.state.subject,
-      email: this.state.email,
-      message: this.state.message
+    const isError = { ...this.state.isError }
+    const isValid = isError.name.length > 0 || isError.email.length > 0
+    console.log('isValidisValid', isValid)
+    if (isValid) {
+      Swal.fire({
+        title: `Lo siento:`,
+        text: `Parece que hay errores en el formulario. Intenta corregirlos antes de enviar de nuevo.`,
+        icon: 'error',
+        showConfirmButton: false,
+        showCancelButton: true,
+        cancelButtonText: 'Cierra',
+      })
+      return
     }
-    axios.post('http://localhost:4444/crix-mail-api/index.js', data)
-      .then(res => {
-        this.setState({ sent: true }, this.resetForm())
-      })
-      .catch(() => {
-        console.log('Message not sent')
-      })
+
+    this.setState({
+      buttonText: this.props.DIC.BTN_SENDING,
+    })
+    const { name, subject, email, message } = this.state
+
+    const data = { name, subject, email, message }
+
+    emailSend(data)
   }
+
   resetForm() {
     this.setState({
       name: '',
       message: '',
       email: '',
       subject: '',
-      buttonText: 'Message Sent'
+      buttonText: this.props.DIC.BTN_SENT,
     })
-  };
-  onClick(e) {
-    this.formSubmit(e);
-    this.resetForm();
+  }
+  handleSubmit = (e) => {
+    this.formSubmit(e)
+    this.resetForm()
   }
   render() {
-    return (
-      <Form onSubmit={(e) => this.formSubmit(e)}>
-        <Label>Name</Label>
-        <input
-          name="name"
-          type="text"
-          value={this.state.name}
-          onChange={this.handleNameChange} />
-        <Label>E-mail</Label>
-        <input
-          name="email"
-          type="text"
-          value={this.state.email}
-          onChange={this.handleEmailChange} />
-        <Label>Subject</Label>
-        <input
-          name="subject"
-          type="text"
-          value={this.state.subject}
-          onChange={this.handleSubjectChange} />
-        <Label>Your message</Label>
-        <textarea
-          name="message"
-          type="text"
-          value={this.state.message}
-          onChange={this.handleMessageChange} />
-        <Button>
-          <ButtonSubmit
-            type="submit"
-            onClick={this.onClick}>{this.state.buttonText}</ButtonSubmit>
-        </Button>
+    const { name, subject, email, message, buttonText, isError } = this.state
+    const { DIC } = this.props
 
-      </Form>
-    );
+    return (
+      <form
+        className="contact-form contact-flex"
+        onSubmit={(e) => this.formSubmit(e)}
+      >
+        <div className="contact-input-group">
+          <label className="contact-label">{DIC.CONTACTFORM_NAME}</label>
+          <input
+            name="name"
+            type="text"
+            value={name}
+            onChange={(e) => {
+              this.handleChange(e)
+            }}
+            className="simple-input"
+          />{' '}
+          {isError.name.length > 0 && (
+            <div className="invalid-feedback">{isError.name}</div>
+          )}
+        </div>{' '}
+        <div className="contact-input-group">
+          <label className="contact-label">{DIC.CONTACTFORM_EMAIL}</label>
+          <input
+            name="email"
+            type="text"
+            value={email}
+            onChange={this.handleChange}
+            className="simple-input"
+          />{' '}
+          {isError.email.length > 0 && (
+            <div className="invalid-feedback">{isError.email}</div>
+          )}
+        </div>{' '}
+        <div className="contact-input-group">
+          <label className="contact-label">{DIC.CONTACTFORM_SUBJECT}</label>
+          <input
+            name="subject"
+            type="text"
+            value={subject}
+            onChange={this.handleChange}
+            className="simple-input"
+          />{' '}
+        </div>
+        <div className="contact-input-group">
+          <label className="contact-label">{DIC.CONTACTFORM_MESSAGE}</label>
+          <textarea
+            name="message"
+            type="text"
+            value={message}
+            onChange={this.handleChange}
+            className="simple-input"
+          />
+        </div>
+        <Button
+          elementType="Link"
+          type="submit"
+          pathLink="/"
+          variant="primary"
+          size="lg"
+          onClick={this.handleSubmit}
+          className="dont-underline"
+        >
+          {buttonText}
+        </Button>
+      </form>
+    )
   }
 }
 
-export default ContactForm;
+export default ContactForm

@@ -1,13 +1,21 @@
-import React, { Fragment } from "react";
+import React, { Fragment } from 'react'
 
-import Routes from './Routes'
+import Header from './components/Header'
+import Footer from './components/Footer'
+import getDictionary from './views/utils/dictionary'
 
-const App = () => {
+import AllRoutes from './Routes'
+
+const DIC = getDictionary()
+
+const App = (props) => {
   return (
     <Fragment>
-      <Routes />
+      <Header DIC={DIC} />
+      <AllRoutes {...props} DIC={DIC} />
+      <Footer DIC={DIC} />
     </Fragment>
-  );
-};
+  )
+}
 
-export default App;
+export default App

@@ -1,0 +1,48 @@
+.burger-container {
+  padding: 20px;
+  margin-right: 20px;
+  display: inline-block;
+  align-content: end;
+  cursor: pointer;
+}
+
+.burger-item {
+  width: 35px;
+  margin: 10px 0;
+  background: var(--secondaryColor);
+  padding: 1px;
+  justify-items: end;
+}
+
+/* DROWING CROSS CSS START*/
+.span-cross {
+  position: relative;
+  height: 45px;
+  /* this can be anything */
+  width: 45px;
+  /* ...but maintain 1:1 aspect ratio */
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  cursor: pointer;
+}
+
+.span-cross::before,
+.span-cross::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 9px;
+  /* cross thickness */
+  background: var(--secondaryColor);
+}
+
+.span-cross::before {
+  transform: rotate(45deg);
+}
+
+.span-cross::after {
+  transform: rotate(-45deg);
+}
+
+/* END OF DROWING CROSS */

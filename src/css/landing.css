@@ -1,0 +1,145 @@
+.landing-img-bg {
+  /* background-image: url('../assets/images/skating-lake_crix.jpg'); */
+  /* background-color: whitesmoke;
+  /* background-color: gainsboro;
+  height: 100vh;
+  width: 100%; */
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(
+    -45deg,
+    var(--primaryColor) 8,
+    var(--light-grey),
+    whitesmoke,
+    whitesmoke
+  );
+  background-size: 400% 400%;
+  animation: gradient 30s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.landing-body-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.landing-body-wrapper h1 {
+  display: flex;
+  justify-content: right;
+  margin: 8rem auto 0 auto;
+}
+.landing-buttons-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.main-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.main-subtitle {
+  display: flex;
+  margin-bottom: 2rem;
+}
+.main-subtitle:hover {
+  background-color: rgb(1, 1, 1, 0.8);
+  color: var(--secondaryColor);
+  padding-left: 3rem;
+  padding-right: 3rem;
+  transition: all 0.5s ease-out;
+}
+
+.main-titles-align {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.social-media-section {
+  position: absolute;
+  bottom: 5%;
+  width: 40%;
+  margin-left: 4rem;
+}
+.bottom-line {
+  margin-block-start: -3rem;
+}
+
+@media only screen and (max-width: 677px) {
+  .main-title {
+    font-size: 2rem;
+  }
+  .main-subtitle {
+    text-align: center;
+  }
+
+  .main-titles-align {
+    align-items: center;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .landing-body-wrapper {
+    width: 100%;
+  }
+
+  .landing-body-wrapper h1 {
+    margin: 6rem auto 2rem auto;
+  }
+
+  .landing-buttons-wrapper {
+    flex-direction: column;
+    margin-top: 6rem;
+  }
+
+  .bottom-line {
+    width: 60%;
+    margin-block-start: -3rem;
+  }
+
+  .social-media-section {
+    width: 60%;
+    margin-left: 2rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .main-titles-align {
+    align-items: center;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .main-title {
+    font-size: 2rem;
+  }
+  .bottom-line {
+    margin-block-start: -3rem;
+  }
+}
+
+.skills-block {
+  position: absolute;
+  bottom: 3%;
+  right: 5%;
+}
+.skills-block:hover {
+  background-color: rgb(1, 1, 1, 0.8);
+  color: var(--secondaryColor);
+  padding-left: 3rem;
+  padding-right: 3rem;
+  transition: all 0.5s ease-out;
+}

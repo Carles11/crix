@@ -1,22 +1,21 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import { BrowserRouter as Router } from "react-router-dom";
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { createRoot } from 'react-dom/client'
+import { BrowserRouter as Router } from 'react-router-dom'
 
-import App from "./App";
-import "./css/style.css"
-import ScrollToTop from "react-router-scroll-top";
+import App from './App'
+import './css/style.css'
+// import ScrollToTop from "./helpers/ScrollToTop";
 
 // import registerServiceWorker from './registerServiceWorker';
 
-let root = document.getElementById("root");
-ReactDOM.render(
+const container = document.getElementById('root')
+const root = createRoot(container)
+root.render(
   <Router>
-    <ScrollToTop>
-      <App />
-    </ScrollToTop>
+    {/* <ScrollToTop /> */}
+    <App />
   </Router>,
-  root
-);
+)
 
 // registerServiceWorker();
-

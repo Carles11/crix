@@ -1,0 +1,126 @@
+button:focus {
+  outline: none;
+}
+
+.btn {
+  /* Display & Box Model */
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 16rem;
+  margin: 0.3rem;
+  /* Text */
+  font-weight: 500;
+  text-decoration: none;
+  /* Other */
+  transition: 0.5s;
+}
+
+.btn:active path,
+.btn:hover path,
+path {
+  transition: 0.3s;
+}
+
+/* size */
+
+.btn-xs {
+  /* Display & Box Model */
+  border-radius: 2px;
+  width: fit-content;
+  align-self: center;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  min-height: 3rem;
+
+  /* Text */
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.btn-sm {
+  /* Display & Box Model */
+  padding-right: 1rem;
+  padding-left: 1rem;
+  min-height: 3rem;
+  border-radius: 2px;
+
+  /* Text */
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.btn-lg {
+  /* Display & Box Model */
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 2px;
+
+  /* Text */
+  font-size: 1rem;
+  min-height: 3rem;
+  line-height: 1.5;
+  letter-spacing: 0.1px;
+}
+
+/* variant */
+
+.btn-light {
+  background: white;
+  color: var(--text-color-dark);
+  font-weight: 600;
+  border: var(--text-color-dark);
+  box-shadow: 6.9829px 8.72862px 15.7115px rgba(1, 1, 1, 0.25);
+  text-decoration: none;
+}
+.btn-light:hover {
+  color: white !important;
+  background: var(--secondaryColor);
+  border: white;
+  font-weight: 400;
+}
+.btn-light:focus {
+  color: white;
+  background: var(--secondaryColor);
+  border: white;
+}
+.btn-light:not(:disabled) {
+}
+.btn-light:not(.disabled) {
+}
+.btn-light:active,
+.btn-light:hover {
+  color: white;
+}
+
+.btn-primary {
+  background: var(--blackBg);
+  color: white;
+  border: white;
+  box-shadow: 6.9829px 8.72862px 15.7115px rgba(1, 1, 1, 0.25);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  color: white !important;
+  background: var(--secondaryColor);
+  border: white;
+  font-weight: 400;
+}
+.btn-primary:focus {
+  color: white;
+  background: var(--secondaryColor);
+  border: white;
+}
+
+/* MOBILE STYLES */
+
+@media only screen and (max-width: 650px) {
+  .btn {
+    min-width: 11rem;
+    width: 14rem;
+    align-self: center;
+  }
+}
