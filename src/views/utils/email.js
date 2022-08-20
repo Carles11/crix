@@ -1,7 +1,7 @@
 import emailjs, { init } from 'emailjs-com'
 import Swal from 'sweetalert2'
 
-const emailSend = ({ data }) => {
+const emailSend = (data) => {
   console.log('--------> emailSend.emailSendemailSend DATA', data)
   const serviceID = 'default_service'
   const templateID = 'template_rvgqsba'
