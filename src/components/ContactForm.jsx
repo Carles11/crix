@@ -91,7 +91,7 @@ class ContactForm extends Component {
             className="simple-input"
           />{' '}
           {isError.name.length > 0 && (
-            <span className="invalid-feedback">{isError.name}</span>
+            <div className="invalid-feedback">{isError.name}</div>
           )}
         </div>{' '}
         <div className="contact-input-group">
@@ -104,7 +104,7 @@ class ContactForm extends Component {
             className="simple-input"
           />{' '}
           {isError.email.length > 0 && (
-            <span className="invalid-feedback">{isError.email}</span>
+            <div className="invalid-feedback">{isError.email}</div>
           )}
         </div>{' '}
         <div className="contact-input-group">
