@@ -12,13 +12,13 @@ class NavigationMobile extends React.Component {
           <CrossMenu handleClose={this.props.handleClose} />
         </div>
         <Link className="mobile-menu-link" to="/whatandwithwho">
-          <h4>Qué hago y con quién trabajo</h4>
+          <h6>Qué hago y con quién trabajo</h6>
         </Link>
         <Link className="mobile-menu-link" to="/about-us">
-          <h4>Sobre Carles</h4>
+          <h6>Sobre Carles</h6>
         </Link>
         <Link className="mobile-menu-link" to="/contact">
-          <h4>Contacta</h4>
+          <h6>Contacta</h6>
         </Link>
       </div>
     )

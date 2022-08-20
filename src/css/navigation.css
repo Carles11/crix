@@ -26,16 +26,14 @@
 .mobile-menu {
   display: flex;
   flex-direction: column;
-  justify-content: end;
-  text-align: right;
-  padding-right: 20px;
   color: silver;
   text-decoration: none;
   cursor: pointer;
   line-height: 0.1;
+  align-items: flex-end;
 }
 
-.mobile-menu-cros {
+.mobile-menu-cross {
   margin-left: 120px;
   margin-top: 40px;
 }
@@ -50,5 +48,8 @@
   .menu-items-block {
     margin-right: 0;
     width: 100%;
+  }
+  .mobile-menu-link h6 {
+    margin: 0.8rem;
   }
 }
