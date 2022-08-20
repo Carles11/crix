@@ -24,7 +24,6 @@ class ContactForm extends Component {
     }
   }
   handleChange = (e) => {
-    e.preventDefault()
     const regExp =
       /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
 
@@ -49,13 +48,14 @@ class ContactForm extends Component {
   }
 
   formSubmit(e) {
+    e.preventDefault()
     const isError = { ...this.state.isError }
-    console.log('iserirororor', isError)
     const isValid = isError.name.length > 0 || isError.email.length > 0
+    console.log('isValidisValid', isValid)
     if (isValid) {
       Swal.fire({
-        title: `Lo siento, ${showName}:`,
-        text: `Parece que hay errores en el formulario.(${error}) Intenta corregirlos antes de enviar. `,
+        title: `Lo siento:`,
+        text: `Parece que hay errores en el formulario. Intenta corregirlos antes de enviar de nuevo. `,
         icon: 'error',
         showConfirmButton: false,
         showCancelButton: true,
@@ -63,7 +63,7 @@ class ContactForm extends Component {
       })
       return
     }
-    e.preventDefault()
+
     this.setState({
       buttonText: this.props.DIC.BTN_SENDING,
     })
