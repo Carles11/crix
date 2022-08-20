@@ -17,6 +17,7 @@ class ContactForm extends Component {
     }
   }
   handleChange = (e) => {
+    console.log('handleChanging', e.target)
     const {
       target: { name, value },
     } = e

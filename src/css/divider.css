@@ -20,10 +20,10 @@ body {
 }
 
 .parallax1 > use {
-  animation: move-forever1 10s linear infinite;
+  animation: move-forever1 6s linear infinite;
 }
 .parallax2 > use {
-  animation: move-forever2 8s linear infinite;
+  animation: move-forever2 4s linear infinite;
 }
 .parallax1 > use:nth-child(1) {
   animation-delay: -2s;

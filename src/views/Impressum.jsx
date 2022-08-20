@@ -17,7 +17,7 @@ const Impressum = () => {
           <br />
           Steuernummer: 013 861 02632
           <br />
-          Ust-Id.Nr.: DE275710941
+          Ust-Id. Nr.: DE275710941
         </div>
       </div>
       <div className="impressum-grey-block">

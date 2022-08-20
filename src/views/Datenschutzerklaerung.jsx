@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import '../css/privacyConsent.css'
 
 const Datenschutzerklaerung = () => {
@@ -21,7 +21,7 @@ const Datenschutzerklaerung = () => {
           keine Weitergabe der Daten an Dritte.
         </article>
       </div>
-      <div className="privacy-grey-block">
+      {/* <div className="privacy-grey-block">
         <h2 className="privacy-subtitle">
           Datenschutzerklärung für Google Analytics
         </h2>
@@ -59,7 +59,7 @@ const Datenschutzerklaerung = () => {
             http://www.google.com/intl/de/analytics/privacyoverview.html.
           </Link>
         </article>
-      </div>
+      </div> */}
     </div>
   )
 }

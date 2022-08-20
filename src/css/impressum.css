@@ -2,7 +2,7 @@
   font-size: 2.6em;
   text-align: center;
   margin: auto;
-  color: silver;
+  color: var(--text-color-dark);
   margin-top: 0;
   padding-top: 125px;
 }
@@ -11,14 +11,14 @@
   font-size: 2em;
   text-align: center;
   margin: auto;
-  color: silver;
+  color: var(--text-color-dark);
   padding-top: 4%;
   padding-bottom: 2%;
 }
 
 .impressum-grey-block {
   background-color: #f4f4f4;
-  color: silver;
+  color: var(--text-color-dark);
   min-height: 450px;
   position: relative;
   width: 100%;
@@ -26,7 +26,7 @@
 }
 .impressum-white-block {
   background-color: white;
-  color: silver;
+  color: var(--text-color-dark);
   min-height: 450px;
   position: relative;
   width: 100%;
@@ -36,7 +36,7 @@
   font-size: 1.2em;
   text-align: center;
   margin: auto;
-  color: silver;
+  color: var(--text-color-dark);
   max-width: 60%;
   text-align: justify;
   letter-spacing: 3px;

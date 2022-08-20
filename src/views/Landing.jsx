@@ -14,8 +14,8 @@ const Landing = (props) => {
     )
   }
 
-  const HoverSkills = ({ handleClick }) => {
-    return <SkillsBlock handleClick={handleClick} />
+  const HoverSkills = () => {
+    return <SkillsBlock />
   }
 
   const [isHovering, setIsHovering] = useState(false)
@@ -64,7 +64,7 @@ const Landing = (props) => {
         </div>
       </div>
       <HoverableDiv handleMouseOver={handleMouseOver} />
-      {isHovering && <HoverSkills handleClick={handleClick} />}
+      {isHovering && <HoverSkills />}
     </div>
   )
 }
