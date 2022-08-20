@@ -72,7 +72,7 @@ class ContactForm extends Component {
   }
   render() {
     const { name, subject, email, message, buttonText, isError } = this.state
-    // const { DIC } = this.props
+    const { DIC } = this.props
 
     return (
       <form
@@ -80,7 +80,7 @@ class ContactForm extends Component {
         onSubmit={(e) => this.formSubmit(e)}
       >
         <div className="contact-input-group">
-          <label className="contact-label">Nombre</label>
+          <label className="contact-label">{DIC.CONTACTFORM_NAME}</label>
           <input
             name="name"
             type="text"
@@ -95,7 +95,7 @@ class ContactForm extends Component {
           )}
         </div>{' '}
         <div className="contact-input-group">
-          <label className="contact-label">E-mail</label>
+          <label className="contact-label">{DIC.CONTACTFORM_EMAIL}</label>
           <input
             name="email"
             type="text"
@@ -108,7 +108,7 @@ class ContactForm extends Component {
           )}
         </div>{' '}
         <div className="contact-input-group">
-          <label className="contact-label">Tema</label>
+          <label className="contact-label">{DIC.CONTACTFORM_SUBJECT}</label>
           <input
             name="subject"
             type="text"
@@ -118,7 +118,7 @@ class ContactForm extends Component {
           />{' '}
         </div>
         <div className="contact-input-group">
-          <label className="contact-label">Tu mensaje</label>
+          <label className="contact-label">{DIC.CONTACTFORM_MESSAGE}</label>
           <textarea
             name="message"
             type="text"
