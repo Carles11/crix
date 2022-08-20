@@ -1,24 +1,27 @@
+.privacy-container {
+  min-height: 90vh;
+}
+
 .privacy-title {
-  font-size: 2.6em;
   text-align: center;
+  font-size: calc(32px + (45 - 35) * ((100vw - 600px) / (1600 - 900)));
   margin: auto;
-  color: silver;
+  color: var(--text-color-dark);
   margin-top: 0;
-  padding-top: 125px;
+  padding-top: 2rem;
 }
 
 .privacy-subtitle {
-  font-size: 2em;
   text-align: center;
   margin: auto;
-  color: silver;
+  color: var(--text-color-dark);
   padding-top: 4%;
   padding-bottom: 2%;
 }
 
 .privacy-grey-block {
   background-color: #f4f4f4;
-  color: silver;
+  color: var(--text-color-dark);
   min-height: 450px;
   position: relative;
   width: 100%;
@@ -26,17 +29,16 @@
 }
 .privacy-white-block {
   background-color: white;
-  color: silver;
+  color: var(--text-color-dark);
   min-height: 450px;
   position: relative;
   width: 100%;
 }
 
 .privacy-article {
-  font-size: 1.2em;
   text-align: center;
-  margin: 4rem;
-  color: silver;
+  margin: 2rem;
+  color: var(--text-color-dark);
   text-align: justify;
   letter-spacing: 3px;
   line-height: 1.8;
@@ -44,16 +46,12 @@
 
 @media only screen and (max-width: 677px) {
   .privacy-article {
-    font-size: 0.8em;
-    max-width: 90%;
     letter-spacing: 1px;
     line-height: 1;
   }
 }
 @media only screen and (max-width: 1024px) {
   .privacy-article {
-    font-size: 1em;
-    max-width: 75%;
     letter-spacing: 2px;
     line-height: 1.3;
   }
