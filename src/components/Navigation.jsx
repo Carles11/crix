@@ -27,14 +27,12 @@ class Navigation extends React.Component {
     this.state = {
       showDropdown: false,
     }
-    this.handleClick = this.handleClick.bind(this)
-    this.handleClose = this.handleClose.bind(this)
   }
 
-  handleClick() {
+  handleClick = () => {
     this.setState({ showDropdown: true })
   }
-  handleClose() {
+  handleClose = () => {
     this.setState({ showDropdown: false })
   }
 
