@@ -29,7 +29,7 @@
 .boxed {
   border: 1px solid silver;
   border-radius: 2px;
-  padding: 4rem;
+  padding: 6rem;
   transition: all 0.2s ease-in-out;
 }
 .boxed:hover {
@@ -63,6 +63,9 @@
   .portrait-flex_right {
     margin-top: 0;
     height: 450px;
+  }
+  .boxed {
+    padding: 4rem;
   }
 }
 @media only screen and (min-width: 1024px) {

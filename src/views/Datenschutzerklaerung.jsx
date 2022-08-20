@@ -4,7 +4,7 @@ import '../css/privacyConsent.css'
 
 const Datenschutzerklaerung = () => {
   return (
-    <div>
+    <div className="privacy-container">
       <h1 className="privacy-title">DATENSCHUTZERKLÄRUNG</h1>
       <div className="privacy-white-block">
         <h2 className="privacy-subtitle">Allgemeine Datenschutzerklärung</h2>

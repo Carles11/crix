@@ -8,7 +8,6 @@
   bottom: 8% !important;
   right: 5% !important;
   background-color: var(--light-grey);
-  opacity: 0.9;
 }
 
 .cross:before {
