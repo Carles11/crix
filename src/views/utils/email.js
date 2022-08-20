@@ -11,7 +11,7 @@ const emailSend = (data) => {
     (result) => {
       Swal.fire({
         title: `Gracias, ${showName}!`,
-        text: `Gracias, tu petición ha sido enviada. En breve nos pondremos en contacto contigo. ${result.text}`,
+        text: `${result.text}, tu petición ha sido enviada. En breve nos pondremos en contacto contigo. Muchas gracias!`,
         icon: 'success',
         showConfirmButton: false,
         showCancelButton: true,
