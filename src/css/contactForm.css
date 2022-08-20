@@ -49,8 +49,9 @@
   color: var(--error-red);
 } */
 
-.invalid-feedback .c-validation {
-  background: #c51244 !important;
+.invalid-feedback {
+  background: var(--error-red) !important;
+  color: var(--text-color-light);
   padding: 10px !important;
   border-radius: 0 !important;
   position: relative;
@@ -58,24 +59,21 @@
   box-shadow: 1px 1px 1px #aaaaaa;
   margin-top: 10px;
 }
-.invalid-feedback .c-validation:before {
+.invalid-feedback:before {
   content: '';
   width: 0;
   height: 0;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
-  border-bottom: 10px solid #c51244;
+  border-bottom: 10px solid var(--error-red);
   position: absolute;
   top: -10px;
 }
 .contact-label:after {
-  color: #c51244 !important;
-}
-.invalid-feedback input,
-.invalid-feedback {
-  background: #fff0f4;
-  color: #c51244;
+  color: var(--error-red) !important;
 }
 .invalid-feedback input {
-  border: 1px solid #c51244 !important;
+  background: #fff0f4;
+  color: var(--error-red);
+  border: 1px solid var(--error-red) !important;
 }

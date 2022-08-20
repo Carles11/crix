@@ -2,6 +2,9 @@ import React, { Component } from 'react'
 
 import Button from '../components/Button'
 import emailSend from '../views/utils/email.js'
+
+import Swal from 'sweetalert2'
+
 import '../css/contactForm.css'
 
 class ContactForm extends Component {
@@ -46,6 +49,20 @@ class ContactForm extends Component {
   }
 
   formSubmit(e) {
+    const isError = { ...this.state.isError }
+    console.log('iserirororor', isError)
+    const isValid = isError.name.length > 0 || isError.email.length > 0
+    if (isValid) {
+      Swal.fire({
+        title: `Lo siento, ${showName}:`,
+        text: `Parece que hay errores en el formulario.(${error}) Intenta corregirlos antes de enviar. `,
+        icon: 'error',
+        showConfirmButton: false,
+        showCancelButton: true,
+        cancelButtonText: 'Cierra',
+      })
+      return
+    }
     e.preventDefault()
     this.setState({
       buttonText: this.props.DIC.BTN_SENDING,
@@ -134,6 +151,7 @@ class ContactForm extends Component {
           variant="primary"
           size="lg"
           onClick={this.handleSubmit}
+          className="dont-underline"
         >
           {buttonText}
         </Button>
