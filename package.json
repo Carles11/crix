@@ -4,7 +4,7 @@
   "description": "CriX Web Developers App",
   "main": "index.js",
   "scripts": {
-    "start": "webpack --env.mode development && nodemon server && webpack-dev-server --inline --hot --config webpack.config.js",
+    "start": "webpack --env.mode development && nodemon server && --inline --hot",
     "build": "webpack --env.mode production && NODE_ENV=production",
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "node server"
