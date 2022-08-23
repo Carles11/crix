@@ -4,37 +4,29 @@ import { Link } from 'react-router-dom'
 
 import CrossMenu from './CrossMenu'
 
-class NavigationMobile extends React.Component {
-  render() {
-    return (
-      <div className="mobile-menu">
-        <div className="mobile-menu-cross">
-          <CrossMenu handleClose={this.props.handleClose} />
-        </div>
-        <Link
-          className="mobile-menu-link"
-          to="/whatandwithwho"
-          onClick={this.props.handleClose}
-        >
-          <h6>Qué hago y con quién trabajo</h6>
-        </Link>
-        <Link
-          className="mobile-menu-link"
-          to="/about-us"
-          onClick={this.props.handleClose}
-        >
-          <h6>Sobre Carles</h6>
-        </Link>
-        <Link
-          className="mobile-menu-link"
-          to="/contact"
-          onClick={this.props.handleClose}
-        >
-          <h6>Contacta</h6>
-        </Link>
+const NavigationMobile = (props) => {
+  const { DIC, handleClose } = props
+
+  return (
+    <div className="mobile-menu">
+      <div className="mobile-menu-cross">
+        <CrossMenu handleClose={handleClose} />
       </div>
-    )
-  }
+      <Link
+        className="mobile-menu-link"
+        to="/whatandwithwho"
+        onClick={handleClose}
+      >
+        <h6>{DIC.NAV_SERVICES}</h6>
+      </Link>
+      <Link className="mobile-menu-link" to="/about-us" onClick={handleClose}>
+        <h6>{DIC.NAV_ABOUT_US}</h6>
+      </Link>
+      <Link className="mobile-menu-link" to="/contact" onClick={handleClose}>
+        <h6>{DIC.NAV_CONTACT}</h6>
+      </Link>
+    </div>
+  )
 }
 
 export default NavigationMobile

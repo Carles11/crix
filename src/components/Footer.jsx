@@ -3,27 +3,29 @@ import { Link } from 'react-router-dom'
 
 import '../css/footer.css'
 
-const Footer = () => {
+const Footer = (props) => {
+  const { DIC } = props
+
   return (
     <div className="footer-container">
       <hr className="bottom-line" />
       <div className="footer-content">
         <div className="footer-left">
           <ul className="footer-ul-left">
-            <h5>Contacta con Carles</h5>
+            <h5>{DIC.FOOTER_CONTACT}</h5>
             <Link to="/contact">
-              <li>Contact</li>
+              <li>{DIC.CONTACT_TITLE}</li>
             </Link>
           </ul>
         </div>
         <div className="footer-right">
           <ul className="footer-ul-right">
-            <h5>Lo legal</h5>
+            <h5>{DIC.LEGAL}</h5>
             <Link to="/datenschutzerklaerung">
-              <li>Datenschutzerklärung</li>
+              <li>{DIC.FOOTER_PRIVACY_POLICY}</li>
             </Link>
             <Link to="/impressum">
-              <li>Impressum</li>
+              <li>{DIC.FOOTER_IMPRINT}</li>
             </Link>
           </ul>
         </div>

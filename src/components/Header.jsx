@@ -5,11 +5,13 @@ import Logo from '../components/Logo'
 
 import '../css/header.css'
 
-const Header = () => {
+const Header = (props) => {
+  const { DIC } = props
+
   return (
     <div className="header-nav-wrapper">
       <Logo />
-      <Navigation />
+      <Navigation DIC={DIC} />
     </div>
   )
 }
