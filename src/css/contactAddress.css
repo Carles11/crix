@@ -1,7 +1,7 @@
 .address-content {
+  z-index: 1;
   text-align: left;
   line-height: 1.3;
-  color: var(--text-color-light);
   margin: 0 auto;
 }
 .address-content h4 {
@@ -9,6 +9,18 @@
 }
 
 .address-highlight {
-  background-color: var(--light-blackBg);
+  background-color: var(--secondaryColor);
+  color: var(--text-color-dark) !important;
   display: inline;
+}
+
+.address-highlight a {
+  color: var(--text-color-light) !important;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.address-highlight a:hover {
+  color: var(--secondaryLightColor) !important;
+  transition: color 1s;
 }

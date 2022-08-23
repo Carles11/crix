@@ -210,7 +210,7 @@ a:not(.dont-underline):after {
   transform-origin: bottom right;
   transition: transform 0.5s ease-out;
 }
-a:hover:after {
+a:not(.dont-underline):hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
