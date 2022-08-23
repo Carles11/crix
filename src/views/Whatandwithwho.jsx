@@ -47,9 +47,26 @@ const Whatandwithwho = (props) => {
               {DIC.WHATIDO_SECTION_TWO_SUB_TWO}
             </h3>
             <ul>
-              <li>TheCirculArt</li>
-              <li>Jordi Arjó, psicólogo</li>
-              <li>Abluelemon</li>
+              <li>
+                <a
+                  href="https://thecirculart.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="dont-underline"
+                >
+                  TheCirculArt
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://abluelemon.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="dont-underline"
+                >
+                  Abluelemon
+                </a>
+              </li>
             </ul>
           </div>
         </div>
