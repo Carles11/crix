@@ -39,7 +39,16 @@ const Whatandwithwho = (props) => {
             </h3>
             <ul>
               <li>Instituto Cervantes</li>
-              <li>Hessenwaldschule</li>
+              <li>
+                <a
+                  href="https://www.leo-leo-hessen.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="dont-underline"
+                >
+                  Hessenwaldschule
+                </a>
+              </li>
               <li>Kultusministerium Hessen</li>
             </ul>
 
