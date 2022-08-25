@@ -53,3 +53,9 @@
     margin: 0.8rem;
   }
 }
+
+.languages {
+  display: flex;
+  justify-content: flex-end;
+  margin: 1rem;
+}

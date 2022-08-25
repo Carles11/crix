@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 // import PropTypes from 'prop-types';
 
+import { Link } from 'react-router-dom'
+
 import Divider from '../components/Divider'
+import PdfViewer from '../components/PdfViewer'
 import '../css/whatandwithwho.css'
 
 const Whatandwithwho = (props) => {
@@ -40,14 +43,7 @@ const Whatandwithwho = (props) => {
             <ul>
               <li>Instituto Cervantes</li>
               <li>
-                <a
-                  href="https://www.leo-leo-hessen.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="dont-underline"
-                >
-                  Hessenwaldschule
-                </a>
+                <Link to="/PdfViewer">Hessenwaldschule</Link>
               </li>
               <li>Kultusministerium Hessen</li>
             </ul>

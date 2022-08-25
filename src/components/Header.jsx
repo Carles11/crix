@@ -6,12 +6,12 @@ import Logo from '../components/Logo'
 import '../css/header.css'
 
 const Header = (props) => {
-  const { DIC } = props
+  const { DIC, handleDIC } = props
 
   return (
     <div className="header-nav-wrapper">
       <Logo />
-      <Navigation DIC={DIC} />
+      <Navigation DIC={DIC} handleDIC={handleDIC} />
     </div>
   )
 }

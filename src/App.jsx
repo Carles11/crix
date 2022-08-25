@@ -6,12 +6,18 @@ import getDictionary from './views/utils/dictionary'
 
 import AllRoutes from './Routes'
 
-const DIC = getDictionary()
+let DIC = getDictionary()
 
 const App = (props) => {
+  const setDictionary = (lang) => {
+    console.log('setDictionary', lang)
+    console.log('typOFLANG appppp', typeof lang)
+
+    DIC = getDictionary(lang)
+  }
   return (
     <Fragment>
-      <Header DIC={DIC} />
+      <Header DIC={DIC} handleDIC={setDictionary} />
       <AllRoutes {...props} DIC={DIC} />
       <Footer DIC={DIC} />
     </Fragment>

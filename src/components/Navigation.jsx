@@ -26,6 +26,7 @@ class Navigation extends React.Component {
     super(props)
     this.state = {
       showDropdown: false,
+      lang: '',
     }
   }
 
@@ -36,8 +37,16 @@ class Navigation extends React.Component {
     this.setState({ showDropdown: false })
   }
 
+  pickTheLang = (langPick) => {
+    this.setState({ lang: langPick })
+    console.log('PICKING-LANG', langPick)
+  }
+
   render() {
-    const { DIC } = this.props
+    const { DIC, handleDIC } = this.props
+    const { lang } = this.state
+
+    handleDIC(lang)
 
     return (
       <div className="menu-items-block">
@@ -51,6 +60,11 @@ class Navigation extends React.Component {
             <BurgerMenu handleClick={this.handleClick} />
           )}
         </Mobile>
+        <div className="languages">
+          <button onClick={() => this.pickTheLang('en')}>ENG</button>
+          <button onClick={() => this.pickTheLang('de')}>DE</button>
+          <button onClick={() => this.pickTheLang('es')}>ESP</button>
+        </div>
       </div>
     )
   }
