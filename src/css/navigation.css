@@ -7,6 +7,13 @@
   cursor: pointer;
   line-height: 0.2;
 }
+.desktop-view {
+  white-space: nowrap;
+}
+
+.mobile-view {
+  display: none;
+}
 
 .menu-items-container h6 {
   margin: 0 0.8rem;
@@ -44,13 +51,19 @@
   cursor: pointer;
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 678px) {
   .menu-items-block {
     margin-right: 0;
     width: 100%;
   }
   .mobile-menu-link h6 {
     margin: 0.8rem;
+  }
+  .desktop-view {
+    display: none;
+  }
+  .mobile-view {
+    display: block;
   }
 }
 

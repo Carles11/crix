@@ -50,16 +50,16 @@ class Navigation extends React.Component {
 
     return (
       <div className="menu-items-block">
-        <Desktop>
+        <div className="desktop-view">
           <NavigationDesktop handleClose={this.handleClose} DIC={DIC} />
-        </Desktop>
-        <Mobile>
+        </div>
+        <div className="mobile-view">
           {this.state.showDropdown ? (
             <NavigationMobile handleClose={this.handleClose} DIC={DIC} />
           ) : (
             <BurgerMenu handleClick={this.handleClick} />
           )}
-        </Mobile>
+        </div>
         <div className="languages">
           <button onClick={() => this.pickTheLang('en')}>ENG</button>
           <button onClick={() => this.pickTheLang('de')}>DE</button>
