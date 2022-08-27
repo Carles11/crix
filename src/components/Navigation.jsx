@@ -1,25 +1,10 @@
 import React from 'react'
-import styled from 'styled-components'
 
 import BurgerMenu from './BurgerMenu'
 import NavigationMobile from './NavigationMobile'
 import NavigationDesktop from './NavigationDesktop'
 
 import '../css/navigation.css'
-
-const Mobile = styled.div`
-  @media only screen and (min-width: 601px) {
-    display: none;
-  }
-`
-
-const Desktop = styled.div`
-  white-space: nowrap;
-
-  @media only screen and (max-width: 750px) {
-    display: none;
-  }
-`
 
 class Navigation extends React.Component {
   constructor(props) {
@@ -39,7 +24,6 @@ class Navigation extends React.Component {
 
   pickTheLang = (langPick) => {
     this.setState({ lang: langPick })
-    console.log('PICKING-LANG', langPick)
   }
 
   render() {
