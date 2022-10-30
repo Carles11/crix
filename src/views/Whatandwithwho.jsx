@@ -1,7 +1,7 @@
 import React from 'react'
 // import PropTypes from 'prop-types';
 
-import Divider from '../components/Divider'
+import DividerFire from '../components/DividerFire'
 import '../css/whatandwithwho.css'
 
 const Whatandwithwho = (props) => {
@@ -28,7 +28,7 @@ const Whatandwithwho = (props) => {
           </div>
         </section>
       </div>
-      <Divider />
+      <DividerFire />
 
       <section className="what-content_bottom">
         <div className="what-content_section">
