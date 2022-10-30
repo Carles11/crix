@@ -1,10 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 // import PropTypes from 'prop-types';
 
-import { Link } from 'react-router-dom'
-
-import Divider from '../components/Divider'
-import PdfViewer from '../components/PdfViewer'
+import DividerFire from '../components/DividerFire'
 import '../css/whatandwithwho.css'
 
 const Whatandwithwho = (props) => {
@@ -31,7 +28,7 @@ const Whatandwithwho = (props) => {
           </div>
         </section>
       </div>
-      <Divider />
+      <DividerFire />
 
       <section className="what-content_bottom">
         <div className="what-content_section">
