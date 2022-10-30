@@ -1,5 +1,6 @@
 import React from 'react'
 // import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom'
 
 import DividerFire from '../components/DividerFire'
 import '../css/whatandwithwho.css'
@@ -19,11 +20,10 @@ const Whatandwithwho = (props) => {
 
             <h3 className="what-subtitle">{DIC.WHATIDO_SECTION_ONE_SUB_TWO}</h3>
             <p>
-              {DIC.WHATIDO_SECTION_ONE_DESC_TWO}{' '}
+              {DIC.WHATIDO_SECTION_ONE_DESC_TWO}
               <a href="/hovear-con-list-de-países">
                 {DIC.WHATIDO_SECTION_ONE_DESC_TWO_bis}
               </a>
-              .
             </p>
           </div>
         </section>

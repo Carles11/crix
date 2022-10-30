@@ -9,7 +9,7 @@
 }
 
 section.what-content_bottom {
-  background-color: white;
+  background-color: var(--secondaryOrangeColor);
   margin: 7rem 0;
   padding-left: 1rem;
   padding-top: 3rem;
@@ -26,7 +26,7 @@ p {
   color: var(--text-color-dark);
 }
 .subtitle-bottom {
-  color: var(--text-color-dark);
+  color: var(--text-color-light);
 }
 
 .what-subtitle {
@@ -56,7 +56,7 @@ p {
   }
   section.what-content_bottom {
     margin: 3rem 0;
-    background-color: white;
+
     padding-left: 0;
     padding-top: 8rem;
   }

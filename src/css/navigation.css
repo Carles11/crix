@@ -28,6 +28,7 @@
   margin-right: 0.5rem;
   align-self: center;
   color: white;
+  z-index: 1;
 }
 
 .mobile-menu {
@@ -53,6 +54,8 @@
 
 @media only screen and (max-width: 678px) {
   .menu-items-block {
+    z-index: 1;
+
     margin-right: 0;
     width: 100%;
   }

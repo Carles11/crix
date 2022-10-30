@@ -1,6 +1,6 @@
+import de from './dictionaries/de.json'
 import en from './dictionaries/en.json'
 import es from './dictionaries/es.json'
-import de from './dictionaries/de.json'
 
 const dictionaries = {
   en,
@@ -8,6 +8,4 @@ const dictionaries = {
   es,
 }
 
-const getDictionary = (lang = 'en') => dictionaries[lang]
-
-export default getDictionary
+export const getDictionary = (lang = 'en') => dictionaries[lang]

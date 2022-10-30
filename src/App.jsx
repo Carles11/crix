@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 
-import Header from './components/Header'
 import Footer from './components/Footer'
-import getDictionary from './views/utils/dictionary'
+import Header from './components/Header'
+import { getDictionary } from './views/utils/dictionary'
 
 import AllRoutes from './Routes'
 

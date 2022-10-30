@@ -1,8 +1,8 @@
 import React from 'react'
 
 import BurgerMenu from './BurgerMenu'
-import NavigationMobile from './NavigationMobile'
 import NavigationDesktop from './NavigationDesktop'
+import NavigationMobile from './NavigationMobile'
 
 import '../css/navigation.css'
 
@@ -15,6 +15,12 @@ class Navigation extends React.Component {
     }
   }
 
+  componentDidMount() {
+    const { lang } = this.state
+    const { handleDIC } = this.props
+
+    handleDIC(lang)
+  }
   handleClick = () => {
     this.setState({ showDropdown: true })
   }
