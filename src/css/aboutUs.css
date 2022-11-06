@@ -8,15 +8,12 @@
   margin: 3rem 0;
   position: relative;
   margin-bottom: 4rem;
-  padding-left: 1rem;
   padding-right: 1rem;
   background-color: white;
 }
 
 section.about-content_bottom {
   background-color: white;
-  margin-top: 7rem;
-  padding-left: 1rem;
   padding-top: 3rem;
   padding-bottom: 4rem;
 }
@@ -25,6 +22,8 @@ section.about-content_bottom {
   width: 100%;
   display: flex;
   flex-direction: column;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 .about-content_section.orange-bg {
   background-color: var(--secondaryOrangeColor);
@@ -68,10 +67,10 @@ a {
     padding-top: 4rem;
   }
   section.about-content_bottom {
-    margin: 3rem 0;
+    margin: 0;
     background-color: white;
+    padding-top: 0rem;
     padding-left: 0;
-    padding-top: 8rem;
     padding-bottom: 6rem;
   }
   .about-content_section {
@@ -101,8 +100,7 @@ a {
     line-height: 1.6em;
   }
   section.about-content_bottom {
-    margin: 3rem 0;
+    margin: 0;
     padding-left: 0;
-    padding-top: 11rem;
   }
 }

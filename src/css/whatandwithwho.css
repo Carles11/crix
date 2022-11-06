@@ -57,9 +57,7 @@ p {
   }
   section.what-content_bottom {
     margin: 0;
-
     padding-left: 0;
-    padding-top: 8rem;
   }
   .what-content_section {
     flex-direction: row;
@@ -84,6 +82,5 @@ p {
   section.what-content_bottom {
     margin: 0;
     padding-left: 0;
-    padding-top: 11rem;
   }
 }

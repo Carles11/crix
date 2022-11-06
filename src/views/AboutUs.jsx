@@ -1,6 +1,6 @@
 import React from 'react'
 
-import DividerFire from '../components/DividerFire'
+import DividerDiagonal from '../components/DividerDiagonal'
 import Portraits from '../components/Portraits'
 import '../css/aboutUs.css'
 
@@ -22,7 +22,7 @@ const AboutUs = (props) => {
         </section>
       </div>
       <div className="about-content_fire-bottom">
-        <DividerFire />
+        <DividerDiagonal />
         <section className="about-content_bottom">
           <div className="about-content_section orange-bg">
             "<h1 className="subtitle-bottom">{DIC.ABOUT_SEC_TWO_TITLE}</h1>
