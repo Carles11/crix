@@ -37,7 +37,7 @@ const Whatandwithwho = (props) => {
             <h1 className="subtitle-bottom">{DIC.WHATIDO_SECTION_TWO_TITLE}</h1>
             <div className="what-content_article">
               <h3 className="what-subtitle subtitle-bottom section-two__title">
-                {DIC.WHATIDO_SECTION_TWO_SUB_ONE}{' '}
+                {DIC.WHATIDO_SECTION_TWO_SUB_ONE}
               </h3>
               <ul>
                 <li>Instituto Cervantes</li>
