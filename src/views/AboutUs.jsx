@@ -21,22 +21,23 @@ const AboutUs = (props) => {
           </div>
         </section>
       </div>
-      <DividerFire />
+      <div className="about-content_fire-bottom">
+        <DividerFire />
+        <section className="about-content_bottom">
+          <div className="about-content_section orange-bg">
+            "<h1 className="subtitle-bottom">{DIC.ABOUT_SEC_TWO_TITLE}</h1>
+            <div className="about-content_article">
+              <h3 className="about-subtitle subtitle-bottom">
+                {DIC.ABOUT_SEC_TWO_SUB_ONE}
+              </h3>
 
-      <section className="about-content_bottom">
-        <div className="about-content_section orange-bg">
-          "<h1 className="subtitle-bottom">{DIC.ABOUT_SEC_TWO_TITLE}</h1>
-          <div className="about-content_article">
-            <h3 className="about-subtitle subtitle-bottom">
-              {DIC.ABOUT_SEC_TWO_SUB_ONE}
-            </h3>
-
-            <p>{DIC.ABOUT_SEC_TWO_DESC_ONE}</p>
-            <p>{DIC.ABOUT_SEC_TWO_DESC_TWO}</p>
+              <p>{DIC.ABOUT_SEC_TWO_DESC_ONE}</p>
+              <p>{DIC.ABOUT_SEC_TWO_DESC_TWO}</p>
+            </div>
           </div>
-        </div>
-        <Portraits />
-      </section>
+          <Portraits />
+        </section>{' '}
+      </div>
     </main>
   )
 }

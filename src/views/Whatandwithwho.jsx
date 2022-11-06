@@ -2,7 +2,8 @@ import React from 'react'
 // import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom'
 
-import DividerFire from '../components/DividerFire'
+import DividerDiagonal from '../components/DividerDiagonal'
+import '../css/dividerDiagonal.css'
 import '../css/whatandwithwho.css'
 
 const Whatandwithwho = (props) => {
@@ -28,51 +29,53 @@ const Whatandwithwho = (props) => {
           </div>
         </section>
       </div>
-      <DividerFire />
+      <div className="what-content_fire-bottom">
+        <DividerDiagonal />
 
-      <section className="what-content_bottom">
-        <div className="what-content_section">
-          <h1 className="subtitle-bottom">{DIC.WHATIDO_SECTION_TWO_TITLE}</h1>
-          <div className="what-content_article">
-            <h3 className="what-subtitle subtitle-bottom">
-              {DIC.WHATIDO_SECTION_TWO_SUB_ONE}{' '}
-            </h3>
-            <ul>
-              <li>Instituto Cervantes</li>
-              <li>
-                <Link to="/PdfViewer">Hessenwaldschule</Link>
-              </li>
-              <li>Kultusministerium Hessen</li>
-            </ul>
+        <section className="what-content_bottom section-two">
+          <div className="what-content_section">
+            <h1 className="subtitle-bottom">{DIC.WHATIDO_SECTION_TWO_TITLE}</h1>
+            <div className="what-content_article">
+              <h3 className="what-subtitle subtitle-bottom section-two__title">
+                {DIC.WHATIDO_SECTION_TWO_SUB_ONE}{' '}
+              </h3>
+              <ul>
+                <li>Instituto Cervantes</li>
+                <li>
+                  <Link to="/PdfViewer">Hessenwaldschule</Link>
+                </li>
+                <li>Kultusministerium Hessen</li>
+              </ul>
 
-            <h3 className="what-subtitle subtitle-bottom">
-              {DIC.WHATIDO_SECTION_TWO_SUB_TWO}
-            </h3>
-            <ul>
-              <li>
-                <a
-                  href="https://thecirculart.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="dont-underline"
-                >
-                  TheCirculArt
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://abluelemon.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="dont-underline"
-                >
-                  Abluelemon
-                </a>
-              </li>
-            </ul>
+              <h3 className="what-subtitle subtitle-bottom">
+                {DIC.WHATIDO_SECTION_TWO_SUB_TWO}
+              </h3>
+              <ul>
+                <li>
+                  <a
+                    href="https://thecirculart.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="dont-underline"
+                  >
+                    TheCirculArt
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://abluelemon.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="dont-underline"
+                  >
+                    Abluelemon
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </main>
   )
 }

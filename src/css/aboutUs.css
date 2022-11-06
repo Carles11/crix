@@ -1,4 +1,8 @@
 /* > Mobile */
+.about-content_fire-bottom {
+  position: relative;
+}
+
 .about-content {
   width: 100%;
   margin: 3rem 0;

@@ -1,16 +1,18 @@
 /* > Mobile */
+
+.what-content_fire-bottom {
+  position: relative;
+}
 .what-content {
   width: 100%;
   margin: 3rem 0;
   position: relative;
-  margin-bottom: 4rem;
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
 section.what-content_bottom {
   background-color: var(--secondaryOrangeColor);
-  margin: 7rem 0;
   padding-left: 1rem;
   padding-top: 3rem;
 }
@@ -52,10 +54,9 @@ p {
   .what-content {
     margin: 0;
     padding-top: 4rem;
-    padding-bottom: 4rem;
   }
   section.what-content_bottom {
-    margin: 3rem 0;
+    margin: 0;
 
     padding-left: 0;
     padding-top: 8rem;
@@ -81,7 +82,7 @@ p {
     line-height: 1.6em;
   }
   section.what-content_bottom {
-    margin: 3rem 0;
+    margin: 0;
     padding-left: 0;
     padding-top: 11rem;
   }

@@ -1,0 +1,81 @@
+body {
+  overflow-x: hidden;
+}
+
+.section-one {
+  background-color: 'red';
+  position: relative;
+  padding: 200px 0 350px;
+}
+.section-one .section-one__title {
+  color: #fff;
+  font-size: 35px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.section-one .section-one__descr {
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.5;
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-two {
+  background-color: var(--secondaryOrangeColor);
+  padding: 100px 0 200px;
+  position: relative;
+  z-index: 10;
+}
+.section-two .section-two__title {
+  color: #fff;
+  font-size: 35px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.section-two .section-two__descr {
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.5;
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* -------------------------------------------------------------------------
+     begin Separator
+   * ------------------------------------------------------------------------- */
+.separator {
+  bottom: -4px;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+
+  width: 100%;
+}
+
+/* -------------------------------------------------------------------------
+     end Separator
+   * ------------------------------------------------------------------------- */
+
+/* begin Media Max-Width 767
+  ============================================================================ */
+
+@media screen and (max-width: 767px) {
+  .section-one {
+    padding: 130px 0 190px;
+  }
+  .section-one .separator {
+    bottom: -110px;
+  }
+  .section-one .separator .separator__svg {
+    left: -20%;
+    position: relative;
+    transform: rotate(15deg);
+    width: 140%;
+  }
+}
+
+/* end Media Max-Width 767
+  ============================================================================ */
