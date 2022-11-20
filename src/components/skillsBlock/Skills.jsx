@@ -16,7 +16,7 @@ const Skills = () => {
             <td>⭐⭐⭐⭐</td>
           </tr>
           <tr>
-            <td>React in Node.js</td>
+            <td>React</td>
             <td>⭐⭐⭐⭐</td>
           </tr>
           <tr>
@@ -28,8 +28,8 @@ const Skills = () => {
             <td>⭐⭐⭐</td>
           </tr>
           <tr>
-            <td>React-native</td>
-            <td>⭐⭐</td>
+            <td>React-Native with expo</td>
+            <td>⭐⭐⭐⭐</td>
           </tr>
           <tr>
             <td>Wordpress</td>

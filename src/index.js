@@ -1,5 +1,4 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter as Router } from 'react-router-dom'
 
@@ -8,7 +7,9 @@ import './css/style.css'
 import ScrollToTop from './helpers/ScrollToTop'
 
 // import registerServiceWorker from './registerServiceWorker';
-
+if (module.hot) {
+  module.hot.accept()
+}
 const container = document.getElementById('root')
 const root = createRoot(container)
 root.render(
