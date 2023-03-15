@@ -24,7 +24,7 @@
     "style-loader": "^3.3.1",
     "sw-precache-webpack-plugin": "^1.0.0",
     "url-loader": "^4.1.1",
-    "webpack": "^5.73.0",
+    "webpack": "^5.76.0",
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.9.3"
   },
@@ -49,7 +49,7 @@
     "svg-inline-loader": "^0.8.2",
     "sweetalert2": "^11.4.24",
     "switch": "^0.0.0",
-    "webpack": "^5.73.0",
+    "webpack": "^5.76.0",
     "webpack-cli": "^4.10.0",
     "yarn": "^1.22.19"
   },
