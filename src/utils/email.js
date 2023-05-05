@@ -6,7 +6,7 @@ const emailSend = (data, DIC, resetForm) => {
   const templateID = 'template_rvgqsba'
   const showName = data.name?.split(' ')[0]
   init('user_5HJvI2zi5tRGkdRn7cAvt')
-
+  console.log({ serviceID, templateID, data })
   emailjs.send(serviceID, templateID, data).then(
     (result) => {
       Swal.fire({
@@ -20,9 +20,10 @@ const emailSend = (data, DIC, resetForm) => {
       resetForm()
     },
     (error) => {
+      console.log({ error })
       Swal.fire({
         title: `${DIC.TOAST_ERROR_TITLE} ${showName}:`,
-        text: `${DIC.TOAST_ERROR_TRYAGAIN}: (${error})`,
+        text: `${DIC.TOAST_ERROR_TRYAGAIN}: (error ${error.status}, ${error.text})`,
         icon: 'error',
         showConfirmButton: false,
         showCancelButton: true,

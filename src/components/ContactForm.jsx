@@ -34,7 +34,7 @@ class ContactForm extends Component {
   render() {
     const { name, subject, email, message, buttonText, isError } = this.state
     const { DIC } = this.props
-    console.log({ buttonText })
+
     const handleChange = (e) => {
       const regExp =
         /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
