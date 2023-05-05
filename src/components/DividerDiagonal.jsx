@@ -16,7 +16,7 @@ const DividerDiagonal = () => {
           xmlns="http://www.w3.org/2000/svg"
         >
           <path d="M 100 100 V 10 L 0 100" />
-          <path d="M 30 73 L 100 18 V 10 Z" fill="#ff6a3d" stroke-width="0" />
+          <path d="M 30 73 L 100 18 V 10 Z" fill="#ff6a3d" strokeWidth="0" />
         </svg>
       </div>
     </div>

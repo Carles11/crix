@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 import Button from '../components/Button'
-import emailSend from '../views/utils/email.js'
+import emailSend from '../utils/email.js'
 
 import Swal from 'sweetalert2'
 
@@ -23,6 +23,9 @@ class ContactForm extends Component {
       },
     }
   }
+
+  
+
   handleChange = (e) => {
     const regExp =
       /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/

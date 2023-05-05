@@ -11,32 +11,23 @@ class Navigation extends React.Component {
     super(props)
     this.state = {
       showDropdown: false,
-      lang: '',
     }
   }
 
-  componentDidMount() {
-    const { lang } = this.state
-    const { handleDIC } = this.props
-
-    handleDIC(lang)
-  }
   handleClick = () => {
     this.setState({ showDropdown: true })
   }
+
   handleClose = () => {
     this.setState({ showDropdown: false })
   }
 
-  pickTheLang = (langPick) => {
-    this.setState({ lang: langPick })
-  }
-
   render() {
     const { DIC, handleDIC } = this.props
-    const { lang } = this.state
 
-    handleDIC(lang)
+    const pickTheLang = (langPick) => {
+      handleDIC(langPick)
+    }
 
     return (
       <div className="menu-items-block">
@@ -51,9 +42,9 @@ class Navigation extends React.Component {
           )}
         </div>
         <div className="languages">
-          <button onClick={() => this.pickTheLang('en')}>ENG</button>
-          <button onClick={() => this.pickTheLang('de')}>DE</button>
-          <button onClick={() => this.pickTheLang('es')}>ESP</button>
+          <button onClick={() => pickTheLang('en')}>ENG</button>
+          <button onClick={() => pickTheLang('de')}>DE</button>
+          <button onClick={() => pickTheLang('es')}>ESP</button>
         </div>
       </div>
     )
