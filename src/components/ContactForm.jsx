@@ -24,10 +24,17 @@ class ContactForm extends Component {
     }
   }
 
+  componentDidMount() {
+    const { DIC } = this.props
+    this.setState({
+      buttonText: DIC.BTN_SEND,
+    })
+  }
+
   render() {
     const { name, subject, email, message, buttonText, isError } = this.state
     const { DIC } = this.props
-
+    console.log({ buttonText })
     const handleChange = (e) => {
       const regExp =
         /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
@@ -53,9 +60,8 @@ class ContactForm extends Component {
     const formSubmit = (e) => {
       e.preventDefault()
       const isError = { ...this.state.isError }
-      console.log('isErrorisErrorisErrorisError', isError)
       const formErrors = isError.name.length > 0 || isError.email.length > 0
-      console.log('formErrorsformErrors', formErrors)
+
       if (formErrors) {
         Swal.fire({
           title: DIC.TOAST_ERROR_TITLE,
@@ -69,13 +75,17 @@ class ContactForm extends Component {
       }
 
       this.setState({
-        buttonText: this.props.DIC.BTN_SENDING,
+        buttonText: DIC.BTN_SENDING,
       })
       const { name, subject, email, message } = this.state
 
       const data = { name, subject, email, message }
 
       emailSend(data, DIC, resetForm)
+
+      this.setState({
+        buttonText: DIC.BTN_SEND,
+      })
     }
 
     const resetForm = () => {
@@ -84,7 +94,7 @@ class ContactForm extends Component {
         message: '',
         email: '',
         subject: '',
-        buttonText: this.props.DIC.BTN_SENT,
+        buttonText: DIC.BTN_SENT,
       })
     }
 
