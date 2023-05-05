@@ -1,7 +1,7 @@
 import emailjs, { init } from 'emailjs-com'
 import Swal from 'sweetalert2'
 
-const emailSend = (data) => {
+const emailSend = (data, DIC, resetForm) => {
   const serviceID = 'default_service'
   const templateID = 'template_rvgqsba'
   const showName = data.name?.split(' ')[0]
@@ -10,22 +10,23 @@ const emailSend = (data) => {
   emailjs.send(serviceID, templateID, data).then(
     (result) => {
       Swal.fire({
-        title: `Gracias, ${showName}!`,
-        text: `${result.text}, tu petición ha sido enviada. En breve nos pondremos en contacto contigo. Muchas gracias!`,
+        title: `${DIC.TOAST_SUCCESS_TITLE}${showName}!`,
+        text: `${result.text}${DIC.TOAST_SUCCESS_TEXT}`,
         icon: 'success',
         showConfirmButton: false,
         showCancelButton: true,
-        cancelButtonText: 'Cierra',
+        cancelButtonText: DIC.TOAST_ERROR_CLOSE,
       })
+      resetForm()
     },
     (error) => {
       Swal.fire({
-        title: `Lo siento, ${showName}:`,
-        text: `Parece que algo no ha funcionado.(${error}) Inténtalo de nuevo por favor. `,
+        title: `${DIC.TOAST_ERROR_TITLE} ${showName}:`,
+        text: `${DIC.TOAST_ERROR_TRYAGAIN}: (${error})`,
         icon: 'error',
         showConfirmButton: false,
         showCancelButton: true,
-        cancelButtonText: 'Cierra',
+        cancelButtonText: DIC.TOAST_ERROR_CLOSE,
       })
     },
   )
