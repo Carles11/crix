@@ -42,9 +42,15 @@ class Navigation extends React.Component {
           )}
         </div>
         <div className="languages">
-          <button onClick={() => pickTheLang('en')}>ENG</button>
-          <button onClick={() => pickTheLang('de')}>DE</button>
-          <button onClick={() => pickTheLang('es')}>ESP</button>
+          <button className="language-button" onClick={() => pickTheLang('en')}>
+            ENG
+          </button>
+          <button className="language-button" onClick={() => pickTheLang('de')}>
+            DE
+          </button>
+          <button className="language-button" onClick={() => pickTheLang('es')}>
+            ESP
+          </button>
         </div>
       </div>
     )

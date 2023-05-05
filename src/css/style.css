@@ -244,6 +244,8 @@ input[type='text'] {
   font-size: 16px;
 }
 
+/* ADDRESS MOBILE-PHONES AND TABLETS*/
+
 @media only screen and (max-width: 650px) {
   input[type='text'] {
     margin: 3px 0;
@@ -264,6 +266,8 @@ input[type='text'] {
     font-size: 14px;
   }
 }
+
+/* ADDRESS TABLETS AND NORMAL PCS */
 
 @media only screen and (max-width: 1200px) {
   input[type='text'] {

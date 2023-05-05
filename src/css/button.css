@@ -85,10 +85,7 @@ path {
   background: var(--secondaryColor);
   border: white;
 }
-.btn-light:not(:disabled) {
-}
-.btn-light:not(.disabled) {
-}
+
 .btn-light:active,
 .btn-light:hover {
   color: white;
@@ -115,6 +112,17 @@ path {
   border: white;
 }
 
+.language-button {
+  border: none;
+  background-color: transparent;
+  color: var(--secondaryColor);
+}
+.language-button:hover {
+  border: 1px solid var(--secondaryColor);
+  color: var(--light-grey);
+  padding: 0.5rem;
+  border-radius: var(--borderRadius);
+}
 /* MOBILE STYLES */
 
 @media only screen and (max-width: 650px) {

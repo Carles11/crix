@@ -73,5 +73,5 @@
 .languages {
   display: flex;
   justify-content: flex-end;
-  margin: 1rem;
+  margin-top: 1rem;
 }

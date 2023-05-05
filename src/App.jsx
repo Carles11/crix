@@ -14,11 +14,9 @@ const App = (props) => {
 
   useEffect(() => {
     DIC = getDictionary(language ? language : 'en')
-    console.log({ language })
     setActiveDIC(DIC)
   }, [language, DIC])
 
-  console.log({ activeDIC })
   return (
     <>
       <Header DIC={activeDIC} handleDIC={setLanguage} />
