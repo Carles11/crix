@@ -6,6 +6,7 @@ import '../css/landing.css'
 
 const Landing = (props) => {
   const { DIC } = props
+
   const HoverableDiv = ({ handleMouseOver }) => {
     return (
       <h4

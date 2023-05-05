@@ -7,22 +7,23 @@ import { getDictionary } from './utils/dictionary'
 import AllRoutes from './Routes'
 
 const App = (props) => {
-  const [language, setLanguage] = useState('')
-
   let DIC
   DIC = getDictionary()
+  const [language, setLanguage] = useState('')
+  const [activeDIC, setActiveDIC] = useState({})
 
   useEffect(() => {
-    DIC = getDictionary(language)
+    DIC = getDictionary(language ? language : 'en')
     console.log({ language })
-    console.log({ DIC })
-  }, [language])
+    setActiveDIC(DIC)
+  }, [language, DIC])
 
+  console.log({ activeDIC })
   return (
     <>
-      <Header DIC={DIC} handleDIC={setLanguage} />
-      <AllRoutes {...props} DIC={DIC} />
-      <Footer DIC={DIC} />
+      <Header DIC={activeDIC} handleDIC={setLanguage} />
+      <AllRoutes {...props} DIC={activeDIC} />
+      <Footer DIC={activeDIC} />
     </>
   )
 }
