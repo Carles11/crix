@@ -49,11 +49,13 @@
   "WHATIDO_SECTION_ONE_TITLE": "What do I do?",
   "WHATIDO_SECTION_ONE_DESC_ONE": "I develop web pages and software in Javascript 100%. That allows me to give total flexibility to your imagination. Or almost. But if you've seen it, it can be done. With WordPress I develop simpler and lower cost pages.",
   "WHATIDO_SECTION_ONE_DESC_ONE_bis": "Management of portals and institutional software.",
-  "WHATIDO_SECTION_ONE_DESC_TWO": "I edit brochures and multipage PDFs, posters and editions of any kind. After your approval, I send the design directly to a digital printer and you receive it at your door.",
+  "WHATIDO_SECTION_ONE_DESC_TWO": "I create brochures and multipage PDFs, posters and editions of any kind. After your approval, I send the design directly to a digital printer and you receive it at your door.",
   "WHATIDO_SECTION_ONE_DESC_TWO_bis": "Shipments throughout Europe",
   "WHATIDO_SECTION_ONE_SUB_ONE": "Web",
   "WHATIDO_SECTION_ONE_SUB_TWO": "Graphic design",
-  "WHATIDO_SECTION_TWO_TITLE": "With whom?",
+  "WHATIDO_SECTION_TWO_TITLE": "For whom?",
   "WHATIDO_SECTION_TWO_SUB_ONE": "Cultural institutions and schools",
-  "WHATIDO_SECTION_TWO_SUB_TWO": "Companies"
+  "WHATIDO_SECTION_TWO_SUB_TWO": "Companies",
+  "NOT_FOUND_TITLE": "Oups. This page doesn't seem to exist.",
+  "NOT_FOUND_SUBTITLE": "Try this other thing:"
 }

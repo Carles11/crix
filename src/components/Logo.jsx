@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import logo from '../assets/logos/crif_logo75_transp.png'
+import logo from '../assets/logos/crix-design-logo-white_transp-500.png'
 import '../css/logo.css'
 const Logo = () => {
   return (

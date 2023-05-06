@@ -26,7 +26,7 @@ section.about-content_bottom {
   padding-right: 1rem;
 }
 .about-content_section.orange-bg {
-  background-color: var(--secondaryOrangeColor);
+  background-color: var(--secondaryColor);
 }
 .about-content h1,
 h3,
@@ -79,7 +79,7 @@ a {
     align-items: baseline;
   }
   .about-content_section.orange-bg {
-    background-color: var(--secondaryOrangeColor);
+    background-color: var(--secondaryColor);
   }
   .about-content_article {
     margin-left: 2rem;

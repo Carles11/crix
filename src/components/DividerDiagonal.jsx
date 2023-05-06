@@ -11,7 +11,7 @@ const DividerDiagonal = () => {
           height="350"
           viewBox="0 0 100 100"
           preserveAspectRatio="none"
-          fill="#ff9800"
+          fill="#ff6a3d"
           version="1.1"
           xmlns="http://www.w3.org/2000/svg"
         >

@@ -23,7 +23,7 @@ body {
 }
 
 .section-two {
-  background-color: var(--secondaryOrangeColor);
+  background-color: var(--secondaryColor);
   padding: 100px 0 200px;
   position: relative;
   z-index: 10;

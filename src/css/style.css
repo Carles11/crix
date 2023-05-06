@@ -195,7 +195,7 @@ a {
   cursor: pointer;
 }
 a:hover {
-  color: var(--secondaryColor) !important;
+  color: var(--primaryLightColor) !important;
   transition: color 1s;
 }
 a:not(.dont-underline):after {

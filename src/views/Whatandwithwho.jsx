@@ -22,8 +22,8 @@ const Whatandwithwho = (props) => {
             <h3 className="what-subtitle">{DIC.WHATIDO_SECTION_ONE_SUB_TWO}</h3>
             <p>
               {DIC.WHATIDO_SECTION_ONE_DESC_TWO}
-              <a href="/hovear-con-list-de-países">
-                {DIC.WHATIDO_SECTION_ONE_DESC_TWO_bis}
+              <a href="/hovear-con-list-de-países" className="dont-underline">
+                &nbsp;{DIC.WHATIDO_SECTION_ONE_DESC_TWO_bis}
               </a>
             </p>
           </div>

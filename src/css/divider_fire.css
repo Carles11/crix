@@ -49,7 +49,7 @@
   height: 200px;
   overflow: hidden;
   border-radius: 100%;
-  border: 1px solid var(--secondaryOrangeColor);
+  border: 1px solid var(--secondaryColor);
 }
 .content .fire {
   filter: url(#goo);
@@ -63,7 +63,7 @@
   bottom: 0;
   width: 100px;
   height: 30px;
-  background: var(--secondaryOrangeColor);
+  background: var(--secondaryColor);
   border-radius: 30px;
 }
 .content figure {
@@ -73,7 +73,7 @@
   bottom: 0;
   width: 70px;
   height: 70px;
-  background: var(--secondaryOrangeColor);
+  background: var(--secondaryColor);
   border-radius: 100%;
 }
 .content figure:nth-child(1) {
@@ -216,7 +216,7 @@
 @keyframes firecircle {
   0% {
     transform: translateY(0) scale(1);
-    background: var(--secondaryOrangeColor);
+    background: var(--secondaryColor);
   }
   100% {
     transform: translateY(-175px) scale(0);

@@ -35,7 +35,7 @@
   "MSG_SOON": "Diese Seite wird derzeit gewartet. Bitte versuchen Sie es später.",
   "MORE_INFO": "Weitere Informationen",
   "NAME": "CriX",
-  "NAV_SERVICES": "Was ich tue und mit wem ich arbeite",
+  "NAV_SERVICES": "Was ich tue",
   "NAV_ABOUT_US": "Über Carles",
   "NAV_CONTACT": "Kontakt",
   "NOTFOUND": "Die Seite, die Sie suchen, existiert hier nicht.",
@@ -49,11 +49,13 @@
   "WHATIDO_SECTION_ONE_TITLE": "Was ich mache",
   "WHATIDO_SECTION_ONE_DESC_ONE": "Ich entwickle Webseiten und Software in 100% Javascript. Das erlaubt mir, Ihrer Fantasie freien Lauf zu lassen. Oder fast. Aber wenn man es gesehen hat, ist es machbar. Mit WordPress entwickle ich einfachere und kostengünstigere Seiten.",
   "WHATIDO_SECTION_ONE_DESC_ONE_bis": "Verwaltung von Portalen und Software für Institutionen.",
-  "WHATIDO_SECTION_ONE_DESC_TWO": "Ich bearbeite Broschüren und mehrseitige PDFs, Plakate und Editionen jeglicher Art. Nach Ihrer Freigabe schicke ich das Design direkt an einen Digitaldrucker und Sie erhalten es direkt vor die Haustür.",
+  "WHATIDO_SECTION_ONE_DESC_TWO": "Ich erstelle Broschüren und mehrseitige PDFs, Plakate und Editionen jeglicher Art. Nach Ihrer Freigabe schicke ich das Design direkt an einen Digitaldrucker und Sie erhalten es direkt vor die Haustür.",
   "WHATIDO_SECTION_ONE_DESC_TWO_bis": "Versand nach ganz Europa",
   "WHATIDO_SECTION_ONE_SUB_ONE": "Web",
   "WHATIDO_SECTION_ONE_SUB_TWO": "Grafikdesign",
-  "WHATIDO_SECTION_TWO_TITLE": "Mit wem?",
+  "WHATIDO_SECTION_TWO_TITLE": "Für wem?",
   "WHATIDO_SECTION_TWO_SUB_ONE": "Kulturelle Einrichtungen und Schulen",
-  "WHATIDO_SECTION_TWO_SUB_TWO": "Unternehmen"
+  "WHATIDO_SECTION_TWO_SUB_TWO": "Unternehmen",
+  "NOT_FOUND_TITLE": "Oups. Diese Seite scheint nicht zu existieren.",
+  "NOT_FOUND_SUBTITLE": "Versuch es lieber damit:"
 }
