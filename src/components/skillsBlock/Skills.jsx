@@ -16,28 +16,25 @@ const Skills = () => {
             <td>⭐⭐⭐⭐</td>
           </tr>
           <tr>
-            <td>React</td>
+            <td>React & NextJS</td>
             <td>⭐⭐⭐⭐</td>
           </tr>
           <tr>
             <td>Redux</td>
-            <td>⭐⭐⭐</td>
+            <td>⭐⭐</td>
           </tr>
           <tr>
             <td>MongoDB & mySQL</td>
             <td>⭐⭐⭐</td>
           </tr>
           <tr>
-            <td>React-Native with expo</td>
+            <td>React-Native & expo</td>
             <td>⭐⭐⭐⭐</td>
           </tr>
-          <tr>
-            <td>NextJS</td>
-            <td>⭐⭐⭐</td>
-          </tr>
+
           <tr>
             <td>Typescript</td>
-            <td>⭐⭐⭐⭐</td>
+            <td>⭐⭐⭐</td>
           </tr>
           <tr>
             <td>Wordpress</td>
