@@ -1,4 +1,11 @@
-.landing-bg {
+.landing-img-bg {
+  /* background-image: url('../assets/images/skating-lake_crix.jpg'); */
+  /* background-color: whitesmoke;
+  /* background-color: gainsboro;
+  height: 100vh;
+  width: 100%; */
+  height: 100vh;
+  width: 100%;
   position: relative;
 }
 
