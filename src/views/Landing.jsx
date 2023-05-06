@@ -77,9 +77,9 @@ const Landing = (props) => {
             </Button>
           </div>
         </div>
+        <HoverableDiv handleMouseOver={handleMouseOver} />
+        {isHovering && <HoverSkills />}
       </div>
-      <HoverableDiv handleMouseOver={handleMouseOver} />
-      {isHovering && <HoverSkills />}
     </div>
   )
 }
