@@ -1,20 +1,5 @@
-.landing-img-bg {
-  /* background-image: url('../assets/images/skating-lake_crix.jpg'); */
-  /* background-color: whitesmoke;
-  /* background-color: gainsboro;
-  height: 100vh;
-  width: 100%; */
-  height: 100vh;
-  width: 100%;
-  background: linear-gradient(
-    -45deg,
-    var(--primaryColor) 8,
-    var(--light-grey),
-    whitesmoke,
-    whitesmoke
-  );
-  background-size: 400% 400%;
-  animation: gradient 30s ease infinite;
+.landing-bg {
+  position: relative;
 }
 
 @keyframes gradient {
