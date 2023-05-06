@@ -40,6 +40,8 @@
   "NAV_CONTACT": "Kontakt",
   "NOTFOUND": "Die Seite, die Sie suchen, existiert hier nicht.",
   "NOTFOUND_TXT": "Oups! Falsches Path. Versuchen Sie es noch einmal.",
+  "SKILLS_PROGRAMMING": "Entwicklung",
+  "SKILLS_DESIGN": "Grafikdesign",
   "TOAST_ERROR_TITLE": "Es tut mir leid",
   "TOAST_ERROR_TEXT": "Das Formular scheint Fehler zu enthalten. Bitte versuche es, diese zu korrigieren, bevor du das Formular erneut absendest.",
   "TOAST_ERROR_TRYAGAIN": "Etwas hat nicht geklappt. Bitte versuche es erneut, oder schreib mir eine E-Mail.",

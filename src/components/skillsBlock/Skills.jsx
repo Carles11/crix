@@ -1,10 +1,11 @@
 import React from 'react'
 import '../../css/skillsBlock.css'
 
-const Skills = () => {
+const Skills = (props) => {
+  const { DIC } = props
   return (
     <div className="column-2a">
-      <h5>Programación</h5>
+      <h5>{DIC.SKILLS_PROGRAMMING}</h5>
       <table className="table-style">
         <tbody>
           <tr>

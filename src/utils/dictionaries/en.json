@@ -40,6 +40,8 @@
   "NAV_CONTACT": "Contact",
   "NOTFOUND": "The page you are looking for does not exist here.",
   "NOTFOUND_TXT": "Oups! Wrong path. Try again.",
+  "SKILLS_PROGRAMMING": "Programming",
+  "SKILLS_DESIGN": "Graphic design",
   "TOAST_ERROR_TITLE": "I am sorry",
   "TOAST_ERROR_TEXT": "There seem to be errors in the form. Please try to correct them before submitting again.",
   "TOAST_ERROR_TRYAGAIN": "Something did not work. Please try again, or write me an email",

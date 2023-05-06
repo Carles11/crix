@@ -20,7 +20,7 @@ const Landing = (props) => {
   }
 
   const HoverSkills = () => {
-    return <SkillsBlock />
+    return <SkillsBlock DIC={DIC} />
   }
 
   const [isHovering, setIsHovering] = useState(false)

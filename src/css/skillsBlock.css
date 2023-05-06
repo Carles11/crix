@@ -3,6 +3,9 @@
   height: fit-content;
   margin: 0 0.5rem;
 }
+.column-2a h5 {
+  margin-bottom: 1rem;
+}
 .skills-container {
   position: absolute;
   bottom: 8% !important;
