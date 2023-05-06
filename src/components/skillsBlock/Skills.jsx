@@ -32,6 +32,14 @@ const Skills = () => {
             <td>⭐⭐⭐⭐</td>
           </tr>
           <tr>
+            <td>NextJS</td>
+            <td>⭐⭐⭐</td>
+          </tr>
+          <tr>
+            <td>Typescript</td>
+            <td>⭐⭐⭐⭐</td>
+          </tr>
+          <tr>
             <td>Wordpress</td>
             <td>⭐⭐⭐⭐</td>
           </tr>
