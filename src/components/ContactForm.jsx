@@ -109,10 +109,7 @@ class ContactForm extends Component {
     }
 
     return (
-      <form
-        className="contact-form contact-flex"
-        onSubmit={(e) => formSubmit(e)}
-      >
+      <form className="contact-form contact-flex">
         <div className="contact-input-group">
           <label className="contact-label">{DIC.CONTACTFORM_NAME}</label>
           <input
