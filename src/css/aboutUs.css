@@ -24,6 +24,7 @@ section.about-content_bottom {
   flex-direction: column;
   padding-left: 1rem;
   padding-right: 1rem;
+  padding-bottom: 4rem;
 }
 .about-content_section.orange-bg {
   background-color: var(--secondaryColor);
@@ -41,6 +42,7 @@ a {
   color: var(--text-color-dark);
 }
 .subtitle-bottom {
+  padding-top: 4rem;
   color: var(--text-color-light) !important;
 }
 

@@ -21,6 +21,7 @@ section.what-content_bottom {
   width: 100%;
   display: flex;
   flex-direction: column;
+  padding-bottom: 4rem;
 }
 .what-content .what-content_section h1,
 h3,
@@ -28,6 +29,7 @@ p {
   color: var(--text-color-dark);
 }
 .subtitle-bottom {
+  padding-top: 4rem;
   color: var(--text-color-light);
 }
 

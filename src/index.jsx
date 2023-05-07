@@ -16,7 +16,7 @@ root.render(
   <Router>
     <ScrollToTop />
     <App />
-  </Router>,
+  </Router>
 )
 
 // registerServiceWorker();

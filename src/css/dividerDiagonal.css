@@ -63,7 +63,7 @@ body {
 
 @media screen and (max-width: 767px) {
   .section-one {
-    padding: 130px 0 190px;
+    padding: 0px 0 150px;
   }
   .section-one .separator {
     bottom: -110px;

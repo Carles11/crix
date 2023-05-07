@@ -29,6 +29,17 @@ module.exports = ({ mode }) => ({
     }),
     new webpack.ProgressPlugin(),
     new webpack.HotModuleReplacementPlugin(),
+    // new webpack.DefinePlugin({
+    //   'process.env.REACT_APP_EMAIL_USER_ID': JSON.stringify(
+    //     process.env.REACT_APP_EMAIL_USER_ID,
+    //   ),
+    //   'process.env.REACT_APP_EMAIL_TEMPLATE_ID': JSON.stringify(
+    //     process.env.REACT_APP_EMAIL_TEMPLATE_ID,
+    //   ),
+    //   'process.env.REACT_APP_EMAIL_SERVICE_ID': JSON.stringify(
+    //     process.env.REACT_APP_EMAIL_SERVICE_ID,
+    //   ),
+    // }),
   ],
   module: {
     rules: [
