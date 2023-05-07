@@ -4,11 +4,11 @@
 
 .privacy-title {
   text-align: center;
-  font-size: calc(32px + (45 - 35) * ((100vw - 600px) / (1600 - 900)));
   margin: auto;
   color: var(--text-color-dark);
   margin-top: 0;
   padding-top: 2rem;
+  overflow-wrap: break-word;
 }
 
 .privacy-subtitle {

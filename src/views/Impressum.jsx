@@ -2,12 +2,13 @@ import React from 'react'
 
 import '../css/impressum.css'
 
-const Impressum = () => {
+const Impressum = (props) => {
+  const { DIC } = props
   return (
     <div>
-      <h1 className="impressum-title">IMPRESSUM</h1>
+      <h1 className="impressum-title">{DIC.IMPRINT_TITLE}</h1>
       <div className="impressum-white-block">
-        <h2 className="impressum-subtitle">Anbieter</h2>
+        <h2 className="impressum-subtitle">{DIC.IMPRINT_PROVIDER}</h2>
         <div className="impressum-article">
           Carles del Río Francés
           <br />
@@ -21,9 +22,9 @@ const Impressum = () => {
         </div>
       </div>
       <div className="impressum-grey-block">
-        <h2 className="impressum-subtitle">Bei redaktionellen Inhalten</h2>
+        <h2 className="impressum-subtitle">{DIC.IMPRINT_CONTENTS}</h2>
         <div className="impressum-article">
-          Verantwortlich nach § 55 Abs.2 RStV
+          {DIC.IMPRINT_RESPONSIBLE}
           <br /> Carles del Río Francés
           <br /> Elbestrasse 15
           <br /> 60329 Frankfurt am Main

@@ -6,7 +6,6 @@
   width: 100%;
   justify-content: space-evenly;
   padding-top: 3rem;
-  padding-right: 1rem;
 }
 
 .portrait-flex_left {
@@ -29,7 +28,7 @@
 .boxed {
   border: 1px solid silver;
   border-radius: 2px;
-  padding: 6rem;
+  padding: 2rem;
   transition: all 0.2s ease-in-out;
 }
 .boxed:hover {
@@ -54,7 +53,7 @@
   .portrait-flex {
     flex-direction: row;
     flex-flow: row nowrap;
-
+    padding-right: 1rem;
     padding-top: 6rem;
   }
   .portrait-flex_left {

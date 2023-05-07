@@ -16,7 +16,11 @@ const Contact = (props) => {
             <h3 className="contact-subtitle">{DIC.CONTACT_SUB}</h3>
             <p>
               {DIC.CONTACT_TEXT_ONE}{' '}
-              <a href="mailto:carles@crix.design" target="_blank">
+              <a
+                href="mailto:carles@crix.design"
+                target="_blank"
+                className="dont-underline"
+              >
                 {DIC.CONTACT_TEXT_TWO}{' '}
               </a>
               {DIC.CONTACT_TEXT_THREE}

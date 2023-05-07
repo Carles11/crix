@@ -1,5 +1,4 @@
 .impressum-title {
-  font-size: 2.6em;
   text-align: center;
   margin: auto;
   color: var(--text-color-dark);
@@ -8,7 +7,6 @@
 }
 
 .impressum-subtitle {
-  font-size: 2em;
   text-align: center;
   margin: auto;
   color: var(--text-color-dark);
@@ -33,7 +31,6 @@
 }
 
 .impressum-article {
-  font-size: 1.2em;
   text-align: center;
   margin: auto;
   color: var(--text-color-dark);
@@ -45,7 +42,6 @@
 
 @media only screen and (max-width: 677px) {
   .impressum-article {
-    font-size: 0.8em;
     max-width: 90%;
     letter-spacing: 1px;
     line-height: 1;
@@ -53,7 +49,6 @@
 }
 @media only screen and (max-width: 1024px) {
   .impressum-article {
-    font-size: 1em;
     max-width: 75%;
     letter-spacing: 2px;
     line-height: 1.3;

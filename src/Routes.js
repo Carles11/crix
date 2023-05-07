@@ -20,9 +20,9 @@ const AllRoutes = (props) => {
       <Route path="*" element={<NotFound DIC={DIC} />} />
       <Route
         path="/datenschutzerklaerung"
-        element={<Datenschutzerklaerung />}
+        element={<Datenschutzerklaerung DIC={DIC} />}
       />
-      <Route path="/impressum" element={<Impressum />} />
+      <Route path="/impressum" element={<Impressum DIC={DIC} />} />
     </Routes>
   )
 }

@@ -60,8 +60,15 @@ class ContactForm extends Component {
     const formSubmit = (e) => {
       e.preventDefault()
       const isError = { ...this.state.isError }
-      const formErrors = isError.name.length > 0 || isError.email.length > 0
-
+      const { name, subject, email, message } = this.state
+      const formErrors =
+        !name ||
+        !email ||
+        name === 'undefined' ||
+        email === 'undefined' ||
+        isError.name.length > 0 ||
+        isError.email.length > 0
+      console.log({ formErrors, name, email, isError })
       if (formErrors) {
         Swal.fire({
           title: DIC.TOAST_ERROR_TITLE,
@@ -77,7 +84,6 @@ class ContactForm extends Component {
       this.setState({
         buttonText: DIC.BTN_SENDING,
       })
-      const { name, subject, email, message } = this.state
 
       const data = { name, subject, email, message }
 

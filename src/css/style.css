@@ -50,18 +50,24 @@
   box-sizing: border-box;
 }
 
+html p {
+  font-size: 16px;
+}
+@media screen and (min-width: 320px) {
+  html p {
+    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+  }
+}
+@media screen and (min-width: 1000px) {
+  html p {
+    font-size: 22px;
+  }
+}
+
 body {
   position: relative;
   font-family: 'Roboto', serif;
-  font-size: 16px;
   margin: 0;
-}
-h1 {
-  margin: 0.47em 0;
-}
-
-h2 {
-  margin: 0.27em 0;
 }
 
 h1,
@@ -70,6 +76,7 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: 'Advent Pro', sans-serif;
   letter-spacing: 0.03em;
   margin: 0;
 }
@@ -78,27 +85,21 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: 'Advent Pro', sans-serif;
   line-height: 1.2;
   font-weight: 400;
 }
-h5 {
-  font-family: 'Advent Pro', sans-serif;
-  line-height: 1;
-  font-weight: 200;
-}
+h5,
 h6 {
-  font-family: 'Advent Pro', sans-serif;
   line-height: 1;
   font-weight: 200;
 }
 
 h1 {
-  font-size: calc(80px + (45 - 35) * ((100vw - 600px) / (1600 - 900)));
+  font-size: 6vw;
 }
 
 h2 {
-  font-size: calc(35px + (40 - 30) * ((100vw - 600px) / (1600 - 900)));
+  font-size: 4.5vw;
 }
 
 h2.tit-box {
@@ -116,49 +117,6 @@ h5 {
 }
 h6 {
   font-size: calc(17px + (8 - 4) * ((100vw - 600px) / (1600 - 900)));
-}
-
-h1 {
-  font-size: 3rem;
-  margin: 0.67em 0;
-}
-
-h2 {
-  font-size: 1.5rem;
-  margin: 0.67em 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  letter-spacing: 0.03em;
-}
-
-h1,
-h2,
-h3 {
-  font-family: 'Montserrat', serif;
-  line-height: 1.2;
-  font-weight: 100;
-}
-
-h1 {
-  font-size: calc(60px + (45 - 35) * ((100vw - 600px) / (1600 - 900)));
-}
-
-h2 {
-  font-size: calc(35px + (40 - 30) * ((100vw - 600px) / (1600 - 900)));
-}
-
-h2.tit-box {
-  font-size: calc(30px + (35 - 25) * ((100vw - 600px) / (1600 - 900)));
-}
-
-h3 {
-  font-size: calc(30px + (15 - 14) * ((100vw - 600px) / (1600 - 900)));
 }
 
 ul {

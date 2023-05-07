@@ -2,23 +2,15 @@ import React from 'react'
 // import { Link } from 'react-router-dom'
 import '../css/privacyConsent.css'
 
-const Datenschutzerklaerung = () => {
+const Datenschutzerklaerung = (props) => {
+  const { DIC } = props
   return (
     <div className="privacy-container">
-      <h1 className="privacy-title">DATENSCHUTZERKLÄRUNG</h1>
+      <h1 className="privacy-title">{DIC.PRIVACY_POLICY_TITLE}</h1>
       <div className="privacy-white-block">
-        <h2 className="privacy-subtitle">Allgemeine Datenschutzerklärung</h2>
+        <h2 className="privacy-subtitle">{DIC.PRIVACY_POLICY_SUBTITLE}</h2>
         <article className="privacy-article">
-          Durch die Nutzung unserer Website erklären Sie sich mit der Erhebung,
-          Verarbeitung und Nutzung von Daten gemäß der nachfolgenden
-          Beschreibung einverstanden. Unsere Website kann grundsätzlich ohne
-          Registrierung besucht werden. Dabei werden Daten wie beispielsweise
-          aufgerufene Seiten bzw. Namen der abgerufenen Datei, Datum und Uhrzeit
-          zu statistischen Zwecken auf dem Server gespeichert, ohne dass diese
-          Daten unmittelbar auf Ihre Person bezogen werden. Personenbezogene
-          Daten, insbesondere Name, Adresse oder E-Mail-Adresse werden soweit
-          möglich auf freiwilliger Basis erhoben. Ohne Ihre Einwilligung erfolgt
-          keine Weitergabe der Daten an Dritte.
+          <p>{DIC.PRIVACY_POLICY_TEXT}</p>
         </article>
       </div>
       {/* <div className="privacy-grey-block">

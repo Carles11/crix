@@ -5,7 +5,7 @@ body {
 .section-one {
   background-color: 'red';
   position: relative;
-  padding: 200px 0 350px;
+  padding: 0 0 350px;
 }
 .section-one .section-one__title {
   color: #fff;
@@ -24,7 +24,6 @@ body {
 
 .section-two {
   background-color: var(--secondaryColor);
-  padding: 100px 0 200px;
   position: relative;
   z-index: 10;
 }
