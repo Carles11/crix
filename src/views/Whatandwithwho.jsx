@@ -61,16 +61,7 @@ const Whatandwithwho = (props) => {
                     TheCirculArt
                   </a>
                 </li>
-                <li>
-                  <a
-                    href="https://abluelemon.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="dont-underline"
-                  >
-                    Abluelemon
-                  </a>
-                </li>
+
                 <li>
                   <a
                     href="https://www.leo-leo-hessen.com/"
