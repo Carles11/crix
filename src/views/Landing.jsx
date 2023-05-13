@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import PropTypes from 'prop-types'
 
 import Button from '../components/Button'
 import SkillsBlock from '../components/skillsBlock'
@@ -7,7 +8,11 @@ import '../css/landing.css'
 const Landing = (props) => {
   const { DIC } = props
 
-  const HoverableDiv = ({ handleMouseOver }) => {
+  const HoverableDiv = () => {
+    const handleMouseOver = () => {
+      setIsHovering(true)
+    }
+
     return (
       <h4
         className="skills-block"
@@ -31,10 +36,6 @@ const Landing = (props) => {
     } else {
       setIsHovering(!isHovering)
     }
-  }
-
-  const handleMouseOver = () => {
-    setIsHovering(true)
   }
 
   const handleClick = () => {
@@ -77,11 +78,20 @@ const Landing = (props) => {
             </Button>
           </div>
         </div>
-        <HoverableDiv handleMouseOver={handleMouseOver} />
+        <HoverableDiv />
         {isHovering && <HoverSkills />}
       </div>
     </div>
   )
+}
+
+Landing.propTypes = {
+  DIC: PropTypes.shape({
+    BTN_SKILLS: PropTypes.string,
+    LANDING_SUBTITLE: PropTypes.string,
+    BTN_CONTACT: PropTypes.string,
+    BTN_ABOUT: PropTypes.string,
+  }),
 }
 
 export default Landing
