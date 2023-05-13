@@ -7,7 +7,7 @@
 }
 
 .impressum-subtitle {
-  text-align: center;
+  text-align: left;
   margin: auto;
   color: var(--text-color-dark);
   padding-top: 11%;
@@ -15,6 +15,7 @@
 }
 
 .impressum-grey-block {
+  padding-left: 25%;
   background-color: #f4f4f4;
   color: var(--text-color-dark);
   min-height: 450px;
@@ -23,6 +24,7 @@
   height: 100%;
 }
 .impressum-white-block {
+  padding-left: 25%;
   background-color: white;
   color: var(--text-color-dark);
   min-height: 450px;
@@ -32,7 +34,6 @@
 
 .impressum-article {
   text-align: left;
-  margin: auto;
   color: var(--text-color-dark);
   max-width: 60%;
   letter-spacing: 3px;
@@ -44,10 +45,12 @@
     max-width: 90%;
     letter-spacing: 1px;
     line-height: 1;
+    padding-left: 5%;
   }
 }
 @media only screen and (max-width: 1024px) {
   .impressum-article {
+    padding-left: 20%;
     max-width: 75%;
     letter-spacing: 2px;
     line-height: 1.3;
