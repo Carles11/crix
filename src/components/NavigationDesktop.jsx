@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import { Link } from 'react-router-dom'
 
@@ -20,6 +21,11 @@ const NavigationDesktop = (props) => {
       </Link>
     </div>
   )
+}
+
+NavigationDesktop.propTypes = {
+  DIC: PropTypes.object.isRequired,
+  // Add PropTypes declarations for other props used in NavigationDesktop.jsx
 }
 
 export default NavigationDesktop

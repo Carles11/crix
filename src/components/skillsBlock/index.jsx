@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import Education from './Education'
 import Skills from './Skills'
@@ -16,6 +17,12 @@ const SkillsBlock = (props) => {
       </div>
     </div>
   )
+}
+
+SkillsBlock.propTypes = {
+  DIC: PropTypes.shape({
+    // Add PropTypes declarations for the DIC object properties
+  }),
 }
 
 export default SkillsBlock

@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import '../css/burgerMenu.css'
 
@@ -18,6 +19,10 @@ class BurgerMenu extends React.Component {
       </nav>
     )
   }
+}
+
+BurgerMenu.propTypes = {
+  handleClick: PropTypes.func.isRequired,
 }
 
 export default BurgerMenu

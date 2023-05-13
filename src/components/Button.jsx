@@ -73,6 +73,11 @@ Button.propTypes = {
   bsPrefix: PropTypes.string,
   block: PropTypes.bool,
   onClick: PropTypes.func,
+  className: PropTypes.string,
+  children: PropTypes.node.isRequired,
+  pathLink: PropTypes.string,
+  ifHrefOpenSelf: PropTypes.bool,
+  disabled: PropTypes.bool,
 }
 
 export default Button

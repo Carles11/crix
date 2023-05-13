@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import '../../css/skillsBlock.css'
 
 const Education = (props) => {
@@ -24,6 +25,13 @@ const Education = (props) => {
       </table>
     </div>
   )
+}
+
+Education.propTypes = {
+  DIC: PropTypes.shape({
+    SKILLS_DESIGN: PropTypes.string.isRequired,
+    // Add PropTypes declarations for other DIC object properties used in Education.jsx
+  }),
 }
 
 export default Education

@@ -1,4 +1,6 @@
 import React from 'react'
+import PropTypes from 'prop-types'
+
 import { Link } from 'react-router-dom'
 
 import '../css/footer.css'
@@ -32,6 +34,16 @@ const Footer = (props) => {
       </div>
     </div>
   )
+}
+
+Footer.propTypes = {
+  DIC: PropTypes.shape({
+    FOOTER_CONTACT: PropTypes.string.isRequired,
+    CONTACT_TITLE: PropTypes.string.isRequired,
+    LEGAL: PropTypes.string.isRequired,
+    FOOTER_PRIVACY_POLICY: PropTypes.string.isRequired,
+    FOOTER_IMPRINT: PropTypes.string.isRequired,
+  }).isRequired,
 }
 
 export default Footer

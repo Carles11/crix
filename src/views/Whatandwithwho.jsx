@@ -1,7 +1,7 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 // import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom'
-
 import DividerDiagonal from '../components/DividerDiagonal'
 import '../css/dividerDiagonal.css'
 import '../css/whatandwithwho.css'
@@ -81,10 +81,18 @@ const Whatandwithwho = (props) => {
   )
 }
 
-// Services.propTypes = {
-//   DIC: PropTypes.shape({
-//     SERVICES_TITLE: PropTypes.string.isRequired,
-//   }).isRequired,
-// };
-
+Whatandwithwho.propTypes = {
+  DIC: PropTypes.shape({
+    WHATIDO_SECTION_ONE_TITLE: PropTypes.string,
+    WHATIDO_SECTION_ONE_SUB_ONE: PropTypes.string,
+    WHATIDO_SECTION_ONE_DESC_ONE: PropTypes.string,
+    WHATIDO_SECTION_ONE_DESC_ONE_bis: PropTypes.string,
+    WHATIDO_SECTION_ONE_SUB_TWO: PropTypes.string,
+    WHATIDO_SECTION_ONE_DESC_TWO: PropTypes.string,
+    WHATIDO_SECTION_ONE_DESC_TWO_bis: PropTypes.string,
+    WHATIDO_SECTION_TWO_TITLE: PropTypes.string,
+    WHATIDO_SECTION_TWO_SUB_ONE: PropTypes.string,
+    WHATIDO_SECTION_TWO_SUB_TWO: PropTypes.string,
+  }),
+}
 export default Whatandwithwho

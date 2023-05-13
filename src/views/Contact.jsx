@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import ContactAdress from '../components/ContactAdress'
 import ContactForm from '../components/ContactForm'
@@ -40,6 +41,17 @@ const Contact = (props) => {
       </div>
     </div>
   )
+}
+
+Contact.propTypes = {
+  DIC: PropTypes.shape({
+    CONTACT_TITLE: PropTypes.string,
+    CONTACT_SUB: PropTypes.string,
+    CONTACT_TEXT_ONE: PropTypes.string,
+    CONTACT_TEXT_TWO: PropTypes.string,
+    CONTACT_TEXT_THREE: PropTypes.string,
+    // Add more PropTypes declarations as needed
+  }),
 }
 
 export default Contact

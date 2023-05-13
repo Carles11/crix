@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import BurgerMenu from './BurgerMenu'
 import NavigationDesktop from './NavigationDesktop'
@@ -55,6 +56,12 @@ class Navigation extends React.Component {
       </div>
     )
   }
+}
+
+Navigation.propTypes = {
+  DIC: PropTypes.object.isRequired,
+  handleDIC: PropTypes.func.isRequired,
+  // Add PropTypes declarations for other props used in Navigation.jsx
 }
 
 export default Navigation

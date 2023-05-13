@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import linkedInIcon from '../assets/icons/social/linkedin-icon64.png'
 import twitterIcon from '../assets/icons/social/twitter-icon64.png'
@@ -16,6 +17,12 @@ const SocialMediaBar = ({ twitterLink, linkedinLink }) => {
       </a>
     </div>
   )
+}
+
+SocialMediaBar.propTypes = {
+  twitterLink: PropTypes.string.isRequired,
+  linkedinLink: PropTypes.string.isRequired,
+  // Add PropTypes declarations for other props used in SocialMediaBar.jsx
 }
 
 export default SocialMediaBar

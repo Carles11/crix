@@ -1,5 +1,6 @@
 import React from 'react'
-import styled from 'styled-components'
+import PropTypes from 'prop-types'
+
 import { Link } from 'react-router-dom'
 
 import CrossMenu from './CrossMenu'
@@ -27,6 +28,12 @@ const NavigationMobile = (props) => {
       </Link>
     </div>
   )
+}
+
+NavigationMobile.propTypes = {
+  DIC: PropTypes.object.isRequired,
+  handleClose: PropTypes.func.isRequired,
+  // Add PropTypes declarations for other props used in NavigationMobile.jsx
 }
 
 export default NavigationMobile

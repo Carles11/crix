@@ -31,11 +31,10 @@
 }
 
 .impressum-article {
-  text-align: center;
+  text-align: left;
   margin: auto;
   color: var(--text-color-dark);
   max-width: 60%;
-  text-align: justify;
   letter-spacing: 3px;
   line-height: 1.8;
 }

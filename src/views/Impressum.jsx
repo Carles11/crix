@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import '../css/impressum.css'
 
@@ -32,6 +33,16 @@ const Impressum = (props) => {
       </div>
     </div>
   )
+}
+
+Impressum.propTypes = {
+  DIC: PropTypes.shape({
+    IMPRINT_TITLE: PropTypes.string,
+    IMPRINT_PROVIDER: PropTypes.string,
+    IMPRINT_CONTENTS: PropTypes.string,
+    IMPRINT_RESPONSIBLE: PropTypes.string,
+    // Add more PropTypes declarations as needed
+  }),
 }
 
 export default Impressum

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import PropTypes from 'prop-types'
 import Button from '../components/Button'
 import emailSend from '../utils/email.js'
 
@@ -172,6 +172,23 @@ class ContactForm extends Component {
       </form>
     )
   }
+}
+
+ContactForm.propTypes = {
+  DIC: PropTypes.shape({
+    BTN_SEND: PropTypes.string.isRequired,
+    ERROR_TEXT: PropTypes.string.isRequired,
+    ERROR_EMAIL: PropTypes.string.isRequired,
+    TOAST_ERROR_TITLE: PropTypes.string.isRequired,
+    TOAST_ERROR_TEXT: PropTypes.string.isRequired,
+    TOAST_ERROR_CLOSE: PropTypes.string.isRequired,
+    BTN_SENDING: PropTypes.string.isRequired,
+    BTN_SENT: PropTypes.string.isRequired,
+    CONTACTFORM_NAME: PropTypes.string.isRequired,
+    CONTACTFORM_EMAIL: PropTypes.string.isRequired,
+    CONTACTFORM_SUBJECT: PropTypes.string.isRequired,
+    CONTACTFORM_MESSAGE: PropTypes.string.isRequired,
+  }).isRequired,
 }
 
 export default ContactForm

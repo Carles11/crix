@@ -1,5 +1,6 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
+import PropTypes from 'prop-types'
 
 import Landing from './views/Landing'
 import Whatandwithwho from './views/Whatandwithwho'
@@ -25,6 +26,10 @@ const AllRoutes = (props) => {
       <Route path="/impressum" element={<Impressum DIC={DIC} />} />
     </Routes>
   )
+}
+
+AllRoutes.propTypes = {
+  DIC: PropTypes.object.isRequired,
 }
 
 export default AllRoutes

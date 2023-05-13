@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import DividerDiagonal from '../components/DividerDiagonal'
 import Portraits from '../components/Portraits'
@@ -40,6 +41,22 @@ const AboutUs = (props) => {
       </div>
     </main>
   )
+}
+
+AboutUs.propTypes = {
+  DIC: PropTypes.shape({
+    ABOUT_SEC_ONE_TITLE: PropTypes.string,
+    ABOUT_SEC_ONE_SUB_ONE: PropTypes.string,
+    ABOUT_SEC_ONE_DESC_ONE: PropTypes.string,
+    ABOUT_SEC_ONE_SUB_TWO: PropTypes.string,
+    ABOUT_SEC_ONE_DESC_TWO: PropTypes.string,
+    ABOUT_SEC_ONE_DESC_TWO_bis: PropTypes.string,
+    ABOUT_SEC_TWO_TITLE: PropTypes.string,
+    ABOUT_SEC_TWO_SUB_ONE: PropTypes.string,
+    ABOUT_SEC_TWO_DESC_ONE: PropTypes.string,
+    ABOUT_SEC_TWO_DESC_TWO: PropTypes.string,
+    // Add more PropTypes declarations as needed
+  }),
 }
 
 export default AboutUs

@@ -1,7 +1,7 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 // import { Link } from 'react-router-dom'
 import '../css/privacyConsent.css'
-
 const Datenschutzerklaerung = (props) => {
   const { DIC } = props
   return (
@@ -54,6 +54,15 @@ const Datenschutzerklaerung = (props) => {
       </div> */}
     </div>
   )
+}
+
+Datenschutzerklaerung.propTypes = {
+  DIC: PropTypes.shape({
+    PRIVACY_POLICY_TITLE: PropTypes.string,
+    PRIVACY_POLICY_SUBTITLE: PropTypes.string,
+    PRIVACY_POLICY_TEXT: PropTypes.string,
+    // Add more PropTypes declarations as needed
+  }),
 }
 
 export default Datenschutzerklaerung
