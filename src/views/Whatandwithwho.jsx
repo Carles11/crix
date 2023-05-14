@@ -41,9 +41,7 @@ const Whatandwithwho = (props) => {
               </h3>
               <ul>
                 <li>Instituto Cervantes</li>
-                <li>
-                  <Link to="/PdfViewer">Hessenwaldschule</Link>
-                </li>
+                <li>Hessenwaldschule</li>
                 <li>Kultusministerium Hessen</li>
               </ul>
 
