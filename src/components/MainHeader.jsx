@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 
@@ -8,35 +8,57 @@ import '../css/mainHeader.css'
 
 const MainHeader = (props) => {
   const { DIC, handleDIC } = props
+  const [showMenu, setShowMenu] = useState(false)
+
+  const [isMobile, setIsMobile] = useState(false)
+
+  //choose the screen size
+  const handleResize = () => {
+    if (window.innerWidth < 720) {
+      setIsMobile(true)
+    } else {
+      setIsMobile(false)
+    }
+  }
+
+  // create an event listener
+  useEffect(() => {
+    window.addEventListener('resize', handleResize)
+  })
 
   const pickTheLang = (langPick) => {
     handleDIC(langPick)
   }
+
+  const handleClick = () => {
+    if (isMobile) {
+      setShowMenu(!showMenu)
+    }
+    return
+  }
   return (
     <header className="header">
       <Logo />
-      <input className="menu-btn" type="checkbox" id="menu-btn" />
-      <label className="menu-icon" htmlFor="menu-btn">
-        <span className="navicon"></span>
-      </label>
-      <ul className="menu">
-        <li className="nodecoration">
+      {!showMenu && (
+        <label
+          className={`menu-icon${showMenu ? '_checked' : ''}`}
+          onClick={handleClick}
+        >
+          <span className={`navicon${showMenu ? '_checked' : ''}`}></span>
+        </label>
+      )}
+      <ul className={`menu${showMenu ? '_checked' : ''}`}>
+        <li className="nodecoration" onClick={handleClick}>
           <Link to="/whatandwithwho">
-            <input className="menu-btn" type="checkbox" id="menu-btn" />
-
             <h6>{DIC.NAV_SERVICES}</h6>
           </Link>
         </li>
-        <li className="nodecoration">
+        <li className="nodecoration" onClick={handleClick}>
           <Link to="/about-us">
-            <input className="menu-btn" type="checkbox" id="menu-btn" />
-
             <h6>{DIC.NAV_ABOUT_US}</h6>
           </Link>
         </li>
-        <li className="nodecoration">
-          <input className="menu-btn" type="checkbox" id="menu-btn" />
-
+        <li className="nodecoration" onClick={handleClick}>
           <Link to="/contact">
             <h6>{DIC.NAV_CONTACT}</h6>
           </Link>

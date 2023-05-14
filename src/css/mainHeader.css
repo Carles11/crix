@@ -34,10 +34,10 @@
   max-height: 0;
   min-height: 0;
   transition: min-height 0.6s ease-out;
-  text-align: center;
   display: flex;
   flex-direction: column;
   min-height: 'auto';
+  text-align: right;
 }
 
 /* menu icon */
@@ -85,24 +85,35 @@
   display: none;
 }
 
-.header .menu-btn:checked ~ .menu {
+.header .menu_checked {
   min-height: 65vh;
+  text-align: right;
 }
 
-.header .menu-btn:checked ~ .menu-icon .navicon {
+.header .force-menu-close {
+  min-height: 0 !important;
+}
+
+.header .menu-icon_checked .navicon_checked {
   background: transparent;
 }
 
-.header .menu-btn:checked ~ .menu-icon .navicon:before {
+.header .menu-icon_checked .navicon_checked:before {
   transform: rotate(-45deg);
 }
 
-.header .menu-btn:checked ~ .menu-icon .navicon:after {
+.header .menu-icon_checked .navicon_checked:after {
   transform: rotate(45deg);
 }
 
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+.header
+  .menu-btn:checked
+  ~ .menu-icon_checked:not(.steps)
+  .navicon_checked:before,
+.header
+  .menu-btn:checked
+  ~ .menu-icon_checked:not(.steps)
+  .navicon_checked:after {
   top: 0;
 }
 
