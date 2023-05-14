@@ -42,7 +42,7 @@
 }
 
 .mobile-menu-cross {
-  margin-left: 120px;
+  margin-right: 8px;
   margin-top: 40px;
 }
 
@@ -74,4 +74,5 @@
   display: flex;
   justify-content: flex-end;
   margin-top: 1rem;
+  margin-bottom: 1rem;
 }

@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
 
 import Footer from './components/Footer'
-import Header from './components/Header'
+// import Header from './components/Header'
+import MainHeader from './components/MainHeader'
 import { getDictionary } from './utils/dictionary'
 
 import AllRoutes from './Routes'
@@ -19,7 +20,8 @@ const App = (props) => {
 
   return (
     <>
-      <Header DIC={activeDIC} handleDIC={setLanguage} />
+      {/* <Header DIC={activeDIC} handleDIC={setLanguage} /> */}
+      <MainHeader DIC={activeDIC} handleDIC={setLanguage} />
       <AllRoutes {...props} DIC={activeDIC} />
       <Footer DIC={activeDIC} />
     </>

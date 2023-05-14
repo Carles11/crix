@@ -133,7 +133,7 @@ li {
   text-decoration: none;
 }
 
-li::before {
+li::before(:not(.nodecoration)) {
   content: '•';
   color: var(--secondaryLightColor);
   padding-right: 11px;

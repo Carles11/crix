@@ -5,7 +5,7 @@
 }
 .what-content {
   width: 100%;
-  margin: 3rem 0;
+  margin: 200px 0 3rem 0;
   position: relative;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -54,8 +54,7 @@ p {
 /* > Tablet */
 @media only screen and (min-width: 677px) {
   .what-content {
-    margin: 0;
-    padding-top: 4rem;
+    padding-top: 0;
   }
   section.what-content_bottom {
     margin: 0;
@@ -75,6 +74,9 @@ p {
 
 /* > Big Desktop */
 @media only screen and (min-width: 1024px) {
+  .what-content {
+    padding-top: 2rem;
+  }
   .what-content_article {
     font-size: 1.5em;
     max-width: 100%;

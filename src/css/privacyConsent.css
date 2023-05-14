@@ -1,10 +1,10 @@
 .privacy-container {
   min-height: 90vh;
-  margin-bottom: 4rem;
+  margin: 200px 0 3rem 0;
 }
 
 .privacy-title {
-  text-align: center;
+  text-align: left;
   margin: auto;
   color: var(--text-color-dark);
   margin-top: 0;

@@ -6,8 +6,8 @@ const Datenschutzerklaerung = (props) => {
   const { DIC } = props
   return (
     <div className="privacy-container">
-      <h1 className="privacy-title">{DIC.PRIVACY_POLICY_TITLE}</h1>
       <div className="privacy-white-block">
+        <h1 className="privacy-title">{DIC.PRIVACY_POLICY_TITLE}</h1>
         <h2 className="privacy-subtitle">{DIC.PRIVACY_POLICY_SUBTITLE}</h2>
         <article className="privacy-article">
           <p>{DIC.PRIVACY_POLICY_TEXT}</p>
