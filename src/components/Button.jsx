@@ -74,7 +74,7 @@ Button.propTypes = {
   block: PropTypes.bool,
   onClick: PropTypes.func,
   className: PropTypes.string,
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node,
   pathLink: PropTypes.string,
   ifHrefOpenSelf: PropTypes.bool,
   disabled: PropTypes.bool,

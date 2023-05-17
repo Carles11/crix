@@ -12,40 +12,41 @@ const MainHeader = (props) => {
 
   const [isMobile, setIsMobile] = useState(false)
 
-  //choose the screen size
-  const handleResize = () => {
-    if (window.innerWidth < 720) {
+  useEffect(() => {
+    const screenW = window.innerWidth
+    if (screenW < 720) {
       setIsMobile(true)
     } else {
       setIsMobile(false)
     }
-  }
-
-  // create an event listener
-  useEffect(() => {
-    window.addEventListener('resize', handleResize)
   })
 
   const pickTheLang = (langPick) => {
     handleDIC(langPick)
   }
 
-  const handleClick = () => {
-    if (isMobile) {
+  const handleClick = (origin) => {
+    const trigger = isMobile && origin === 'logo-click'
+    const logoClick = origin === 'logo-click'
+    console.log({ trigger, isMobile, origin })
+    if (isMobile && !logoClick) {
       setShowMenu(!showMenu)
+    } else if (isMobile && logoClick) {
+      setShowMenu(false)
+      console.log({ showMenu })
     }
     return
   }
   return (
     <header className="header">
-      <Logo />
+      <Logo handleClick={handleClick} />
       {!showMenu && (
-        <label
+        <div
           className={`menu-icon${showMenu ? '_checked' : ''}`}
           onClick={handleClick}
         >
           <span className={`navicon${showMenu ? '_checked' : ''}`}></span>
-        </label>
+        </div>
       )}
       <ul className={`menu${showMenu ? '_checked' : ''}`}>
         <li className="nodecoration" onClick={handleClick}>

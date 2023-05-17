@@ -38,11 +38,11 @@ const Footer = (props) => {
 
 Footer.propTypes = {
   DIC: PropTypes.shape({
-    FOOTER_CONTACT: PropTypes.string.isRequired,
-    CONTACT_TITLE: PropTypes.string.isRequired,
-    LEGAL: PropTypes.string.isRequired,
-    FOOTER_PRIVACY_POLICY: PropTypes.string.isRequired,
-    FOOTER_IMPRINT: PropTypes.string.isRequired,
+    FOOTER_CONTACT: PropTypes.string,
+    CONTACT_TITLE: PropTypes.string,
+    LEGAL: PropTypes.string,
+    FOOTER_PRIVACY_POLICY: PropTypes.string,
+    FOOTER_IMPRINT: PropTypes.string,
   }).isRequired,
 }
 
