@@ -19,7 +19,6 @@ const Landing = (props) => {
     }
 
     const handleMobileClose = () => {
-      console.log('handleMobileClose----------->')
       if (screenWidth < 767) {
         setIsHovering((prevState) => !prevState) // Use functional update to access the previous state
       }
@@ -41,14 +40,11 @@ const Landing = (props) => {
   }
 
   const handleClick = () => {
-    console.log('handleClick----------->')
-
     if (screenWidth > 767) {
       setIsHovering(false)
     }
   }
-  console.log({ screenWidth })
-  console.log({ isHovering })
+
   return (
     <div className="landing-bg" onClick={handleClick}>
       <div className="landing-body-wrapper">

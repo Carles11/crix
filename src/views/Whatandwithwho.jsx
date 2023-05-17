@@ -1,14 +1,28 @@
-import React from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
-// import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom'
+import Modal from '../components/Modal.jsx'
+
 import DividerDiagonal from '../components/DividerDiagonal'
+import PdfViewer from '../components/PdfViewer'
+
+import CervantesPdf from '../assets/pdfs/Kulturprogramm_APRIL-AUG_2023_digital.pdf'
+
 import '../css/dividerDiagonal.css'
 import '../css/whatandwithwho.css'
 
 const Whatandwithwho = (props) => {
   const { DIC } = props
+  const [showPdf, setShowPdf] = useState(false)
+  const [pdfFile, setPdfFile] = useState(null)
 
+  const loadPdf = (file) => {
+    setPdfFile(file)
+    setShowPdf(true)
+  }
+
+  const hideModal = () => {
+    setShowPdf(false)
+  }
   return (
     <main>
       <div className="what-content">
@@ -40,7 +54,9 @@ const Whatandwithwho = (props) => {
                 {DIC.WHATIDO_SECTION_TWO_SUB_ONE}
               </h3>
               <ul>
-                <li>Instituto Cervantes</li>
+                <li onClick={() => loadPdf(CervantesPdf)}>
+                  Instituto Cervantes
+                </li>
                 <li>Hessenwaldschule</li>
                 <li>Kultusministerium Hessen</li>
               </ul>
@@ -74,6 +90,11 @@ const Whatandwithwho = (props) => {
             </div>
           </div>
         </section>
+
+        <Modal show={showPdf} handleClose={hideModal}>
+          <p>Modal Viewer</p>
+          <PdfViewer file={pdfFile} />
+        </Modal>
       </div>
     </main>
   )

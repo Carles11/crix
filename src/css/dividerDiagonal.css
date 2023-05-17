@@ -25,7 +25,7 @@ body {
 .section-two {
   background-color: var(--secondaryColor);
   position: relative;
-  z-index: 10;
+  /* z-index: 10; */
 }
 .section-two .section-two__title {
   color: #fff;
