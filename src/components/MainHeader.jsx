@@ -26,14 +26,11 @@ const MainHeader = (props) => {
   }
 
   const handleClick = (origin) => {
-    const trigger = isMobile && origin === 'logo-click'
     const logoClick = origin === 'logo-click'
-    console.log({ trigger, isMobile, origin })
     if (isMobile && !logoClick) {
       setShowMenu(!showMenu)
     } else if (isMobile && logoClick) {
       setShowMenu(false)
-      console.log({ showMenu })
     }
     return
   }
