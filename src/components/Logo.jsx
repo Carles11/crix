@@ -22,7 +22,7 @@ const Logo = ({ handleClick }) => {
 }
 
 Logo.propTypes = {
-  handleClick: PropTypes.function,
+  handleClick: PropTypes.func,
 }
 
 export default Logo

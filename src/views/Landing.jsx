@@ -6,11 +6,23 @@ import SkillsBlock from '../components/skillsBlock'
 import '../css/landing.css'
 
 const Landing = (props) => {
+  const [isHovering, setIsHovering] = useState(false)
+
   const { DIC } = props
+  const screenWidth = window.innerWidth
 
   const HoverableDiv = () => {
     const handleMouseOver = () => {
-      setIsHovering(true)
+      if (screenWidth > 767) {
+        setIsHovering(true)
+      }
+    }
+
+    const handleMobileClose = () => {
+      console.log('handleMobileClose----------->')
+      if (screenWidth < 767) {
+        setIsHovering((prevState) => !prevState) // Use functional update to access the previous state
+      }
     }
 
     return (
@@ -28,24 +40,15 @@ const Landing = (props) => {
     return <SkillsBlock DIC={DIC} />
   }
 
-  const [isHovering, setIsHovering] = useState(false)
-
-  const handleMobileClose = () => {
-    if (window.innerWidth > 767) {
-      return
-    } else {
-      setIsHovering(!isHovering)
-    }
-  }
-
   const handleClick = () => {
-    if (window.innerWidth > 767) {
+    console.log('handleClick----------->')
+
+    if (screenWidth > 767) {
       setIsHovering(false)
-    } else {
-      return
     }
   }
-
+  console.log({ screenWidth })
+  console.log({ isHovering })
   return (
     <div className="landing-bg" onClick={handleClick}>
       <div className="landing-body-wrapper">
