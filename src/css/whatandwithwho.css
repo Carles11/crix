@@ -50,6 +50,9 @@ p {
 .what-content_article p {
   margin-top: 1.2em;
 }
+.what-content_article ul li {
+  margin-top: 1.2em;
+}
 
 /* > Tablet */
 @media only screen and (min-width: 677px) {

@@ -60,8 +60,9 @@ const Whatandwithwho = (props) => {
                 <li onClick={() => loadPdf(CervantesPdf, 28)}>
                   Instituto Cervantes
                 </li>
-                <li onClick={() => loadPdf(LeoPdf, 2)}>Hessenwaldschule</li>
-                <li>Kultusministerium Hessen</li>
+                <li onClick={() => loadPdf(LeoPdf, 2)}>
+                  Hessenwaldschule & Kultusministerium Hessen
+                </li>
               </ul>
 
               <h3 className="what-subtitle subtitle-bottom">
