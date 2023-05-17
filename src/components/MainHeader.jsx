@@ -37,12 +37,12 @@ const MainHeader = (props) => {
   return (
     <header className="header">
       <Logo handleClick={handleClick} />
-      {!showMenu && (
+      {isMobile && (
         <div
-          className={`menu-icon${showMenu ? '_checked' : ''}`}
+          className={`menu-icon ${showMenu ? 'open' : ''}`}
           onClick={handleClick}
         >
-          <span className={`navicon${showMenu ? '_checked' : ''}`}></span>
+          <span className={`navicon ${showMenu ? 'open' : ''}`}></span>
         </div>
       )}
       <ul className={`menu${showMenu ? '_checked' : ''}`}>
