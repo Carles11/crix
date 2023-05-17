@@ -39,10 +39,10 @@ const MainHeader = (props) => {
       <Logo handleClick={handleClick} />
       {!showMenu && (
         <div
-          className={`${showMenu ? '_checked' : ''} menu-icon`}
+          className={`menu-icon${showMenu ? '_checked' : ''}`}
           onClick={handleClick}
         >
-          <span className={`${showMenu ? '_checked' : ''} navicon`}></span>
+          <span className={`navicon${showMenu ? '_checked' : ''}`}></span>
         </div>
       )}
       <ul className={`menu${showMenu ? '_checked' : ''}`}>
