@@ -6,6 +6,7 @@ import DividerDiagonal from '../components/DividerDiagonal'
 import PdfViewer from '../components/PdfViewer'
 
 import CervantesPdf from '../assets/pdfs/Kulturprogramm_APRIL-AUG_2023_digital.pdf'
+import LeoPdf from '../assets/pdfs/Leo-2022-flyer_lowRes.pdf'
 
 import '../css/dividerDiagonal.css'
 import '../css/whatandwithwho.css'
@@ -14,9 +15,11 @@ const Whatandwithwho = (props) => {
   const { DIC } = props
   const [showPdf, setShowPdf] = useState(false)
   const [pdfFile, setPdfFile] = useState(null)
+  const [totalPages, setTotalPages] = useState()
 
-  const loadPdf = (file) => {
+  const loadPdf = (file, numPages) => {
     setPdfFile(file)
+    setTotalPages(numPages)
     setShowPdf(true)
   }
 
@@ -54,10 +57,10 @@ const Whatandwithwho = (props) => {
                 {DIC.WHATIDO_SECTION_TWO_SUB_ONE}
               </h3>
               <ul>
-                <li onClick={() => loadPdf(CervantesPdf)}>
+                <li onClick={() => loadPdf(CervantesPdf, 28)}>
                   Instituto Cervantes
                 </li>
-                <li>Hessenwaldschule</li>
+                <li onClick={() => loadPdf(LeoPdf, 2)}>Hessenwaldschule</li>
                 <li>Kultusministerium Hessen</li>
               </ul>
 
@@ -92,8 +95,8 @@ const Whatandwithwho = (props) => {
         </section>
 
         <Modal show={showPdf} handleClose={hideModal}>
-          <p>Modal Viewer</p>
-          <PdfViewer file={pdfFile} />
+          <p>PDF Viewer</p>
+          <PdfViewer file={pdfFile} totalPages={totalPages} />
         </Modal>
       </div>
     </main>
