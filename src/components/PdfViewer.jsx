@@ -23,12 +23,10 @@ const PdfViewer = ({ file, totalPages }) => {
   }
 
   function previousPage() {
-    console.log('CLCCLICLICLICLCILCIL')
     changePage(-1)
   }
 
   function nextPage() {
-    console.log('CLCCLICLICLICLCILCIL')
     changePage(1)
   }
 

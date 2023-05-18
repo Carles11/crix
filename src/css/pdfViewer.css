@@ -2,6 +2,10 @@
   margin-top: 2rem;
   display: flex;
   justify-content: center;
+  height: auto;
+  max-width: 100%;
+  flex-direction: column;
+  align-items: center;
 }
 
 .pdf-navigators {
@@ -26,21 +30,26 @@
 
 .round {
   border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .button-style {
+  height: 50px;
+  width: 50px;
   border: none;
   background-color: transparent;
 }
 
-@media only screen and (max-width: 678px) {
-  .pdf-container {
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+/* FIX FOR PDF DISPLAY */
+.annotationLayer {
+  display: none !important;
+}
 
+@media only screen and (max-width: 678px) {
   .pdf-navigators {
     margin-left: 0;
     z-index: 100;

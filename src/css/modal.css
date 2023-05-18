@@ -3,7 +3,7 @@
   top: 100px;
   left: 0;
   width: 100%;
-  height: 'fit-content';
+  height: 100%;
   background: rgba(0, 0, 0, 0.6);
   z-index: 99;
 }
@@ -11,8 +11,8 @@
 .modal-main {
   position: fixed;
   background: white;
-  width: 80%;
-  height: 80vh;
+  width: auto;
+  height: fit-content;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -59,7 +59,6 @@
 
 @media only screen and (max-width: 678px) {
   .modal-main {
-    width: 90%;
-    height: 95vh;
+    width: auto;
   }
 }

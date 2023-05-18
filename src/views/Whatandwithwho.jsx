@@ -5,8 +5,9 @@ import Modal from '../components/Modal.jsx'
 import DividerDiagonal from '../components/DividerDiagonal'
 import PdfViewer from '../components/PdfViewer'
 
-import CervantesPdf from '../assets/pdfs/Kulturprogramm_APRIL-AUG_2023_digital.pdf'
-import LeoPdf from '../assets/pdfs/Leo-2022-flyer_lowRes.pdf'
+import CervantesProgrammPdf from '../assets/pdfs/Kulturprogramm_APRIL-AUG_2023_4web_lowRes.pdf'
+import CervantesTripticoPdf from '../assets/pdfs/INSTITUTO-CERVANTES-ARTUR-HERAS-EXPOSICION_triptico_2023_4web.pdf'
+import LeoFlyerPdf from '../assets/pdfs/Leo-2022-flyer_lowRes.pdf'
 
 import '../css/dividerDiagonal.css'
 import '../css/whatandwithwho.css'
@@ -57,11 +58,16 @@ const Whatandwithwho = (props) => {
                 {DIC.WHATIDO_SECTION_TWO_SUB_ONE}
               </h3>
               <ul>
-                <li onClick={() => loadPdf(CervantesPdf, 28)}>
-                  Instituto Cervantes
+                <h5>Instituto Cervantes</h5>
+                <li onClick={() => loadPdf(CervantesProgrammPdf, 28)}>
+                  {DIC.WHATIDO_PDF_1}
                 </li>
-                <li onClick={() => loadPdf(LeoPdf, 2)}>
-                  Hessenwaldschule & Kultusministerium Hessen
+                <li onClick={() => loadPdf(CervantesTripticoPdf, 2)}>
+                  {DIC.WHATIDO_PDF_2}
+                </li>
+                <h5>Hessenwaldschule & Kultusministerium Hessen</h5>
+                <li onClick={() => loadPdf(LeoFlyerPdf, 2)}>
+                  {DIC.WHATIDO_PDF_3}
                 </li>
               </ul>
 
@@ -94,11 +100,12 @@ const Whatandwithwho = (props) => {
             </div>
           </div>
         </section>
-
-        <Modal show={showPdf} handleClose={hideModal}>
-          <p>PDF Viewer</p>
-          <PdfViewer file={pdfFile} totalPages={totalPages} />
-        </Modal>
+        <div className="max-width-modal">
+          <Modal show={showPdf} handleClose={hideModal}>
+            <h5>PDF Viewer</h5>
+            <PdfViewer file={pdfFile} totalPages={totalPages} />
+          </Modal>
+        </div>
       </div>
     </main>
   )
@@ -116,6 +123,9 @@ Whatandwithwho.propTypes = {
     WHATIDO_SECTION_TWO_TITLE: PropTypes.string,
     WHATIDO_SECTION_TWO_SUB_ONE: PropTypes.string,
     WHATIDO_SECTION_TWO_SUB_TWO: PropTypes.string,
+    WHATIDO_PDF_1: PropTypes.string,
+    WHATIDO_PDF_2: PropTypes.string,
+    WHATIDO_PDF_3: PropTypes.string,
   }),
 }
 export default Whatandwithwho

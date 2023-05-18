@@ -51,8 +51,12 @@ p {
   margin-top: 1.2em;
 }
 .what-content_article ul li {
-  margin-top: 1.2em;
+  margin: 1.2rem;
   cursor: pointer;
+}
+.what-content_article h5 {
+  margin-top: 1.2rem;
+  text-decoration: underline;
 }
 
 /* > Tablet */
@@ -74,6 +78,13 @@ p {
     margin-bottom: 6rem;
     width: 50%;
   }
+}
+
+.max-width-modal {
+  max-width: 95vw;
+}
+.max-width-modal h5 {
+  padding-left: 2rem;
 }
 
 /* > Big Desktop */
