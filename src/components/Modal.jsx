@@ -4,7 +4,9 @@ import PropTypes from 'prop-types'
 import '../css/modal.css'
 
 const Modal = ({ handleClose, show, children }) => {
-  const showHideClassName = show ? 'modal display-block' : 'modal display-none'
+  const showHideClassName = show()
+    ? 'modal display-block'
+    : 'modal display-none'
 
   return (
     <div className={showHideClassName}>
@@ -20,7 +22,7 @@ const Modal = ({ handleClose, show, children }) => {
 
 Modal.propTypes = {
   handleClose: PropTypes.func,
-  show: PropTypes.boolean,
+  show: PropTypes.func,
   children: PropTypes.node,
 }
 

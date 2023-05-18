@@ -27,6 +27,10 @@ const Whatandwithwho = (props) => {
   const hideModal = () => {
     setShowPdf(false)
   }
+
+  const returnBoolean = () => {
+    return showPdf
+  }
   return (
     <main>
       <div className="what-content">
@@ -101,7 +105,7 @@ const Whatandwithwho = (props) => {
           </div>
         </section>
         <div className="max-width-modal">
-          <Modal show={showPdf} handleClose={hideModal}>
+          <Modal show={returnBoolean} handleClose={hideModal}>
             <h5>PDF Viewer</h5>
             <PdfViewer file={pdfFile} totalPages={totalPages} />
           </Modal>

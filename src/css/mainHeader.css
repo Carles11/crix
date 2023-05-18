@@ -48,7 +48,7 @@
 .header .menu-icon {
   cursor: pointer;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   padding: 28px 20px;
   position: relative;
   user-select: none;
