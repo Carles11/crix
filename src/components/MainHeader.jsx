@@ -12,9 +12,11 @@ const MainHeader = (props) => {
 
   const [isMobile, setIsMobile] = useState(false)
 
+  const screenW = window.innerWidth
+  const isMobileOrTablet = screenW < 720
+
   useEffect(() => {
-    const screenW = window.innerWidth
-    if (screenW < 720) {
+    if (isMobileOrTablet) {
       setIsMobile(true)
     } else {
       setIsMobile(false)
@@ -47,7 +49,10 @@ const MainHeader = (props) => {
       )}
       <ul className={`menu${showMenu ? '_checked' : ''}`}>
         <li className="nodecoration" onClick={handleClick}>
-          <Link to="/whatandwithwho">
+          <Link
+            to="/whatandwithwho"
+            className={` ${isMobileOrTablet ? 'dont_underline' : ''}`}
+          >
             <h6>{DIC.NAV_SERVICES}</h6>
           </Link>
         </li>
