@@ -23,21 +23,25 @@ const Skills = (props) => {
           </tr>
           <tr>
             <td>Redux</td>
-            <td>⭐⭐</td>
+            <td>⭐⭐⭐</td>
           </tr>
           <tr>
-            <td>MongoDB & mySQL</td>
+            <td>Typescript</td>
             <td>⭐⭐⭐</td>
           </tr>
           <tr>
             <td>React-Native & expo</td>
             <td>⭐⭐⭐⭐</td>
           </tr>
-
           <tr>
-            <td>Typescript</td>
+            <td>MongoDB & mySQL</td>
             <td>⭐⭐⭐</td>
           </tr>
+          <tr>
+            <td>Supabase</td>
+            <td>⭐⭐⭐</td>
+          </tr>
+          <hr />
           <tr>
             <td>Wordpress</td>
             <td>⭐⭐⭐⭐</td>

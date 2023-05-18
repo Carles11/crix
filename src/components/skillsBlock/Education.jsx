@@ -15,7 +15,7 @@ const Education = (props) => {
           </tr>
           <tr>
             <td>Adobe Photoshop</td>
-            <td>⭐⭐⭐</td>
+            <td>⭐⭐⭐⭐</td>
           </tr>
           <tr>
             <td>Adobe Acrobat DC</td>
