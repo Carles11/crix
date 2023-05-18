@@ -48,6 +48,14 @@ module.exports = ({ mode }) => ({
         test: /\.svg$/,
         loader: 'svg-inline-loader',
       },
+      {
+        test: /\.pdf$/,
+        use: ['file-loader'],
+      },
+      {
+        test: /\.node$/,
+        use: ['node-loader'],
+      },
     ],
   },
   resolve: {
