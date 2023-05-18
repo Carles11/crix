@@ -61,7 +61,7 @@ const Whatandwithwho = (props) => {
               <h3 className="what-subtitle subtitle-bottom section-two__title">
                 {DIC.WHATIDO_SECTION_TWO_SUB_ONE}
               </h3>
-              <ul>
+              {/* <ul>
                 <h5>Instituto Cervantes</h5>
                 <li onClick={() => loadPdf(CervantesProgrammPdf, 28)}>
                   {DIC.WHATIDO_PDF_1}
@@ -72,6 +72,40 @@ const Whatandwithwho = (props) => {
                 <h5>Hessenwaldschule & Kultusministerium Hessen</h5>
                 <li onClick={() => loadPdf(LeoFlyerPdf, 2)}>
                   {DIC.WHATIDO_PDF_3}
+                </li>
+              </ul> */}
+              <ul>
+                <h5>Instituto Cervantes</h5>
+                <li>
+                  <a
+                    href={CervantesProgrammPdf}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="dont-underline"
+                  >
+                    {DIC.WHATIDO_PDF_1}
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href={CervantesTripticoPdf}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="dont-underline"
+                  >
+                    {DIC.WHATIDO_PDF_2}
+                  </a>
+                </li>
+                <h5>Hessenwaldschule & Kultusministerium Hessen</h5>
+                <li>
+                  <a
+                    href={LeoFlyerPdf}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="dont-underline"
+                  >
+                    {DIC.WHATIDO_PDF_3}
+                  </a>
                 </li>
               </ul>
 

@@ -43,27 +43,15 @@
 .privacy-article {
   text-align: left;
   color: var(--text-color-dark);
-  letter-spacing: 3px;
-  line-height: 1.8;
 }
 
 @media only screen and (max-width: 677px) {
   .privacy-container {
     margin-bottom: 8rem;
   }
-
-  .privacy-article {
-    letter-spacing: 1px;
-    line-height: 1;
-  }
 }
 @media only screen and (max-width: 1024px) {
   .privacy-container {
     margin-bottom: 11rem;
-  }
-
-  .privacy-article {
-    letter-spacing: 2px;
-    line-height: 1.3;
   }
 }

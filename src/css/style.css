@@ -164,8 +164,6 @@ a:not(.dont-underline):after {
   transform: scaleX(0);
   height: 2px;
   margin-top: 2px;
-  /* bottom: 0;
-  left: 0; */
   background-color: var(--secondaryLightColor);
   transform-origin: bottom right;
   transition: transform 0.5s ease-out;
