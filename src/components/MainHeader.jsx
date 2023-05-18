@@ -39,44 +39,46 @@ const MainHeader = (props) => {
   return (
     <header className="header">
       <Logo handleClick={handleClick} />
-      {isMobile && (
-        <div
-          className={`menu-icon ${showMenu ? 'open' : ''}`}
-          onClick={handleClick}
-        >
-          <span className={`navicon ${showMenu ? 'open' : ''}`}></span>
-        </div>
-      )}
-      <ul className={`menu${showMenu ? '_checked' : ''}`}>
-        <li className="nodecoration" onClick={handleClick}>
-          <Link
-            to="/whatandwithwho"
-            className={` ${isMobileOrTablet ? 'dont_underline' : ''}`}
+      <div className="header-menus">
+        {isMobile && (
+          <div
+            className={`menu-icon ${showMenu ? 'open' : ''}`}
+            onClick={handleClick}
           >
-            <h6>{DIC.NAV_SERVICES}</h6>
-          </Link>
-        </li>
-        <li className="nodecoration" onClick={handleClick}>
-          <Link to="/about-us">
-            <h6>{DIC.NAV_ABOUT_US}</h6>
-          </Link>
-        </li>
-        <li className="nodecoration" onClick={handleClick}>
-          <Link to="/contact">
-            <h6>{DIC.NAV_CONTACT}</h6>
-          </Link>
-        </li>
-      </ul>
-      <div className="languages">
-        <button className="language-button" onClick={() => pickTheLang('en')}>
-          ENG
-        </button>
-        <button className="language-button" onClick={() => pickTheLang('de')}>
-          DE
-        </button>
-        <button className="language-button" onClick={() => pickTheLang('es')}>
-          ESP
-        </button>
+            <span className={`navicon ${showMenu ? 'open' : ''}`}></span>
+          </div>
+        )}
+        <ul className={`menu${showMenu ? '_checked' : ''}`}>
+          <li className="nodecoration" onClick={handleClick}>
+            <Link
+              to="/whatandwithwho"
+              className={` ${isMobileOrTablet ? 'dont_underline' : ''}`}
+            >
+              <h6>{DIC.NAV_SERVICES}</h6>
+            </Link>
+          </li>
+          <li className="nodecoration" onClick={handleClick}>
+            <Link to="/about-us">
+              <h6>{DIC.NAV_ABOUT_US}</h6>
+            </Link>
+          </li>
+          <li className="nodecoration" onClick={handleClick}>
+            <Link to="/contact">
+              <h6>{DIC.NAV_CONTACT}</h6>
+            </Link>
+          </li>
+        </ul>
+        <div className="languages">
+          <button className="language-button" onClick={() => pickTheLang('en')}>
+            ENG
+          </button>
+          <button className="language-button" onClick={() => pickTheLang('de')}>
+            DE
+          </button>
+          <button className="language-button" onClick={() => pickTheLang('es')}>
+            ESP
+          </button>
+        </div>
       </div>
     </header>
   )
