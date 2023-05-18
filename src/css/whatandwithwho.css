@@ -52,6 +52,7 @@ p {
 }
 .what-content_article ul li {
   margin-top: 1.2em;
+  cursor: pointer;
 }
 
 /* > Tablet */
