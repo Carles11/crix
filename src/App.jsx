@@ -19,7 +19,6 @@ const App = (props) => {
 
   return (
     <>
-      {/* <Header DIC={activeDIC} handleDIC={setLanguage} /> */}
       <MainHeader DIC={activeDIC} handleDIC={setLanguage} />
       <AllRoutes {...props} DIC={activeDIC} />
       <Footer DIC={activeDIC} />

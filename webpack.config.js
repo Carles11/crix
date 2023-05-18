@@ -16,7 +16,7 @@ module.exports = ({ mode }) => ({
     filename: 'app.js',
   },
   devServer: {
-    publicPath: '/',
+    publicPath: '/public',
     hot: true,
   },
   plugins: [

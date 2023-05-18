@@ -4,8 +4,9 @@ const path = require('path')
 const app = express()
 const PORT = process.env.PORT || 3000 || 5001
 const ENV = process.env.NODE_ENV || 'development'
-console.log('process.env.PORT----------------->', process.env.PORT)
-console.log('process.env.PORNODE_ENV----------------->', process.env.NODE_ENV)
+// console.log('process.env.PORT----------------->', process.env.PORT)
+// console.log('process.env.PORNODE_ENV----------------->', process.env.NODE_ENV)
+
 app.use(express.static(path.join(__dirname, 'dist')))
 app.use(express.static(path.join(__dirname, 'public')))
 
