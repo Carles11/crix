@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
-import Modal from '../components/Modal.jsx'
 
 import DividerDiagonal from '../components/DividerDiagonal'
-import PdfViewer from '../components/PdfViewer'
+// import Modal from '../components/Modal.jsx'
+// import PdfViewer from '../components/PdfViewer'
+// import PdfIframe from '../components/PdfIframe.jsx'
 
 import CervantesProgrammPdf from '../assets/pdfs/Kulturprogramm_APRIL-AUG_2023_4web_lowRes.pdf'
 import CervantesTripticoPdf from '../assets/pdfs/INSTITUTO-CERVANTES-ARTUR-HERAS-EXPOSICION_triptico_2023_4web.pdf'
@@ -20,7 +21,7 @@ const Whatandwithwho = (props) => {
 
   const loadPdf = (file, numPages) => {
     setPdfFile(file)
-    setTotalPages(numPages)
+    // setTotalPages(numPages)
     setShowPdf(true)
   }
 
@@ -31,6 +32,7 @@ const Whatandwithwho = (props) => {
   const returnBoolean = () => {
     return showPdf
   }
+
   return (
     <main>
       <div className="what-content">
@@ -138,12 +140,13 @@ const Whatandwithwho = (props) => {
             </div>
           </div>
         </section>
-        <div className="max-width-modal">
+        {/* <div className="max-width-modal">
           <Modal show={returnBoolean} handleClose={hideModal}>
             <h5>PDF Viewer</h5>
-            <PdfViewer file={pdfFile} totalPages={totalPages} />
+            <PdfIframe file={pdfFile} />
+             <PdfViewer file={pdfFile} totalPages={totalPages} />
           </Modal>
-        </div>
+        </div> */}
       </div>
     </main>
   )
