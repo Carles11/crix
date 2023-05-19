@@ -1,14 +1,14 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
+import Modal from '../components/Modal.jsx'
 
 import DividerDiagonal from '../components/DividerDiagonal'
-// import Modal from '../components/Modal.jsx'
 // import PdfViewer from '../components/PdfViewer'
-// import PdfIframe from '../components/PdfIframe.jsx'
 
 import CervantesProgrammPdf from '../assets/pdfs/Kulturprogramm_APRIL-AUG_2023_4web_lowRes.pdf'
 import CervantesTripticoPdf from '../assets/pdfs/INSTITUTO-CERVANTES-ARTUR-HERAS-EXPOSICION_triptico_2023_4web.pdf'
 import LeoFlyerPdf from '../assets/pdfs/Leo-2022-flyer_lowRes.pdf'
+import PdfIframe from '../components/PdfIframe.jsx'
 
 import '../css/dividerDiagonal.css'
 import '../css/whatandwithwho.css'
@@ -63,7 +63,7 @@ const Whatandwithwho = (props) => {
               <h3 className="what-subtitle subtitle-bottom section-two__title">
                 {DIC.WHATIDO_SECTION_TWO_SUB_ONE}
               </h3>
-              {/* <ul>
+              <ul>
                 <h5>Instituto Cervantes</h5>
                 <li onClick={() => loadPdf(CervantesProgrammPdf, 28)}>
                   {DIC.WHATIDO_PDF_1}
@@ -75,8 +75,8 @@ const Whatandwithwho = (props) => {
                 <li onClick={() => loadPdf(LeoFlyerPdf, 2)}>
                   {DIC.WHATIDO_PDF_3}
                 </li>
-              </ul> */}
-              <ul>
+              </ul>
+              {/* <ul>
                 <h5>Instituto Cervantes</h5>
                 <li>
                   <a
@@ -109,7 +109,7 @@ const Whatandwithwho = (props) => {
                     {DIC.WHATIDO_PDF_3}
                   </a>
                 </li>
-              </ul>
+              </ul> */}
 
               <h3 className="what-subtitle subtitle-bottom">
                 {DIC.WHATIDO_SECTION_TWO_SUB_TWO}
@@ -140,13 +140,12 @@ const Whatandwithwho = (props) => {
             </div>
           </div>
         </section>
-        {/* <div className="max-width-modal">
+        <div className="max-width-modal">
           <Modal show={returnBoolean} handleClose={hideModal}>
-            <h5>PDF Viewer</h5>
             <PdfIframe file={pdfFile} />
-             <PdfViewer file={pdfFile} totalPages={totalPages} />
+            {/* <PdfViewer file={pdfFile} totalPages={totalPages} /> */}
           </Modal>
-        </div> */}
+        </div>
       </div>
     </main>
   )

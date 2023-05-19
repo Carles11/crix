@@ -11,9 +11,13 @@ const Modal = ({ handleClose, show, children }) => {
   return (
     <div className={showHideClassName}>
       <section className="modal-main">
-        <button type="button" onClick={handleClose} className="close">
-          X
-        </button>
+        <div className="iframe-header">
+          <h5>Crix design's</h5>
+          <button type="button" onClick={handleClose} className="close">
+            Close
+          </button>
+        </div>
+        <hr />
         {children}
       </section>
     </div>
