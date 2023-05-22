@@ -8,6 +8,17 @@ const ENV = process.env.NODE_ENV || 'development'
 // console.log('process.env.PORT----------------->', process.env.PORT)
 // console.log('process.env.PORNODE_ENV----------------->', process.env.NODE_ENV)
 
+app.use(express.static(path.join(__dirname, 'dist')))
+app.use(express.static(path.join(__dirname, 'public')))
+
+app.get('/*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'dist', 'index.html'), (err) => {
+    if (err) {
+      res.status(500).send(err)
+    }
+  })
+})
+
 const server = app.listen(PORT, () => {
   console.log(`Listening on port ${String(PORT)} in (${ENV}).`)
 })
@@ -33,19 +44,4 @@ wss.on('connection', (ws) => {
   ws.on('close', () => {
     console.log('WebSocket connection closed')
   })
-})
-
-app.use(express.static(path.join(__dirname, 'dist')))
-app.use(express.static(path.join(__dirname, 'public')))
-
-app.get('/*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'dist', 'index.html'), (err) => {
-    if (err) {
-      res.status(500).send(err)
-    }
-  })
-})
-
-app.listen(PORT, () => {
-  console.log(`listening on port ${String(PORT)} in (${ENV}).`)
 })
