@@ -8,7 +8,8 @@ const PdfIframe = ({ file }) => {
     <div className="i-frame">
       <iframe
         title="pdf"
-        src={`/pdfJs/web/viewer.html?file=${file}`}
+        // src={`/pdfJs/web/viewer.html?file=${file}`}
+        src={file}
         width="100%"
         height="700px"
       ></iframe>
