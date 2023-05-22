@@ -6,9 +6,9 @@ import App from './App'
 import './css/style.css'
 import ScrollToTop from './helpers/ScrollToTop'
 
-if (module.hot) {
-  module.hot.accept()
-}
+// if (module.hot) {
+//   module.hot.accept()
+// }
 
 ReactDOM.render(
   <Router>
