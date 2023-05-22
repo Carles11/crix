@@ -1,19 +1,17 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
 import '../css/modal.css'
 
 const PdfIframe = ({ file, DIC }) => {
-  //   console.log({ file })
+  const [currentFile, setCurrentFile] = useState(file)
+
+  useEffect(() => {
+    setCurrentFile(file)
+  }, [file])
+
   return (
     <div className="i-frame">
-      {/* <iframe
-        title="pdf"
-        src={`/pdfJs/web/viewer.html?file=${file}`}
-        // src={file}
-        width="100%"
-        height="700px"
-  ></iframe> */}
-      <object className="i-object" data={file} type="application/pdf">
+      <object className="i-object" data={currentFile} type="application/pdf">
         <div className="alt-info">
           {DIC.MODAL_PDF_LOAD_ERROR}{' '}
           <a

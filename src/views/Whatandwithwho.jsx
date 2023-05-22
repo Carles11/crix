@@ -7,6 +7,7 @@ import DividerDiagonal from '../components/DividerDiagonal'
 
 import CervantesProgrammPdf from '../assets/pdfs/Kulturprogramm_APRIL-AUG_2023_4web_lowRes.pdf'
 import CervantesTripticoPdf from '../assets/pdfs/INSTITUTO-CERVANTES-ARTUR-HERAS-EXPOSICION_triptico_2023_4web.pdf'
+import CervantesBannerPdf from '../assets/pdfs/kurse_banner.pdf'
 import LeoFlyerPdf from '../assets/pdfs/Leo-2022-flyer_lowRes.pdf'
 import PdfIframe from '../components/PdfIframe.jsx'
 
@@ -17,11 +18,9 @@ const Whatandwithwho = (props) => {
   const { DIC } = props
   const [showPdf, setShowPdf] = useState(false)
   const [pdfFile, setPdfFile] = useState(null)
-  const [totalPages, setTotalPages] = useState()
 
-  const loadPdf = (file, numPages) => {
+  const loadPdf = (file) => {
     setPdfFile(file)
-    // setTotalPages(numPages)
     setShowPdf(true)
   }
 
@@ -65,51 +64,20 @@ const Whatandwithwho = (props) => {
               </h3>
               <ul>
                 <h5>Instituto Cervantes</h5>
-                <li onClick={() => loadPdf(CervantesProgrammPdf, 28)}>
+                <li onClick={() => loadPdf(CervantesProgrammPdf)}>
                   {DIC.WHATIDO_PDF_1}
                 </li>
-                <li onClick={() => loadPdf(CervantesTripticoPdf, 2)}>
+                <li onClick={() => loadPdf(CervantesTripticoPdf)}>
                   {DIC.WHATIDO_PDF_2}
                 </li>
+                <li onClick={() => loadPdf(CervantesBannerPdf)}>
+                  {DIC.WHATIDO_PDF_4}
+                </li>
                 <h5>Hessenwaldschule & Kultusministerium Hessen</h5>
-                <li onClick={() => loadPdf(LeoFlyerPdf, 2)}>
+                <li onClick={() => loadPdf(LeoFlyerPdf)}>
                   {DIC.WHATIDO_PDF_3}
                 </li>
               </ul>
-              {/* <ul>
-                <h5>Instituto Cervantes</h5>
-                <li>
-                  <a
-                    href={CervantesProgrammPdf}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="dont-underline"
-                  >
-                    {DIC.WHATIDO_PDF_1}
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href={CervantesTripticoPdf}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="dont-underline"
-                  >
-                    {DIC.WHATIDO_PDF_2}
-                  </a>
-                </li>
-                <h5>Hessenwaldschule & Kultusministerium Hessen</h5>
-                <li>
-                  <a
-                    href={LeoFlyerPdf}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="dont-underline"
-                  >
-                    {DIC.WHATIDO_PDF_3}
-                  </a>
-                </li>
-              </ul> */}
 
               <h3 className="what-subtitle subtitle-bottom">
                 {DIC.WHATIDO_SECTION_TWO_SUB_TWO}
@@ -166,6 +134,7 @@ Whatandwithwho.propTypes = {
     WHATIDO_PDF_1: PropTypes.string,
     WHATIDO_PDF_2: PropTypes.string,
     WHATIDO_PDF_3: PropTypes.string,
+    WHATIDO_PDF_4: PropTypes.string,
   }),
 }
 export default Whatandwithwho

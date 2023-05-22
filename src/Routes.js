@@ -19,7 +19,6 @@ const AllRoutes = (props) => {
       <Route path="/whatandwithwho" element={<Whatandwithwho DIC={DIC} />} />
       <Route path="/contact" element={<Contact DIC={DIC} />} />
       <Route path="/about-us" element={<AboutUs DIC={DIC} />} />
-      <Route path="/pdfJs" element={<PdfIframe DIC={DIC} />} />
       <Route path="*" element={<NotFound DIC={DIC} />} />
       <Route
         path="/datenschutzerklaerung"
