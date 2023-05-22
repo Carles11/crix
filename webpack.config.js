@@ -19,6 +19,7 @@ module.exports = ({ mode }) => ({
     publicPath: '/public',
     hot: true,
     allowedHosts: ['all'],
+    public: '0.0.0.0:3000',
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
@@ -64,5 +65,9 @@ module.exports = ({ mode }) => ({
     alias: {
       'react-dom': '@hot-loader/react-dom',
     },
+  },
+  externals: {
+    'pdfjs-dist': 'pdfjsLib',
+    'pdfjs-dist/build/pdf.worker.js': 'pdfjsWorker',
   },
 })
