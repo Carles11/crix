@@ -142,7 +142,7 @@ const Whatandwithwho = (props) => {
         </section>
         <div className="max-width-modal">
           <Modal show={returnBoolean} handleClose={hideModal}>
-            <PdfIframe file={pdfFile} />
+            <PdfIframe file={pdfFile} DIC={DIC} />
             {/* <PdfViewer file={pdfFile} totalPages={totalPages} /> */}
           </Modal>
         </div>
