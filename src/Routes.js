@@ -9,7 +9,6 @@ import AboutUs from './views/AboutUs'
 import Datenschutzerklaerung from './views/Datenschutzerklaerung'
 import Impressum from './views/Impressum'
 import NotFound from './views/NotFound'
-import PdfIframe from './components/PdfIframe'
 
 const AllRoutes = (props) => {
   const { DIC } = props

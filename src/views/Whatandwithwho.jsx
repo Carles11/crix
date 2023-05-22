@@ -8,7 +8,14 @@ import DividerDiagonal from '../components/DividerDiagonal'
 import CervantesProgrammPdf from '../assets/pdfs/Kulturprogramm_APRIL-AUG_2023_4web_lowRes.pdf'
 import CervantesTripticoPdf from '../assets/pdfs/INSTITUTO-CERVANTES-ARTUR-HERAS-EXPOSICION_triptico_2023_4web.pdf'
 import CervantesBannerPdf from '../assets/pdfs/kurse_banner.pdf'
+import CervantesFlyerPdf from '../assets/pdfs/IC_FORMACION_2020_4web.pdf'
+import CervantesGutscheinPdf from '../assets/pdfs/IC_GUTSCHEIN_FINAL.pdf'
 import LeoFlyerPdf from '../assets/pdfs/Leo-2022-flyer_lowRes.pdf'
+import LeoPosterPdf from '../assets/pdfs/Leon_DINA2_2018_4web.pdf'
+import OETFlyer from '../assets/pdfs/OET_Montagskino_NOV_4web.pdf'
+import PalomoEntrada from '../assets/pdfs/Caminosdelaguitarra_entrada_4web.pdf'
+import PalomoKit from '../assets/pdfs/spuren_der_gitarre_4web.pdf'
+
 import PdfIframe from '../components/PdfIframe.jsx'
 
 import '../css/dividerDiagonal.css'
@@ -73,9 +80,25 @@ const Whatandwithwho = (props) => {
                 <li onClick={() => loadPdf(CervantesBannerPdf)}>
                   {DIC.WHATIDO_PDF_4}
                 </li>
+                <li onClick={() => loadPdf(CervantesFlyerPdf)}>
+                  {DIC.WHATIDO_PDF_5}
+                </li>
+                <li onClick={() => loadPdf(CervantesGutscheinPdf)}>
+                  {DIC.WHATIDO_PDF_6}
+                </li>
                 <h5>Hessenwaldschule & Kultusministerium Hessen</h5>
                 <li onClick={() => loadPdf(LeoFlyerPdf)}>
                   {DIC.WHATIDO_PDF_3}
+                </li>
+                <li onClick={() => loadPdf(LeoPosterPdf)}>
+                  {DIC.WHATIDO_PDF_7}
+                </li>
+                <h5>Spanish Tourist Board</h5>
+                <li onClick={() => loadPdf(OETFlyer)}>{DIC.WHATIDO_PDF_8}</li>
+                <h5>Artist promotion</h5>
+                <li onClick={() => loadPdf(PalomoKit)}>{DIC.WHATIDO_PDF_9}</li>
+                <li onClick={() => loadPdf(PalomoEntrada)}>
+                  {DIC.WHATIDO_PDF_10}
                 </li>
               </ul>
 
@@ -135,6 +158,12 @@ Whatandwithwho.propTypes = {
     WHATIDO_PDF_2: PropTypes.string,
     WHATIDO_PDF_3: PropTypes.string,
     WHATIDO_PDF_4: PropTypes.string,
+    WHATIDO_PDF_5: PropTypes.string,
+    WHATIDO_PDF_6: PropTypes.string,
+    WHATIDO_PDF_7: PropTypes.string,
+    WHATIDO_PDF_8: PropTypes.string,
+    WHATIDO_PDF_9: PropTypes.string,
+    WHATIDO_PDF_10: PropTypes.string,
   }),
 }
 export default Whatandwithwho
