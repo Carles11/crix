@@ -18,6 +18,7 @@ module.exports = ({ mode }) => ({
   devServer: {
     publicPath: '/public',
     hot: true,
+    allowedHosts: ['all'],
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
