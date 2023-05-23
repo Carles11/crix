@@ -199,6 +199,7 @@ input[type='text'] {
   opacity: 0.8;
   color: var(--text-color-dark);
   font-size: 16px;
+  width: 80%;
 }
 
 /* ADDRESS MOBILE-PHONES AND TABLETS*/
