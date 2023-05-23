@@ -15,7 +15,7 @@ const PdfIframe = ({ file, DIC }) => {
         <div className="alt-info">
           {DIC.MODAL_PDF_LOAD_ERROR}{' '}
           <a
-            href={file}
+            href={`${file}#view=FitV`}
             target="_blank"
             rel="noopener noreferrer"
             className="dont-underline"
