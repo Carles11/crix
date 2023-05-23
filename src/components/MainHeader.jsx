@@ -70,13 +70,13 @@ const MainHeader = (props) => {
         </ul>
         <div className="languages">
           <button className="language-button" onClick={() => pickTheLang('en')}>
-            ENG
+            EN
           </button>
           <button className="language-button" onClick={() => pickTheLang('de')}>
             DE
           </button>
           <button className="language-button" onClick={() => pickTheLang('es')}>
-            ESP
+            ES
           </button>
         </div>
       </div>

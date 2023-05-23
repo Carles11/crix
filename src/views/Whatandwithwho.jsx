@@ -1,19 +1,24 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import Modal from '../components/Modal.jsx'
+import { redirect } from 'react-router-dom'
 
 import DividerDiagonal from '../components/DividerDiagonal'
 // import PdfViewer from '../components/PdfViewer'
 
-import CervantesProgrammPdf from '../assets/pdfs/Kulturprogramm_APRIL-AUG_2023_4web_lowRes.pdf'
+import CervantesProgrammPdf from '../assets/pdfs/Kulturprogramm_JUNI-SEPTEMBER_2022_V11_4WEB.pdf'
 import CervantesTripticoPdf from '../assets/pdfs/INSTITUTO-CERVANTES-ARTUR-HERAS-EXPOSICION_triptico_2023_4web.pdf'
 import CervantesBannerPdf from '../assets/pdfs/kurse_banner.pdf'
-import CervantesFlyerPdf from '../assets/pdfs/IC_FORMACION_2020_4web.pdf'
+import CervantesFlyerPdf from '../assets/pdfs/IC_FORMACION_2020_4web_lowRes.pdf'
 import CervantesGutscheinPdf from '../assets/pdfs/IC_GUTSCHEIN_FINAL.pdf'
+
 import LeoFlyerPdf from '../assets/pdfs/Leo-2022-flyer_lowRes.pdf'
 import LeoPosterPdf from '../assets/pdfs/Leon_DINA2_2018_4web.pdf'
+
 import OETFlyer from '../assets/pdfs/OET_Montagskino_NOV_4web.pdf'
-import PalomoEntrada from '../assets/pdfs/Caminosdelaguitarra_entrada_4web.pdf'
+import AblueLemonPitchDeck from '../assets/pdfs/CineKitchenFrankfurt_4web.pdf'
+
+import PalomoEntrada from '../assets/pdfs/Eintrittskarte_EntreCulturas_4web2.pdf'
 import PalomoKit from '../assets/pdfs/spuren_der_gitarre_4web.pdf'
 
 import PdfIframe from '../components/PdfIframe.jsx'
@@ -25,10 +30,21 @@ const Whatandwithwho = (props) => {
   const { DIC } = props
   const [showPdf, setShowPdf] = useState(false)
   const [pdfFile, setPdfFile] = useState(null)
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    const screenW = window.innerWidth
+    const mob = screenW < 420
+    setIsMobile(mob)
+  }, [pdfFile, isMobile])
 
   const loadPdf = (file) => {
     setPdfFile(file)
-    setShowPdf(true)
+    if (!isMobile) {
+      setShowPdf(true)
+    } else {
+      window.open(`${file}#view=FitV`)
+    }
   }
 
   const hideModal = () => {
@@ -93,12 +109,16 @@ const Whatandwithwho = (props) => {
                 <li onClick={() => loadPdf(LeoPosterPdf)}>
                   {DIC.WHATIDO_PDF_7}
                 </li>
-                <h5>Spanish Tourist Board</h5>
+
+                <h5> {DIC.WHATIDO_OET_TITLE}</h5>
                 <li onClick={() => loadPdf(OETFlyer)}>{DIC.WHATIDO_PDF_8}</li>
-                <h5>Artist promotion</h5>
+                <h5> {DIC.WHATIDO_ARTIST_ENTERPRISE_TITLE}</h5>
                 <li onClick={() => loadPdf(PalomoKit)}>{DIC.WHATIDO_PDF_9}</li>
                 <li onClick={() => loadPdf(PalomoEntrada)}>
                   {DIC.WHATIDO_PDF_10}
+                </li>
+                <li onClick={() => loadPdf(AblueLemonPitchDeck)}>
+                  {DIC.WHATIDO_PDF_11}
                 </li>
               </ul>
 
@@ -154,6 +174,8 @@ Whatandwithwho.propTypes = {
     WHATIDO_SECTION_TWO_TITLE: PropTypes.string,
     WHATIDO_SECTION_TWO_SUB_ONE: PropTypes.string,
     WHATIDO_SECTION_TWO_SUB_TWO: PropTypes.string,
+    WHATIDO_OET_TITLE: PropTypes.string,
+    WHATIDO_ARTIST_ENTERPRISE_TITLE: PropTypes.string,
     WHATIDO_PDF_1: PropTypes.string,
     WHATIDO_PDF_2: PropTypes.string,
     WHATIDO_PDF_3: PropTypes.string,
@@ -164,6 +186,7 @@ Whatandwithwho.propTypes = {
     WHATIDO_PDF_8: PropTypes.string,
     WHATIDO_PDF_9: PropTypes.string,
     WHATIDO_PDF_10: PropTypes.string,
+    WHATIDO_PDF_11: PropTypes.string,
   }),
 }
 export default Whatandwithwho
