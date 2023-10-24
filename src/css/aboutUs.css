@@ -60,6 +60,7 @@ a {
 
 .about-content_article p {
   margin-top: 1.2em;
+  color: var(--text-color-light);
 }
 
 /* > Tablet */
