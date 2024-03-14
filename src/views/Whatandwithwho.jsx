@@ -81,7 +81,7 @@ const Whatandwithwho = (props) => {
           <div className="what-content_section">
             <h1 className="subtitle-bottom">{DIC.WHATIDO_SECTION_TWO_TITLE}</h1>
             <div className="what-content_article">
-              <h3 className="what-subtitle subtitle-bottom section-two__title">
+              <h3 className="what-subtitle">
                 {DIC.WHATIDO_SECTION_TWO_SUB_ONE}
               </h3>
               <ul>
@@ -121,7 +121,7 @@ const Whatandwithwho = (props) => {
                 </li>
               </ul>
 
-              <h3 className="what-subtitle subtitle-bottom">
+              <h3 className="what-subtitle">
                 {DIC.WHATIDO_SECTION_TWO_SUB_TWO}
               </h3>
               <ul>
@@ -132,7 +132,7 @@ const Whatandwithwho = (props) => {
                     rel="noopener noreferrer"
                     className="dont-underline"
                   >
-                    TheCirculArt
+                    <p>TheCirculArt</p>
                   </a>
                 </li>
 
@@ -143,7 +143,7 @@ const Whatandwithwho = (props) => {
                     rel="noopener noreferrer"
                     className="dont-underline"
                   >
-                    Leo, leo... ¿qué lees?
+                    <p> Leo, leo... ¿qué lees?</p>
                   </a>
                 </li>
               </ul>

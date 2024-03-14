@@ -36,6 +36,7 @@ p {
 .what-subtitle {
   margin-top: 2rem;
   display: flex;
+  color: var(--text-color-light);
 }
 .what-subtitle:hover {
   background-color: var(--light-blackBg);
@@ -53,6 +54,9 @@ p {
 .what-content_article ul li {
   margin: 1.2rem;
   cursor: pointer;
+  color: var(--text-color-light);
+}
+.what-content_article ul li a p {
   color: var(--text-color-light);
 }
 .what-content_article h5 {
