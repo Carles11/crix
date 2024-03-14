@@ -14,11 +14,11 @@ const AboutUs = (props) => {
           <h1>{DIC.ABOUT_SEC_ONE_TITLE}</h1>
           <div className="about-content_article">
             <h3 className="about-subtitle">{DIC.ABOUT_SEC_ONE_SUB_ONE}</h3>
-            <p>{DIC.ABOUT_SEC_ONE_DESC_ONE}</p>
+            <p className="about-text">{DIC.ABOUT_SEC_ONE_DESC_ONE}</p>
 
             <h3 className="about-subtitle">{DIC.ABOUT_SEC_ONE_SUB_TWO}</h3>
-            <p>{DIC.ABOUT_SEC_ONE_DESC_TWO}</p>
-            <p>{DIC.ABOUT_SEC_ONE_DESC_TWO_bis}</p>
+            <p className="about-text">{DIC.ABOUT_SEC_ONE_DESC_TWO}</p>
+            <p className="about-text">{DIC.ABOUT_SEC_ONE_DESC_TWO_bis}</p>
           </div>
         </section>
       </div>
@@ -26,7 +26,7 @@ const AboutUs = (props) => {
         <DividerDiagonal />
         <section className="about-content_bottom">
           <div className="about-content_section orange-bg">
-            "<h1 className="subtitle-bottom">{DIC.ABOUT_SEC_TWO_TITLE}</h1>
+            <h1 className="subtitle-bottom">{DIC.ABOUT_SEC_TWO_TITLE}</h1>
             <div className="about-content_article">
               <h3 className="about-subtitle subtitle-bottom">
                 {DIC.ABOUT_SEC_TWO_SUB_ONE}

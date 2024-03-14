@@ -58,6 +58,10 @@ a {
   transition: all 0.5s ease-out;
 }
 
+.about-text {
+  color: var(--text-color-dark) !important;
+}
+
 .about-content_article p {
   margin-top: 1.2em;
   color: var(--text-color-light);
