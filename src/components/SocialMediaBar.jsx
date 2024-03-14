@@ -9,10 +9,20 @@ import '../css/portraits.css'
 const SocialMediaBar = ({ twitterLink, linkedinLink }) => {
   return (
     <div className="social-flex">
-      <a href={twitterLink} target="_blank" rel="noopener noreferrer">
+      <a
+        href={twitterLink}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="dont-underline"
+      >
         <img src={twitterIcon} alt="twitter icon" />
       </a>
-      <a href={linkedinLink} target="_blank" rel="noopener noreferrer">
+      <a
+        href={linkedinLink}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="dont-underline"
+      >
         <img src={linkedInIcon} alt="linkedin icon" />
       </a>
     </div>
