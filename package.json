@@ -3,6 +3,9 @@
   "version": "2.0.0",
   "description": "WebApp of CriX Developers and Designers App",
   "main": "index.js",
+  "engines": {
+    "node": ">=18.18.0"
+  },
   "scripts": {
     "start": "react-scripts start --hot && nodemon server",
     "build": "webpack --mode=production && set NODE_ENV=production",
