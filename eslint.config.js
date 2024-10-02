@@ -10,7 +10,7 @@ export default defineConfig({
   },
   // Specify parser options
   parserOptions: {
-    ecmaVersion: 2020, // or 2021, depending on your setup
+    ecmaVersion: 2021, // or 2021, depending on your setup
     sourceType: 'module', // Allows for the use of imports
     ecmaFeatures: {
       jsx: true, // Enable JSX parsing
