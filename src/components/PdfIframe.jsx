@@ -11,7 +11,13 @@ const PdfIframe = ({ file, DIC }) => {
 
   return (
     <div className="i-frame">
-      <object className="i-object" data={currentFile} type="application/pdf">
+      <iframe
+        className="i-object"
+        src={currentFile}
+        title="PDF Viewer"
+        width="100%"
+        height="600px"
+      >
         <div className="alt-info">
           {DIC.MODAL_PDF_LOAD_ERROR}{' '}
           <a
@@ -23,7 +29,7 @@ const PdfIframe = ({ file, DIC }) => {
             {DIC.MODAL_PDF_OPEN_FILE}
           </a>
         </div>
-      </object>
+      </iframe>
     </div>
   )
 }

@@ -2,6 +2,8 @@ import emailjs, { init } from 'emailjs-com'
 import Swal from 'sweetalert2'
 
 const emailSend = (data, DIC, resetForm) => {
+  console.log('Email Data:', data)
+
   const serviceID = 'service_1xubnpl'
   const templateID = 'template_rvgqsba'
   const showName = data.name?.split(' ')[0]
