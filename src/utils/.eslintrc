@@ -1,0 +1,23 @@
+{
+  // "extends": "airbnb",
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "plugins": ["react", "compat"],
+  "rules": {
+    "semi": [2, "never"],
+    "no-unexpected-multiline": 2,
+    "compat/compat": 2,
+    "react/no-did-update-set-state": "error",
+    "react/no-unknown-property": "error",
+    "react/no-unused-prop-types": "error",
+    "react/prop-types": "error",
+    "react/react-in-jsx-scope": "error"
+  },
+  "env": {
+    "browser": true,
+    "jest": true
+  }
+}
