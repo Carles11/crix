@@ -5,8 +5,6 @@ import Swal from 'sweetalert2'
 init(process.env.REACT_APP_EMAILJS_PUBLIC_KEY)
 
 const emailSend = (data, DIC, resetForm) => {
-  console.log('Email Data:', data)
-
   const serviceID = process.env.REACT_APP_SERVICE_ID
   const templateID = process.env.REACT_APP_TEMPLATE_ID
   const showName = data.name?.split(' ')[0]
