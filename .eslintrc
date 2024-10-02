@@ -18,6 +18,11 @@
   },
   "env": {
     "browser": true,
-    "jest": true
+    "jest": true,
+    "es6": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2020, // or 2021, depending on your setup
+    "sourceType": "module" // Allows for the use of imports
   }
 }
