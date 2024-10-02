@@ -1,8 +1,11 @@
 {
-  // "extends": "airbnb",
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended" // Add this line to extend React rules
+  ],
   "settings": {
     "react": {
-      "version": "detect"
+      "version": "detect" // Automatically detect the React version
     }
   },
   "plugins": ["react", "compat"],
@@ -14,7 +17,7 @@
     "react/no-unknown-property": "error",
     "react/no-unused-prop-types": "error",
     "react/prop-types": "error",
-    "react/react-in-jsx-scope": "error"
+    "react/react-in-jsx-scope": "error" // Only needed for React versions < 17
   },
   "env": {
     "browser": true,
@@ -23,6 +26,9 @@
   },
   "parserOptions": {
     "ecmaVersion": 2020, // or 2021, depending on your setup
-    "sourceType": "module" // Allows for the use of imports
+    "sourceType": "module", // Allows for the use of imports
+    "ecmaFeatures": {
+      "jsx": true // Enable JSX parsing
+    }
   }
 }

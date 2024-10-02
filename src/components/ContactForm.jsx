@@ -167,7 +167,7 @@ class ContactForm extends Component {
           onClick={handleSubmit}
           className="dont-underline"
         >
-          {buttonText}
+          {buttonText || 'Go!'}
         </Button>
       </form>
     )
