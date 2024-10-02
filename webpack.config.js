@@ -10,7 +10,7 @@ module.exports = ({ mode }) => ({
     'webpack-dev-server/client?http://localhost:3000',
     'webpack/hot/only-dev-server',
   ],
-  devtool: mode === 'production' ? false : 'source-map',
+  devtool: mode === 'production' ? 'source-map' : 'eval-source-map', // Added devtool config
   output: {
     path: path.join(__dirname, 'dist'),
     filename: 'app.js',
@@ -20,6 +20,9 @@ module.exports = ({ mode }) => ({
     hot: true,
     allowedHosts: ['all'],
     public: '0.0.0.0:3000',
+  },
+  optimization: {
+    minimize: mode === 'production' ? false : true, // Added optimization config
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),

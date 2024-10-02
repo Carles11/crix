@@ -8,8 +8,17 @@ const ENV = process.env.NODE_ENV || 'development'
 // console.log('process.env.PORT----------------->', process.env.PORT)
 // console.log('process.env.PORNODE_ENV----------------->', process.env.NODE_ENV)
 
+// Serve static files from dist and public directories
 app.use(express.static(path.join(__dirname, 'dist')))
-app.use(express.static(path.join(__dirname, 'public')))
+app.use(
+  express.static(path.join(__dirname, 'public'), {
+    setHeaders: (res, path) => {
+      if (path.endsWith('.css')) {
+        res.setHeader('Content-Type', 'text/css')
+      }
+    },
+  }),
+)
 
 app.get('/*', (req, res) => {
   res.sendFile(path.join(__dirname, 'dist', 'index.html'), (err) => {
