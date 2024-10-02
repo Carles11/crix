@@ -1,6 +1,10 @@
+# Ignore node_modules directory
 /node_modules
+
+# Ignore project-specific directories
 /_CriX
 /.vscode
 /dist
+
+# Ignore environment variable files
 .env
-/.env

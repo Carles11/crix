@@ -1,13 +1,16 @@
 import emailjs, { init } from 'emailjs-com'
 import Swal from 'sweetalert2'
 
+// Initialize EmailJS with public key
+init(process.env.REACT_APP_EMAILJS_PUBLIC_KEY)
+
 const emailSend = (data, DIC, resetForm) => {
   console.log('Email Data:', data)
 
-  const serviceID = 'service_1xubnpl'
-  const templateID = 'template_rvgqsba'
+  const serviceID = process.env.REACT_APP_SERVICE_ID
+  const templateID = process.env.REACT_APP_TEMPLATE_ID
   const showName = data.name?.split(' ')[0]
-  init('user_5HJvI2zi5tRGkdRn7cAvt')
+
   console.log({ serviceID, templateID, data })
   emailjs.send(serviceID, templateID, data).then(
     (result) => {
