@@ -18,6 +18,16 @@ const Footer = (props) => {
             <Link to="/contact">
               <li>{DIC.CONTACT_TITLE}</li>
             </Link>
+            <li>
+              <a
+                href="https://www.rio-frances.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="dont-underline footer-link-to-rio"
+              >
+                {DIC.FOOTER_WEBDEV}
+              </a>
+            </li>
           </ul>
         </div>
         <div className="footer-right">
@@ -43,6 +53,7 @@ Footer.propTypes = {
     LEGAL: PropTypes.string,
     FOOTER_PRIVACY_POLICY: PropTypes.string,
     FOOTER_IMPRINT: PropTypes.string,
+    FOOTER_WEBDEV: PropTypes.string,
   }).isRequired,
 }
 

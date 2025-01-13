@@ -68,7 +68,7 @@ class ContactForm extends Component {
         email === 'undefined' ||
         isError.name.length > 0 ||
         isError.email.length > 0
-      console.log({ formErrors, name, email, isError })
+      // console.log({ formErrors, name, email, isError })
       if (formErrors) {
         Swal.fire({
           title: DIC.TOAST_ERROR_TITLE,

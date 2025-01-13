@@ -84,6 +84,11 @@ h6 {
   margin: 0;
 }
 
+.footer-link-to-rio {
+  color: white;
+  text-decoration: none;
+  padding-top: 1rem;
+}
 @media only screen and (max-width: 767px) {
   .footer-content {
     flex-direction: column;
