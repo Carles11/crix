@@ -127,6 +127,16 @@ const Whatandwithwho = (props) => {
               <ul>
                 <li>
                   <a
+                    href="https://www.rio-frances.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="dont-underline"
+                  >
+                    <p>My developer portfolio</p>
+                  </a>
+                </li>
+                <li>
+                  <a
                     href="https://thecirculart-statistics.vercel.app/"
                     target="_blank"
                     rel="noopener noreferrer"
