@@ -127,15 +127,25 @@ const Whatandwithwho = (props) => {
               <ul>
                 <li>
                   <a
-                    href="https://thecirculart.com/"
+                    href="https://thecirculart-statistics.vercel.app/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="dont-underline"
                   >
-                    <p>TheCirculArt</p>
+                    <p>TheCirculArt statistics</p>
                   </a>
                 </li>
 
+                <li>
+                  <a
+                    href="https://www.mosaic.photography/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="dont-underline"
+                  >
+                    <p> Mosaic iconic photography</p>
+                  </a>
+                </li>
                 <li>
                   <a
                     href="https://www.leo-leo-hessen.com/"
