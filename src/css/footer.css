@@ -73,8 +73,15 @@ h6 {
 .footer-ul-right h5 {
   margin-bottom: 1rem;
 }
+.footer-ul-right li {
+  margin: 0.3rem 0;
+}
+
 .footer-ul-left h5 {
   margin-bottom: 1rem;
+}
+.footer-ul-left li {
+  margin: 0.3rem 0;
 }
 
 .bottom-line {
