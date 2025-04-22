@@ -56,6 +56,11 @@ p {
   cursor: pointer;
   color: var(--text-color-light);
 }
+.what-content_article ul li:hover {
+  color: var(--primaryColor) !important;
+  transition: color 1s;
+  text-decoration: underline;
+}
 .what-content_article ul li a p {
   color: var(--text-color-light);
 }
@@ -63,6 +68,10 @@ p {
   color: var(--text-color-light);
   margin-top: 1.2rem;
   text-decoration: underline;
+}
+
+.what-web-projects p {
+  margin: 0;
 }
 
 /* > Tablet */

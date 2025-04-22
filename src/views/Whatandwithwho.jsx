@@ -121,51 +121,50 @@ const Whatandwithwho = (props) => {
                 </li>
               </ul>
 
-              <h3 className="what-subtitle">
-                {DIC.WHATIDO_SECTION_TWO_SUB_TWO}
-              </h3>
-              <ul>
-                <li>
-                  <a
-                    href="https://www.rio-frances.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="dont-underline"
-                  >
-                    <p>My developer portfolio</p>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://thecirculart-statistics.vercel.app/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="dont-underline"
-                  >
-                    <p>TheCirculArt statistics</p>
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    href="https://www.mosaic.photography/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="dont-underline"
-                  >
-                    <p> Mosaic iconic photography</p>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.leo-leo-hessen.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="dont-underline"
-                  >
-                    <p> Leo, leo... ¿qué lees?</p>
-                  </a>
-                </li>
+              <ul className="what-web-projects">
+                <h3 className="what-subtitle">
+                  {DIC.WHATIDO_SECTION_TWO_SUB_TWO}
+                </h3>
+                <a
+                  href="https://www.rio-frances.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="dont-underline"
+                >
+                  <li>My developer portfolio</li>
+                </a>
+                <a
+                  href="https://www.mosaic.photography"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="dont-underline footer-link-to-rio"
+                >
+                  <li>{DIC.FOOTER_MOSAIC}</li>
+                </a>
+                <a
+                  href="https://thecirculart-statistics.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="dont-underline"
+                >
+                  <li>TheCirculArt statistics</li>
+                </a>
+                <a
+                  href="https://www.mosaic.photography/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="dont-underline"
+                >
+                  <li>Mosaic iconic photography</li>
+                </a>
+                <a
+                  href="https://www.leo-leo-hessen.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="dont-underline"
+                >
+                  <li>Leo, leo... ¿qué lees?</li>
+                </a>
               </ul>
             </div>
           </div>
@@ -206,6 +205,7 @@ Whatandwithwho.propTypes = {
     WHATIDO_PDF_9: PropTypes.string,
     WHATIDO_PDF_10: PropTypes.string,
     WHATIDO_PDF_11: PropTypes.string,
+    FOOTER_MOSAIC: PropTypes.string,
   }),
 }
 export default Whatandwithwho
