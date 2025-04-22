@@ -30,7 +30,7 @@ const Footer = (props) => {
             </li>
             <li>
               <a
-                href="https://www.rio-frances.com"
+                href="https://www.mosaic.photography"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="dont-underline footer-link-to-rio"
