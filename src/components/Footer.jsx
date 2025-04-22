@@ -28,6 +28,16 @@ const Footer = (props) => {
                 {DIC.FOOTER_WEBDEV}
               </a>
             </li>
+            <li>
+              <a
+                href="https://www.rio-frances.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="dont-underline footer-link-to-rio"
+              >
+                {DIC.FOOTER_MOSAIC}
+              </a>
+            </li>
           </ul>
         </div>
         <div className="footer-right">
@@ -54,6 +64,7 @@ Footer.propTypes = {
     FOOTER_PRIVACY_POLICY: PropTypes.string,
     FOOTER_IMPRINT: PropTypes.string,
     FOOTER_WEBDEV: PropTypes.string,
+    FOOTER_MOSAIC: PropTypes.string,
   }).isRequired,
 }
 
