@@ -38,6 +38,16 @@ const Footer = (props) => {
                 {DIC.FOOTER_MOSAIC}
               </a>
             </li>
+            <li>
+              <a
+                href="https://www.weddweb.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="dont-underline footer-link-to-rio"
+              >
+                {DIC.FOOTER_WEDDWEB}
+              </a>
+            </li>
           </ul>
         </div>
         <div className="footer-right">
@@ -65,6 +75,7 @@ Footer.propTypes = {
     FOOTER_IMPRINT: PropTypes.string,
     FOOTER_WEBDEV: PropTypes.string,
     FOOTER_MOSAIC: PropTypes.string,
+    FOOTER_WEDDWEB: PropTypes.string,
   }).isRequired,
 }
 

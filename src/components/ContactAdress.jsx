@@ -15,7 +15,17 @@ const ContactAdress = () => {
           rel="noopener noreferrer"
           className="dont-underline"
         >
-          +49-01782871785
+          +49-01782871785{' '}
+        </a>
+        <br />
+        Phone:{' '}
+        <a
+          href="tel:+56921881214"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="dont-underline"
+        >
+          +56-921881214{' '}
         </a>
         <br />
         E-Mail:{' '}
